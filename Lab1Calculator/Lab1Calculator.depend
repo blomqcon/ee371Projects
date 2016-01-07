@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1452117959 source:c:\users\elizabeth\desktop\uw winter 2016\cse 371\lab1calculator\main.c
+	<stdio.h>
+	<stdlib.h>
+
