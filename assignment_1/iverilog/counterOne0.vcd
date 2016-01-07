@@ -1,5 +1,5 @@
 $date
-	Thu Jan 07 13:17:32 2016
+	Thu Jan 07 14:49:20 2016
 $end
 $version
 	Icarus Verilog
@@ -13,28 +13,71 @@ $var wire 1 ! clk $end
 $var wire 4 " q [0:3] $end
 $var wire 4 # qBar [0:3] $end
 $var wire 1 $ rst $end
+$var wire 1 % test $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+0%
 0$
 b1111 #
 b0 "
 0!
 $end
 #20
+b0 #
+1%
+b1111 "
+1$
 1!
 #40
 0!
 #60
+b1000 #
+0%
+b111 "
 1!
 #80
 0!
 #100
+b100 #
+1%
+b1011 "
 1!
 #120
 0!
 #140
+b1100 #
+0%
+b11 "
 1!
+#160
+0!
 #180
+b10 #
+1%
+b1101 "
+1!
+#200
+0!
+#220
+b1010 #
+0%
+b101 "
+1!
+#240
+0!
+#260
+b110 #
+1%
+b1001 "
+1!
+#280
+0!
+#300
+b1110 #
+0%
+b1 "
+1!
+#340

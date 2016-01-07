@@ -34,6 +34,14 @@ module Tester (q, clk, rst);
  initial // Stimulus
  begin
  clk = 0; rst = 0;
+ #stimDelay clk = 1; rst = 1;
+ #stimDelay clk = 0;
+ #stimDelay clk = 1;
+ #stimDelay clk = 0;
+ #stimDelay clk = 1;
+ #stimDelay clk = 0;
+ #stimDelay clk = 1;
+ #stimDelay clk = 0;
  #stimDelay clk = 1;
  #stimDelay clk = 0;
  #stimDelay clk = 1;
