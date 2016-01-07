@@ -18,7 +18,7 @@ module testBench;
  end
 endmodule
 
-module Tester (q, clk, reset);
+module Tester (q, clk, rst);
 
  input [3:0] q;
  output clk, rst;
@@ -28,7 +28,7 @@ module Tester (q, clk, reset);
  initial // Response
  begin
  $display("\t\t clk rst \t q \t Time ");
- $monitor("\t\t %b\t %b \t %b \t %b", clk, rst, q, $time );
+ $monitor("\t\t %b\t %b \t %b", clk, rst, q, $time );
  end
 
  initial // Stimulus
