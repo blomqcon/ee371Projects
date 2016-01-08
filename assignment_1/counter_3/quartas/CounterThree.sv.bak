@@ -1,0 +1,12 @@
+module CounterTree(q, clk, rst);
+	input clk, rst;
+	output reg[0:3] q;
+	
+	always@(negedge rst or posedge clk)
+	begin
+		if(!rst)
+			q = 0;
+		else
+			q[1] = q[0];
+	end
+endmodule
