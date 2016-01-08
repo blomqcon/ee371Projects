@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Fri Jan 08 12:15:11 2016
+Fri Jan 08 12:45:25 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Jan 08 12:15:11 2016      ;
+; Analysis & Synthesis Status     ; Successful - Fri Jan 08 12:45:25 2016      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; DE1_SoC                                    ;
 ; Top-level Entity Name           ; DE1_SoC                                    ;
@@ -282,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Fri Jan 08 12:15:08 2016
+    Info: Processing started: Fri Jan 08 12:45:22 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
     Info (12023): Found entity 1: DE1_SoC
@@ -306,8 +306,8 @@ Info (21057): Implemented 96 device resources after synthesis - the final resour
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 29 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 632 megabytes
-    Info: Processing ended: Fri Jan 08 12:15:11 2016
+    Info: Peak virtual memory: 616 megabytes
+    Info: Processing ended: Fri Jan 08 12:45:25 2016
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

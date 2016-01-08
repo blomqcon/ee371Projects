@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Fri Jan 08 12:38:09 2016
+Fri Jan 08 12:47:52 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Jan 08 12:38:09 2016      ;
+; Analysis & Synthesis Status     ; Successful - Fri Jan 08 12:47:52 2016      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; DE1_SoC                                    ;
 ; Top-level Entity Name           ; DE1_SoC                                    ;
@@ -164,15 +164,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_1/quartas_structural/DE1_SoC.sv    ;         ;
-; DFlipFlop.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_1/quartas_structural/DFlipFlop.sv  ;         ;
-; counterOne.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_1/quartas_structural/counterOne.sv ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                         ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+---------+
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_1/quartas_structural/DE1_SoC.sv         ;         ;
+; DFlipFlop.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_1/quartas_structural/DFlipFlop.sv       ;         ;
+; counterOne.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_1/quartas_structural/counterOne.sv      ;         ;
+; clock_divider15.sv               ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_1/quartas_structural/clock_divider15.sv ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -278,15 +279,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Fri Jan 08 12:38:06 2016
+    Info: Processing started: Fri Jan 08 12:47:49 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
     Info (12023): Found entity 1: DE1_SoC
-Info (12021): Found 2 design units, including 2 entities, in source file dflipflop.sv
+Info (12021): Found 1 design units, including 1 entities, in source file dflipflop.sv
     Info (12023): Found entity 1: DFlipFlop
-    Info (12023): Found entity 2: clock_divider15
 Info (12021): Found 1 design units, including 1 entities, in source file counterone.sv
     Info (12023): Found entity 1: CounterOne
+Info (12021): Found 1 design units, including 1 entities, in source file clock_divider15.sv
+    Info (12023): Found entity 1: clock_divider15
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
 Info (12128): Elaborating entity "clock_divider15" for hierarchy "clock_divider15:clk_div"
 Info (12128): Elaborating entity "CounterOne" for hierarchy "CounterOne:counter"
@@ -302,7 +304,7 @@ Info (21057): Implemented 96 device resources after synthesis - the final resour
     Info (21061): Implemented 29 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 616 megabytes
-    Info: Processing ended: Fri Jan 08 12:38:09 2016
+    Info: Processing ended: Fri Jan 08 12:47:52 2016
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
