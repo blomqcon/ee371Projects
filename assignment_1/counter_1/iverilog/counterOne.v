@@ -1,7 +1,6 @@
 module CounterOne(q, clk, rst);
 	input clk, rst;
 	output [3:0] q;
-	output test;
 	
 	wire [3:0] qBar;
 	
