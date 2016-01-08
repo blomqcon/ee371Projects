@@ -1,6 +1,6 @@
 // counter.v
 `include "DFlipFlop.v"
-`include "counterOne.v"
+`include "counterTwo.v"
 
 module testBench;
  wire [3:0] q;
@@ -13,7 +13,7 @@ module testBench;
  initial
  begin
  // these two files support gtkwave and are required
- $dumpfile("counterOne0.vcd");
+ $dumpfile("counterTwo0.vcd");
  $dumpvars(1, counter);
  end
 endmodule
