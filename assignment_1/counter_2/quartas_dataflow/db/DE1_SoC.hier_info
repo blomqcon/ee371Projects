@@ -1,60 +1,60 @@
 |DE1_SoC
-HEX0[0] <= <VCC>
-HEX0[1] <= <VCC>
-HEX0[2] <= <VCC>
-HEX0[3] <= <VCC>
-HEX0[4] <= <VCC>
-HEX0[5] <= <VCC>
-HEX0[6] <= <VCC>
-HEX1[0] <= <VCC>
-HEX1[1] <= <VCC>
-HEX1[2] <= <VCC>
-HEX1[3] <= <VCC>
-HEX1[4] <= <VCC>
-HEX1[5] <= <VCC>
-HEX1[6] <= <VCC>
-HEX2[0] <= <VCC>
-HEX2[1] <= <VCC>
-HEX2[2] <= <VCC>
-HEX2[3] <= <VCC>
-HEX2[4] <= <VCC>
-HEX2[5] <= <VCC>
-HEX2[6] <= <VCC>
-HEX3[0] <= <VCC>
-HEX3[1] <= <VCC>
-HEX3[2] <= <VCC>
-HEX3[3] <= <VCC>
-HEX3[4] <= <VCC>
-HEX3[5] <= <VCC>
-HEX3[6] <= <VCC>
-HEX4[0] <= <VCC>
-HEX4[1] <= <VCC>
-HEX4[2] <= <VCC>
-HEX4[3] <= <VCC>
-HEX4[4] <= <VCC>
-HEX4[5] <= <VCC>
-HEX4[6] <= <VCC>
-HEX5[0] <= <VCC>
-HEX5[1] <= <VCC>
-HEX5[2] <= <VCC>
-HEX5[3] <= <VCC>
-HEX5[4] <= <VCC>
-HEX5[5] <= <VCC>
-HEX5[6] <= <VCC>
+HEX0[0] << <VCC>
+HEX0[1] << <VCC>
+HEX0[2] << <VCC>
+HEX0[3] << <VCC>
+HEX0[4] << <VCC>
+HEX0[5] << <VCC>
+HEX0[6] << <VCC>
+HEX1[0] << <VCC>
+HEX1[1] << <VCC>
+HEX1[2] << <VCC>
+HEX1[3] << <VCC>
+HEX1[4] << <VCC>
+HEX1[5] << <VCC>
+HEX1[6] << <VCC>
+HEX2[0] << <VCC>
+HEX2[1] << <VCC>
+HEX2[2] << <VCC>
+HEX2[3] << <VCC>
+HEX2[4] << <VCC>
+HEX2[5] << <VCC>
+HEX2[6] << <VCC>
+HEX3[0] << <VCC>
+HEX3[1] << <VCC>
+HEX3[2] << <VCC>
+HEX3[3] << <VCC>
+HEX3[4] << <VCC>
+HEX3[5] << <VCC>
+HEX3[6] << <VCC>
+HEX4[0] << <VCC>
+HEX4[1] << <VCC>
+HEX4[2] << <VCC>
+HEX4[3] << <VCC>
+HEX4[4] << <VCC>
+HEX4[5] << <VCC>
+HEX4[6] << <VCC>
+HEX5[0] << <VCC>
+HEX5[1] << <VCC>
+HEX5[2] << <VCC>
+HEX5[3] << <VCC>
+HEX5[4] << <VCC>
+HEX5[5] << <VCC>
+HEX5[6] << <VCC>
 KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
-LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] <= clk.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] <= <GND>
-LEDR[3] <= <GND>
-LEDR[4] <= <GND>
-LEDR[5] <= <GND>
-LEDR[6] <= CounterTwo:counter.port0
-LEDR[7] <= CounterTwo:counter.port0
-LEDR[8] <= CounterTwo:counter.port0
-LEDR[9] <= CounterTwo:counter.port0
+LEDR[0] << SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] << clk.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << CounterTwo:counter.port0
+LEDR[7] << CounterTwo:counter.port0
+LEDR[8] << CounterTwo:counter.port0
+LEDR[9] << CounterTwo:counter.port0
 SW[0] => SW[0].IN1
 SW[1] => ~NO_FANOUT~
 SW[2] => ~NO_FANOUT~
@@ -105,17 +105,43 @@ divided_clock15 <= divided_clocks[24].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DE1_SoC|CounterTwo:counter
-q[0] <= ps[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= ps[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= ps[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= ps[3].DB_MAX_OUTPUT_PORT_TYPE
-clk => ps[0].CLK
-clk => ps[1].CLK
-clk => ps[2].CLK
-clk => ps[3].CLK
-rst => ps[0].ACLR
-rst => ps[1].ACLR
-rst => ps[2].ACLR
-rst => ps[3].ACLR
+q[0] <= DFlipFlop:c0.port0
+q[1] <= DFlipFlop:c1.port0
+q[2] <= DFlipFlop:c2.port0
+q[3] <= DFlipFlop:c3.port0
+clk => clk.IN4
+rst => rst.IN4
+
+
+|DE1_SoC|CounterTwo:counter|DFlipFlop:c0
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qBar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+
+
+|DE1_SoC|CounterTwo:counter|DFlipFlop:c1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qBar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+
+
+|DE1_SoC|CounterTwo:counter|DFlipFlop:c2
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qBar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+
+
+|DE1_SoC|CounterTwo:counter|DFlipFlop:c3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qBar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
 
 

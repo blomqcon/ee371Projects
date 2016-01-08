@@ -1,5 +1,5 @@
 Fitter report for DE1_SoC
-Thu Jan 07 19:56:35 2016
+Fri Jan 08 12:11:52 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +---------------------------------+--------------------------------------------+
-; Fitter Status                   ; Successful - Thu Jan 07 19:56:35 2016      ;
+; Fitter Status                   ; Successful - Fri Jan 08 12:11:52 2016      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; DE1_SoC                                    ;
 ; Top-level Entity Name           ; DE1_SoC                                    ;
@@ -73,7 +73,7 @@ agreement for further details.
 ; Device                          ; 5CSEMA5F31C6                               ;
 ; Timing Models                   ; Final                                      ;
 ; Logic utilization (in ALMs)     ; 15 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 32                                         ;
+; Total registers                 ; 30                                         ;
 ; Total pins                      ; 67 / 457 ( 15 % )                          ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                      ;
@@ -217,16 +217,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------+--------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                                                                                            ;
-+----------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
-; Node                       ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                     ; Destination Port ; Destination Port Name ;
-+----------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
-; CLOCK_50~inputCLKENA0      ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                      ;                  ;                       ;
-; CounterThree:counter|ps[0] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; CounterThree:counter|ps[0]~DUPLICATE ;                  ;                       ;
-; CounterThree:counter|ps[1] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; CounterThree:counter|ps[1]~DUPLICATE ;                  ;                       ;
-; CounterThree:counter|ps[2] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; CounterThree:counter|ps[2]~DUPLICATE ;                  ;                       ;
-+----------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                                                                                        ;
++--------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+------------------------------------+------------------+-----------------------+
+; Node                     ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                   ; Destination Port ; Destination Port Name ;
++--------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+------------------------------------+------------------+-----------------------+
+; CLOCK_50~inputCLKENA0    ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                    ;                  ;                       ;
+; CounterTwo:counter|ps[3] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; CounterTwo:counter|ps[3]~DUPLICATE ;                  ;                       ;
++--------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+------------------------------------+------------------+-----------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -867,8 +865,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 191 ) ; 0.00 % ( 0 / 191 )         ; 0.00 % ( 0 / 191 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 191 ) ; 0.00 % ( 0 / 191 )         ; 0.00 % ( 0 / 191 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 194 ) ; 0.00 % ( 0 / 194 )         ; 0.00 % ( 0 / 194 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 194 ) ; 0.00 % ( 0 / 194 )         ; 0.00 % ( 0 / 194 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -891,7 +889,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 191 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 194 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -899,7 +897,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 371/Verilog Files/quartas/output_files/DE1_SoC.pin.
+The pin-out file can be found in D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -909,12 +907,12 @@ The pin-out file can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 3
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 15 / 32,070        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 15                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 16 / 32,070        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 13                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 1                  ;       ;
-;         [c] ALMs used for registers                         ; 2                  ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 17 / 32,070        ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 14                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 2                  ;       ;
+;         [c] ALMs used for registers                         ; 1                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 32,070         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 32,070         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -927,20 +925,20 @@ The pin-out file can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 3
 ;     -- Logic LABs                                           ; 4                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 27                 ;       ;
+; Combinational ALUT usage for logic                          ; 30                 ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 0                  ;       ;
 ;     -- 5 input functions                                    ; 0                  ;       ;
-;     -- 4 input functions                                    ; 0                  ;       ;
-;     -- <=3 input functions                                  ; 27                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 2                  ;       ;
-; Dedicated logic registers                                   ; 32                 ;       ;
+;     -- 4 input functions                                    ; 1                  ;       ;
+;     -- <=3 input functions                                  ; 29                 ;       ;
+; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
+; Dedicated logic registers                                   ; 30                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 29 / 64,140        ; < 1 % ;
-;         -- Secondary logic registers                        ; 3 / 64,140         ; < 1 % ;
+;         -- Secondary logic registers                        ; 1 / 64,140         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 29                 ;       ;
-;         -- Routing optimization registers                   ; 3                  ;       ;
+;         -- Routing optimization registers                   ; 1                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 67 / 457           ; 15 %  ;
@@ -993,11 +991,11 @@ The pin-out file can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 3
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.2% / 0.2% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.2% / 0.1% ;       ;
 ; Maximum fan-out                                             ; 24                 ;       ;
-; Highest non-global fan-out                                  ; 9                  ;       ;
-; Total fan-out                                               ; 197                ;       ;
-; Average fan-out                                             ; 1.01               ;       ;
+; Highest non-global fan-out                                  ; 7                  ;       ;
+; Total fan-out                                               ; 199                ;       ;
+; Average fan-out                                             ; 1.02               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -1008,12 +1006,12 @@ The pin-out file can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 3
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 15 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 15                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 16 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 13                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 1                    ; 0                              ;
-;         [c] ALMs used for registers                         ; 2                    ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 17 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 14                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 2                    ; 0                              ;
+;         [c] ALMs used for registers                         ; 1                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )    ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -1026,13 +1024,13 @@ The pin-out file can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 3
 ;     -- Logic LABs                                           ; 4                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 27                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 30                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
 ;     -- 6 input functions                                    ; 0                    ; 0                              ;
 ;     -- 5 input functions                                    ; 0                    ; 0                              ;
-;     -- 4 input functions                                    ; 0                    ; 0                              ;
-;     -- <=3 input functions                                  ; 27                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 2                    ; 0                              ;
+;     -- 4 input functions                                    ; 1                    ; 0                              ;
+;     -- <=3 input functions                                  ; 29                   ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 1                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
@@ -1040,10 +1038,10 @@ The pin-out file can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 3
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
 ;         -- Primary logic registers                          ; 29 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 3 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 1 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
 ;         -- Design implementation registers                  ; 29                   ; 0                              ;
-;         -- Routing optimization registers                   ; 3                    ; 0                              ;
+;         -- Routing optimization registers                   ; 1                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
@@ -1060,8 +1058,8 @@ The pin-out file can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 3
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 197                  ; 0                              ;
-;     -- Registered Connections                               ; 44                   ; 0                              ;
+;     -- Total Connections                                    ; 199                  ; 0                              ;
+;     -- Registered Connections                               ; 46                   ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
@@ -1098,7 +1096,7 @@ The pin-out file can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 3
 ; KEY[1]   ; AA15  ; 3B       ; 36           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ;
 ; KEY[2]   ; W15   ; 3B       ; 40           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ;
 ; KEY[3]   ; Y16   ; 3B       ; 40           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ;
-; SW[0]    ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ;
+; SW[0]    ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ;
 ; SW[1]    ; AC12  ; 3A       ; 16           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ;
 ; SW[2]    ; AF9   ; 3A       ; 8            ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ;
 ; SW[3]    ; AF10  ; 3A       ; 4            ; 0            ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ;
@@ -2103,9 +2101,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node   ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
 +------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------+--------------+
-; |DE1_SoC                     ; 14.5 (0.5)           ; 15.5 (0.5)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 27 (1)              ; 32 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 67   ; 0            ; |DE1_SoC                         ; work         ;
-;    |CounterThree:counter|    ; 1.0 (1.0)            ; 2.0 (2.0)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|CounterThree:counter    ; work         ;
-;    |clock_divider15:clk_div| ; 13.0 (13.0)          ; 13.0 (13.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 25 (25)             ; 25 (25)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider15:clk_div ; work         ;
+; |DE1_SoC                     ; 15.0 (0.5)           ; 16.0 (0.5)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (1)              ; 30 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 67   ; 0            ; |DE1_SoC                         ; work         ;
+;    |CounterTwo:counter|      ; 2.0 (2.0)            ; 2.5 (2.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 5 (5)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|CounterTwo:counter      ; work         ;
+;    |clock_divider15:clk_div| ; 12.5 (12.5)          ; 13.0 (13.0)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 25 (25)             ; 25 (25)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider15:clk_div ; work         ;
 +------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2204,14 +2202,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[8]                                             ;                   ;         ;
 ; SW[9]                                             ;                   ;         ;
 ; SW[0]                                             ;                   ;         ;
-;      - CounterThree:counter|ps[3]                 ; 0                 ; 0       ;
-;      - CounterThree:counter|ps[2]                 ; 0                 ; 0       ;
-;      - CounterThree:counter|ps[1]                 ; 0                 ; 0       ;
-;      - CounterThree:counter|ps[0]                 ; 0                 ; 0       ;
+;      - CounterTwo:counter|ps[0]                   ; 0                 ; 0       ;
+;      - CounterTwo:counter|ps[1]                   ; 0                 ; 0       ;
+;      - CounterTwo:counter|ps[2]                   ; 0                 ; 0       ;
+;      - CounterTwo:counter|ps[3]                   ; 0                 ; 0       ;
 ;      - LEDR[0]~output                             ; 0                 ; 0       ;
-;      - CounterThree:counter|ps[2]~DUPLICATE       ; 0                 ; 0       ;
-;      - CounterThree:counter|ps[1]~DUPLICATE       ; 0                 ; 0       ;
-;      - CounterThree:counter|ps[0]~DUPLICATE       ; 0                 ; 0       ;
+;      - CounterTwo:counter|ps[3]~DUPLICATE         ; 0                 ; 0       ;
 ; CLOCK_50                                          ;                   ;         ;
 ;      - clock_divider15:clk_div|divided_clocks[24] ; 0                 ; 0       ;
 +---------------------------------------------------+-------------------+---------+
@@ -2224,8 +2220,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; CLOCK_50                                   ; PIN_AF14      ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; CLOCK_50                                   ; PIN_AF14      ; 24      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; SW[0]                                      ; PIN_AB12      ; 8       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; clock_divider15:clk_div|divided_clocks[24] ; FF_X31_Y1_N56 ; 9       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; SW[0]                                      ; PIN_AB12      ; 6       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; clock_divider15:clk_div|divided_clocks[24] ; FF_X31_Y1_N56 ; 7       ; Clock        ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -2243,18 +2239,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+---------+
 ; Name                                        ; Fan-Out ;
 +---------------------------------------------+---------+
-; clock_divider15:clk_div|divided_clocks[24]  ; 9       ;
-; SW[0]~input                                 ; 8       ;
-; CounterThree:counter|ps[3]                  ; 3       ;
+; clock_divider15:clk_div|divided_clocks[24]  ; 7       ;
+; SW[0]~input                                 ; 6       ;
+; CounterTwo:counter|ps[0]                    ; 5       ;
+; CounterTwo:counter|ps[1]                    ; 4       ;
+; CounterTwo:counter|ps[2]                    ; 3       ;
 ; clock_divider15:clk_div|divided_clocks[0]   ; 2       ;
-; CounterThree:counter|ps[1]                  ; 2       ;
-; CounterThree:counter|ps[2]                  ; 2       ;
-; CounterThree:counter|ps[0]~DUPLICATE        ; 1       ;
-; CounterThree:counter|ps[1]~DUPLICATE        ; 1       ;
-; CounterThree:counter|ps[2]~DUPLICATE        ; 1       ;
+; CounterTwo:counter|ns[3]~0                  ; 2       ;
+; CounterTwo:counter|ps[3]~DUPLICATE          ; 1       ;
 ; CLOCK_50~input                              ; 1       ;
 ; clock_divider15:clk_div|divided_clocks[0]~0 ; 1       ;
-; CounterThree:counter|ps[3]~0                ; 1       ;
+; CounterTwo:counter|ps[0]~1                  ; 1       ;
 ; clock_divider15:clk_div|divided_clocks[1]   ; 1       ;
 ; clock_divider15:clk_div|divided_clocks[2]   ; 1       ;
 ; clock_divider15:clk_div|divided_clocks[3]   ; 1       ;
@@ -2278,7 +2273,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; clock_divider15:clk_div|divided_clocks[21]  ; 1       ;
 ; clock_divider15:clk_div|divided_clocks[22]  ; 1       ;
 ; clock_divider15:clk_div|divided_clocks[23]  ; 1       ;
-; CounterThree:counter|ps[0]                  ; 1       ;
+; CounterTwo:counter|ps[2]~0                  ; 1       ;
+; CounterTwo:counter|ns[1]                    ; 1       ;
+; CounterTwo:counter|ps[3]                    ; 1       ;
 ; clock_divider15:clk_div|Add0~94             ; 1       ;
 ; clock_divider15:clk_div|Add0~93             ; 1       ;
 ; clock_divider15:clk_div|Add0~90             ; 1       ;
@@ -2334,14 +2331,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Routing Resource Type                       ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Block interconnects                         ; 11 / 289,320 ( < 1 % ) ;
+; Block interconnects                         ; 14 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 1 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 3 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 7 / 56,300 ( < 1 % )   ;
+; C2 interconnects                            ; 6 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 5 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
-; Direct links                                ; 2 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 3 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )         ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )          ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )          ;
@@ -2397,12 +2394,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )          ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )         ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )         ;
-; Local interconnects                         ; 5 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 6 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
-; R14 interconnects                           ; 13 / 12,676 ( < 1 % )  ;
-; R14/C12 interconnect drivers                ; 13 / 20,720 ( < 1 % )  ;
+; R14 interconnects                           ; 14 / 12,676 ( < 1 % )  ;
+; R14/C12 interconnect drivers                ; 14 / 20,720 ( < 1 % )  ;
 ; R3 interconnects                            ; 7 / 130,992 ( < 1 % )  ;
-; R6 interconnects                            ; 20 / 266,960 ( < 1 % ) ;
+; R6 interconnects                            ; 19 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )      ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -2619,36 +2616,36 @@ Info (332111): Found 1 clocks
     Info (332111):   20.000     CLOCK_50
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:08
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:14
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X44_Y10
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.38 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.80 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:05
-Info (144001): Generated suppressed messages file C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 371/Verilog Files/quartas/output_files/DE1_SoC.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:09
+Info (144001): Generated suppressed messages file D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1545 megabytes
-    Info: Processing ended: Thu Jan 07 19:56:36 2016
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Peak virtual memory: 1539 megabytes
+    Info: Processing ended: Fri Jan 08 12:11:53 2016
+    Info: Elapsed time: 00:01:18
+    Info: Total CPU time (on all processors): 00:01:15
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 371/Verilog Files/quartas/output_files/DE1_SoC.fit.smsg.
+The suppressed messages can be found in D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.fit.smsg.
 
 

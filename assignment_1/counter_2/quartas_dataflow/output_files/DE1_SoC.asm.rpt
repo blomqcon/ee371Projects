@@ -1,5 +1,5 @@
 Assembler report for DE1_SoC
-Thu Jan 07 19:56:47 2016
+Fri Jan 08 12:12:18 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 371/Verilog Files/quartas/output_files/DE1_SoC.sof
+  5. Assembler Device Options: D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Jan 07 19:56:47 2016 ;
+; Assembler Status      ; Successful - Fri Jan 08 12:12:18 2016 ;
 ; Revision Name         ; DE1_SoC                               ;
 ; Top-level Entity Name ; DE1_SoC                               ;
 ; Family                ; Cyclone V                             ;
@@ -53,24 +53,24 @@ agreement for further details.
 +--------+---------+---------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                        ;
-+--------------------------------------------------------------------------------------------------+
-; File Name                                                                                        ;
-+--------------------------------------------------------------------------------------------------+
-; C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 371/Verilog Files/quartas/output_files/DE1_SoC.sof ;
-+--------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                                ;
++------------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                                ;
++------------------------------------------------------------------------------------------------------------------------------------------+
+; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.sof ;
++------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 371/Verilog Files/quartas/output_files/DE1_SoC.sof ;
-+----------------+-----------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                   ;
-+----------------+-----------------------------------------------------------------------------------------------------------+
-; Device         ; 5CSEMA5F31C6                                                                                              ;
-; JTAG usercode  ; 0x00AFC171                                                                                                ;
-; Checksum       ; 0x00AFC171                                                                                                ;
-+----------------+-----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.sof ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                           ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Device         ; 5CSEMA5F31C6                                                                                                                                      ;
+; JTAG usercode  ; 0x00AFC769                                                                                                                                        ;
+; Checksum       ; 0x00AFC769                                                                                                                                        ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Thu Jan 07 19:56:38 2016
+    Info: Processing started: Fri Jan 08 12:11:57 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 664 megabytes
-    Info: Processing ended: Thu Jan 07 19:56:47 2016
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 672 megabytes
+    Info: Processing ended: Fri Jan 08 12:12:18 2016
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:19
 
 

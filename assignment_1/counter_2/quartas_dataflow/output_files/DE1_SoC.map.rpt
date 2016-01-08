@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Thu Jan 07 22:45:54 2016
+Fri Jan 08 12:15:11 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Jan 07 22:45:54 2016      ;
+; Analysis & Synthesis Status     ; Successful - Fri Jan 08 12:15:11 2016      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; DE1_SoC                                    ;
 ; Top-level Entity Name           ; DE1_SoC                                    ;
@@ -164,15 +164,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                              ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas/DE1_SoC.sv         ;         ;
-; clock_divider15.sv               ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas/clock_divider15.sv ;         ;
-; CounterTwo.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas/CounterTwo.sv      ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                       ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/DE1_SoC.sv         ;         ;
+; clock_divider15.sv               ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/clock_divider15.sv ;         ;
+; CounterTwo.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/CounterTwo.sv      ;         ;
+; DFlipFlop.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/DFlipFlop.sv       ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -200,15 +201,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                      ;
-+------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------+--------------+
-; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
-+------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------+--------------+
-; |DE1_SoC                     ; 29 (0)            ; 29 (0)       ; 0                 ; 0          ; 67   ; 0            ; |DE1_SoC                         ; work         ;
-;    |CounterTwo:counter|      ; 4 (4)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|CounterTwo:counter      ; work         ;
-;    |clock_divider15:clk_div| ; 25 (25)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider15:clk_div ; work         ;
-+------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                              ;
++------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
++------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
+; |DE1_SoC                     ; 29 (0)            ; 29 (0)       ; 0                 ; 0          ; 67   ; 0            ; |DE1_SoC                                 ; work         ;
+;    |CounterTwo:counter|      ; 4 (2)             ; 4 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|CounterTwo:counter              ; work         ;
+;       |DFlipFlop:c0|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|CounterTwo:counter|DFlipFlop:c0 ; work         ;
+;       |DFlipFlop:c1|         ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|CounterTwo:counter|DFlipFlop:c1 ; work         ;
+;       |DFlipFlop:c2|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|CounterTwo:counter|DFlipFlop:c2 ; work         ;
+;       |DFlipFlop:c3|         ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|CounterTwo:counter|DFlipFlop:c3 ; work         ;
+;    |clock_divider15:clk_div| ; 25 (25)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider15:clk_div         ; work         ;
++------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -277,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Thu Jan 07 22:45:53 2016
+    Info: Processing started: Fri Jan 08 12:15:08 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
     Info (12023): Found entity 1: DE1_SoC
@@ -285,12 +290,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file clock_d
     Info (12023): Found entity 1: clock_divider15
 Info (12021): Found 1 design units, including 1 entities, in source file countertwo.sv
     Info (12023): Found entity 1: CounterTwo
+Info (12021): Found 1 design units, including 1 entities, in source file dflipflop.sv
+    Info (12023): Found entity 1: DFlipFlop
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
 Info (12128): Elaborating entity "clock_divider15" for hierarchy "clock_divider15:clk_div"
 Info (12128): Elaborating entity "CounterTwo" for hierarchy "CounterTwo:counter"
+Info (12128): Elaborating entity "DFlipFlop" for hierarchy "CounterTwo:counter|DFlipFlop:c0"
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 7 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas/output_files/DE1_SoC.map.smsg
+Info (144001): Generated suppressed messages file D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
@@ -299,14 +307,14 @@ Info (21057): Implemented 96 device resources after synthesis - the final resour
     Info (21061): Implemented 29 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 632 megabytes
-    Info: Processing ended: Thu Jan 07 22:45:54 2016
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Fri Jan 08 12:15:11 2016
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas/output_files/DE1_SoC.map.smsg.
+The suppressed messages can be found in D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.map.smsg.
 
 

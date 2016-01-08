@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE1_SoC
-Thu Jan 07 19:56:56 2016
+Fri Jan 08 12:12:36 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -124,7 +124,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; DE1_SoC.sdc   ; OK     ; Thu Jan 07 19:56:52 2016 ;
+; DE1_SoC.sdc   ; OK     ; Fri Jan 08 12:12:26 2016 ;
 +---------------+--------+--------------------------+
 
 
@@ -908,7 +908,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 1     ; 1    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
-; Unconstrained Input Port Paths  ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 6     ; 6    ;
 ; Unconstrained Output Ports      ; 6     ; 6    ;
 ; Unconstrained Output Port Paths ; 6     ; 6    ;
 +---------------------------------+-------+------+
@@ -920,7 +920,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Thu Jan 07 19:56:49 2016
+    Info: Processing started: Fri Jan 08 12:12:21 2016
 Info: Command: quartus_sta DE1_SoC -c DE1_SoC
 Info: qsta_default_script.tcl version: #1
 Info (21077): Low junction temperature is 0 degrees C
@@ -998,17 +998,17 @@ Info (332146): Worst-case minimum pulse width slack is 8.790
     Info (332119):     8.790               0.000 CLOCK_50 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info (144001): Generated suppressed messages file C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 371/Verilog Files/quartas/output_files/DE1_SoC.sta.smsg
+Info (144001): Generated suppressed messages file D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.sta.smsg
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 891 megabytes
-    Info: Processing ended: Thu Jan 07 19:56:56 2016
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 942 megabytes
+    Info: Processing ended: Fri Jan 08 12:12:36 2016
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +-----------------------------------------------+
 ; TimeQuest Timing Analyzer Suppressed Messages ;
 +-----------------------------------------------+
-The suppressed messages can be found in C:/Users/Elizabeth/Desktop/UW Winter 2016/CSE 371/Verilog Files/quartas/output_files/DE1_SoC.sta.smsg.
+The suppressed messages can be found in D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.sta.smsg.
 
 
