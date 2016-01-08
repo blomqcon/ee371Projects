@@ -1,0 +1,69 @@
+$date
+	Fri Jan 08 13:53:12 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testBench $end
+$scope module counter $end
+$var wire 1 ! clk $end
+$var wire 4 " d [3:0] $end
+$var wire 4 # q [0:3] $end
+$var wire 4 $ qBar [3:0] $end
+$var wire 1 % rst $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0%
+b1111 $
+b0 #
+b1000 "
+0!
+$end
+#20
+b1100 "
+b111 $
+b1 #
+1%
+1!
+#40
+0!
+#60
+b1110 "
+b11 $
+b11 #
+1!
+#80
+0!
+#100
+b1111 "
+b1 $
+b111 #
+1!
+#120
+0!
+#140
+b111 "
+b0 $
+b1111 #
+1!
+#160
+0!
+#180
+b11 "
+b1000 $
+b1110 #
+1!
+#200
+0!
+#220
+b1 "
+b1100 $
+b1100 #
+1!
+#260

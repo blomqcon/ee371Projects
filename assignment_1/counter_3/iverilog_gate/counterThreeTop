@@ -1,0 +1,200 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_003A8320 .scope module, "testBench" "testBench" 2 5;
+ .timescale 0 0;
+v01E0DED8_0 .net "clk", 0 0, v003A9DA8_0; 1 drivers
+RS_01DE4004 .resolv tri, L_01E0E6C0, L_01E0DD20, L_01E0E198, L_01E0E400;
+v01E0DF30_0 .net8 "q", 0 3, RS_01DE4004; 4 drivers
+v01E0DCC8_0 .net "rst", 0 0, v003AACB8_0; 1 drivers
+S_01E0B560 .scope module, "counter" "CounterThree" 2 9, 3 1, S_003A8320;
+ .timescale 0 0;
+L_003AD920 .functor BUF 1, L_01E0E458, C4<0>, C4<0>, C4<0>;
+L_003AD6B8 .functor BUF 1, L_01E0E3A8, C4<0>, C4<0>, C4<0>;
+L_003AD6F0 .functor BUF 1, L_01E0E668, C4<0>, C4<0>, C4<0>;
+L_003AD7D0 .functor BUF 1, L_01E0DF88, C4<0>, C4<0>, C4<0>;
+v01E0D230_0 .net *"_s1", 0 0, L_003AD920; 1 drivers
+v01E0D2E0_0 .net *"_s11", 0 0, L_003AD6F0; 1 drivers
+v01E0D338_0 .net *"_s14", 0 0, L_01E0E668; 1 drivers
+v01E0E508_0 .net *"_s16", 0 0, L_003AD7D0; 1 drivers
+v01E0E2F8_0 .net *"_s19", 0 0, L_01E0DF88; 1 drivers
+v01E0DDD0_0 .net *"_s4", 0 0, L_01E0E458; 1 drivers
+v01E0DC70_0 .net *"_s6", 0 0, L_003AD6B8; 1 drivers
+v01E0DE28_0 .net *"_s9", 0 0, L_01E0E3A8; 1 drivers
+v01E0E0E8_0 .alias "clk", 0 0, v01E0DED8_0;
+RS_01DE4214 .resolv tri, L_01E0E718, L_01E0E1F0, L_01E0DFE0, L_01E0DE80;
+v01E0DD78_0 .net8 "d", 3 0, RS_01DE4214; 4 drivers
+v01E0E140_0 .alias "q", 0 3, v01E0DF30_0;
+RS_01DE422C .resolv tri, L_01E0E560, L_01E0E248, L_01E0E2A0, L_01E0E4B0;
+v01E0E5B8_0 .net8 "qBar", 3 0, RS_01DE422C; 4 drivers
+v01E0E610_0 .alias "rst", 0 0, v01E0DCC8_0;
+L_01E0E718 .part/pv L_003AD920, 0, 1, 4;
+L_01E0E458 .part RS_01DE4004, 2, 1;
+L_01E0E1F0 .part/pv L_003AD6B8, 1, 1, 4;
+L_01E0E3A8 .part RS_01DE4004, 1, 1;
+L_01E0DFE0 .part/pv L_003AD6F0, 2, 1, 4;
+L_01E0E668 .part RS_01DE4004, 0, 1;
+L_01E0DE80 .part/pv L_003AD7D0, 3, 1, 4;
+L_01E0DF88 .part RS_01DE422C, 0, 1;
+L_01E0E6C0 .part/pv v01E0D078_0, 3, 1, 4;
+L_01E0E560 .part/pv L_01E0F0A0, 0, 1, 4;
+L_01E0E038 .part RS_01DE4214, 0, 1;
+L_01E0DD20 .part/pv v01E0CE10_0, 2, 1, 4;
+L_01E0E248 .part/pv L_01E0F298, 1, 1, 4;
+L_01E0E090 .part RS_01DE4214, 1, 1;
+L_01E0E198 .part/pv v01E0CD60_0, 1, 1, 4;
+L_01E0E2A0 .part/pv L_01E0EEE0, 2, 1, 4;
+L_01E0E350 .part RS_01DE4214, 2, 1;
+L_01E0E400 .part/pv v01E0CF18_0, 0, 1, 4;
+L_01E0E4B0 .part/pv L_01E0F068, 3, 1, 4;
+L_01E0E9D8 .part RS_01DE4214, 3, 1;
+S_01E0B890 .scope module, "c0" "DFlipFlop" 3 20, 4 1, S_01E0B560;
+ .timescale 0 0;
+L_01E0F0A0 .functor NOT 1, v01E0D078_0, C4<0>, C4<0>, C4<0>;
+v01E0CEC0_0 .net "D", 0 0, L_01E0E038; 1 drivers
+v01E0D020_0 .alias "clk", 0 0, v01E0DED8_0;
+v01E0D078_0 .var "q", 0 0;
+v01E0D0D0_0 .net "qBar", 0 0, L_01E0F0A0; 1 drivers
+v01E0D1D8_0 .alias "rst", 0 0, v01E0DCC8_0;
+S_01E0B230 .scope module, "c1" "DFlipFlop" 3 21, 4 1, S_01E0B560;
+ .timescale 0 0;
+L_01E0F298 .functor NOT 1, v01E0CE10_0, C4<0>, C4<0>, C4<0>;
+v01E0CDB8_0 .net "D", 0 0, L_01E0E090; 1 drivers
+v01E0CF70_0 .alias "clk", 0 0, v01E0DED8_0;
+v01E0CE10_0 .var "q", 0 0;
+v01E0D128_0 .net "qBar", 0 0, L_01E0F298; 1 drivers
+v01E0CE68_0 .alias "rst", 0 0, v01E0DCC8_0;
+S_01E0B808 .scope module, "c2" "DFlipFlop" 3 22, 4 1, S_01E0B560;
+ .timescale 0 0;
+L_01E0EEE0 .functor NOT 1, v01E0CD60_0, C4<0>, C4<0>, C4<0>;
+v01E0CCB0_0 .net "D", 0 0, L_01E0E350; 1 drivers
+v01E0CD08_0 .alias "clk", 0 0, v01E0DED8_0;
+v01E0CD60_0 .var "q", 0 0;
+v01E0D288_0 .net "qBar", 0 0, L_01E0EEE0; 1 drivers
+v01E0D180_0 .alias "rst", 0 0, v01E0DCC8_0;
+S_01E0BCD0 .scope module, "c3" "DFlipFlop" 3 23, 4 1, S_01E0B560;
+ .timescale 0 0;
+L_01E0F068 .functor NOT 1, v01E0CF18_0, C4<0>, C4<0>, C4<0>;
+v003AAD10_0 .net "D", 0 0, L_01E0E9D8; 1 drivers
+v01E0CC58_0 .alias "clk", 0 0, v01E0DED8_0;
+v01E0CF18_0 .var "q", 0 0;
+v01E0CFC8_0 .net "qBar", 0 0, L_01E0F068; 1 drivers
+v01E0D390_0 .alias "rst", 0 0, v01E0DCC8_0;
+E_01DD5FE8/0 .event negedge, v003AACB8_0;
+E_01DD5FE8/1 .event posedge, v003A9DA8_0;
+E_01DD5FE8 .event/or E_01DD5FE8/0, E_01DD5FE8/1;
+S_003A8430 .scope module, "aTester" "Tester" 2 10, 2 21, S_003A8320;
+ .timescale 0 0;
+P_01DD610C .param/l "stimDelay" 2 26, +C4<010100>;
+v003A9DA8_0 .var "clk", 0 0;
+v003A9E00_0 .alias "q", 0 3, v01E0DF30_0;
+v003AACB8_0 .var "rst", 0 0;
+    .scope S_01E0B890;
+T_0 ;
+    %wait E_01DD5FE8;
+    %load/v 8, v01E0D1D8_0, 1;
+    %inv 8, 1;
+    %jmp/0xz  T_0.0, 8;
+    %set/v v01E0D078_0, 0, 1;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/v 8, v01E0CEC0_0, 1;
+    %set/v v01E0D078_0, 8, 1;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_01E0B230;
+T_1 ;
+    %wait E_01DD5FE8;
+    %load/v 8, v01E0CE68_0, 1;
+    %inv 8, 1;
+    %jmp/0xz  T_1.0, 8;
+    %set/v v01E0CE10_0, 0, 1;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/v 8, v01E0CDB8_0, 1;
+    %set/v v01E0CE10_0, 8, 1;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_01E0B808;
+T_2 ;
+    %wait E_01DD5FE8;
+    %load/v 8, v01E0D180_0, 1;
+    %inv 8, 1;
+    %jmp/0xz  T_2.0, 8;
+    %set/v v01E0CD60_0, 0, 1;
+    %jmp T_2.1;
+T_2.0 ;
+    %load/v 8, v01E0CCB0_0, 1;
+    %set/v v01E0CD60_0, 8, 1;
+T_2.1 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_01E0BCD0;
+T_3 ;
+    %wait E_01DD5FE8;
+    %load/v 8, v01E0D390_0, 1;
+    %inv 8, 1;
+    %jmp/0xz  T_3.0, 8;
+    %set/v v01E0CF18_0, 0, 1;
+    %jmp T_3.1;
+T_3.0 ;
+    %load/v 8, v003AAD10_0, 1;
+    %set/v v01E0CF18_0, 8, 1;
+T_3.1 ;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_003A8430;
+T_4 ;
+    %vpi_call 2 30 "$display", "\011\011 clk rst \011 q \011 Time ";
+    %vpi_call 2 31 "$monitor", "\011\011 %b\011 %b \011 %b", v003A9DA8_0, v003AACB8_0, v003A9E00_0, $time;
+    %end;
+    .thread T_4;
+    .scope S_003A8430;
+T_5 ;
+    %set/v v003A9DA8_0, 0, 1;
+    %set/v v003AACB8_0, 0, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 1, 1;
+    %set/v v003AACB8_0, 1, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 0, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 1, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 0, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 1, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 0, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 1, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 0, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 1, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 0, 1;
+    %delay 20, 0;
+    %set/v v003A9DA8_0, 1, 1;
+    %delay 40, 0;
+    %vpi_call 2 50 "$finish";
+    %end;
+    .thread T_5;
+    .scope S_003A8320;
+T_6 ;
+    %vpi_call 2 16 "$dumpfile", "counterThree0.vcd";
+    %vpi_call 2 17 "$dumpvars", 2'sb01, S_01E0B560;
+    %end;
+    .thread T_6;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "counterThreeTop.v";
+    "./counterThree.v";
+    "./DFlipFlop.v";
