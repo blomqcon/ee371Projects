@@ -15,9 +15,9 @@ int main()
     scanf("%f", &conversion);
     getchar();
 
-    //if inputted exchange rate is 0.00, ask for input again
-    while(conversion == 0) {
-        printf("0 is not a valid exchange rate. Please input again.\n");
+    //if inputted exchange rate is 0.00 or negative, ask for input again
+    while(conversion <= 0) {
+        printf("%f is not a valid exchange rate. Please input again.\n", conversion);
         scanf("%f", &conversion);
         getchar();
     }
