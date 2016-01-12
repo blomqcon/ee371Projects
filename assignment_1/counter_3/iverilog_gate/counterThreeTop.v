@@ -24,6 +24,8 @@ module Tester (q, clk, rst);
  output clk, rst;
  reg clk, rst;
  parameter stimDelay = 20;
+ 
+ integer i;
 
  initial // Response
  begin
@@ -35,16 +37,11 @@ module Tester (q, clk, rst);
  begin
  clk = 0; rst = 0;
  #stimDelay clk = 1; rst = 1;
- #stimDelay clk = 0; 
- #stimDelay clk = 1; 
- #stimDelay clk = 0;
- #stimDelay clk = 1;
- #stimDelay clk = 0;
- #stimDelay clk = 1;
- #stimDelay clk = 0;
- #stimDelay clk = 1;
- #stimDelay clk = 0;
- #stimDelay clk = 1;
+
+ for (i = 0; i < 16; i = i + 1) begin
+	#stimDelay clk = 0;
+	#stimDelay clk = 1;
+ end
 
  #(2*stimDelay); // needed to see END of simulation
  $finish; // finish simulation

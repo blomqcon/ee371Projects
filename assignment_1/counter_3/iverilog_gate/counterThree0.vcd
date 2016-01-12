@@ -1,5 +1,5 @@
 $date
-	Fri Jan 08 13:53:12 2016
+	Mon Jan 11 15:04:32 2016
 $end
 $version
 	Icarus Verilog
@@ -10,60 +10,118 @@ $end
 $scope module testBench $end
 $scope module counter $end
 $var wire 1 ! clk $end
-$var wire 4 " d [3:0] $end
-$var wire 4 # q [0:3] $end
-$var wire 4 $ qBar [3:0] $end
-$var wire 1 % rst $end
+$var wire 1 " rst $end
+$var wire 4 # qBar [3:0] $end
+$var wire 4 $ q [0:3] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0%
-b1111 $
-b0 #
-b1000 "
+b0 $
+b1111 #
+0"
 0!
 $end
 #20
-b1100 "
-b111 $
-b1 #
-1%
+b111 #
+b1 $
+1"
 1!
 #40
 0!
 #60
-b1110 "
-b11 $
 b11 #
+b11 $
 1!
 #80
 0!
 #100
-b1111 "
-b1 $
-b111 #
+b1 #
+b111 $
 1!
 #120
 0!
 #140
-b111 "
-b0 $
-b1111 #
+b0 #
+b1111 $
 1!
 #160
 0!
 #180
-b11 "
-b1000 $
-b1110 #
+b1000 #
+b1110 $
 1!
 #200
 0!
 #220
-b1 "
-b1100 $
 b1100 #
+b1100 $
 1!
+#240
+0!
 #260
+b1110 #
+b1000 $
+1!
+#280
+0!
+#300
+b1111 #
+b0 $
+1!
+#320
+0!
+#340
+b111 #
+b1 $
+1!
+#360
+0!
+#380
+b11 #
+b11 $
+1!
+#400
+0!
+#420
+b1 #
+b111 $
+1!
+#440
+0!
+#460
+b0 #
+b1111 $
+1!
+#480
+0!
+#500
+b1000 #
+b1110 $
+1!
+#520
+0!
+#540
+b1100 #
+b1100 $
+1!
+#560
+0!
+#580
+b1110 #
+b1000 $
+1!
+#600
+0!
+#620
+b1111 #
+b0 $
+1!
+#640
+0!
+#660
+b111 #
+b1 $
+1!
+#700
