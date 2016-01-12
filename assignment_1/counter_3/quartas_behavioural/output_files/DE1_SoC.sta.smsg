@@ -1,4 +1,3 @@
-Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (332174): Ignored filter at DE1_SoC.sdc(10): CLOCK2_50 could not be matched with a port
 Warning (332049): Ignored create_clock at DE1_SoC.sdc(10): Argument <targets> is an empty collection
 Warning (332174): Ignored filter at DE1_SoC.sdc(11): CLOCK3_50 could not be matched with a port

@@ -1,4 +1,3 @@
-Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Extra Info (176236): Started Fast Input/Output/OE register processing

@@ -41,11 +41,12 @@ HEX5[3] << <VCC>
 HEX5[4] << <VCC>
 HEX5[5] << <VCC>
 HEX5[6] << <VCC>
-KEY[0] => ~NO_FANOUT~
+KEY[0] => _.IN1
+KEY[0] => LEDR[0].DATAIN
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
-LEDR[0] << SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[0] << KEY[0].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[1] << clk.DB_MAX_OUTPUT_PORT_TYPE
 LEDR[2] << <GND>
 LEDR[3] << <GND>
@@ -55,7 +56,7 @@ LEDR[6] << CounterOne:counter.port0
 LEDR[7] << CounterOne:counter.port0
 LEDR[8] << CounterOne:counter.port0
 LEDR[9] << CounterOne:counter.port0
-SW[0] => SW[0].IN1
+SW[0] => ~NO_FANOUT~
 SW[1] => ~NO_FANOUT~
 SW[2] => ~NO_FANOUT~
 SW[3] => ~NO_FANOUT~

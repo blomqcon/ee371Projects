@@ -1,4 +1,3 @@
-Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (332174): Ignored filter at DE1_SoC.sdc(10): CLOCK2_50 could not be matched with a port
 Warning (332049): Ignored create_clock at DE1_SoC.sdc(10): Argument <targets> is an empty collection
 Warning (332174): Ignored filter at DE1_SoC.sdc(11): CLOCK3_50 could not be matched with a port
@@ -98,6 +97,7 @@ Warning (332049): Ignored set_output_delay at DE1_SoC.sdc(93): Argument <targets
 Warning (332049): Ignored set_output_delay at DE1_SoC.sdc(93): Argument -clock is not an object ID
 Warning (332049): Ignored set_output_delay at DE1_SoC.sdc(94): Argument <targets> is an empty collection
 Warning (332049): Ignored set_output_delay at DE1_SoC.sdc(94): Argument -clock is not an object ID
+Warning (332060): Node: clock_divider15:clk_div|divided_clocks[24] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: clock_divider15:clk_div|divided_clocks[24] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: clock_divider15:clk_div|divided_clocks[24] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: clock_divider15:clk_div|divided_clocks[24] was determined to be a clock but was found without an associated clock assignment.

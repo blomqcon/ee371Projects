@@ -19,8 +19,8 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50);
  clock_divider15 clk_div (CLOCK_50, clk);
  
  wire [0:3] q;
- CounterFour counter(q, clk, SW[0]);
+ CounterFour counter(.q(q), .clk(clk), .rst(~KEY[0]));
  
- assign LEDR = {q, 4'b0000, clk, SW[0]};
+ assign LEDR = {q, 4'b0000, clk, ~KEY[0]};
  
 endmodule 
