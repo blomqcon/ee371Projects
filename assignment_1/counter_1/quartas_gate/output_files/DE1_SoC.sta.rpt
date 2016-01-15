@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE1_SoC
-Tue Jan 12 11:45:27 2016
+Tue Jan 12 12:50:34 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -143,7 +143,7 @@ agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; DE1_SoC.sdc   ; OK     ; Tue Jan 12 11:45:17 2016 ;
+; DE1_SoC.sdc   ; OK     ; Tue Jan 12 12:50:23 2016 ;
 +---------------+--------+--------------------------+
 
 
@@ -1156,7 +1156,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Tue Jan 12 11:45:14 2016
+    Info: Processing started: Tue Jan 12 12:50:21 2016
 Info: Command: quartus_sta DE1_SoC -c DE1_SoC
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -1278,8 +1278,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info (144001): Generated suppressed messages file D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_1/quartas_gate/output_files/DE1_SoC.sta.smsg
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1031 megabytes
-    Info: Processing ended: Tue Jan 12 11:45:27 2016
+    Info: Peak virtual memory: 1027 megabytes
+    Info: Processing ended: Tue Jan 12 12:50:34 2016
     Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:15
 

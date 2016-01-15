@@ -17,7 +17,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 14.0.0 Build 200 06/17/2014 SJ Web Edition"
 
-// DATE "01/12/2016 11:45:31"
+// DATE "01/12/2016 12:50:37"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -1076,6 +1076,17 @@ wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~7_combout ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~q ;
 wire \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~_wirecell_combout ;
 wire \altera_internal_jtag~TDO ;
+wire [4:0] \auto_signaltap_0|acq_trigger_in_reg ;
+wire [4:0] \auto_signaltap_0|acq_data_in_reg ;
+wire [15:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_val_shift_reg ;
+wire [31:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_len_reg ;
+wire [12:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|last_trigger_address_delayed ;
+wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|current_segment_delayed ;
+wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|condition_delay_reg ;
+wire [12:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|buffer_write_address_delayed ;
+wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|trigger_config_deserialize|dffs ;
+wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs ;
+wire [9:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|builtin:ela_trigger_flow_mgr_entity|trigger_config_deserialize|dffs ;
 wire [13:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|modified_post_count ;
 wire [12:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|last_buffer_write_address_sig ;
 wire [13:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|sld_buffer_manager_inst|counter ;
@@ -1106,17 +1117,6 @@ wire [15:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state ;
 wire [4:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter ;
 wire [3:0] \auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR ;
 wire [31:0] \clk_div|divided_clocks ;
-wire [4:0] \auto_signaltap_0|acq_trigger_in_reg ;
-wire [4:0] \auto_signaltap_0|acq_data_in_reg ;
-wire [15:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_val_shift_reg ;
-wire [31:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|tdo_crc_len_reg ;
-wire [12:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|last_trigger_address_delayed ;
-wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|current_segment_delayed ;
-wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|condition_delay_reg ;
-wire [12:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|buffer_write_address_delayed ;
-wire [3:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|trigger_config_deserialize|dffs ;
-wire [14:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|basic_multi_level_mbpm_trigger_gen:multi_level_mbpm|trigger_condition_deserialize|dffs ;
-wire [9:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|builtin:ela_trigger_flow_mgr_entity|trigger_config_deserialize|dffs ;
 
 wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a0_PORTBDATAOUT_bus ;
 wire [0:0] \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_ram_gen:stp_buffer_ram|auto_generated|ram_block1a1_PORTBDATAOUT_bus ;

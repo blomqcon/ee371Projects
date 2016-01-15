@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="e23ea677e3cb53609cca"/>
+    <hash md5_digest_80b="b1cf17758c447c1d42c5"/>
   </project>
   <file_info>
     <file device="5CSEMA5F31C6" path="DE1_SoC.sof" usercode="0xFFFFFFFF"/>
@@ -20,8 +20,8 @@
         <parameter name="SLD_NODE_CRC_HIWORD" type="dec" value="41394"/>
         <parameter name="SLD_NODE_CRC_LOWORD" type="dec" value="50132"/>
         <parameter name="sld_incremental_routing" type="unknown" value="1"/>
-        <parameter name="sld_sample_depth" type="unknown" value="128"/>
-        <parameter name="sld_segment_size" type="unknown" value="128"/>
+        <parameter name="sld_sample_depth" type="unknown" value="64"/>
+        <parameter name="sld_segment_size" type="unknown" value="64"/>
         <parameter name="sld_ram_block_type" type="unknown" value="AUTO"/>
         <parameter name="sld_state_bits" type="unknown" value="11"/>
         <parameter name="sld_buffer_full_stop" type="unknown" value="1"/>
@@ -46,8 +46,8 @@
         <parameter name="SLD_ADVANCED_TRIGGER_8" type="string" value="NONE"/>
         <parameter name="SLD_ADVANCED_TRIGGER_9" type="string" value="NONE"/>
         <parameter name="SLD_ADVANCED_TRIGGER_10" type="string" value="NONE"/>
-        <parameter name="sld_inversion_mask_length" type="unknown" value="36"/>
-        <parameter name="sld_inversion_mask" type="unknown" value="000000000000000000000000000000000000"/>
+        <parameter name="sld_inversion_mask_length" type="unknown" value="35"/>
+        <parameter name="sld_inversion_mask" type="unknown" value="00000000000000000000000000000000000"/>
         <parameter name="sld_power_up_trigger" type="unknown" value="0"/>
         <parameter name="SLD_STATE_FLOW_MGR_ENTITY" type="string" value="state_flow_mgr_entity.vhd"/>
         <parameter name="sld_state_flow_use_generated" type="unknown" value="0"/>

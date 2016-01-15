@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE1_SoC
-Tue Jan 12 11:27:55 2016
+Tue Jan 12 14:07:49 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -143,7 +143,7 @@ agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; DE1_SoC.sdc   ; OK     ; Tue Jan 12 11:27:45 2016 ;
+; DE1_SoC.sdc   ; OK     ; Tue Jan 12 14:07:42 2016 ;
 +---------------+--------+--------------------------+
 
 
@@ -162,8 +162,8 @@ agreement for further details.
 +------------+-----------------+---------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
 +------------+-----------------+---------------------+------+
-; 79.94 MHz  ; 79.94 MHz       ; altera_reserved_tck ;      ;
-; 189.97 MHz ; 189.97 MHz      ; CLOCK_50            ;      ;
+; 71.41 MHz  ; 71.41 MHz       ; altera_reserved_tck ;      ;
+; 261.85 MHz ; 261.85 MHz      ; CLOCK_50            ;      ;
 +------------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -179,8 +179,8 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 10.412 ; 0.000         ;
-; CLOCK_50            ; 14.736 ; 0.000         ;
+; altera_reserved_tck ; 9.665  ; 0.000         ;
+; CLOCK_50            ; 16.181 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -189,8 +189,8 @@ HTML report is unavailable in plain text report export.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; CLOCK_50            ; 0.308 ; 0.000         ;
-; altera_reserved_tck ; 0.424 ; 0.000         ;
+; altera_reserved_tck ; 0.473 ; 0.000         ;
+; CLOCK_50            ; 0.484 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -199,7 +199,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 14.809 ; 0.000         ;
+; altera_reserved_tck ; 14.255 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -208,7 +208,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.737 ; 0.000         ;
+; altera_reserved_tck ; 0.524 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -217,8 +217,8 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+--------------------+
 ; Clock               ; Slack  ; End Point TNS      ;
 +---------------------+--------+--------------------+
-; CLOCK_50            ; 8.875  ; 0.000              ;
-; altera_reserved_tck ; 15.091 ; 0.000              ;
+; CLOCK_50            ; 8.713  ; 0.000              ;
+; altera_reserved_tck ; 15.276 ; 0.000              ;
 +---------------------+--------+--------------------+
 
 
@@ -227,35 +227,31 @@ HTML report is unavailable in plain text report export.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; 1.277 ; 2.382 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; 1.277 ; 2.382 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 1.915 ; 2.567 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 2.318 ; 2.617 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 2.572 ; 3.668 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 2.597 ; 2.912 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Hold Times                                                                                   ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 0.761 ; 0.384 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 0.604 ; 0.199 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------+
-; Hold Times                                                                                     ;
+; Clock to Output Times                                                                          ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; -0.038 ; -0.829 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; -0.038 ; -0.829 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 0.826  ; 0.393  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.636  ; 0.232  ; Rise       ; altera_reserved_tck ;
+; LEDR[*]             ; CLOCK_50            ; 11.233 ; 11.537 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 11.233 ; 11.537 ; Rise       ; CLOCK_50            ;
+; altera_reserved_tdo ; altera_reserved_tck ; 5.509  ; 5.570  ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 6.580  ; 6.670  ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                        ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 9.465 ; 9.588 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 9.465 ; 9.588 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdo ; altera_reserved_tck ; 5.509 ; 5.570 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 6.425 ; 6.518 ; Fall       ; altera_reserved_tck ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -263,8 +259,8 @@ HTML report is unavailable in plain text report export.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 7.661 ; 7.751 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 7.661 ; 7.751 ; Rise       ; CLOCK_50            ;
+; LEDR[*]             ; CLOCK_50            ; 9.179 ; 9.367 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 9.179 ; 9.367 ; Rise       ; CLOCK_50            ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 5.229 ; 5.278 ; Rise       ; altera_reserved_tck ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 5.291 ; 5.363 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
@@ -275,7 +271,7 @@ HTML report is unavailable in plain text report export.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 8.182 ; 8.896 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 8.177 ; 8.889 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -284,7 +280,7 @@ HTML report is unavailable in plain text report export.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 6.625 ; 7.260 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 6.621 ; 7.254 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -299,8 +295,8 @@ No synchronizer chains to report.
 +------------+-----------------+---------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
 +------------+-----------------+---------------------+------+
-; 82.16 MHz  ; 82.16 MHz       ; altera_reserved_tck ;      ;
-; 192.64 MHz ; 192.64 MHz      ; CLOCK_50            ;      ;
+; 73.32 MHz  ; 73.32 MHz       ; altera_reserved_tck ;      ;
+; 240.38 MHz ; 240.38 MHz      ; CLOCK_50            ;      ;
 +------------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -310,8 +306,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 10.581 ; 0.000         ;
-; CLOCK_50            ; 14.809 ; 0.000         ;
+; altera_reserved_tck ; 9.847  ; 0.000         ;
+; CLOCK_50            ; 15.840 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -320,8 +316,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; CLOCK_50            ; 0.291 ; 0.000         ;
-; altera_reserved_tck ; 0.417 ; 0.000         ;
+; altera_reserved_tck ; 0.491 ; 0.000         ;
+; CLOCK_50            ; 0.514 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -330,7 +326,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 14.898 ; 0.000         ;
+; altera_reserved_tck ; 14.351 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -339,7 +335,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.688 ; 0.000         ;
+; altera_reserved_tck ; 0.490 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -348,8 +344,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+-------------------+
 ; Clock               ; Slack  ; End Point TNS     ;
 +---------------------+--------+-------------------+
-; CLOCK_50            ; 8.857  ; 0.000             ;
-; altera_reserved_tck ; 15.076 ; 0.000             ;
+; CLOCK_50            ; 8.690  ; 0.000             ;
+; altera_reserved_tck ; 15.260 ; 0.000             ;
 +---------------------+--------+-------------------+
 
 
@@ -358,35 +354,31 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; 1.127 ; 2.219 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; 1.127 ; 2.219 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 1.979 ; 2.642 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 2.386 ; 2.696 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 2.527 ; 3.640 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 2.612 ; 2.960 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------+
-; Hold Times                                                                                    ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall   ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; 0.114 ; -0.690 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; 0.114 ; -0.690 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 0.790 ; 0.415  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.562 ; 0.197  ; Rise       ; altera_reserved_tck ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                        ;
+; Hold Times                                                                                   ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 9.000 ; 9.128 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 9.000 ; 9.128 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdo ; altera_reserved_tck ; 5.352 ; 5.388 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 6.250 ; 6.197 ; Fall       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 0.790 ; 0.415 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 0.550 ; 0.197 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                          ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; LEDR[*]             ; CLOCK_50            ; 10.623 ; 10.945 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 10.623 ; 10.945 ; Rise       ; CLOCK_50            ;
+; altera_reserved_tdo ; altera_reserved_tck ; 5.352  ; 5.388  ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 6.250  ; 6.290  ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -394,8 +386,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 7.246 ; 7.351 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 7.246 ; 7.351 ; Rise       ; CLOCK_50            ;
+; LEDR[*]             ; CLOCK_50            ; 8.638 ; 8.861 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 8.638 ; 8.861 ; Rise       ; CLOCK_50            ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 5.090 ; 5.115 ; Rise       ; altera_reserved_tck ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 5.136 ; 5.184 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
@@ -406,7 +398,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 7.821 ; 8.534 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 7.817 ; 8.528 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -415,7 +407,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 6.309 ; 6.957 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 6.305 ; 6.952 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -430,8 +422,8 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 13.192 ; 0.000         ;
-; CLOCK_50            ; 16.806 ; 0.000         ;
+; altera_reserved_tck ; 12.832 ; 0.000         ;
+; CLOCK_50            ; 17.708 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -440,8 +432,8 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; CLOCK_50            ; 0.151 ; 0.000         ;
-; altera_reserved_tck ; 0.181 ; 0.000         ;
+; altera_reserved_tck ; 0.147 ; 0.000         ;
+; CLOCK_50            ; 0.228 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -450,7 +442,7 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 15.853 ; 0.000         ;
+; altera_reserved_tck ; 15.545 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -459,7 +451,7 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.326 ; 0.000         ;
+; altera_reserved_tck ; 0.210 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -468,8 +460,8 @@ No synchronizer chains to report.
 +---------------------+--------+--------------------+
 ; Clock               ; Slack  ; End Point TNS      ;
 +---------------------+--------+--------------------+
-; CLOCK_50            ; 8.501  ; 0.000              ;
-; altera_reserved_tck ; 14.789 ; 0.000              ;
+; CLOCK_50            ; 8.647  ; 0.000              ;
+; altera_reserved_tck ; 14.933 ; 0.000              ;
 +---------------------+--------+--------------------+
 
 
@@ -478,23 +470,19 @@ No synchronizer chains to report.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; 0.890 ; 2.202 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; 0.890 ; 2.202 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 1.106 ; 2.130 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 1.442 ; 2.134 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 1.576 ; 2.917 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 1.617 ; 2.346 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Hold Times                                                                                     ;
-+---------------------+---------------------+--------+--------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+--------+--------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; -0.194 ; -1.280 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; -0.194 ; -1.280 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 0.420  ; -0.282 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.366  ; -0.375 ; Rise       ; altera_reserved_tck ;
-+---------------------+---------------------+--------+--------+------------+---------------------+
++-----------------------------------------------------------------------------------------------+
+; Hold Times                                                                                    ;
++---------------------+---------------------+-------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+--------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 0.407 ; -0.282 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 0.332 ; -0.385 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+-------+--------+------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -502,10 +490,10 @@ No synchronizer chains to report.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 5.603 ; 5.766 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 5.603 ; 5.766 ; Rise       ; CLOCK_50            ;
+; LEDR[*]             ; CLOCK_50            ; 6.788 ; 7.143 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 6.788 ; 7.143 ; Rise       ; CLOCK_50            ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.369 ; 3.421 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 4.340 ; 4.397 ; Fall       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 4.457 ; 4.513 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 
 
@@ -514,8 +502,8 @@ No synchronizer chains to report.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 4.599 ; 4.732 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 4.599 ; 4.732 ; Rise       ; CLOCK_50            ;
+; LEDR[*]             ; CLOCK_50            ; 5.623 ; 5.880 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 5.623 ; 5.880 ; Rise       ; CLOCK_50            ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.260 ; 3.306 ; Rise       ; altera_reserved_tck ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.777 ; 3.835 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
@@ -526,7 +514,7 @@ No synchronizer chains to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 4.893 ; 5.885 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 4.889 ; 5.880 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -535,7 +523,7 @@ No synchronizer chains to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 4.072 ; 5.005 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 4.069 ; 5.000 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -550,8 +538,8 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 13.628 ; 0.000         ;
-; CLOCK_50            ; 17.085 ; 0.000         ;
+; altera_reserved_tck ; 13.293 ; 0.000         ;
+; CLOCK_50            ; 17.744 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -560,8 +548,8 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; CLOCK_50            ; 0.125 ; 0.000         ;
-; altera_reserved_tck ; 0.168 ; 0.000         ;
+; altera_reserved_tck ; 0.139 ; 0.000         ;
+; CLOCK_50            ; 0.222 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -570,7 +558,7 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 16.046 ; 0.000         ;
+; altera_reserved_tck ; 15.773 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -579,7 +567,7 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.285 ; 0.000         ;
+; altera_reserved_tck ; 0.183 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -588,8 +576,8 @@ No synchronizer chains to report.
 +---------------------+--------+-------------------+
 ; Clock               ; Slack  ; End Point TNS     ;
 +---------------------+--------+-------------------+
-; CLOCK_50            ; 8.457  ; 0.000             ;
-; altera_reserved_tck ; 14.769 ; 0.000             ;
+; CLOCK_50            ; 8.643  ; 0.000             ;
+; altera_reserved_tck ; 14.893 ; 0.000             ;
 +---------------------+--------+-------------------+
 
 
@@ -598,23 +586,19 @@ No synchronizer chains to report.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; 0.788 ; 2.038 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; 0.788 ; 2.038 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 1.062 ; 2.075 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 1.342 ; 2.083 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 1.446 ; 2.737 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 1.482 ; 2.258 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Hold Times                                                                                     ;
-+---------------------+---------------------+--------+--------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+--------+--------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; -0.117 ; -1.183 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; -0.117 ; -1.183 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 0.414  ; -0.326 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.327  ; -0.431 ; Rise       ; altera_reserved_tck ;
-+---------------------+---------------------+--------+--------+------------+---------------------+
++-----------------------------------------------------------------------------------------------+
+; Hold Times                                                                                    ;
++---------------------+---------------------+-------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+--------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 0.414 ; -0.326 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 0.301 ; -0.431 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+-------+--------+------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -622,10 +606,10 @@ No synchronizer chains to report.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 5.190 ; 5.330 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 5.190 ; 5.330 ; Rise       ; CLOCK_50            ;
+; LEDR[*]             ; CLOCK_50            ; 6.226 ; 6.527 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 6.226 ; 6.527 ; Rise       ; CLOCK_50            ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.142 ; 3.174 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 4.155 ; 4.140 ; Fall       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 4.179 ; 4.218 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 
 
@@ -634,8 +618,8 @@ No synchronizer chains to report.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 4.204 ; 4.322 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 4.204 ; 4.322 ; Rise       ; CLOCK_50            ;
+; LEDR[*]             ; CLOCK_50            ; 5.099 ; 5.325 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 5.099 ; 5.325 ; Rise       ; CLOCK_50            ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.032 ; 3.057 ; Rise       ; altera_reserved_tck ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.596 ; 3.634 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
@@ -646,7 +630,7 @@ No synchronizer chains to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 4.570 ; 5.568 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 4.567 ; 5.564 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -655,7 +639,7 @@ No synchronizer chains to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 3.758 ; 4.714 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 3.755 ; 4.710 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -670,9 +654,9 @@ No synchronizer chains to report.
 +----------------------+--------+-------+----------+---------+---------------------+
 ; Clock                ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +----------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack     ; 10.412 ; 0.125 ; 14.809   ; 0.285   ; 8.457               ;
-;  CLOCK_50            ; 14.736 ; 0.125 ; N/A      ; N/A     ; 8.457               ;
-;  altera_reserved_tck ; 10.412 ; 0.168 ; 14.809   ; 0.285   ; 14.769              ;
+; Worst-case Slack     ; 9.665  ; 0.139 ; 14.255   ; 0.183   ; 8.643               ;
+;  CLOCK_50            ; 15.840 ; 0.222 ; N/A      ; N/A     ; 8.643               ;
+;  altera_reserved_tck ; 9.665  ; 0.139 ; 14.255   ; 0.183   ; 14.893              ;
 ; Design-wide TNS      ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  CLOCK_50            ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 ;  altera_reserved_tck ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
@@ -684,35 +668,31 @@ No synchronizer chains to report.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; 1.277 ; 2.382 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; 1.277 ; 2.382 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 1.979 ; 2.642 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 2.386 ; 2.696 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 2.572 ; 3.668 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 2.612 ; 2.960 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------+
-; Hold Times                                                                                    ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall   ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-; KEY[*]              ; CLOCK_50            ; 0.114 ; -0.690 ; Rise       ; CLOCK_50            ;
-;  KEY[0]             ; CLOCK_50            ; 0.114 ; -0.690 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdi ; altera_reserved_tck ; 0.826 ; 0.415  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.636 ; 0.232  ; Rise       ; altera_reserved_tck ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                        ;
+; Hold Times                                                                                   ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 9.465 ; 9.588 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 9.465 ; 9.588 ; Rise       ; CLOCK_50            ;
-; altera_reserved_tdo ; altera_reserved_tck ; 5.509 ; 5.570 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 6.425 ; 6.518 ; Fall       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 0.790 ; 0.415 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 0.604 ; 0.199 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                          ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; LEDR[*]             ; CLOCK_50            ; 11.233 ; 11.537 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 11.233 ; 11.537 ; Rise       ; CLOCK_50            ;
+; altera_reserved_tdo ; altera_reserved_tck ; 5.509  ; 5.570  ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 6.580  ; 6.670  ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -720,8 +700,8 @@ No synchronizer chains to report.
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; LEDR[*]             ; CLOCK_50            ; 4.204 ; 4.322 ; Rise       ; CLOCK_50            ;
-;  LEDR[1]            ; CLOCK_50            ; 4.204 ; 4.322 ; Rise       ; CLOCK_50            ;
+; LEDR[*]             ; CLOCK_50            ; 5.099 ; 5.325 ; Rise       ; CLOCK_50            ;
+;  LEDR[1]            ; CLOCK_50            ; 5.099 ; 5.325 ; Rise       ; CLOCK_50            ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.032 ; 3.057 ; Rise       ; altera_reserved_tck ;
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.596 ; 3.634 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
@@ -732,7 +712,7 @@ No synchronizer chains to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 8.182 ; 8.896 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 8.177 ; 8.889 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -741,7 +721,7 @@ No synchronizer chains to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; KEY[0]     ; LEDR[0]     ;    ; 3.758 ; 4.714 ;    ;
+; KEY[0]     ; LEDR[0]     ;    ; 3.755 ; 4.710 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -1076,51 +1056,45 @@ No synchronizer chains to report.
 +---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Setup Transfers                                                                         ;
-+---------------------+---------------------+------------+----------+----------+----------+
-; From Clock          ; To Clock            ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------+---------------------+------------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 5113       ; 0        ; 45       ; 0        ;
-; CLOCK_50            ; altera_reserved_tck ; false path ; 0        ; 0        ; 0        ;
-; altera_reserved_tck ; CLOCK_50            ; false path ; 0        ; 0        ; 0        ;
-; CLOCK_50            ; CLOCK_50            ; 3850       ; 0        ; 0        ; 0        ;
-+---------------------+---------------------+------------+----------+----------+----------+
++---------------------------------------------------------------------------------------+
+; Setup Transfers                                                                       ;
++---------------------+---------------------+----------+----------+----------+----------+
+; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------+---------------------+----------+----------+----------+----------+
+; altera_reserved_tck ; altera_reserved_tck ; 4540     ; 0        ; 45       ; 0        ;
+; CLOCK_50            ; CLOCK_50            ; 325      ; 0        ; 0        ; 0        ;
++---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-----------------------------------------------------------------------------------------+
-; Hold Transfers                                                                          ;
-+---------------------+---------------------+------------+----------+----------+----------+
-; From Clock          ; To Clock            ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------+---------------------+------------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 5113       ; 0        ; 45       ; 0        ;
-; CLOCK_50            ; altera_reserved_tck ; false path ; 0        ; 0        ; 0        ;
-; altera_reserved_tck ; CLOCK_50            ; false path ; 0        ; 0        ; 0        ;
-; CLOCK_50            ; CLOCK_50            ; 3850       ; 0        ; 0        ; 0        ;
-+---------------------+---------------------+------------+----------+----------+----------+
++---------------------------------------------------------------------------------------+
+; Hold Transfers                                                                        ;
++---------------------+---------------------+----------+----------+----------+----------+
+; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------+---------------------+----------+----------+----------+----------+
+; altera_reserved_tck ; altera_reserved_tck ; 4540     ; 0        ; 45       ; 0        ;
+; CLOCK_50            ; CLOCK_50            ; 325      ; 0        ; 0        ; 0        ;
++---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-----------------------------------------------------------------------------------------+
-; Recovery Transfers                                                                      ;
-+---------------------+---------------------+------------+----------+----------+----------+
-; From Clock          ; To Clock            ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------+---------------------+------------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 136        ; 0        ; 1        ; 0        ;
-; altera_reserved_tck ; CLOCK_50            ; false path ; 0        ; 0        ; 0        ;
-+---------------------+---------------------+------------+----------+----------+----------+
++---------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                    ;
++---------------------+---------------------+----------+----------+----------+----------+
+; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------+---------------------+----------+----------+----------+----------+
+; altera_reserved_tck ; altera_reserved_tck ; 106      ; 0        ; 1        ; 0        ;
++---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-----------------------------------------------------------------------------------------+
-; Removal Transfers                                                                       ;
-+---------------------+---------------------+------------+----------+----------+----------+
-; From Clock          ; To Clock            ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------+---------------------+------------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 136        ; 0        ; 1        ; 0        ;
-; altera_reserved_tck ; CLOCK_50            ; false path ; 0        ; 0        ; 0        ;
-+---------------------+---------------------+------------+----------+----------+----------+
++---------------------------------------------------------------------------------------+
+; Removal Transfers                                                                     ;
++---------------------+---------------------+----------+----------+----------+----------+
+; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------+---------------------+----------+----------+----------+----------+
+; altera_reserved_tck ; altera_reserved_tck ; 106      ; 0        ; 1        ; 0        ;
++---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -1142,7 +1116,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 1     ; 1    ;
+; Unconstrained Clocks            ; 2     ; 2    ;
 ; Unconstrained Input Ports       ; 3     ; 3    ;
 ; Unconstrained Input Port Paths  ; 60    ; 60   ;
 ; Unconstrained Output Ports      ; 7     ; 7    ;
@@ -1156,7 +1130,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Tue Jan 12 11:27:42 2016
+    Info: Processing started: Tue Jan 12 14:07:40 2016
 Info: Command: quartus_sta DE1_SoC -c DE1_SoC
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -1172,116 +1146,116 @@ Info (332151): Clock uncertainty is not calculated until you update the timing n
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
-Info (332146): Worst-case setup slack is 10.412
+Info (332146): Worst-case setup slack is 9.665
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    10.412               0.000 altera_reserved_tck 
-    Info (332119):    14.736               0.000 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.308
+    Info (332119):     9.665               0.000 altera_reserved_tck 
+    Info (332119):    16.181               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.473
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.308               0.000 CLOCK_50 
-    Info (332119):     0.424               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 14.809
+    Info (332119):     0.473               0.000 altera_reserved_tck 
+    Info (332119):     0.484               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is 14.255
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    14.809               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.737
+    Info (332119):    14.255               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.524
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.737               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 8.875
+    Info (332119):     0.524               0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 8.713
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.875               0.000 CLOCK_50 
-    Info (332119):    15.091               0.000 altera_reserved_tck 
+    Info (332119):     8.713               0.000 CLOCK_50 
+    Info (332119):    15.276               0.000 altera_reserved_tck 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 10.581
+Info (332146): Worst-case setup slack is 9.847
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    10.581               0.000 altera_reserved_tck 
-    Info (332119):    14.809               0.000 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.291
+    Info (332119):     9.847               0.000 altera_reserved_tck 
+    Info (332119):    15.840               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.491
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.291               0.000 CLOCK_50 
-    Info (332119):     0.417               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 14.898
+    Info (332119):     0.491               0.000 altera_reserved_tck 
+    Info (332119):     0.514               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is 14.351
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    14.898               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.688
+    Info (332119):    14.351               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.490
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.688               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 8.857
+    Info (332119):     0.490               0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 8.690
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.857               0.000 CLOCK_50 
-    Info (332119):    15.076               0.000 altera_reserved_tck 
+    Info (332119):     8.690               0.000 CLOCK_50 
+    Info (332119):    15.260               0.000 altera_reserved_tck 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 13.192
+Info (332146): Worst-case setup slack is 12.832
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    13.192               0.000 altera_reserved_tck 
-    Info (332119):    16.806               0.000 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.151
+    Info (332119):    12.832               0.000 altera_reserved_tck 
+    Info (332119):    17.708               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.147
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.151               0.000 CLOCK_50 
-    Info (332119):     0.181               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 15.853
+    Info (332119):     0.147               0.000 altera_reserved_tck 
+    Info (332119):     0.228               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is 15.545
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.853               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.326
+    Info (332119):    15.545               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.210
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.326               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 8.501
+    Info (332119):     0.210               0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 8.647
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.501               0.000 CLOCK_50 
-    Info (332119):    14.789               0.000 altera_reserved_tck 
+    Info (332119):     8.647               0.000 CLOCK_50 
+    Info (332119):    14.933               0.000 altera_reserved_tck 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 13.628
+Info (332146): Worst-case setup slack is 13.293
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    13.628               0.000 altera_reserved_tck 
-    Info (332119):    17.085               0.000 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.125
+    Info (332119):    13.293               0.000 altera_reserved_tck 
+    Info (332119):    17.744               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.139
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.125               0.000 CLOCK_50 
-    Info (332119):     0.168               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 16.046
+    Info (332119):     0.139               0.000 altera_reserved_tck 
+    Info (332119):     0.222               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is 15.773
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    16.046               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.285
+    Info (332119):    15.773               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.183
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.285               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 8.457
+    Info (332119):     0.183               0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 8.643
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.457               0.000 CLOCK_50 
-    Info (332119):    14.769               0.000 altera_reserved_tck 
+    Info (332119):     8.643               0.000 CLOCK_50 
+    Info (332119):    14.893               0.000 altera_reserved_tck 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info (144001): Generated suppressed messages file D:/University of Washington/Classes/8_Winter_2015/E E 371/ee371Projects/assignment_1/counter_2/quartas_dataflow/output_files/DE1_SoC.sta.smsg
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1034 megabytes
-    Info: Processing ended: Tue Jan 12 11:27:55 2016
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 1012 megabytes
+    Info: Processing ended: Tue Jan 12 14:07:49 2016
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +-----------------------------------------------+

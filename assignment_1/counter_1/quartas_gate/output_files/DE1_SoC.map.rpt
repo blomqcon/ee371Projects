@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Tue Jan 12 11:44:09 2016
+Tue Jan 12 12:49:14 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -51,7 +51,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jan 12 11:44:09 2016      ;
+; Analysis & Synthesis Status     ; Successful - Tue Jan 12 12:49:14 2016      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; DE1_SoC                                    ;
 ; Top-level Entity Name           ; DE1_SoC                                    ;
@@ -546,7 +546,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Tue Jan 12 11:44:04 2016
+    Info: Processing started: Tue Jan 12 12:49:10 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
@@ -594,9 +594,9 @@ Info (21057): Implemented 798 device resources after synthesis - the final resou
     Info (21061): Implemented 721 logic cells
     Info (21064): Implemented 5 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 725 megabytes
-    Info: Processing ended: Tue Jan 12 11:44:09 2016
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 729 megabytes
+    Info: Processing ended: Tue Jan 12 12:49:14 2016
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:05
 
 

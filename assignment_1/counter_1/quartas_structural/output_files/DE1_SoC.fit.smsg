@@ -1,4 +1,3 @@
-Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Extra Info (176236): Started Fast Input/Output/OE register processing
@@ -109,5 +108,6 @@ Warning (332060): Node: CounterOne:counter|DFlipFlop:c2|q was determined to be a
 Warning (332060): Node: CounterOne:counter|DFlipFlop:c1|q was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: CounterOne:counter|DFlipFlop:c0|q was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: clock_divider15:clk_div|divided_clocks[24] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Extra Info (176247): Finished moving registers into I/O cells, DSP blocks, and RAM blocks
 Warning (15705): Ignored locations or region assignments to the following nodes

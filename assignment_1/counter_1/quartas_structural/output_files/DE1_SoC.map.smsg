@@ -1,1 +1,2 @@
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (13024): Output pins are stuck at VCC or GND
+Warning (21074): Design contains 13 input pin(s) that do not drive logic
