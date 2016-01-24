@@ -5,9 +5,6 @@ module Arriving(clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor,
 	input arriveCtrl, departing, innerDoor, outerDoor, pressurized, evacuated;
 	output reg arriving;
 	
-	reg [3:0] ps;
-	reg [3:0] ns;
-	
 	parameter reset = 3'b000;
 	parameter min5 = 3'b001;
 	parameter pres = 3'b010;
@@ -15,19 +12,25 @@ module Arriving(clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor,
 	parameter evac = 3'b100;
 	parameter openIn = 3'b101;
 	
+	reg [3:0] ps = reset;
+	reg [3:0] ns = reset;
+	
 	Timer t(clk, arriveCtrl & !done, 3'b101, done);
 	
 	always @(*) 
 		case(ps)
 			reset: if(arriveCtrl) begin 
 				ns = min5;
-				arriving = 1; end
+				end
 			else begin 
 				ns = reset;
 				arriving = 0; end
 			
-			min5: if(done) ns = pres;
-			else ns = min5;
+			min5: begin
+				arriving = 1;
+				if(done) ns = pres;
+				else ns = min5;
+			end
 			
 			pres: if(pressurized) ns = openOut;
 			else ns = pres;

@@ -39,6 +39,14 @@ module Tester (clk, rst, pressurizeCtrl, pressurized, evacuated);
  clk = 0; #stimDelay clk = 1; rst = 1; #stimDelay
  clk = 0; #stimDelay clk = 1; pressurizeCtrl = 1; #stimDelay
  
+ 
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ pressurizeCtrl = 0;
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ clk = 0; #stimDelay clk = 1; #stimDelay
  clk = 0; #stimDelay clk = 1; #stimDelay
  clk = 0; #stimDelay clk = 1; #stimDelay
  clk = 0; #stimDelay clk = 1; #stimDelay
