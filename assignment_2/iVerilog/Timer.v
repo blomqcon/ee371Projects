@@ -3,7 +3,7 @@ module Timer(clk, rst, stopVal, done);
 	input [0:2] stopVal;
 	output reg done;
 	
-	reg [0:2] q = 0'b000;
+	reg [0:2] q = 3'b000;
 	
 	always @(*) begin
 		done <= (q == stopVal);
