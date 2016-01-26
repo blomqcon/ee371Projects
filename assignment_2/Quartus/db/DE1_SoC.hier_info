@@ -1,0 +1,465 @@
+|DE1_SoC
+HEX0[0] << BinToHexDisplay:comb_29.port1
+HEX0[1] << BinToHexDisplay:comb_29.port1
+HEX0[2] << BinToHexDisplay:comb_29.port1
+HEX0[3] << BinToHexDisplay:comb_29.port1
+HEX0[4] << BinToHexDisplay:comb_29.port1
+HEX0[5] << BinToHexDisplay:comb_29.port1
+HEX0[6] << BinToHexDisplay:comb_29.port1
+HEX1[0] << <GND>
+HEX1[1] << <GND>
+HEX1[2] << <GND>
+HEX1[3] << <VCC>
+HEX1[4] << <GND>
+HEX1[5] << <GND>
+HEX1[6] << <GND>
+HEX2[0] << BinToHexDisplay:comb_21.port1
+HEX2[1] << BinToHexDisplay:comb_21.port1
+HEX2[2] << BinToHexDisplay:comb_21.port1
+HEX2[3] << BinToHexDisplay:comb_21.port1
+HEX2[4] << BinToHexDisplay:comb_21.port1
+HEX2[5] << BinToHexDisplay:comb_21.port1
+HEX2[6] << BinToHexDisplay:comb_21.port1
+HEX3[0] << <VCC>
+HEX3[1] << <GND>
+HEX3[2] << <GND>
+HEX3[3] << <GND>
+HEX3[4] << <GND>
+HEX3[5] << <VCC>
+HEX3[6] << <GND>
+HEX4[0] << BinToHexDisplay:comb_13.port1
+HEX4[1] << BinToHexDisplay:comb_13.port1
+HEX4[2] << BinToHexDisplay:comb_13.port1
+HEX4[3] << BinToHexDisplay:comb_13.port1
+HEX4[4] << BinToHexDisplay:comb_13.port1
+HEX4[5] << BinToHexDisplay:comb_13.port1
+HEX4[6] << BinToHexDisplay:comb_13.port1
+HEX5[0] << <GND>
+HEX5[1] << <GND>
+HEX5[2] << <VCC>
+HEX5[3] << <VCC>
+HEX5[4] << <GND>
+HEX5[5] << <GND>
+HEX5[6] << <GND>
+KEY[0] => _.IN1
+KEY[1] => _.IN1
+KEY[2] => _.IN1
+KEY[3] => ~NO_FANOUT~
+LEDR[0] << Interlock:i.arrivingLED
+LEDR[1] << Interlock:i.departingLED
+LEDR[2] << Interlock:i.outerLED
+LEDR[3] << Interlock:i.innerLED
+LEDR[4] << Interlock:i.pressurizeLED
+LEDR[5] << Interlock:i.evacuateLED
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << clock_divider15:clk_div.port1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+CLOCK_50 => CLOCK_50.IN2
+
+
+|DE1_SoC|Interlock:i
+arriveCtrl => Arriving:a.arriveCtrl
+departCtrl => Departing:d.departCtrl
+innerDoorCtrl => innerDoorCtrl.IN1
+outerDoorCtrl => outerDoorCtrl.IN1
+pressurizeCtrl => pressurizeCtrl.IN1
+evacuateCtrl => evacuateCtrl.IN1
+clk => clk.IN3
+rst => rst.IN3
+arrivingLED <= arriving.DB_MAX_OUTPUT_PORT_TYPE
+departingLED <= departing.DB_MAX_OUTPUT_PORT_TYPE
+innerLED <= InnerDoor:iDoor.port6
+outerLED <= OuterDoor:oDoor.port6
+pressurizeLED <= pressurized.DB_MAX_OUTPUT_PORT_TYPE
+evacuateLED <= evacuated.DB_MAX_OUTPUT_PORT_TYPE
+gFull[1] <= garageFull[1].DB_MAX_OUTPUT_PORT_TYPE
+gFull[0] <= garageFull[0].DB_MAX_OUTPUT_PORT_TYPE
+debugStateArriving[2] <= Arriving:a.debugState[2]
+debugStateArriving[1] <= Arriving:a.debugState[1]
+debugStateArriving[0] <= Arriving:a.debugState[0]
+debugStateDeparting[2] <= Departing:d.debugState[2]
+debugStateDeparting[1] <= Departing:d.debugState[1]
+debugStateDeparting[0] <= Departing:d.debugState[0]
+
+
+|DE1_SoC|Interlock:i|InnerDoor:iDoor
+clk => innerDoor~reg0.CLK
+clk => preDeparting.CLK
+clk => preArriving.CLK
+rst => innerDoor.OUTPUTSELECT
+innerDoorCtrl => always0.IN0
+arriving => always0.IN1
+arriving => preArriving.DATAIN
+departing => always0.IN1
+departing => preDeparting.DATAIN
+evacuated => always0.IN1
+innerDoor <= innerDoor~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|OuterDoor:oDoor
+clk => outerDoor~reg0.CLK
+clk => preDeparting.CLK
+clk => preArriving.CLK
+rst => outerDoor.OUTPUTSELECT
+outerDoorCtrl => always0.IN0
+arriving => always0.IN1
+arriving => preArriving.DATAIN
+departing => always0.IN1
+departing => preDeparting.DATAIN
+pressurized => always0.IN1
+outerDoor <= outerDoor~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Chamber:c
+clk => clk.IN2
+rst => pressurized.OUTPUTSELECT
+rst => evacuated.OUTPUTSELECT
+rst => pressurizing.OUTPUTSELECT
+rst => evacuating.OUTPUTSELECT
+pressurizeCtrl => pressurizeCtrl.IN1
+evacuateCtrl => evacuateCtrl.IN1
+pressurized <= pressurized~reg0.DB_MAX_OUTPUT_PORT_TYPE
+evacuated <= evacuated~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Chamber:c|Timer:tP
+clk => clk.IN1
+rst => q[2].ACLR
+rst => q[1].ACLR
+rst => q[0].ACLR
+stopVal[2] => Equal0.IN2
+stopVal[1] => Equal0.IN1
+stopVal[0] => Equal0.IN0
+done <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Chamber:c|Timer:tP|clock_divider15:clk_div
+clock => divided_clocks[0].CLK
+clock => divided_clocks[1].CLK
+clock => divided_clocks[2].CLK
+clock => divided_clocks[3].CLK
+clock => divided_clocks[4].CLK
+clock => divided_clocks[5].CLK
+clock => divided_clocks[6].CLK
+clock => divided_clocks[7].CLK
+clock => divided_clocks[8].CLK
+clock => divided_clocks[9].CLK
+clock => divided_clocks[10].CLK
+clock => divided_clocks[11].CLK
+clock => divided_clocks[12].CLK
+clock => divided_clocks[13].CLK
+clock => divided_clocks[14].CLK
+clock => divided_clocks[15].CLK
+clock => divided_clocks[16].CLK
+clock => divided_clocks[17].CLK
+clock => divided_clocks[18].CLK
+clock => divided_clocks[19].CLK
+clock => divided_clocks[20].CLK
+clock => divided_clocks[21].CLK
+clock => divided_clocks[22].CLK
+clock => divided_clocks[23].CLK
+clock => divided_clocks[24].CLK
+clock => divided_clocks[25].CLK
+clock => divided_clocks[26].CLK
+clock => divided_clocks[27].CLK
+clock => divided_clocks[28].CLK
+clock => divided_clocks[29].CLK
+clock => divided_clocks[30].CLK
+clock => divided_clocks[31].CLK
+divided_clock15 <= divided_clocks[23].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Chamber:c|Timer:tE
+clk => clk.IN1
+rst => q[2].ACLR
+rst => q[1].ACLR
+rst => q[0].ACLR
+stopVal[2] => Equal0.IN2
+stopVal[1] => Equal0.IN1
+stopVal[0] => Equal0.IN0
+done <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div
+clock => divided_clocks[0].CLK
+clock => divided_clocks[1].CLK
+clock => divided_clocks[2].CLK
+clock => divided_clocks[3].CLK
+clock => divided_clocks[4].CLK
+clock => divided_clocks[5].CLK
+clock => divided_clocks[6].CLK
+clock => divided_clocks[7].CLK
+clock => divided_clocks[8].CLK
+clock => divided_clocks[9].CLK
+clock => divided_clocks[10].CLK
+clock => divided_clocks[11].CLK
+clock => divided_clocks[12].CLK
+clock => divided_clocks[13].CLK
+clock => divided_clocks[14].CLK
+clock => divided_clocks[15].CLK
+clock => divided_clocks[16].CLK
+clock => divided_clocks[17].CLK
+clock => divided_clocks[18].CLK
+clock => divided_clocks[19].CLK
+clock => divided_clocks[20].CLK
+clock => divided_clocks[21].CLK
+clock => divided_clocks[22].CLK
+clock => divided_clocks[23].CLK
+clock => divided_clocks[24].CLK
+clock => divided_clocks[25].CLK
+clock => divided_clocks[26].CLK
+clock => divided_clocks[27].CLK
+clock => divided_clocks[28].CLK
+clock => divided_clocks[29].CLK
+clock => divided_clocks[30].CLK
+clock => divided_clocks[31].CLK
+divided_clock15 <= divided_clocks[23].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Arriving:a
+clk => clk.IN1
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+arriveCtrl => arriveCtrl.IN1
+arriving <= arriving~reg0.DB_MAX_OUTPUT_PORT_TYPE
+departing => always0.IN1
+innerDoor => ns.OUTPUTSELECT
+innerDoor => ns.OUTPUTSELECT
+outerDoor => ns.OUTPUTSELECT
+outerDoor => ns.OUTPUTSELECT
+outerDoor => Selector4.IN3
+pressurized => ns.OUTPUTSELECT
+pressurized => ns.OUTPUTSELECT
+pressurized => Selector3.IN3
+evacuated => ns.OUTPUTSELECT
+evacuated => ns.OUTPUTSELECT
+evacuated => Selector5.IN3
+garageFull[2] => LessThan0.IN6
+garageFull[1] => LessThan0.IN5
+garageFull[0] => LessThan0.IN4
+debugState[2] <= debugState[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+debugState[1] <= debugState[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+debugState[0] <= debugState[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Arriving:a|Timer:aTimer
+clk => clk.IN1
+rst => q[2].ACLR
+rst => q[1].ACLR
+rst => q[0].ACLR
+stopVal[2] => Equal0.IN2
+stopVal[1] => Equal0.IN1
+stopVal[0] => Equal0.IN0
+done <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Arriving:a|Timer:aTimer|clock_divider15:clk_div
+clock => divided_clocks[0].CLK
+clock => divided_clocks[1].CLK
+clock => divided_clocks[2].CLK
+clock => divided_clocks[3].CLK
+clock => divided_clocks[4].CLK
+clock => divided_clocks[5].CLK
+clock => divided_clocks[6].CLK
+clock => divided_clocks[7].CLK
+clock => divided_clocks[8].CLK
+clock => divided_clocks[9].CLK
+clock => divided_clocks[10].CLK
+clock => divided_clocks[11].CLK
+clock => divided_clocks[12].CLK
+clock => divided_clocks[13].CLK
+clock => divided_clocks[14].CLK
+clock => divided_clocks[15].CLK
+clock => divided_clocks[16].CLK
+clock => divided_clocks[17].CLK
+clock => divided_clocks[18].CLK
+clock => divided_clocks[19].CLK
+clock => divided_clocks[20].CLK
+clock => divided_clocks[21].CLK
+clock => divided_clocks[22].CLK
+clock => divided_clocks[23].CLK
+clock => divided_clocks[24].CLK
+clock => divided_clocks[25].CLK
+clock => divided_clocks[26].CLK
+clock => divided_clocks[27].CLK
+clock => divided_clocks[28].CLK
+clock => divided_clocks[29].CLK
+clock => divided_clocks[30].CLK
+clock => divided_clocks[31].CLK
+divided_clock15 <= divided_clocks[23].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Departing:d
+clk => clk.IN1
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+rst => ns.DATAA
+departCtrl => departCtrl.IN1
+arriving => always0.IN1
+departing <= departing~reg0.DB_MAX_OUTPUT_PORT_TYPE
+innerDoor => ~NO_FANOUT~
+outerDoor => ns.OUTPUTSELECT
+outerDoor => ns.OUTPUTSELECT
+outerDoor => Selector4.IN3
+pressurized => ns.OUTPUTSELECT
+pressurized => ns.OUTPUTSELECT
+pressurized => Selector3.IN3
+evacuated => ns.OUTPUTSELECT
+evacuated => ns.OUTPUTSELECT
+garageFull[2] => LessThan0.IN6
+garageFull[1] => LessThan0.IN5
+garageFull[0] => LessThan0.IN4
+debugState[2] <= debugState[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+debugState[1] <= debugState[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+debugState[0] <= debugState[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Departing:d|Timer:dTimer
+clk => clk.IN1
+rst => q[2].ACLR
+rst => q[1].ACLR
+rst => q[0].ACLR
+stopVal[2] => Equal0.IN2
+stopVal[1] => Equal0.IN1
+stopVal[0] => Equal0.IN0
+done <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|Interlock:i|Departing:d|Timer:dTimer|clock_divider15:clk_div
+clock => divided_clocks[0].CLK
+clock => divided_clocks[1].CLK
+clock => divided_clocks[2].CLK
+clock => divided_clocks[3].CLK
+clock => divided_clocks[4].CLK
+clock => divided_clocks[5].CLK
+clock => divided_clocks[6].CLK
+clock => divided_clocks[7].CLK
+clock => divided_clocks[8].CLK
+clock => divided_clocks[9].CLK
+clock => divided_clocks[10].CLK
+clock => divided_clocks[11].CLK
+clock => divided_clocks[12].CLK
+clock => divided_clocks[13].CLK
+clock => divided_clocks[14].CLK
+clock => divided_clocks[15].CLK
+clock => divided_clocks[16].CLK
+clock => divided_clocks[17].CLK
+clock => divided_clocks[18].CLK
+clock => divided_clocks[19].CLK
+clock => divided_clocks[20].CLK
+clock => divided_clocks[21].CLK
+clock => divided_clocks[22].CLK
+clock => divided_clocks[23].CLK
+clock => divided_clocks[24].CLK
+clock => divided_clocks[25].CLK
+clock => divided_clocks[26].CLK
+clock => divided_clocks[27].CLK
+clock => divided_clocks[28].CLK
+clock => divided_clocks[29].CLK
+clock => divided_clocks[30].CLK
+clock => divided_clocks[31].CLK
+divided_clock15 <= divided_clocks[23].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|BinToHexDisplay:comb_13
+binary[3] => Decoder0.IN3
+binary[2] => Decoder0.IN2
+binary[1] => Decoder0.IN1
+binary[0] => Decoder0.IN0
+HEX[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|BinToHexDisplay:comb_21
+binary[3] => Decoder0.IN3
+binary[2] => Decoder0.IN2
+binary[1] => Decoder0.IN1
+binary[0] => Decoder0.IN0
+HEX[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|BinToHexDisplay:comb_29
+binary[3] => Decoder0.IN3
+binary[2] => Decoder0.IN2
+binary[1] => Decoder0.IN1
+binary[0] => Decoder0.IN0
+HEX[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC|clock_divider15:clk_div
+clock => divided_clocks[0].CLK
+clock => divided_clocks[1].CLK
+clock => divided_clocks[2].CLK
+clock => divided_clocks[3].CLK
+clock => divided_clocks[4].CLK
+clock => divided_clocks[5].CLK
+clock => divided_clocks[6].CLK
+clock => divided_clocks[7].CLK
+clock => divided_clocks[8].CLK
+clock => divided_clocks[9].CLK
+clock => divided_clocks[10].CLK
+clock => divided_clocks[11].CLK
+clock => divided_clocks[12].CLK
+clock => divided_clocks[13].CLK
+clock => divided_clocks[14].CLK
+clock => divided_clocks[15].CLK
+clock => divided_clocks[16].CLK
+clock => divided_clocks[17].CLK
+clock => divided_clocks[18].CLK
+clock => divided_clocks[19].CLK
+clock => divided_clocks[20].CLK
+clock => divided_clocks[21].CLK
+clock => divided_clocks[22].CLK
+clock => divided_clocks[23].CLK
+clock => divided_clocks[24].CLK
+clock => divided_clocks[25].CLK
+clock => divided_clocks[26].CLK
+clock => divided_clocks[27].CLK
+clock => divided_clocks[28].CLK
+clock => divided_clocks[29].CLK
+clock => divided_clocks[30].CLK
+clock => divided_clocks[31].CLK
+divided_clock15 <= divided_clocks[23].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,11 @@
+
+module BinToHexDisplay(binary, HEX);
+	input [0:3] binary;
+	output [0:6] HEX;
+
+	always@(*) begin
+		case(binary)
+			'b0000: HEX = 'b1111110
+			default: 'b1111111
+	end
+endmodule 
