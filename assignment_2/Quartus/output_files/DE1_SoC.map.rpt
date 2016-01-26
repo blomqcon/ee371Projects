@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Mon Jan 25 23:56:01 2016
+Tue Jan 26 10:56:16 2016
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -21,24 +21,25 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
  13. Inverted Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
  15. Source assignments for sld_signaltap:auto_signaltap_0
- 16. Parameter Settings for User Entity Instance: Interlock:i|Arriving:a
- 17. Parameter Settings for User Entity Instance: Interlock:i|Departing:d
- 18. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 19. Port Connectivity Checks: "BinToHexDisplay:comb_29"
- 20. Port Connectivity Checks: "BinToHexDisplay:comb_21"
- 21. Port Connectivity Checks: "BinToHexDisplay:comb_13"
- 22. Port Connectivity Checks: "Interlock:i|Departing:d|Timer:dTimer"
- 23. Port Connectivity Checks: "Interlock:i|Departing:d"
- 24. Port Connectivity Checks: "Interlock:i|Arriving:a|Timer:aTimer"
- 25. Port Connectivity Checks: "Interlock:i|Arriving:a"
- 26. Port Connectivity Checks: "Interlock:i|Chamber:c|Timer:tE"
- 27. Port Connectivity Checks: "Interlock:i|Chamber:c|Timer:tP"
- 28. SignalTap II Logic Analyzer Settings
- 29. Post-Synthesis Netlist Statistics for Top Partition
- 30. Elapsed Time Per Partition
- 31. Connections to In-System Debugging Instance "auto_signaltap_0"
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+ 16. Parameter Settings for User Entity Instance: Interlock:i|Chamber:c
+ 17. Parameter Settings for User Entity Instance: Interlock:i|Arriving:a
+ 18. Parameter Settings for User Entity Instance: Interlock:i|Departing:d
+ 19. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 20. Port Connectivity Checks: "BinToHexDisplay:comb_29"
+ 21. Port Connectivity Checks: "BinToHexDisplay:comb_21"
+ 22. Port Connectivity Checks: "BinToHexDisplay:comb_13"
+ 23. Port Connectivity Checks: "Interlock:i|Departing:d|Timer:dTimer"
+ 24. Port Connectivity Checks: "Interlock:i|Departing:d"
+ 25. Port Connectivity Checks: "Interlock:i|Arriving:a|Timer:aTimer"
+ 26. Port Connectivity Checks: "Interlock:i|Arriving:a"
+ 27. Port Connectivity Checks: "Interlock:i|Chamber:c|Timer:tE"
+ 28. Port Connectivity Checks: "Interlock:i|Chamber:c|Timer:tP"
+ 29. SignalTap II Logic Analyzer Settings
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 33. Analysis & Synthesis Messages
+ 34. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -65,7 +66,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jan 25 23:56:01 2016      ;
+; Analysis & Synthesis Status     ; Successful - Tue Jan 26 10:56:16 2016      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; DE1_SoC                                    ;
 ; Top-level Entity Name           ; DE1_SoC                                    ;
@@ -262,13 +263,13 @@ agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 325                      ;
+; Estimate of Logic utilization (ALMs needed) ; 324                      ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 465                      ;
+; Combinational ALUT usage for logic          ; 463                      ;
 ;     -- 7 input functions                    ; 3                        ;
-;     -- 6 input functions                    ; 84                       ;
+;     -- 6 input functions                    ; 83                       ;
 ;     -- 5 input functions                    ; 57                       ;
-;     -- 4 input functions                    ; 43                       ;
+;     -- 4 input functions                    ; 42                       ;
 ;     -- <=3 input functions                  ; 278                      ;
 ;                                             ;                          ;
 ; Dedicated logic registers                   ; 555                      ;
@@ -279,7 +280,7 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0                        ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 303                      ;
-; Total fan-out                               ; 3539                     ;
+; Total fan-out                               ; 3528                     ;
 ; Average fan-out                             ; 3.03                     ;
 +---------------------------------------------+--------------------------+
 
@@ -289,20 +290,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                              ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                          ; Library Name ;
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |DE1_SoC                                                                                                ; 465 (2)           ; 555 (0)      ; 320               ; 0          ; 67   ; 0            ; |DE1_SoC                                                                                                                                                                                                                                                                                                                                     ; work         ;
+; |DE1_SoC                                                                                                ; 463 (2)           ; 555 (0)      ; 320               ; 0          ; 67   ; 0            ; |DE1_SoC                                                                                                                                                                                                                                                                                                                                     ; work         ;
 ;    |BinToHexDisplay:comb_13|                                                                            ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|BinToHexDisplay:comb_13                                                                                                                                                                                                                                                                                                             ; work         ;
 ;    |BinToHexDisplay:comb_21|                                                                            ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|BinToHexDisplay:comb_21                                                                                                                                                                                                                                                                                                             ; work         ;
 ;    |BinToHexDisplay:comb_29|                                                                            ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|BinToHexDisplay:comb_29                                                                                                                                                                                                                                                                                                             ; work         ;
-;    |Interlock:i|                                                                                        ; 132 (3)           ; 130 (4)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i                                                                                                                                                                                                                                                                                                                         ; work         ;
+;    |Interlock:i|                                                                                        ; 130 (3)           ; 130 (4)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i                                                                                                                                                                                                                                                                                                                         ; work         ;
 ;       |Arriving:a|                                                                                      ; 36 (10)           ; 33 (7)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Arriving:a                                                                                                                                                                                                                                                                                                              ; work         ;
 ;          |Timer:aTimer|                                                                                 ; 26 (3)            ; 26 (3)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Arriving:a|Timer:aTimer                                                                                                                                                                                                                                                                                                 ; work         ;
 ;             |clock_divider15:clk_div|                                                                   ; 23 (23)           ; 23 (23)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Arriving:a|Timer:aTimer|clock_divider15:clk_div                                                                                                                                                                                                                                                                         ; work         ;
-;       |Chamber:c|                                                                                       ; 57 (5)            ; 56 (4)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Chamber:c                                                                                                                                                                                                                                                                                                               ; work         ;
-;          |Timer:tE|                                                                                     ; 26 (3)            ; 26 (3)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Chamber:c|Timer:tE                                                                                                                                                                                                                                                                                                      ; work         ;
+;       |Chamber:c|                                                                                       ; 57 (4)            ; 56 (4)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Chamber:c                                                                                                                                                                                                                                                                                                               ; work         ;
+;          |Timer:tE|                                                                                     ; 27 (4)            ; 26 (3)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Chamber:c|Timer:tE                                                                                                                                                                                                                                                                                                      ; work         ;
 ;             |clock_divider15:clk_div|                                                                   ; 23 (23)           ; 23 (23)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div                                                                                                                                                                                                                                                                              ; work         ;
 ;          |Timer:tP|                                                                                     ; 26 (3)            ; 26 (3)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Chamber:c|Timer:tP                                                                                                                                                                                                                                                                                                      ; work         ;
 ;             |clock_divider15:clk_div|                                                                   ; 23 (23)           ; 23 (23)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Chamber:c|Timer:tP|clock_divider15:clk_div                                                                                                                                                                                                                                                                              ; work         ;
-;       |Departing:d|                                                                                     ; 33 (6)            ; 33 (7)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Departing:d                                                                                                                                                                                                                                                                                                             ; work         ;
+;       |Departing:d|                                                                                     ; 31 (4)            ; 33 (7)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Departing:d                                                                                                                                                                                                                                                                                                             ; work         ;
 ;          |Timer:dTimer|                                                                                 ; 27 (4)            ; 26 (3)       ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Departing:d|Timer:dTimer                                                                                                                                                                                                                                                                                                ; work         ;
 ;             |clock_divider15:clk_div|                                                                   ; 23 (23)           ; 23 (23)      ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|Departing:d|Timer:dTimer|clock_divider15:clk_div                                                                                                                                                                                                                                                                        ; work         ;
 ;       |InnerDoor:iDoor|                                                                                 ; 1 (1)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|Interlock:i|InnerDoor:iDoor                                                                                                                                                                                                                                                                                                         ; work         ;
@@ -468,31 +469,46 @@ Encoding Type:  User-Encoded
 
 
 +---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Interlock:i|Chamber:c  ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; pressurizeTime ; 00000000000000000000000000000110 ; Unsigned Binary ;
+; evacuateTime   ; 00000000000000000000000000000111 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Interlock:i|Arriving:a ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; reset          ; 000   ; Unsigned Binary                            ;
-; min5           ; 001   ; Unsigned Binary                            ;
-; pres           ; 010   ; Unsigned Binary                            ;
-; openOut        ; 011   ; Unsigned Binary                            ;
-; evac           ; 100   ; Unsigned Binary                            ;
-; openIn         ; 101   ; Unsigned Binary                            ;
-+----------------+-------+--------------------------------------------+
++------------------+-------+------------------------------------------+
+; Parameter Name   ; Value ; Type                                     ;
++------------------+-------+------------------------------------------+
+; garageSize       ; 11    ; Unsigned Binary                          ;
+; arrivingWaitTime ; 100   ; Unsigned Binary                          ;
+; reset            ; 000   ; Unsigned Binary                          ;
+; min5             ; 001   ; Unsigned Binary                          ;
+; pres             ; 010   ; Unsigned Binary                          ;
+; openOut          ; 011   ; Unsigned Binary                          ;
+; evac             ; 100   ; Unsigned Binary                          ;
+; openIn           ; 101   ; Unsigned Binary                          ;
++------------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Interlock:i|Departing:d ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; reset          ; 000   ; Unsigned Binary                             ;
-; min5           ; 001   ; Unsigned Binary                             ;
-; pres           ; 010   ; Unsigned Binary                             ;
-; openOut        ; 011   ; Unsigned Binary                             ;
-; evac           ; 100   ; Unsigned Binary                             ;
-+----------------+-------+---------------------------------------------+
++-------------------+-------+------------------------------------------+
+; Parameter Name    ; Value ; Type                                     ;
++-------------------+-------+------------------------------------------+
+; garageSize        ; 11    ; Unsigned Binary                          ;
+; departingWaitTime ; 100   ; Unsigned Binary                          ;
+; reset             ; 000   ; Unsigned Binary                          ;
+; min5              ; 001   ; Unsigned Binary                          ;
+; pres              ; 010   ; Unsigned Binary                          ;
+; openOut           ; 011   ; Unsigned Binary                          ;
+; evac              ; 100   ; Unsigned Binary                          ;
++-------------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -585,13 +601,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------------+
 ; Port Connectivity Checks: "Interlock:i|Departing:d|Timer:dTimer" ;
-+------------+-------+----------+----------------------------------+
-; Port       ; Type  ; Severity ; Details                          ;
-+------------+-------+----------+----------------------------------+
-; stopVal[0] ; Input ; Info     ; Stuck at VCC                     ;
-; stopVal[1] ; Input ; Info     ; Stuck at GND                     ;
-; stopVal[2] ; Input ; Info     ; Stuck at VCC                     ;
-+------------+-------+----------+----------------------------------+
++---------------+-------+----------+-------------------------------+
+; Port          ; Type  ; Severity ; Details                       ;
++---------------+-------+----------+-------------------------------+
+; stopVal[1..2] ; Input ; Info     ; Stuck at GND                  ;
+; stopVal[0]    ; Input ; Info     ; Stuck at VCC                  ;
++---------------+-------+----------+-------------------------------+
 
 
 +-----------------------------------------------------+
@@ -605,13 +620,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-----------------------------------------------------------------+
 ; Port Connectivity Checks: "Interlock:i|Arriving:a|Timer:aTimer" ;
-+------------+-------+----------+---------------------------------+
-; Port       ; Type  ; Severity ; Details                         ;
-+------------+-------+----------+---------------------------------+
-; stopVal[0] ; Input ; Info     ; Stuck at VCC                    ;
-; stopVal[1] ; Input ; Info     ; Stuck at GND                    ;
-; stopVal[2] ; Input ; Info     ; Stuck at VCC                    ;
-+------------+-------+----------+---------------------------------+
++---------------+-------+----------+------------------------------+
+; Port          ; Type  ; Severity ; Details                      ;
++---------------+-------+----------+------------------------------+
+; stopVal[1..2] ; Input ; Info     ; Stuck at GND                 ;
+; stopVal[0]    ; Input ; Info     ; Stuck at VCC                 ;
++---------------+-------+----------+------------------------------+
 
 
 +----------------------------------------------------+
@@ -629,8 +643,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Port          ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; stopVal       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; stopVal[0..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; stopVal[2]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; stopVal[0..2] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
 +---------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -664,24 +677,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 1                           ;
 ;     SCLR              ; 3                           ;
 ;     plain             ; 138                         ;
-; arriav_lcell_comb     ; 177                         ;
+; arriav_lcell_comb     ; 175                         ;
 ;     arith             ; 115                         ;
 ;         1 data inputs ; 110                         ;
 ;         2 data inputs ; 5                           ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 61                          ;
+;     normal            ; 59                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 28                          ;
-;         4 data inputs ; 4                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 3                           ;
 ;         5 data inputs ; 4                           ;
-;         6 data inputs ; 13                          ;
+;         6 data inputs ; 12                          ;
 ; boundary_port         ; 68                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.20                        ;
-; Average LUT depth     ; 2.21                        ;
+; Average LUT depth     ; 2.19                        ;
 +-----------------------+-----------------------------+
 
 
@@ -751,7 +764,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Mon Jan 25 23:55:56 2016
+    Info: Processing started: Tue Jan 26 10:56:10 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file code/timer.sv
@@ -774,8 +787,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file clock_d
     Info (12023): Found entity 1: clock_divider15
 Info (12021): Found 1 design units, including 1 entities, in source file code/bintohexdisplay.sv
     Info (12023): Found entity 1: BinToHexDisplay
-Warning (10236): Verilog HDL Implicit Net warning at Departing.sv(19): created implicit net for "done"
-Warning (10236): Verilog HDL Implicit Net warning at Arriving.sv(20): created implicit net for "done"
+Warning (10236): Verilog HDL Implicit Net warning at Departing.sv(22): created implicit net for "done"
+Warning (10236): Verilog HDL Implicit Net warning at Arriving.sv(23): created implicit net for "done"
 Critical Warning (10846): Verilog HDL Instantiation warning at DE1_SoC.sv(23): instance has no name
 Critical Warning (10846): Verilog HDL Instantiation warning at DE1_SoC.sv(25): instance has no name
 Critical Warning (10846): Verilog HDL Instantiation warning at DE1_SoC.sv(27): instance has no name
@@ -790,9 +803,9 @@ Info (12128): Elaborating entity "Timer" for hierarchy "Interlock:i|Chamber:c|Ti
 Warning (10230): Verilog HDL assignment warning at Timer.sv(21): truncated value with size 32 to match size of target (3)
 Info (12128): Elaborating entity "clock_divider15" for hierarchy "Interlock:i|Chamber:c|Timer:tP|clock_divider15:clk_div"
 Info (12128): Elaborating entity "Arriving" for hierarchy "Interlock:i|Arriving:a"
-Warning (10230): Verilog HDL assignment warning at Arriving.sv(65): truncated value with size 4 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at Arriving.sv(68): truncated value with size 4 to match size of target (3)
 Info (12128): Elaborating entity "Departing" for hierarchy "Interlock:i|Departing:d"
-Warning (10230): Verilog HDL assignment warning at Departing.sv(59): truncated value with size 4 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at Departing.sv(62): truncated value with size 4 to match size of target (3)
 Info (12128): Elaborating entity "BinToHexDisplay" for hierarchy "BinToHexDisplay:comb_13"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_o184.tdf
     Info (12023): Found entity 1: altsyncram_o184
@@ -822,15 +835,15 @@ Info (144001): Generated suppressed messages file D:/University of Washington/Cl
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 43 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 790 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 787 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 53 output pins
-    Info (21061): Implemented 713 logic cells
+    Info (21061): Implemented 710 logic cells
     Info (21064): Implemented 5 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 741 megabytes
-    Info: Processing ended: Mon Jan 25 23:56:01 2016
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 738 megabytes
+    Info: Processing ended: Tue Jan 26 10:56:16 2016
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:05
 
 

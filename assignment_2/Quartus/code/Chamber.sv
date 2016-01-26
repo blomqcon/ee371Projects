@@ -4,12 +4,15 @@ module Chamber(clk, rst, pressurizeCtrl, evacuateCtrl, pressurized, evacuated);
 	output reg pressurized = 0;
 	output reg evacuated = 1;
 	
+	parameter pressurizeTime = 'b110;
+	parameter evacuateTime = 'b111;
+	
 	wire pDone, eDone;
 	reg pressurizing = 0;
 	reg evacuating = 0;
 	
-	Timer tP(clk, pressurizeCtrl, 'b110, pDone);
-	Timer tE(clk, evacuateCtrl, 'b110, eDone);
+	Timer tP(clk, pressurizeCtrl, pressurizeTime, pDone);
+	Timer tE(clk, evacuateCtrl, evacuateTime, eDone);
 	
 	always @(posedge clk) begin
 		if(rst) begin

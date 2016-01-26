@@ -7,6 +7,9 @@ module Arriving(clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor,
 	output reg arriving;
 	output reg [0:2] debugState;
 	
+	parameter garageSize = 2'b11;
+	parameter arrivingWaitTime = 3'b100;
+	
 	parameter reset = 3'b000;
 	parameter min5 = 3'b001;
 	parameter pres = 3'b010;
@@ -17,11 +20,11 @@ module Arriving(clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor,
 	reg [3:0] ps = reset;
 	reg [3:0] ns = reset;
 	
-	Timer aTimer(clk, arriveCtrl, 3'b101, done);
+	Timer aTimer(clk, arriveCtrl, arrivingWaitTime, done);
 	
 	always @(*)
 		case(ps)
-			reset: if(arriveCtrl && (garageFull < 2'b11) && (!departing)) begin 
+			reset: if(arriveCtrl && (garageFull < garageSize) && (!departing)) begin 
 					ns = min5;
 				end
 			else begin 

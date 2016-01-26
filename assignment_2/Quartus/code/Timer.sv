@@ -23,5 +23,4 @@ module Timer(clk, rst, stopVal, done);
 				q <= q;
 		end
 	end
-
-endmodule
+endmodule 
