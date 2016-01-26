@@ -35,17 +35,25 @@ module Tester (clk, rst, innerDoorCtrl, evacuated, innerDoor);//q, clk, rst);
  initial // Stimulus
  begin
  clk = 0; rst = 0; innerDoorCtrl = 0; evacuated = 0;
- 
- clk = 0; #stimDelay clk = 1; rst = 1; #stimDelay
- clk = 0; #stimDelay clk = 1; innerDoorCtrl = 1; #stimDelay
- clk = 0; #stimDelay clk = 1; evacuated = 1; #stimDelay
- 
+ rst = 1;
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ rst = 0;
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ innerDoorCtrl = 1; 
  clk = 0; #stimDelay clk = 1; #stimDelay
  clk = 0; #stimDelay clk = 1; #stimDelay
+ innerDoorCtrl = 0;
  clk = 0; #stimDelay clk = 1; #stimDelay
- /*#stimDelay clk = 1; rst = 1;
- #stimDelay clk = 0; innerDoorCtrl = 1;
- #stimDelay clk = 1;*/
+ evacuated = 1; innerDoorCtrl = 1;
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ innerDoorCtrl = 0;
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ innerDoorCtrl = 1;
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ innerDoorCtrl = 0;
+ clk = 0; #stimDelay clk = 1; #stimDelay
+ clk = 0; #stimDelay clk = 1; #stimDelay
 
  #(2*stimDelay); // needed to see END of simulation
  $finish; // finish simulation

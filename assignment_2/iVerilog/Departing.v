@@ -1,9 +1,10 @@
-`include "Timer.v"
+//`include "Timer.v"
 
-module Departing(clk, rst, departCtrl, arriving, departing, innerDoor, outerDoor, pressurized, evacuated);
+module Departing(clk, rst, departCtrl, arriving, departing, innerDoor, outerDoor, pressurized, evacuated, debugState);
 	input clk, rst;
 	input departCtrl, arriving, innerDoor, outerDoor, pressurized, evacuated;
 	output reg departing;
+	output reg [0:2] debugState;
 	
 	parameter reset = 3'b000;
 	parameter min5 = 3'b001;
@@ -54,5 +55,6 @@ module Departing(clk, rst, departCtrl, arriving, departing, innerDoor, outerDoor
 		end begin
 			ps <= ns;
 		end
+		debugState <= ps;
 	end
 endmodule

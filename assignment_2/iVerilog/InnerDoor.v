@@ -4,18 +4,18 @@ module InnerDoor(clk, rst, innerDoorCtrl, evacuated, innerDoor);
 	input evacuated;
 	output reg innerDoor;
 	
-	reg ns;
-	
-	always @(*) begin
-		ns <= (innerDoorCtrl & evacuated);
+	always @(posedge innerDoorCtrl) begin
+		if(innerDoor)
+			innerDoor <= 0;
+		else if(evacuated)
+			innerDoor <= 1;
+		else
+			innerDoor = 0;
 	end
 		
 	always @(negedge rst or posedge clk) begin
-		if(!rst) begin
+		if(rst) begin
 			innerDoor <= 0;
-		end
-		else begin
-			innerDoor <= ns;
 		end
 	end
 endmodule

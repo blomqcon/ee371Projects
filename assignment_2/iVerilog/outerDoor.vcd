@@ -1,5 +1,5 @@
 $date
-	Thu Jan 21 12:11:38 2016
+	Mon Jan 25 00:18:19 2016
 $end
 $version
 	Icarus Verilog
@@ -13,45 +13,68 @@ $var wire 1 ! clk $end
 $var wire 1 " outerDoorCtrl $end
 $var wire 1 # pressurized $end
 $var wire 1 $ rst $end
-$var reg 1 % ns $end
-$var reg 1 & outerDoor $end
+$var reg 1 % outerDoor $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0&
 0%
-0$
+1$
 0#
 0"
 0!
 $end
 #20
-1$
 1!
 #40
 0!
+0$
 #60
-1"
 1!
 #80
 0!
+1"
 #100
-1%
-1#
 1!
 #120
 0!
 #140
-1&
 1!
 #160
 0!
+0"
 #180
 1!
 #200
+1%
 0!
+1"
+1#
 #220
 1!
+#240
+0!
+#260
+1!
 #280
+0!
+0"
+#300
+1!
+#320
+0%
+0!
+1"
+#340
+1!
+#360
+0!
+0"
+#380
+1!
+#400
+0!
+#420
+1!
+#480

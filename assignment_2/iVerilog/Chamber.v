@@ -1,5 +1,3 @@
-//Pressurize p(clk, rst, pressurizeCtrl, pressurized, evacuated);
-//Evacuate e(clk, rst, evacuateCtrl, pressurized, evacuated);
 module Chamber(clk, rst, pressurizeCtrl, evacuateCtrl, pressurized, evacuated);
 	input clk, rst;
 	input pressurizeCtrl, evacuateCtrl;
