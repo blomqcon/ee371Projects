@@ -1,6 +1,4 @@
 `include "Timer.v"
-`include "Pressurize.v"
-`include "Evacuate.v"
 `include "Chamber.v"
 
 module testBench;

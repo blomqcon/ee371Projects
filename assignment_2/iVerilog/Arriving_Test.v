@@ -1,4 +1,5 @@
 // counter.v
+`include "Timer.v"
 `include "Arriving.v"
 
 module testBench;
@@ -6,9 +7,10 @@ module testBench;
 	wire arriveCtrl;
 	wire arriving;
 	wire departing, innerDoor, outerDoor, pressurized, evacuated;
-
-	Arriving p(clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor, pressurized, evacuated);
-	Tester aTester(clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor, pressurized, evacuated);
+	wire [0:2] debugState;
+	
+	Arriving p(clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor, pressurized, evacuated, debugState);
+	Tester aTester(clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor, pressurized, evacuated, debugState);
 
 	// file for gtkwave
 	initial begin
@@ -18,8 +20,9 @@ module testBench;
 	end
 endmodule
 
-module Tester (clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor, pressurized, evacuated);
+module Tester (clk, rst, arriveCtrl, arriving, departing, innerDoor, outerDoor, pressurized, evacuated, debugState);
  input arriving;
+ input [0:2] debugState;
  output clk, rst;
  output arriveCtrl, departing, innerDoor, outerDoor, pressurized, evacuated;
  

@@ -1,5 +1,5 @@
 $date
-	Sun Jan 24 23:32:22 2016
+	Thu Jan 28 22:38:01 2016
 $end
 $version
 	Icarus Verilog
@@ -10,11 +10,11 @@ $end
 $scope module testBench $end
 $scope module c $end
 $var wire 1 ! clk $end
-$var wire 1 " eDone $end
-$var wire 1 # evacuateCtrl $end
-$var wire 1 $ pDone $end
-$var wire 1 % pressurizeCtrl $end
-$var wire 1 & rst $end
+$var wire 1 " evacuateCtrl $end
+$var wire 1 # pressurizeCtrl $end
+$var wire 1 $ rst $end
+$var wire 1 % pDone $end
+$var wire 1 & eDone $end
 $var reg 1 ' evacuated $end
 $var reg 1 ( evacuating $end
 $var reg 1 ) pressurized $end
@@ -28,9 +28,9 @@ $dumpvars
 0)
 0(
 1'
-1&
+0&
 0%
-0$
+1$
 0#
 0"
 0!
@@ -39,15 +39,15 @@ $end
 1!
 #40
 0!
-1%
-0&
+1#
+0$
 #60
 1*
 0'
 1!
 #80
 0!
-0%
+0#
 #100
 1!
 #120
@@ -61,7 +61,7 @@ $end
 #200
 0!
 #220
-1"
+1&
 1!
 #240
 0!
@@ -70,7 +70,7 @@ $end
 #280
 0!
 #300
-1$
+1%
 1!
 #320
 0!
@@ -88,15 +88,15 @@ $end
 1!
 #440
 0!
-1#
+1"
 #460
-0"
+0&
 1(
 0)
 1!
 #480
 0!
-0#
+0"
 #500
 1!
 #520
@@ -118,7 +118,7 @@ $end
 #680
 0!
 #700
-1"
+1&
 1!
 #720
 0!

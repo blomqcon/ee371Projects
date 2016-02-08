@@ -7,7 +7,7 @@ module Departing(clk, rst, departCtrl, arriving, departing, innerDoor, outerDoor
 	output reg departing;
 	output reg [0:2] debugState;
 	
-	parameter garageSize = 2'b11;
+	parameter garageEmpty = 2'b00;
 	parameter departingWaitTime = 3'b100;
 	
 	parameter reset = 3'b000;
@@ -23,7 +23,7 @@ module Departing(clk, rst, departCtrl, arriving, departing, innerDoor, outerDoor
 	
 	always @(*) 
 		case(ps)
-			reset: if(departCtrl && (garageFull > garageSize) && (!arriving)) begin 
+			reset: if(departCtrl && (garageFull > garageEmpty) && (!arriving)) begin 
 					ns = min5;
 				end
 			else begin 

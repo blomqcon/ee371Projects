@@ -97,23 +97,23 @@ Warning (332049): Ignored set_output_delay at DE1_SoC.sdc(93): Argument <targets
 Warning (332049): Ignored set_output_delay at DE1_SoC.sdc(93): Argument -clock is not an object ID
 Warning (332049): Ignored set_output_delay at DE1_SoC.sdc(94): Argument <targets> is an empty collection
 Warning (332049): Ignored set_output_delay at DE1_SoC.sdc(94): Argument -clock is not an object ID
-Warning (332060): Node: Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Chamber:c|Timer:tP|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Departing:d|Timer:dTimer|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Arriving:a|Timer:aTimer|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
-Warning (332060): Node: clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
-Warning (332060): Node: Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: clock_divider15:clk_div|divided_clocks[12] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Chamber:c|Timer:tP|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Departing:d|Timer:dTimer|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Arriving:a|Timer:aTimer|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
-Warning (332060): Node: clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
-Warning (332060): Node: Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: clock_divider15:clk_div|divided_clocks[12] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Chamber:c|Timer:tP|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Departing:d|Timer:dTimer|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Arriving:a|Timer:aTimer|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
-Warning (332060): Node: clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
-Warning (332060): Node: Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: clock_divider15:clk_div|divided_clocks[12] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Chamber:c|Timer:tP|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Interlock:i|Chamber:c|Timer:tE|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Departing:d|Timer:dTimer|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: Interlock:i|Arriving:a|Timer:aTimer|clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
-Warning (332060): Node: clock_divider15:clk_div|divided_clocks[23] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: clock_divider15:clk_div|divided_clocks[12] was determined to be a clock but was found without an associated clock assignment.
