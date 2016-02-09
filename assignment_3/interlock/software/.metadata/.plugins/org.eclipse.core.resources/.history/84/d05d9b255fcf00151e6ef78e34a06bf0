@@ -1,0 +1,79 @@
+
+#include "sys/alt_stdio.h"
+#include "unistd.h";
+
+#define interlock_ctrls (volatile char *) 0x00005010
+#define interlock_outputs (volatile char *) 0x00005020
+
+void printCurrentState() {
+	if(*interlock_outputs & 0b00000001) {
+		alt_putstr("Arriving\n");
+	} else if(*interlock_outputs & 0b00000010) {
+		alt_putstr("Departing\n");
+	}
+
+	if(*interlock_outputs & 0b00000100) {
+		alt_putstr("Doors: Inner Door Open\n");
+	} else if(*interlock_outputs & 0b00001000) {
+		alt_putstr("Doors: Outer Door Open\n");
+	} else {
+		alt_putstr("Doors: Doors closed\n");
+	}
+
+	if(*interlock_outputs & 0b00010000) {
+		alt_putstr("Chamber: Pressurized\n");
+	} else if(*interlock_outputs & 0b00100000) {
+		alt_putstr("Chamber: Evacuated\n");
+	} else {
+		alt_putstr("Chamber: Neither\n");
+	}
+}
+
+void checkCommand(char c) {
+	if('P' == c) {
+		char* temp = *interlock_ctrls;
+		*interlock_ctrls = 0b010000;
+		usleep(100000); //0.1 seconds
+		*interlock_ctrls = temp;
+	} else if ('E' == c) {
+		char* temp = *interlock_ctrls;
+		*interlock_ctrls = 0b100000;
+		usleep(100000); //0.1 seconds
+		*interlock_ctrls = temp;
+	} else if('O' == c) {
+		char* temp = *interlock_ctrls;
+		*interlock_ctrls = 0b001000;
+		usleep(100000); //0.1 seconds
+		*interlock_ctrls = temp;
+	} else if ('I' == c) {
+		char* temp = *interlock_ctrls;
+		*interlock_ctrls = 0b000100;
+		usleep(100000); //0.1 seconds
+		*interlock_ctrls = temp;
+	} else if('A' == c) {
+		char* temp = *interlock_ctrls;
+		*interlock_ctrls = 0b000001;
+		usleep(100000); //0.1 seconds
+		*interlock_ctrls = temp;
+	} else if('D' == c) {
+		char* temp = *interlock_ctrls;
+		*interlock_ctrls = 0b001000;
+		usleep(100000); //0.1 seconds
+		*interlock_ctrls = temp;
+	}
+}
+
+int main()
+{ 
+	printCurrentState();
+
+  printf("Enter 'H' for list of commands: ");
+
+
+  while (1) {
+	  checkCommand(alt_getchar());
+
+  }
+
+  return 0;
+}

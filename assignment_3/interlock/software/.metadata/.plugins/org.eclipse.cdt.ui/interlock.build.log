@@ -1,0 +1,6 @@
+08:02:32 **** Clean-only build of configuration Nios II for project interlock ****
+make clean 
+[interlock clean complete]
+
+08:02:32 Build Finished (took 130ms)
+

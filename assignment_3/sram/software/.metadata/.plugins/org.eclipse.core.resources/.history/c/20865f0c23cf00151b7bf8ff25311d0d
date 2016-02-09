@@ -1,0 +1,61 @@
+
+#include "sys/alt_stdio.h"
+#include "unistd.h"
+
+
+#define switches (volatile char *) 0x0002050
+#define leds (volatile char *) 0x0002040
+
+#define sram_enable (volatile char *) 0x0002030
+#define sram_readwrite (volatile char *) 0x0002020
+#define sram_address (volatile char *) 0x0002010
+#define sram_data (volatile char *) 0x0002000
+
+int main()
+{ 
+  alt_putstr("Hello from Nios II!\n");
+
+  *leds = 0x00;
+
+  *sram_enable = 0b1;
+  *sram_readwrite = 0b0;
+
+  *sram_address = 0b00000000001;
+  *sram_data = 0xf0;
+  usleep(1000000);
+  *sram_address = 0b00000000002;
+  *sram_data = 0xf0;
+  usleep(1000000);
+
+  *sram_readwrite = 0b1;
+  *leds = *sram_data;
+
+  /*int i = 0;
+  while(i < 127) {
+	  usleep(10000); //0.01 seconds
+	  *sram_address = (char)i;
+	  *sram_data = (char)i;
+	  i++;
+  }
+
+
+  *leds = 0x00;
+
+  *sram_readwrite = 0b1;
+  i = 0;
+  while (i < 127) {
+	  usleep(100000); //0.1 seconds
+	  *sram_address = (char)i;
+	  *leds = *sram_data;
+	  //*leds = (char)i;
+	  i++;
+  }*/
+
+
+  //*leds = 0xf0;
+
+  /* Event loop never exits. */
+  while (1);
+
+  return 0;
+}

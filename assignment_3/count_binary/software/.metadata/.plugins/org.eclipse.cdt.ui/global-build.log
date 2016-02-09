@@ -1,0 +1,39 @@
+13:34:08 **** Build of configuration Nios II for project count_binary ****
+make all 
+Info: Building ../count_binary_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../count_binary_bsp/
+[BSP build complete]
+Info: Compiling count_binary.c to obj/default/count_binary.o
+nios2-elf-gcc -xc -MP -MMD -c -I../count_binary_bsp//HAL/inc -I../count_binary_bsp/ -I../count_binary_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/count_binary.o count_binary.c
+Info: Linking count_binary.elf
+nios2-elf-g++  -T'../count_binary_bsp//linker.x' -msys-crt0='../count_binary_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../count_binary_bsp/  -msmallc  -Wl,-Map=count_binary.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o count_binary.elf obj/default/count_binary.o -lm -msys-lib=m
+nios2-elf-insert count_binary.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11030 --timestamp 1454448473 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name test --quartus_project_dir "C:/Users/blomqcon/Desktop/count_binary" --jdi C:/Users/blomqcon/Desktop/count_binary/software/count_binary_bsp/../../nios2_quartus2_project.jdi --sopcinfo C:/Users/blomqcon/Desktop/count_binary/software/count_binary_bsp/../../test.sopcinfo
+Info: (count_binary.elf) 11 KBytes program size (code + initialized data).
+Info:                    8060 Bytes free for stack + heap.
+Info: Creating count_binary.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source count_binary.elf >count_binary.objdump
+[count_binary build complete]
+13:34:19 **** Build of configuration Nios II for project count_binary ****
+make all 
+Info: Building ../count_binary_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../count_binary_bsp/
+[BSP build complete]
+[count_binary build complete]
+13:34:20 **** Incremental Build of configuration Nios II for project count_binary ****
+make all 
+Info: Building ../count_binary_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../count_binary_bsp/
+[BSP build complete]
+[count_binary build complete]
+13:46:19 **** Build of configuration Nios II for project count_binary ****
+make all 
+Info: Building ../count_binary_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../count_binary_bsp/
+[BSP build complete]
+[count_binary build complete]
+13:46:20 **** Incremental Build of configuration Nios II for project count_binary ****
+make all 
+Info: Building ../count_binary_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../count_binary_bsp/
+[BSP build complete]
+[count_binary build complete]

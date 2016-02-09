@@ -1,0 +1,19 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst test.onchip_mem -pg 1 -lvl 3 -y 30
+preplace inst test.switches_pio -pg 1 -lvl 3 -y 290
+preplace inst test.led_pio -pg 1 -lvl 3 -y 390
+preplace inst test.clk_0 -pg 1 -lvl 1 -y 290
+preplace inst test.jtag_uart -pg 1 -lvl 3 -y 190
+preplace inst test.cpu -pg 1 -lvl 2 -y 210
+preplace inst test -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc FAN_OUT<net_container>test</net_container>(SLAVE)cpu.clk,(SLAVE)led_pio.clk,(SLAVE)jtag_uart.clk,(SLAVE)onchip_mem.clk1,(MASTER)clk_0.clk,(SLAVE)switches_pio.clk) 1 1 2 410 380 760
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)test.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>test</net_container>(SLAVE)cpu.reset_n,(SLAVE)onchip_mem.reset1,(MASTER)cpu.jtag_debug_module_reset,(SLAVE)led_pio.reset,(SLAVE)jtag_uart.reset,(MASTER)clk_0.clk_reset,(SLAVE)switches_pio.reset) 1 1 2 430 440 740
+preplace netloc INTERCONNECT<net_container>test</net_container>(MASTER)cpu.data_master,(MASTER)cpu.instruction_master,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)onchip_mem.s1,(SLAVE)cpu.jtag_debug_module,(SLAVE)led_pio.s1,(SLAVE)switches_pio.s1) 1 1 2 430 200 720
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)test.switches_pio_external_connection,(SLAVE)switches_pio.external_connection) 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)clk_0.clk_in,(SLAVE)test.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)led_pio.external_connection,(SLAVE)test.led_pio_external_connection) 1 0 3 NJ 420 NJ 420 NJ
+preplace netloc POINT_TO_POINT<net_container>test</net_container>(MASTER)cpu.d_irq,(SLAVE)jtag_uart.irq) 1 2 1 N
+levelinfo -pg 1 0 200 960
+levelinfo -hier test 210 240 480 800 950

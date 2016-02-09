@@ -1,0 +1,19 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst test.sys_clk_timer -pg 1 -lvl 3 -y 290
+preplace inst test.onchip_mem -pg 1 -lvl 3 -y 30
+preplace inst test.led_pio -pg 1 -lvl 3 -y 390
+preplace inst test.clk_0 -pg 1 -lvl 1 -y 350
+preplace inst test.jtag_uart -pg 1 -lvl 3 -y 190
+preplace inst test.cpu -pg 1 -lvl 2 -y 270
+preplace inst test.sysid -pg 1 -lvl 3 -y 110
+preplace inst test -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc FAN_OUT<net_container>test</net_container>(SLAVE)jtag_uart.irq,(SLAVE)sys_clk_timer.irq,(MASTER)cpu.d_irq) 1 2 1 700
+preplace netloc FAN_OUT<net_container>test</net_container>(SLAVE)sys_clk_timer.clk,(SLAVE)onchip_mem.clk1,(SLAVE)jtag_uart.clk,(MASTER)clk_0.clk,(SLAVE)led_pio.clk,(SLAVE)cpu.clk,(SLAVE)sysid.clk) 1 1 2 390 400 720
+preplace netloc INTERCONNECT<net_container>test</net_container>(SLAVE)sysid.control_slave,(SLAVE)onchip_mem.s1,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)led_pio.s1,(MASTER)cpu.data_master,(SLAVE)cpu.jtag_debug_module,(SLAVE)sys_clk_timer.s1,(MASTER)cpu.instruction_master) 1 1 2 430 460 680
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)test.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)clk_0.clk_in,(SLAVE)test.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)led_pio.external_connection,(SLAVE)test.led_pio_external_connection) 1 0 3 NJ 420 NJ 420 NJ
+preplace netloc FAN_OUT<net_container>test</net_container>(SLAVE)sysid.reset,(SLAVE)onchip_mem.reset1,(SLAVE)sys_clk_timer.reset,(MASTER)clk_0.clk_reset,(SLAVE)jtag_uart.reset,(SLAVE)led_pio.reset,(SLAVE)cpu.reset_n) 1 1 2 410 440 740
+levelinfo -pg 1 0 180 940
+levelinfo -hier test 190 220 460 780 930

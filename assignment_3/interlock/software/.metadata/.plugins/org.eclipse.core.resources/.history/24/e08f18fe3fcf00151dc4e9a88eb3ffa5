@@ -1,0 +1,44 @@
+
+
+#include "sys/alt_stdio.h"
+
+#define interlock_ctrls (volatile char *) 0x0002010
+#define interlock_outputs (volatile char *) 0x0002000
+
+void printCurrentState() {
+	if(*interlock_outputs & 0b000001) {
+		printf("Arriving\n");
+	} else if(*interlock_outputs & 0b000010) {
+		printf("Departing\n");
+	}
+
+	if(*interlock_outputs & 0b000100) {
+		printf("Doors: Inner Door Open\n");
+	} else if(*interlock_outputs & 0b001000) {
+		printf("Doors: Outer Door Open\n");
+	} else {
+		printf("Doors: Doors closed\n");
+	}
+
+	if(*interlock_outputs & 0b010000) {
+		printf("Chamber: Pressurized\n");
+	} else if(*interlock_outputs & 0b100000) {
+		printf("Chamber: Evacuated\n");
+	} else {
+		printf("Chamber: Neither\n");
+	}
+
+}
+
+
+int main()
+{ 
+	  printCurrentState();
+
+	  printf("Enter 'H' for list of commands: ");
+	  char c = getchar();
+  /* Event loop never exits. */
+  while (1);
+
+  return 0;
+}
