@@ -28,7 +28,7 @@
 set_global_assignment -name SMART_RECOMPILE ON
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 5.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:30:26  DECEMBER 11, 2004"
-set_global_assignment -name LAST_QUARTUS_VERSION 15.1.1
+set_global_assignment -name LAST_QUARTUS_VERSION 14.0
 set_parameter -name MRAM_BYTEENA_LATCH ON
 
 # Pin & Location Assignments
