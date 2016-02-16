@@ -104,8 +104,13 @@ set_location_assignment PIN_AF10 -to SW[3]
 set_location_assignment PIN_AF9 -to SW[2]
 set_location_assignment PIN_AC12 -to SW[1]
 set_location_assignment PIN_AB12 -to SW[0]
-set_global_assignment -name QIP_FILE test/synthesis/test.qip
+set_global_assignment -name QIP_FILE lab4CPU/synthesis/lab4CPU.qip
+set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/Counter4.sv
 set_global_assignment -name SDC_FILE hw_dev_tutorial.sdc
 set_global_assignment -name BDF_FILE nios2_quartus2_project.bdf
 set_global_assignment -name SYSTEMVERILOG_FILE DE1_SoC.sv
+set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/DFlipFlop.sv
+set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/StartBitDetect.sv
+set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/BitSampleCount.sv
+set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/BitIdentifierCount.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

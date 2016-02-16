@@ -13,5 +13,6 @@
  <generation
    testbench_simulation="NONE"
    testbench_system="NONE"
-   path="_PROJECT_NAME_" />
+   path="_PROJECT_NAME_"
+   block_symbol_file="0" />
 </preferences>

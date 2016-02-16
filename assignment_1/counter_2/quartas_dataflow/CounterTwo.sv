@@ -4,6 +4,7 @@ module CounterTwo(q, clk, rst);
 	
 	wire [3:0] qBar;
 	
+	//
 	DFlipFlop c0 (q[0], qBar[0], qBar[0], clk, rst);
 	DFlipFlop c1 (q[1], qBar[1], (qBar[0] & qBar[1]) | (q[1] & q[0]), clk, rst);
 	DFlipFlop c2 (q[2], qBar[2], (qBar[0] & qBar[1] & qBar[2]) | (q[2] & q[0]) | (q[2] & q[1]), clk, rst);

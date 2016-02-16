@@ -1,8 +1,8 @@
 <sld_project_info>
   <sld_infos>
-    <sld_info hpath="test:myFile" name="myFile">
+    <sld_info hpath="lab4CPU:cpu" name="cpu">
       <assignment_values>
-        <assignment_value text="QSYS_NAME test HAS_SOPCINFO 1 GENERATION_ID 1455002858"/>
+        <assignment_value text="QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1455654041"/>
       </assignment_values>
     </sld_info>
     <sld_info hpath="sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:instrumentation_fabric" library="alt_sld_fab" name="instrumentation_fabric">
