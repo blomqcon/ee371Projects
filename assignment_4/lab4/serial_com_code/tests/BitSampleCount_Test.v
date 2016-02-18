@@ -19,25 +19,23 @@ endmodule
 module Tester (srcc, bic, rstBSC, clk);
 	input srcc, bic;
 	output clk, rstBSC;
-	reg clk, rst;
+	reg clk, rstBSC;
 	parameter stimDelay = 20;
 
 	integer i;
 
 	initial begin // Response
-		$display("\t\t clk rst \t srcc \t bic \t Time ");
-		$monitor("\t\t %b\t %b \t %b \t %b", clk, rst, srcc, bic, $time );
+		$display("\t\t clk rstBSC \t srcc \t bic \t Time ");
+		$monitor("\t\t %b\t %b \t %b \t %b", clk, rstBSC, srcc, bic, $time );
 	end
 
 	initial begin // Stimulus 
-		clk = 0; rst = 0;
-		#stimDelay clk = 1; rst = 1;
-		#stimDelay clk = 1; rst = 0;
+		clk = 0; rstBSC = 0;
+		#stimDelay clk = 1; rstBSC = 1;
 
 		for (i = 0; i < 16; i = i +1) begin
-			#stimDelay clk = 0;
-			#stimDelay clk = 1;
-	end
+			#stimDelay clk = 0; #stimDelay clk = 1;
+		end
 
 	#(2*stimDelay); // needed to see END of simulation
 	$finish; // finish simulation

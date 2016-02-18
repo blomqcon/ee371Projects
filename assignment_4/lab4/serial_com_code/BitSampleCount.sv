@@ -1,21 +1,27 @@
-module BitSampleCount(srcc, bic, rstBSC, clk);
-	input rstBSC, clk;
-	output reg srcc, bic;
+module BitSampleCount(srClock, bicClock, resetBSC, clock);
+	input resetBSC, clock;
+	output reg srClock = 1'b0;
+	output reg bicClock = 1'b0;
 	
 	
 	wire [3:0] counterOut;
-	Counter4 counter(counterOut, clk, rstBSC);
+	Counter4 counter(counterOut, clock, resetBSC);
 	
-	always @(posedge clk) begin
-		if (counterOut == 15) begin
-			bic <= 1;
-			srcc <= 0;
-		end else if (counterOut == 7) begin
-			bic <= 0;
-			srcc <= 1;
+	always @(posedge clock or posedge resetBSC) begin
+		if(resetBSC) begin
+			bicClock <= 0;
+			srClock <= 0;
 		end else begin
-			bic <= 0;
-			srcc <= 0;
+			if(counterOut == 4'b1111) begin
+				bicClock <= 1;
+				srClock <= 0;
+			end else if(counterOut == 4'b0111) begin
+				bicClock <= 0;
+				srClock <= 1;
+			end else begin
+				bicClock <= 0;
+				srClock <= 0;
+			end
 		end
 	end
 endmodule 

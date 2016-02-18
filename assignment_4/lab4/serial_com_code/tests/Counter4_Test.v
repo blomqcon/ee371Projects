@@ -33,12 +33,15 @@ module Tester (q, clk, rst);
 	initial begin // Stimulus 
 		clk = 0; rst = 0;
 		#stimDelay clk = 1; rst = 1;
-		#stimDelay clk = 1; rst = 0;
 
 		for (i = 0; i < 16; i = i +1) begin
-			#stimDelay clk = 0;
-			#stimDelay clk = 1;
-	end
+			#stimDelay clk = 0; #stimDelay clk = 1;
+		end
+		
+		rst = 0;
+		for (i = 0; i < 16; i = i +1) begin
+			#stimDelay clk = 0; #stimDelay clk = 1;
+		end
 
 	#(2*stimDelay); // needed to see END of simulation
 	$finish; // finish simulation
