@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1455920529 source:d:\university_of_washington\classes\8_winter_2016\ee_371\ee371projects\assignment_4\test_c_code\buffer_test\main.c
+	<stdio.h>
+	<stdlib.h>
+
