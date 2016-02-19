@@ -44,7 +44,9 @@ module Tester (parallelOut, charRecieved, data, clock);
 		end
 		
 		data = 1;
-		#stimDelay clock = 0; #stimDelay clock = 1;
+		for(i = 0; i < 16; i = i + 1) begin
+			#stimDelay clock = 0; #stimDelay clock = 1;
+		end
 
 		for(j = 0; j < 8; j = j + 1) begin
 			data = testChar[j];
