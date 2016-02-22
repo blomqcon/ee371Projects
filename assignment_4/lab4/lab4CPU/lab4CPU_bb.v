@@ -1,12 +1,22 @@
 
 module lab4CPU (
+	character_recieved_input_external_connection_export,
 	clk_clk,
-	led_pio_external_connection_export,
+	led_output_external_connection_export,
+	load_output_external_connection_export,
+	parallel_input_external_connection_export,
+	parallel_output_external_connection_export,
 	reset_reset_n,
-	switches_pio_external_connection_export);	
+	transmit_enable_output_external_connection_export,
+	character_sent_input_external_connection_export);	
 
+	input		character_recieved_input_external_connection_export;
 	input		clk_clk;
-	output	[7:0]	led_pio_external_connection_export;
+	output	[7:0]	led_output_external_connection_export;
+	output		load_output_external_connection_export;
+	input	[7:0]	parallel_input_external_connection_export;
+	output	[7:0]	parallel_output_external_connection_export;
 	input		reset_reset_n;
-	input	[7:0]	switches_pio_external_connection_export;
+	output		transmit_enable_output_external_connection_export;
+	input		character_sent_input_external_connection_export;
 endmodule

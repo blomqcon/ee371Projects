@@ -1,19 +1,28 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
-preplace inst test.onchip_mem -pg 1 -lvl 3 -y 30
-preplace inst test.switches_pio -pg 1 -lvl 3 -y 290
-preplace inst test.led_pio -pg 1 -lvl 3 -y 390
-preplace inst test.clk_0 -pg 1 -lvl 1 -y 290
-preplace inst test.jtag_uart -pg 1 -lvl 3 -y 190
-preplace inst test.cpu -pg 1 -lvl 2 -y 210
-preplace inst test -pg 1 -lvl 1 -y 40 -regy -20
-preplace netloc INTERCONNECT<net_container>test</net_container>(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)cpu.jtag_debug_module,(SLAVE)switches_pio.s1,(MASTER)cpu.data_master,(SLAVE)led_pio.s1,(MASTER)cpu.instruction_master,(SLAVE)onchip_mem.s1) 1 1 2 450 440 760
-preplace netloc FAN_OUT<net_container>test</net_container>(SLAVE)led_pio.clk,(MASTER)clk_0.clk,(SLAVE)onchip_mem.clk1,(SLAVE)switches_pio.clk,(SLAVE)cpu.clk,(SLAVE)jtag_uart.clk) 1 1 2 410 180 740
-preplace netloc INTERCONNECT<net_container>test</net_container>(MASTER)cpu.jtag_debug_module_reset,(MASTER)clk_0.clk_reset,(SLAVE)led_pio.reset,(SLAVE)onchip_mem.reset1,(SLAVE)cpu.reset_n,(SLAVE)jtag_uart.reset,(SLAVE)switches_pio.reset) 1 1 2 430 200 700
-preplace netloc EXPORT<net_container>test</net_container>(SLAVE)test.led_pio_external_connection,(SLAVE)led_pio.external_connection) 1 0 3 NJ 420 NJ 420 NJ
-preplace netloc EXPORT<net_container>test</net_container>(SLAVE)test.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
-preplace netloc EXPORT<net_container>test</net_container>(SLAVE)test.switches_pio_external_connection,(SLAVE)switches_pio.external_connection) 1 0 3 NJ 360 NJ 360 NJ
-preplace netloc EXPORT<net_container>test</net_container>(SLAVE)clk_0.clk_in,(SLAVE)test.clk) 1 0 1 NJ
-preplace netloc POINT_TO_POINT<net_container>test</net_container>(MASTER)cpu.d_irq,(SLAVE)jtag_uart.irq) 1 2 1 N
-levelinfo -pg 1 0 200 960
-levelinfo -hier test 210 240 480 800 950
+preplace inst lab4CPU.transmit_enable_output -pg 1 -lvl 3 -y 710
+preplace inst lab4CPU -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst lab4CPU.load_output -pg 1 -lvl 3 -y 330
+preplace inst lab4CPU.parallel_output -pg 1 -lvl 3 -y 530
+preplace inst lab4CPU.clk_0 -pg 1 -lvl 1 -y 160
+preplace inst lab4CPU.character_recieved_input -pg 1 -lvl 3 -y 810
+preplace inst lab4CPU.parallel_input -pg 1 -lvl 3 -y 430
+preplace inst lab4CPU.led_output -pg 1 -lvl 3 -y 130
+preplace inst lab4CPU.onchip_mem -pg 1 -lvl 3 -y 630
+preplace inst lab4CPU.jtag_uart -pg 1 -lvl 3 -y 30
+preplace inst lab4CPU.character_sent_input -pg 1 -lvl 3 -y 230
+preplace inst lab4CPU.cpu -pg 1 -lvl 2 -y 110
+preplace netloc FAN_OUT<net_container>lab4CPU</net_container>(SLAVE)cpu.clk,(SLAVE)character_sent_input.clk,(SLAVE)transmit_enable_output.clk,(SLAVE)jtag_uart.clk,(SLAVE)onchip_mem.clk1,(SLAVE)character_recieved_input.clk,(SLAVE)parallel_output.clk,(SLAVE)load_output.clk,(SLAVE)parallel_input.clk,(MASTER)clk_0.clk,(SLAVE)led_output.clk) 1 1 2 410 260 740
+preplace netloc INTERCONNECT<net_container>lab4CPU</net_container>(SLAVE)character_recieved_input.s1,(SLAVE)transmit_enable_output.s1,(SLAVE)parallel_output.s1,(SLAVE)parallel_input.s1,(MASTER)cpu.instruction_master,(SLAVE)led_output.s1,(SLAVE)load_output.s1,(SLAVE)character_sent_input.s1,(MASTER)cpu.data_master,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)onchip_mem.s1,(SLAVE)cpu.jtag_debug_module) 1 1 2 450 240 700
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.transmit_enable_output_external_connection,(SLAVE)transmit_enable_output.external_connection) 1 0 3 NJ 740 NJ 740 NJ
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.parallel_output_external_connection,(SLAVE)parallel_output.external_connection) 1 0 3 NJ 560 NJ 560 NJ
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)parallel_input.external_connection,(SLAVE)lab4CPU.parallel_input_external_connection) 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)lab4CPU.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.led_output_external_connection,(SLAVE)led_output.external_connection) 1 0 3 NJ 300 NJ 300 NJ
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)clk_0.clk_in,(SLAVE)lab4CPU.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)character_recieved_input.external_connection,(SLAVE)lab4CPU.character_recieved_input_external_connection) 1 0 3 NJ 840 NJ 840 NJ
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.load_output_external_connection,(SLAVE)load_output.external_connection) 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc INTERCONNECT<net_container>lab4CPU</net_container>(SLAVE)led_output.reset,(SLAVE)load_output.reset,(SLAVE)character_sent_input.reset,(SLAVE)character_recieved_input.reset,(MASTER)clk_0.clk_reset,(SLAVE)parallel_input.reset,(SLAVE)cpu.reset_n,(SLAVE)transmit_enable_output.reset,(SLAVE)onchip_mem.reset1,(SLAVE)parallel_output.reset,(MASTER)cpu.jtag_debug_module_reset,(SLAVE)jtag_uart.reset) 1 1 2 430 280 780
+preplace netloc POINT_TO_POINT<net_container>lab4CPU</net_container>(SLAVE)jtag_uart.irq,(MASTER)cpu.d_irq) 1 2 1 720
+levelinfo -pg 1 0 200 990
+levelinfo -hier lab4CPU 210 240 480 810 970
