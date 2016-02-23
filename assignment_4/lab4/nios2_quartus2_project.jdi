@@ -99,8 +99,8 @@
     </sld_info>
     <sld_info hpath="lab4CPU:cpu" name="cpu">
       <assignment_values>
-        <assignment_value text="QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456188092"/>
-        <assignment_value text="QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456188151"/>
+        <assignment_value text="QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456194553"/>
+        <assignment_value text="QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456194617"/>
       </assignment_values>
       <parameters/>
     </sld_info>

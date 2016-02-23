@@ -8,7 +8,7 @@
    <export preferredWidth="188" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
+ <library expandedCategories="Project,Library" />
  <window width="1294" height="1407" x="1273" y="0" />
  <generation
    testbench_simulation="NONE"
