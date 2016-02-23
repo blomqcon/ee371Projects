@@ -1,0 +1,44 @@
+16:57:41 **** Incremental Build of configuration Nios II for project lab4code2 ****
+make all 
+Info: Building ../lab4code2_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab4code2_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab4code2_bsp//HAL/inc -I../lab4code2_bsp/ -I../lab4code2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:50:2: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+  char *pBuffer = calloc(BUFFER_SIZE, sizeof(char));
+  ^
+hello_world_small.c:50:18: warning: incompatible implicit declaration of built-in function 'calloc'
+  char *pBuffer = calloc(BUFFER_SIZE, sizeof(char));
+                  ^
+hello_world_small.c:88:16: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast
+     alt_putstr((*data_bus_input) >> 1);
+                ^
+In file included from hello_world_small.c:1:0:
+../lab4code2_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:86:9: warning: unused variable 'parity' [-Wunused-variable]
+     int parity = *data_bus_input & 0x01;
+         ^
+Info: Linking lab4code2.elf
+nios2-elf-g++  -T'../lab4code2_bsp//linker.x' -msys-crt0='../lab4code2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab4code2_bsp/  -msmallc  -Wl,-Map=lab4code2.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o lab4code2.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert lab4code2.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name lab4CPU --quartus_project_dir "C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4" --jdi C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4/software/lab4code2_bsp/../../nios2_quartus2_project.jdi --sopcinfo C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4/software/lab4code2_bsp/../../lab4CPU.sopcinfo
+Info: (lab4code2.elf) 2276 Bytes program size (code + initialized data).
+Info:                 13 KBytes free for stack + heap.
+Info: Creating lab4code2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab4code2.elf >lab4code2.objdump
+[lab4code2 build complete]
+16:57:54 **** Build of configuration Nios II for project lab4code2 ****
+make all 
+Info: Building ../lab4code2_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab4code2_bsp/
+[BSP build complete]
+[lab4code2 build complete]
+16:57:55 **** Incremental Build of configuration Nios II for project lab4code2 ****
+make all 
+Info: Building ../lab4code2_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab4code2_bsp/
+[BSP build complete]
+[lab4code2 build complete]

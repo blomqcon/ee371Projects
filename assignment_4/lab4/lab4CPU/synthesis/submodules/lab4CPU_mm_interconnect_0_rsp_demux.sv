@@ -28,7 +28,7 @@
 // ------------------------------------------
 // Generation parameters:
 //   output_name:         lab4CPU_mm_interconnect_0_rsp_demux
-//   ST_DATA_W:           92
+//   ST_DATA_W:           93
 //   ST_CHANNEL_W:        10
 //   NUM_OUTPUTS:         1
 //   VALID_WIDTH:         1
@@ -46,7 +46,7 @@ module lab4CPU_mm_interconnect_0_rsp_demux
     // Sink
     // -------------------
     input  [1-1      : 0]   sink_valid,
-    input  [92-1    : 0]   sink_data, // ST_DATA_W=92
+    input  [93-1    : 0]   sink_data, // ST_DATA_W=93
     input  [10-1 : 0]   sink_channel, // ST_CHANNEL_W=10
     input                         sink_startofpacket,
     input                         sink_endofpacket,
@@ -56,7 +56,7 @@ module lab4CPU_mm_interconnect_0_rsp_demux
     // Sources 
     // -------------------
     output reg                      src0_valid,
-    output reg [92-1    : 0] src0_data, // ST_DATA_W=92
+    output reg [93-1    : 0] src0_data, // ST_DATA_W=93
     output reg [10-1 : 0] src0_channel, // ST_CHANNEL_W=10
     output reg                      src0_startofpacket,
     output reg                      src0_endofpacket,

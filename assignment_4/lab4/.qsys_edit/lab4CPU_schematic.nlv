@@ -12,17 +12,18 @@ preplace inst lab4CPU.onchip_mem -pg 1 -lvl 3 -y 630
 preplace inst lab4CPU.jtag_uart -pg 1 -lvl 3 -y 30
 preplace inst lab4CPU.character_sent_input -pg 1 -lvl 3 -y 230
 preplace inst lab4CPU.cpu -pg 1 -lvl 2 -y 110
-preplace netloc FAN_OUT<net_container>lab4CPU</net_container>(SLAVE)cpu.clk,(SLAVE)character_sent_input.clk,(SLAVE)transmit_enable_output.clk,(SLAVE)jtag_uart.clk,(SLAVE)onchip_mem.clk1,(SLAVE)character_recieved_input.clk,(SLAVE)parallel_output.clk,(SLAVE)load_output.clk,(SLAVE)parallel_input.clk,(MASTER)clk_0.clk,(SLAVE)led_output.clk) 1 1 2 410 260 740
-preplace netloc INTERCONNECT<net_container>lab4CPU</net_container>(SLAVE)character_recieved_input.s1,(SLAVE)transmit_enable_output.s1,(SLAVE)parallel_output.s1,(SLAVE)parallel_input.s1,(MASTER)cpu.instruction_master,(SLAVE)led_output.s1,(SLAVE)load_output.s1,(SLAVE)character_sent_input.s1,(MASTER)cpu.data_master,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)onchip_mem.s1,(SLAVE)cpu.jtag_debug_module) 1 1 2 450 240 700
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)load_output.external_connection,(SLAVE)lab4CPU.load_output_external_connection) 1 0 3 NJ 360 NJ 360 NJ
 preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.transmit_enable_output_external_connection,(SLAVE)transmit_enable_output.external_connection) 1 0 3 NJ 740 NJ 740 NJ
 preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.parallel_output_external_connection,(SLAVE)parallel_output.external_connection) 1 0 3 NJ 560 NJ 560 NJ
-preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)parallel_input.external_connection,(SLAVE)lab4CPU.parallel_input_external_connection) 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)character_sent_input.external_connection,(SLAVE)lab4CPU.character_sent_input_external_connection) 1 0 3 NJ 320 NJ 320 NJ
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.character_recieved_input_external_connection,(SLAVE)character_recieved_input.external_connection) 1 0 3 NJ 840 NJ 840 NJ
 preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)lab4CPU.reset) 1 0 1 NJ
 preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.led_output_external_connection,(SLAVE)led_output.external_connection) 1 0 3 NJ 300 NJ 300 NJ
 preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)clk_0.clk_in,(SLAVE)lab4CPU.clk) 1 0 1 NJ
-preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)character_recieved_input.external_connection,(SLAVE)lab4CPU.character_recieved_input_external_connection) 1 0 3 NJ 840 NJ 840 NJ
-preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.load_output_external_connection,(SLAVE)load_output.external_connection) 1 0 3 NJ 360 NJ 360 NJ
-preplace netloc INTERCONNECT<net_container>lab4CPU</net_container>(SLAVE)led_output.reset,(SLAVE)load_output.reset,(SLAVE)character_sent_input.reset,(SLAVE)character_recieved_input.reset,(MASTER)clk_0.clk_reset,(SLAVE)parallel_input.reset,(SLAVE)cpu.reset_n,(SLAVE)transmit_enable_output.reset,(SLAVE)onchip_mem.reset1,(SLAVE)parallel_output.reset,(MASTER)cpu.jtag_debug_module_reset,(SLAVE)jtag_uart.reset) 1 1 2 430 280 780
-preplace netloc POINT_TO_POINT<net_container>lab4CPU</net_container>(SLAVE)jtag_uart.irq,(MASTER)cpu.d_irq) 1 2 1 720
-levelinfo -pg 1 0 200 990
-levelinfo -hier lab4CPU 210 240 480 810 970
+preplace netloc INTERCONNECT<net_container>lab4CPU</net_container>(SLAVE)transmit_enable_output.s1,(SLAVE)onchip_mem.s1,(SLAVE)led_output.s1,(SLAVE)character_recieved_input.s1,(SLAVE)cpu.jtag_debug_module,(MASTER)cpu.instruction_master,(SLAVE)character_sent_input.s1,(MASTER)cpu.data_master,(SLAVE)parallel_output.s1,(SLAVE)load_output.s1,(SLAVE)parallel_input.s1,(SLAVE)jtag_uart.avalon_jtag_slave) 1 1 2 430 100 720
+preplace netloc INTERCONNECT<net_container>lab4CPU</net_container>(SLAVE)parallel_output.reset,(SLAVE)onchip_mem.reset1,(SLAVE)led_output.reset,(MASTER)clk_0.clk_reset,(MASTER)cpu.jtag_debug_module_reset,(SLAVE)parallel_input.reset,(SLAVE)jtag_uart.reset,(SLAVE)load_output.reset,(SLAVE)character_sent_input.reset,(SLAVE)cpu.reset_n,(SLAVE)character_recieved_input.reset,(SLAVE)transmit_enable_output.reset) 1 1 2 430 860 780
+preplace netloc POINT_TO_POINT<net_container>lab4CPU</net_container>(MASTER)cpu.d_irq,(SLAVE)jtag_uart.irq) 1 2 1 700
+preplace netloc EXPORT<net_container>lab4CPU</net_container>(SLAVE)lab4CPU.parallel_input_external_connection,(SLAVE)parallel_input.external_connection) 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc FAN_OUT<net_container>lab4CPU</net_container>(MASTER)clk_0.clk,(SLAVE)jtag_uart.clk,(SLAVE)character_sent_input.clk,(SLAVE)load_output.clk,(SLAVE)cpu.clk,(SLAVE)led_output.clk,(SLAVE)parallel_output.clk,(SLAVE)onchip_mem.clk1,(SLAVE)character_recieved_input.clk,(SLAVE)parallel_input.clk,(SLAVE)transmit_enable_output.clk) 1 1 2 410 760 760
+levelinfo -pg 1 0 200 1010
+levelinfo -hier lab4CPU 210 240 480 830 990

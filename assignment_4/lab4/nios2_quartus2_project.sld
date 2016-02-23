@@ -2,8 +2,8 @@
   <sld_infos>
     <sld_info hpath="lab4CPU:cpu" name="cpu">
       <assignment_values>
-        <assignment_value text="QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456127101"/>
-        <assignment_value text="QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456127835"/>
+        <assignment_value text="QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456188092"/>
+        <assignment_value text="QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456188151"/>
       </assignment_values>
     </sld_info>
     <sld_info hpath="sld_hub:auto_hub|alt_sld_fab:\instrumentation_fabric_with_node_gen:instrumentation_fabric" library="alt_sld_fab" name="instrumentation_fabric">

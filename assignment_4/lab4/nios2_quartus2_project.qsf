@@ -112,7 +112,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/SerialOutput.sv
 set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/SerialInput.sv
 set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/Counter4.sv
 set_global_assignment -name SDC_FILE hw_dev_tutorial.sdc
-set_global_assignment -name BDF_FILE nios2_quartus2_project.bdf
 set_global_assignment -name SYSTEMVERILOG_FILE DE1_SoC.sv
 set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/DFlipFlop.sv
 set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/StartBitDetect.sv

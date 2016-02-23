@@ -34,7 +34,7 @@
    {
       datum baseAddress
       {
-         value = "8272";
+         value = "20560";
          type = "String";
       }
    }
@@ -50,7 +50,7 @@
    {
       datum baseAddress
       {
-         value = "8208";
+         value = "20496";
          type = "String";
       }
    }
@@ -79,7 +79,7 @@
    {
       datum baseAddress
       {
-         value = "6144";
+         value = "18432";
          type = "String";
       }
    }
@@ -100,7 +100,7 @@
    {
       datum baseAddress
       {
-         value = "8304";
+         value = "20592";
          type = "String";
       }
    }
@@ -116,7 +116,7 @@
    {
       datum baseAddress
       {
-         value = "8256";
+         value = "20544";
          type = "String";
       }
    }
@@ -132,7 +132,7 @@
    {
       datum baseAddress
       {
-         value = "8224";
+         value = "20512";
          type = "String";
       }
    }
@@ -187,7 +187,7 @@
    {
       datum baseAddress
       {
-         value = "8288";
+         value = "20576";
          type = "String";
       }
    }
@@ -203,7 +203,7 @@
    {
       datum baseAddress
       {
-         value = "8240";
+         value = "20528";
          type = "String";
       }
    }
@@ -219,7 +219,7 @@
    {
       datum baseAddress
       {
-         value = "8192";
+         value = "20480";
          type = "String";
       }
    }
@@ -332,8 +332,8 @@
   <parameter name="cpuID_stored" value="0" />
   <parameter name="cpuReset" value="false" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
-  <parameter name="dataAddrWidth" value="14" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x1000' /><slave name='cpu.jtag_debug_module' start='0x1800' end='0x2000' /><slave name='transmit_enable_output.s1' start='0x2000' end='0x2010' /><slave name='character_sent_input.s1' start='0x2010' end='0x2020' /><slave name='load_output.s1' start='0x2020' end='0x2030' /><slave name='parallel_output.s1' start='0x2030' end='0x2040' /><slave name='led_output.s1' start='0x2040' end='0x2050' /><slave name='character_recieved_input.s1' start='0x2050' end='0x2060' /><slave name='parallel_input.s1' start='0x2060' end='0x2070' /><slave name='jtag_uart.avalon_jtag_slave' start='0x2070' end='0x2078' /></address-map>]]></parameter>
+  <parameter name="dataAddrWidth" value="15" />
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x4000' /><slave name='cpu.jtag_debug_module' start='0x4800' end='0x5000' /><slave name='transmit_enable_output.s1' start='0x5000' end='0x5010' /><slave name='character_sent_input.s1' start='0x5010' end='0x5020' /><slave name='load_output.s1' start='0x5020' end='0x5030' /><slave name='parallel_output.s1' start='0x5030' end='0x5040' /><slave name='led_output.s1' start='0x5040' end='0x5050' /><slave name='character_recieved_input.s1' start='0x5050' end='0x5060' /><slave name='parallel_input.s1' start='0x5060' end='0x5070' /><slave name='jtag_uart.avalon_jtag_slave' start='0x5070' end='0x5078' /></address-map>]]></parameter>
   <parameter name="dcache_bursts" value="false" />
   <parameter name="dcache_lineSize" value="32" />
   <parameter name="dcache_numTCDM" value="0" />
@@ -359,8 +359,8 @@
   <parameter name="icache_size" value="2048" />
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
-  <parameter name="instAddrWidth" value="13" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x1000' /><slave name='cpu.jtag_debug_module' start='0x1800' end='0x2000' /></address-map>]]></parameter>
+  <parameter name="instAddrWidth" value="15" />
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x4000' /><slave name='cpu.jtag_debug_module' start='0x4800' end='0x5000' /></address-map>]]></parameter>
   <parameter name="internalIrqMaskSystemInfo" value="32" />
   <parameter name="manuallyAssignCpuID" value="true" />
   <parameter name="mmu_TLBMissExcOffset" value="0" />
@@ -518,7 +518,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="4096" />
+  <parameter name="memorySize" value="16384" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="resetrequest_enabled" value="true" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
@@ -590,7 +590,7 @@
    start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2070" />
+  <parameter name="baseAddress" value="0x5070" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -599,7 +599,7 @@
    start="cpu.data_master"
    end="cpu.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1800" />
+  <parameter name="baseAddress" value="0x4800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -617,7 +617,7 @@
    start="cpu.data_master"
    end="parallel_input.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2060" />
+  <parameter name="baseAddress" value="0x5060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -626,7 +626,7 @@
    start="cpu.data_master"
    end="character_recieved_input.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2050" />
+  <parameter name="baseAddress" value="0x5050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -635,7 +635,7 @@
    start="cpu.data_master"
    end="led_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2040" />
+  <parameter name="baseAddress" value="0x5040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -644,7 +644,7 @@
    start="cpu.data_master"
    end="parallel_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2030" />
+  <parameter name="baseAddress" value="0x5030" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -653,7 +653,7 @@
    start="cpu.data_master"
    end="load_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2020" />
+  <parameter name="baseAddress" value="0x5020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -662,7 +662,7 @@
    start="cpu.data_master"
    end="character_sent_input.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2010" />
+  <parameter name="baseAddress" value="0x5010" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -671,7 +671,7 @@
    start="cpu.data_master"
    end="transmit_enable_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2000" />
+  <parameter name="baseAddress" value="0x5000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -680,7 +680,7 @@
    start="cpu.instruction_master"
    end="cpu.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1800" />
+  <parameter name="baseAddress" value="0x4800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
