@@ -9,7 +9,11 @@
   </columns>
  </systemtable>
  <library expandedCategories="Project,Library" />
+<<<<<<< HEAD
  <window width="1936" height="1176" x="-8" y="-8" />
+=======
+ <window width="1294" height="1407" x="1273" y="0" />
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec
  <generation
    testbench_simulation="NONE"
    testbench_system="NONE"

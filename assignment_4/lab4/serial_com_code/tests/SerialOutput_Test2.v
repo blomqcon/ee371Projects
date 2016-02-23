@@ -46,11 +46,19 @@ module Tester (serialOut, charSent, data, transmitEnable, load, clock);
 	initial begin // Stimulus 
 		clock = 0; data = 8'b00000000; transmitEnable = 0; load = 0;
 		
+<<<<<<< HEAD
 		for(i = 0; i < 10; i = i + 1) begin
 			#stimDelay clock = 0; #stimDelay clock = 1;
 		end
 		
 		load = 0;
+=======
+		for(i = 0; i < 20; i = i + 1) begin
+			#stimDelay clock = 0; #stimDelay clock = 1;
+		end
+		
+		load = 1;
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec
 		transmitEnable = 1;
 		data = 8'b01001101;
 		
@@ -59,6 +67,7 @@ module Tester (serialOut, charSent, data, transmitEnable, load, clock);
 		#stimDelay clock = 0; #stimDelay clock = 1;
 		load = 0;
 		
+<<<<<<< HEAD
 		for(i = 0; i < 10; i = i + 1) begin
 			#stimDelay clock = 0; #stimDelay clock = 1;
 		end
@@ -75,6 +84,13 @@ module Tester (serialOut, charSent, data, transmitEnable, load, clock);
 		load = 0;
 		
 		for(i = 0; i < 16 * 10; i = i + 1) begin
+=======
+		/*while(~charSent) begin 
+			#stimDelay clock = 0; #stimDelay clock = 1;
+		end*/ 
+		
+		for(i = 0; i < 16 * 11; i = i + 1) begin
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec
 			#stimDelay clock = 0; #stimDelay clock = 1;
 		end
 		
@@ -82,4 +98,8 @@ module Tester (serialOut, charSent, data, transmitEnable, load, clock);
 	#(5*stimDelay); // needed to see END of simulation
 	$finish; // finish simulation
 	end
+<<<<<<< HEAD
 endmodule 
+=======
+endmodule 
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec

@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="lab4CPU" kind="lab4CPU" version="1.0" fabric="QSYS">
  <!-- Format version 15.1 189 (Future versions may contain additional information.) -->
+<<<<<<< HEAD
  <!-- 2016.02.23.03:39:07 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
   <value>1456227547</value>
+=======
+ <!-- 2016.02.22.18:30:17 -->
+ <!-- A collection of modules and connections -->
+ <parameter name="AUTO_GENERATION_ID">
+  <type>java.lang.Integer</type>
+  <value>1456194617</value>
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>

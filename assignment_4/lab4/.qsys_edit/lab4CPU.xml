@@ -801,12 +801,20 @@
 										<fullscreen-action>false</fullscreen-action>
 										<node nodeId="1372710005721" orientation="HORIZONTAL" divider="0.22181146025878004">
 											<node nodeId="1375985011088" orientation="VERTICAL" divider="0.504054054054054">
+<<<<<<< HEAD
 												<leaf id="1" nodeId="1375985003630">
+=======
+												<leaf id="0" nodeId="1375985003630">
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec
 													<placeholders>
 														<placeholder>dock.single.IP\ Catalog</placeholder>
 													</placeholders>
 												</leaf>
+<<<<<<< HEAD
 												<leaf id="2" nodeId="1375985011087">
+=======
+												<leaf id="3" nodeId="1375985011087">
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec
 													<placeholders>
 														<placeholder>dock.single.Hierarchy</placeholder>
 													</placeholders>
@@ -892,10 +900,17 @@
 							</adjacent>
 							<children ignore="false">
 								<child>
+<<<<<<< HEAD
 									<layout factory="predefined" placeholder="dock.single.Messages">
 										<replacement id="dockablesingle Messages"/>
 										<delegate id="delegate_ccontrol backup factory id">
 											<id>Messages</id>
+=======
+									<layout factory="predefined" placeholder="dock.single.IP\ Catalog">
+										<replacement id="dockablesingle IP Catalog"/>
+										<delegate id="delegate_ccontrol backup factory id">
+											<id>IP Catalog</id>
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec
 											<area/>
 										</delegate>
 									</layout>
@@ -1029,6 +1044,19 @@
 										</child>
 									</children>
 								</child>
+<<<<<<< HEAD
+=======
+								<child>
+									<layout factory="predefined" placeholder="dock.single.Hierarchy">
+										<replacement id="dockablesingle Hierarchy"/>
+										<delegate id="delegate_ccontrol backup factory id">
+											<id>Hierarchy</id>
+											<area/>
+										</delegate>
+									</layout>
+									<children ignore="false"/>
+								</child>
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec
 							</children>
 						</root>
 						<root name="ccontrol west">
