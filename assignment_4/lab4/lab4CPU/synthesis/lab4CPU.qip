@@ -2,7 +2,7 @@ set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_TOOL_NAME "Q
 set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_TOOL_VERSION "15.1"
 set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "lab4CPU" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../lab4CPU.sopcinfo"]
-set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name SLD_INFO "QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456188092"
+set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name SLD_INFO "QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456227377"
 set_global_assignment -library "lab4CPU" -name MISC_FILE [file join $::quartus(qip_path) "../lab4CPU.cmp"]
 set_global_assignment -library "lab4CPU" -name SLD_FILE [file join $::quartus(qip_path) "lab4CPU.regmap"]
 set_global_assignment -library "lab4CPU" -name SLD_FILE [file join $::quartus(qip_path) "lab4CPU.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_COMPONENT_DI
 set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTQ1NjE4ODA5Mg==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTQ1NjIyNzM3Nw==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRU1BNUYzMUM2::QXV0byBERVZJQ0U="
 set_global_assignment -entity "lab4CPU" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -611,6 +611,25 @@ set_global_assignment -entity "altera_merlin_master_translator" -library "lab4CP
 set_global_assignment -entity "altera_merlin_master_translator" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "QVZfUkVHSVNURVJJTkNPTUlOR1NJR05BTFM=::MQ==::cmVnaXN0ZXJJbmNvbWluZ1NpZ25hbHM="
 set_global_assignment -entity "altera_merlin_master_translator" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "QVZfQUxXQVlTQlVSU1RNQVhCVVJTVA==::MA==::QWx3YXlzIGJ1cnN0IG1heC1idXJzdA=="
 set_global_assignment -entity "altera_merlin_master_translator" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "U1lOQ19SRVNFVA==::MA==::VXNlIHN5bmNocm9ub3VzIHJlc2V0cw=="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_NAME "bGFiNENQVV9wYXJhbGxlbF9vdXRwdXQ="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_DISPLAY_NAME "UElPIChQYXJhbGxlbCBJL08p"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_VERSION "MTUuMQ=="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "Yml0TW9kaWZ5aW5nT3V0UmVn::ZmFsc2U=::RW5hYmxlIGluZGl2aWR1YWwgYml0IHNldHRpbmcvY2xlYXJpbmc="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGlyZWN0aW9u::T3V0cHV0::RGlyZWN0aW9u"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "cmVzZXRWYWx1ZQ==::MA==::T3V0cHV0IFBvcnQgUmVzZXQgVmFsdWU="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "d2lkdGg=::MTA=::V2lkdGggKDEtMzIgYml0cyk="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "Y2xvY2tSYXRl::NTAwMDAwMDA=::Y2xvY2tSYXRl"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfdHJp::ZmFsc2U=::ZGVyaXZlZF9oYXNfdHJp"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfb3V0::dHJ1ZQ==::ZGVyaXZlZF9oYXNfb3V0"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfaW4=::ZmFsc2U=::ZGVyaXZlZF9oYXNfaW4="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9kb190ZXN0X2JlbmNoX3dpcmluZw==::ZmFsc2U=::ZGVyaXZlZF9kb190ZXN0X2JlbmNoX3dpcmluZw=="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9jYXB0dXJl::ZmFsc2U=::ZGVyaXZlZF9jYXB0dXJl"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9lZGdlX3R5cGU=::Tk9ORQ==::ZGVyaXZlZF9lZGdlX3R5cGU="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9pcnFfdHlwZQ==::Tk9ORQ==::ZGVyaXZlZF9pcnFfdHlwZQ=="
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfaXJx::ZmFsc2U=::ZGVyaXZlZF9oYXNfaXJx"
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_NAME "bGFiNENQVV9wYXJhbGxlbF9pbnB1dA=="
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_DISPLAY_NAME "UElPIChQYXJhbGxlbCBJL08p"
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
@@ -621,7 +640,7 @@ set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name 
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGlyZWN0aW9u::SW5wdXQ=::RGlyZWN0aW9u"
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "Z2VuZXJhdGVJUlE=::ZmFsc2U=::R2VuZXJhdGUgSVJR"
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "c2ltRG9UZXN0QmVuY2hXaXJpbmc=::ZmFsc2U=::SGFyZHdpcmUgUElPIGlucHV0cyBpbiB0ZXN0IGJlbmNo"
-set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "d2lkdGg=::OA==::V2lkdGggKDEtMzIgYml0cyk="
+set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "d2lkdGg=::MTA=::V2lkdGggKDEtMzIgYml0cyk="
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "Y2xvY2tSYXRl::NTAwMDAwMDA=::Y2xvY2tSYXRl"
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfdHJp::ZmFsc2U=::ZGVyaXZlZF9oYXNfdHJp"
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfb3V0::ZmFsc2U=::ZGVyaXZlZF9oYXNfb3V0"
@@ -860,6 +879,7 @@ set_global_assignment -library "lab4CPU" -name SYSTEMVERILOG_FILE [file join $::
 set_global_assignment -library "lab4CPU" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
 set_global_assignment -library "lab4CPU" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "lab4CPU" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "lab4CPU" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/lab4CPU_parallel_output.v"]
 set_global_assignment -library "lab4CPU" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/lab4CPU_parallel_input.v"]
 set_global_assignment -library "lab4CPU" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/lab4CPU_onchip_mem.hex"]
 set_global_assignment -library "lab4CPU" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/lab4CPU_onchip_mem.v"]
@@ -941,6 +961,9 @@ set_global_assignment -entity "altera_merlin_slave_translator" -library "lab4CPU
 set_global_assignment -entity "altera_merlin_master_translator" -library "lab4CPU" -name IP_TOOL_NAME "altera_merlin_master_translator"
 set_global_assignment -entity "altera_merlin_master_translator" -library "lab4CPU" -name IP_TOOL_VERSION "15.1"
 set_global_assignment -entity "altera_merlin_master_translator" -library "lab4CPU" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "lab4CPU_parallel_output" -library "lab4CPU" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_TOOL_NAME "altera_avalon_pio"
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_TOOL_VERSION "15.1"
 set_global_assignment -entity "lab4CPU_parallel_input" -library "lab4CPU" -name IP_TOOL_ENV "Qsys"

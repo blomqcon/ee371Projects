@@ -105,6 +105,7 @@ set_location_assignment PIN_AF9 -to SW[2]
 set_location_assignment PIN_AC12 -to SW[1]
 set_location_assignment PIN_AB12 -to SW[0]
 set_global_assignment -name QIP_FILE lab4CPU/synthesis/lab4CPU.qip
+set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/clock_divider7.sv
 set_global_assignment -name QSYS_FILE lab4CPU.qsys
 set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/shiftBufferTransmit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE serial_com_code/shiftBufferReceive.sv

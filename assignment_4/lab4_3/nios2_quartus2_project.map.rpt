@@ -1,0 +1,425 @@
+Analysis & Synthesis report for nios2_quartus2_project
+Tue Feb 23 05:28:08 2016
+Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Tue Feb 23 05:28:08 2016               ;
+; Quartus Prime Version       ; 15.1.1 Build 189 12/02/2015 SJ Standard Edition ;
+; Revision Name               ; nios2_quartus2_project                          ;
+; Top-level Entity Name       ; DE1_SoC                                         ;
+; Family                      ; Cyclone V                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
+; Total registers             ; N/A until Partition Merge                       ;
+; Total pins                  ; N/A until Partition Merge                       ;
+; Total virtual pins          ; N/A until Partition Merge                       ;
+; Total block memory bits     ; N/A until Partition Merge                       ;
+; Total PLLs                  ; N/A until Partition Merge                       ;
+; Total DLLs                  ; N/A until Partition Merge                       ;
++-----------------------------+-------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                 ;
++---------------------------------------------------------------------------------+--------------------+------------------------+
+; Option                                                                          ; Setting            ; Default Value          ;
++---------------------------------------------------------------------------------+--------------------+------------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                        ;
+; Top-level entity name                                                           ; DE1_SoC            ; nios2_quartus2_project ;
+; Family name                                                                     ; Cyclone V          ; Cyclone IV GX          ;
+; Use smart compilation                                                           ; On                 ; Off                    ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                     ;
+; Enable compact report table                                                     ; Off                ; Off                    ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto                   ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                    ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                    ;
+; Preserve fewer node names                                                       ; On                 ; On                     ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                    ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001           ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993              ;
+; State Machine Processing                                                        ; Auto               ; Auto                   ;
+; Safe State Machine                                                              ; Off                ; Off                    ;
+; Extract Verilog State Machines                                                  ; On                 ; On                     ;
+; Extract VHDL State Machines                                                     ; On                 ; On                     ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                    ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000                   ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                    ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                     ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                     ;
+; Parallel Synthesis                                                              ; On                 ; On                     ;
+; DSP Block Balancing                                                             ; Auto               ; Auto                   ;
+; NOT Gate Push-Back                                                              ; On                 ; On                     ;
+; Power-Up Don't Care                                                             ; On                 ; On                     ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                    ;
+; Remove Duplicate Registers                                                      ; On                 ; On                     ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                    ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                    ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                    ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                    ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                    ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                     ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                    ;
+; Optimization Technique                                                          ; Balanced           ; Balanced               ;
+; Carry Chain Length                                                              ; 70                 ; 70                     ;
+; Auto Carry Chains                                                               ; On                 ; On                     ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                     ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                    ;
+; Auto ROM Replacement                                                            ; On                 ; On                     ;
+; Auto RAM Replacement                                                            ; On                 ; On                     ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                     ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto                   ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto                   ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                     ;
+; Strict RAM Replacement                                                          ; Off                ; Off                    ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                     ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                    ;
+; Auto Resource Sharing                                                           ; Off                ; Off                    ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                    ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                    ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                    ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                     ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                    ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                     ;
+; Report Parameter Settings                                                       ; On                 ; On                     ;
+; Report Source Assignments                                                       ; On                 ; On                     ;
+; Report Connectivity Checks                                                      ; On                 ; On                     ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                    ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                      ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation     ;
+; HDL message level                                                               ; Level2             ; Level2                 ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                    ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000                   ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000                   ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                    ;
+; Clock MUX Protection                                                            ; On                 ; On                     ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                    ;
+; Block Design Naming                                                             ; Auto               ; Auto                   ;
+; SDC constraint protection                                                       ; Off                ; Off                    ;
+; Synthesis Effort                                                                ; Auto               ; Auto                   ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                     ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                    ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium                 ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto                   ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                     ;
+; Synthesis Seed                                                                  ; 1                  ; 1                      ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                     ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                    ;
++---------------------------------------------------------------------------------+--------------------+------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+    Info: Processing started: Tue Feb 23 05:27:32 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off nios2_quartus2_project -c nios2_quartus2_project
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12248): Elaborating Qsys system entity "lab4CPU.qsys"
+Info (12250): 2016.02.23.05:27:45 Progress: Loading lab4_3/lab4CPU.qsys
+Info (12250): 2016.02.23.05:27:46 Progress: Reading input file
+Info (12250): 2016.02.23.05:27:46 Progress: Adding character_recieved_input [altera_avalon_pio 15.1]
+Info (12250): 2016.02.23.05:27:46 Progress: Parameterizing module character_recieved_input
+Info (12250): 2016.02.23.05:27:46 Progress: Adding character_sent_input [altera_avalon_pio 15.1]
+Info (12250): 2016.02.23.05:27:46 Progress: Parameterizing module character_sent_input
+Info (12250): 2016.02.23.05:27:46 Progress: Adding clk_0 [clock_source 15.1]
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing module clk_0
+Info (12250): 2016.02.23.05:27:47 Progress: Adding cpu [altera_nios2_qsys 15.1]
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing module cpu
+Info (12250): 2016.02.23.05:27:47 Progress: Adding jtag_uart [altera_avalon_jtag_uart 15.1]
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing module jtag_uart
+Info (12250): 2016.02.23.05:27:47 Progress: Adding led_output [altera_avalon_pio 15.1]
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing module led_output
+Info (12250): 2016.02.23.05:27:47 Progress: Adding load_output [altera_avalon_pio 15.1]
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing module load_output
+Info (12250): 2016.02.23.05:27:47 Progress: Adding onchip_mem [altera_avalon_onchip_memory2 15.1]
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing module onchip_mem
+Info (12250): 2016.02.23.05:27:47 Progress: Adding parallel_input [altera_avalon_pio 15.1]
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing module parallel_input
+Info (12250): 2016.02.23.05:27:47 Progress: Adding parallel_output [altera_avalon_pio 15.1]
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing module parallel_output
+Info (12250): 2016.02.23.05:27:47 Progress: Adding transmit_enable_output [altera_avalon_pio 15.1]
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing module transmit_enable_output
+Info (12250): 2016.02.23.05:27:47 Progress: Building connections
+Info (12250): 2016.02.23.05:27:47 Progress: Parameterizing connections
+Info (12250): 2016.02.23.05:27:47 Progress: Validating
+Info (12250): 2016.02.23.05:27:48 Progress: Done reading input file
+Info (12250): Lab4CPU.character_recieved_input: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info (12250): Lab4CPU.character_sent_input: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning (12251): Lab4CPU.cpu: Nios II Classic cores are no longer recommended for new projects
+Info (12250): Lab4CPU.parallel_input: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info (12250): Lab4CPU: Generating lab4CPU "lab4CPU" for QUARTUS_SYNTH
+Info (12250): Character_recieved_input: Starting RTL generation for module 'lab4CPU_character_recieved_input'
+Info (12250): Character_recieved_input:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab4CPU_character_recieved_input --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0001_character_recieved_input_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0001_character_recieved_input_gen//lab4CPU_character_recieved_input_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Character_recieved_input: Done RTL generation for module 'lab4CPU_character_recieved_input'
+Info (12250): Character_recieved_input: "lab4CPU" instantiated altera_avalon_pio "character_recieved_input"
+Info (12250): Cpu: Starting RTL generation for module 'lab4CPU_cpu'
+Info (12250): Cpu:   Generation command is [exec C:/altera/15.1/quartus/bin64/eperlcmd.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lab4CPU_cpu --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0002_cpu_gen/ --quartus_bindir=C:/altera/15.1/quartus/bin64 --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0002_cpu_gen//lab4CPU_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info (12250): Cpu: # 2016.02.23 05:27:56 (*) Starting Nios II generation
+Info (12250): Cpu: # 2016.02.23 05:27:56 (*)   Checking for plaintext license.
+Info (12250): Cpu: # 2016.02.23 05:27:59 (*)   Couldn't query license setup in Quartus directory C:/altera/15.1/quartus/bin64
+Info (12250): Cpu: # 2016.02.23 05:27:59 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Cpu: # 2016.02.23 05:27:59 (*)   Plaintext license not found.
+Info (12250): Cpu: # 2016.02.23 05:27:59 (*)   No license required to generate encrypted Nios II/e.
+Info (12250): Cpu: # 2016.02.23 05:27:59 (*)   Elaborating CPU configuration settings
+Info (12250): Cpu: # 2016.02.23 05:27:59 (*)   Creating all objects for CPU
+Info (12250): Cpu: # 2016.02.23 05:28:00 (*)   Generating RTL from CPU objects
+Info (12250): Cpu: # 2016.02.23 05:28:00 (*)   Creating plain-text RTL
+Info (12250): Cpu: # 2016.02.23 05:28:02 (*) Done Nios II generation
+Info (12250): Cpu: Done RTL generation for module 'lab4CPU_cpu'
+Info (12250): Cpu: "lab4CPU" instantiated altera_nios2_qsys "cpu"
+Info (12250): Jtag_uart: Starting RTL generation for module 'lab4CPU_jtag_uart'
+Info (12250): Jtag_uart:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lab4CPU_jtag_uart --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0003_jtag_uart_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0003_jtag_uart_gen//lab4CPU_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Jtag_uart: Done RTL generation for module 'lab4CPU_jtag_uart'
+Info (12250): Jtag_uart: "lab4CPU" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info (12250): Led_output: Starting RTL generation for module 'lab4CPU_led_output'
+Info (12250): Led_output:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab4CPU_led_output --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0004_led_output_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0004_led_output_gen//lab4CPU_led_output_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Led_output: Done RTL generation for module 'lab4CPU_led_output'
+Info (12250): Led_output: "lab4CPU" instantiated altera_avalon_pio "led_output"
+Info (12250): Load_output: Starting RTL generation for module 'lab4CPU_load_output'
+Info (12250): Load_output:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab4CPU_load_output --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0005_load_output_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0005_load_output_gen//lab4CPU_load_output_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Load_output: Done RTL generation for module 'lab4CPU_load_output'
+Info (12250): Load_output: "lab4CPU" instantiated altera_avalon_pio "load_output"
+Info (12250): Onchip_mem: Starting RTL generation for module 'lab4CPU_onchip_mem'
+Info (12250): Onchip_mem:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=lab4CPU_onchip_mem --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0006_onchip_mem_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0006_onchip_mem_gen//lab4CPU_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Onchip_mem: Done RTL generation for module 'lab4CPU_onchip_mem'
+Info (12250): Onchip_mem: "lab4CPU" instantiated altera_avalon_onchip_memory2 "onchip_mem"
+Info (12250): Parallel_input: Starting RTL generation for module 'lab4CPU_parallel_input'
+Info (12250): Parallel_input:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab4CPU_parallel_input --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0007_parallel_input_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6854_5903363051572367640.dir/0007_parallel_input_gen//lab4CPU_parallel_input_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Parallel_input: Done RTL generation for module 'lab4CPU_parallel_input'
+Info (12250): Parallel_input: "lab4CPU" instantiated altera_avalon_pio "parallel_input"
+Info (12250): Avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info (12250): Avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info (12250): Mm_interconnect_0: "lab4CPU" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info (12250): Irq_mapper: "lab4CPU" instantiated altera_irq_mapper "irq_mapper"
+Info (12250): Rst_controller: "lab4CPU" instantiated altera_reset_controller "rst_controller"
+Info (12250): Cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info (12250): Jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info (12250): Cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info (12250): Jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info (12250): Jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info (12250): Router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info (12250): Router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info (12250): Router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info (12250): Router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info (12250): Cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info (12250): Cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info (12250): Cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info (12250): Cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info (12250): Reusing file C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4CPU/submodules/altera_merlin_arbitrator.sv
+Info (12250): Rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info (12250): Rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info (12250): Reusing file C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4CPU/submodules/altera_merlin_arbitrator.sv
+Info (12250): Rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info (12250): Reusing file C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4CPU/submodules/altera_merlin_arbitrator.sv
+Info (12250): Avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info (12250): Error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info (12250): Lab4CPU: Done "lab4CPU" with 29 modules, 43 files
+Info (12249): Finished elaborating Qsys system entity "lab4CPU.qsys"
+Info (12021): Found 1 design units, including 1 entities, in source file nios2_quartus2_project.bdf
+    Info (12023): Found entity 1: nios2_quartus2_project
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/sram.v
+    Info (12023): Found entity 1: SRAM File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/SRAM.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/sr_clk_ctrl.v
+    Info (12023): Found entity 1: SC_CLK_CTRL File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/SR_CLK_CTRL.v Line: 1
+Error (10228): Verilog HDL error at SC_CLK_CTRL.v(1): module "SC_CLK_CTRL" cannot be declared more than once File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/SC_CLK_CTRL.v Line: 1
+Info (10499): HDL info at SR_CLK_CTRL.v(1): see declaration for object "SC_CLK_CTRL" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/SR_CLK_CTRL.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file serial_com_code/sc_clk_ctrl.v
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/sb_detect.v
+    Info (12023): Found entity 1: sb_detect File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/sb_detect.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/sampling_mod.v
+    Info (12023): Found entity 1: sampling_mod File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/sampling_mod.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/s2p_sr.v
+    Info (12023): Found entity 1: S2P_SR File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/S2P_SR.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/p2s_sr.v
+    Info (12023): Found entity 1: P2S_SR File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/P2S_SR.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/ic_clk_ctrl.v
+    Info (12023): Found entity 1: IC_CLK_CTRL File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/IC_CLK_CTRL.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/com_mod.v
+    Info (12023): Found entity 1: com_mod File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/com_mod.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/bsc.v
+    Info (12023): Found entity 1: BSC File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/BSC.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/bit_counter.v
+    Info (12023): Found entity 1: bit_counter File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/bit_counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/bic.v
+    Info (12023): Found entity 1: BIC File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/BIC.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/clock_divider7.sv
+    Info (12023): Found entity 1: clock_divider19 File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/serial_com_code/clock_divider7.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
+    Info (12023): Found entity 1: DE1_SoC File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/DE1_SoC.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/lab4cpu.v
+    Info (12023): Found entity 1: lab4CPU File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/lab4cpu.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/altera_avalon_sc_fifo.v
+    Info (12023): Found entity 1: altera_avalon_sc_fifo File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_avalon_sc_fifo.v Line: 21
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/lab4cpu/submodules/altera_merlin_arbitrator.sv
+    Info (12023): Found entity 1: altera_merlin_arbitrator File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_merlin_arbitrator.sv Line: 103
+    Info (12023): Found entity 2: altera_merlin_arb_adder File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_merlin_arbitrator.sv Line: 228
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/altera_merlin_burst_uncompressor.sv
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_merlin_burst_uncompressor.sv Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/altera_merlin_master_agent.sv
+    Info (12023): Found entity 1: altera_merlin_master_agent File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_merlin_master_agent.sv Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/altera_merlin_master_translator.sv
+    Info (12023): Found entity 1: altera_merlin_master_translator File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_merlin_master_translator.sv Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/altera_merlin_slave_agent.sv
+    Info (12023): Found entity 1: altera_merlin_slave_agent File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_merlin_slave_agent.sv Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/altera_merlin_slave_translator.sv
+    Info (12023): Found entity 1: altera_merlin_slave_translator File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_merlin_slave_translator.sv Line: 35
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/altera_reset_controller.v
+    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_reset_controller.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/altera_reset_synchronizer.v
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/altera_reset_synchronizer.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_character_recieved_input.v
+    Info (12023): Found entity 1: lab4CPU_character_recieved_input File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_character_recieved_input.v Line: 21
+Info (12021): Found 21 design units, including 21 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_cpu.v
+    Info (12023): Found entity 1: lab4CPU_cpu_register_bank_a_module File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 21
+    Info (12023): Found entity 2: lab4CPU_cpu_register_bank_b_module File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 86
+    Info (12023): Found entity 3: lab4CPU_cpu_nios2_oci_debug File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 151
+    Info (12023): Found entity 4: lab4CPU_cpu_ociram_sp_ram_module File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 292
+    Info (12023): Found entity 5: lab4CPU_cpu_nios2_ocimem File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 355
+    Info (12023): Found entity 6: lab4CPU_cpu_nios2_avalon_reg File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 536
+    Info (12023): Found entity 7: lab4CPU_cpu_nios2_oci_break File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 628
+    Info (12023): Found entity 8: lab4CPU_cpu_nios2_oci_xbrk File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 922
+    Info (12023): Found entity 9: lab4CPU_cpu_nios2_oci_dbrk File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 1128
+    Info (12023): Found entity 10: lab4CPU_cpu_nios2_oci_itrace File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 1314
+    Info (12023): Found entity 11: lab4CPU_cpu_nios2_oci_td_mode File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 1637
+    Info (12023): Found entity 12: lab4CPU_cpu_nios2_oci_dtrace File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 1704
+    Info (12023): Found entity 13: lab4CPU_cpu_nios2_oci_compute_input_tm_cnt File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 1798
+    Info (12023): Found entity 14: lab4CPU_cpu_nios2_oci_fifo_wrptr_inc File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 1869
+    Info (12023): Found entity 15: lab4CPU_cpu_nios2_oci_fifo_cnt_inc File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 1911
+    Info (12023): Found entity 16: lab4CPU_cpu_nios2_oci_fifo File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 1957
+    Info (12023): Found entity 17: lab4CPU_cpu_nios2_oci_pib File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 2458
+    Info (12023): Found entity 18: lab4CPU_cpu_nios2_oci_im File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 2526
+    Info (12023): Found entity 19: lab4CPU_cpu_nios2_performance_monitors File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 2642
+    Info (12023): Found entity 20: lab4CPU_cpu_nios2_oci File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 2658
+    Info (12023): Found entity 21: lab4CPU_cpu File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu.v Line: 3166
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_cpu_jtag_debug_module_sysclk.v
+    Info (12023): Found entity 1: lab4CPU_cpu_jtag_debug_module_sysclk File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu_jtag_debug_module_sysclk.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_cpu_jtag_debug_module_tck.v
+    Info (12023): Found entity 1: lab4CPU_cpu_jtag_debug_module_tck File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu_jtag_debug_module_tck.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_cpu_jtag_debug_module_wrapper.v
+    Info (12023): Found entity 1: lab4CPU_cpu_jtag_debug_module_wrapper File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu_jtag_debug_module_wrapper.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_cpu_oci_test_bench.v
+    Info (12023): Found entity 1: lab4CPU_cpu_oci_test_bench File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu_oci_test_bench.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_cpu_test_bench.v
+    Info (12023): Found entity 1: lab4CPU_cpu_test_bench File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_cpu_test_bench.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_irq_mapper.sv
+    Info (12023): Found entity 1: lab4CPU_irq_mapper File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_irq_mapper.sv Line: 31
+Info (12021): Found 5 design units, including 5 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_jtag_uart.v
+    Info (12023): Found entity 1: lab4CPU_jtag_uart_sim_scfifo_w File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_jtag_uart.v Line: 21
+    Info (12023): Found entity 2: lab4CPU_jtag_uart_scfifo_w File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_jtag_uart.v Line: 77
+    Info (12023): Found entity 3: lab4CPU_jtag_uart_sim_scfifo_r File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_jtag_uart.v Line: 162
+    Info (12023): Found entity 4: lab4CPU_jtag_uart_scfifo_r File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_jtag_uart.v Line: 240
+    Info (12023): Found entity 5: lab4CPU_jtag_uart File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_jtag_uart.v Line: 327
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_led_output.v
+    Info (12023): Found entity 1: lab4CPU_led_output File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_led_output.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_load_output.v
+    Info (12023): Found entity 1: lab4CPU_load_output File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_load_output.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0.v
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0 File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_avalon_st_adapter.v
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_avalon_st_adapter File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_avalon_st_adapter.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_avalon_st_adapter_error_adapter_0 File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv Line: 66
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_cmd_demux.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_cmd_demux File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_cmd_demux.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_cmd_demux_001.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_cmd_demux_001 File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_cmd_demux_001.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_cmd_mux.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_cmd_mux File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_cmd_mux.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_cmd_mux_001.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_cmd_mux_001 File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_cmd_mux_001.sv Line: 51
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_router_default_decode File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router.sv Line: 45
+    Info (12023): Found entity 2: lab4CPU_mm_interconnect_0_router File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router_001.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_router_001_default_decode File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router_001.sv Line: 45
+    Info (12023): Found entity 2: lab4CPU_mm_interconnect_0_router_001 File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router_001.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router_002.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_router_002_default_decode File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router_002.sv Line: 45
+    Info (12023): Found entity 2: lab4CPU_mm_interconnect_0_router_002 File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router_002.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router_003.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_router_003_default_decode File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router_003.sv Line: 45
+    Info (12023): Found entity 2: lab4CPU_mm_interconnect_0_router_003 File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_router_003.sv Line: 84
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_rsp_demux.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_rsp_demux File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_rsp_demux.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_rsp_mux.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_rsp_mux File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_rsp_mux.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_rsp_mux_001.sv
+    Info (12023): Found entity 1: lab4CPU_mm_interconnect_0_rsp_mux_001 File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_mm_interconnect_0_rsp_mux_001.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_onchip_mem.v
+    Info (12023): Found entity 1: lab4CPU_onchip_mem File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_onchip_mem.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/lab4cpu/submodules/lab4cpu_parallel_input.v
+    Info (12023): Found entity 1: lab4CPU_parallel_input File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/db/ip/lab4cpu/submodules/lab4cpu_parallel_input.v Line: 21
+Info (144001): Generated suppressed messages file C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/nios2_quartus2_project.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 842 megabytes
+    Error: Processing ended: Tue Feb 23 05:28:08 2016
+    Error: Elapsed time: 00:00:36
+    Error: Total CPU time (on all processors): 00:01:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_3/nios2_quartus2_project.map.smsg.
+
+

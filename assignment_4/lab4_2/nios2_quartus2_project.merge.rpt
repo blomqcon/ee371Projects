@@ -1,0 +1,539 @@
+Partition Merge report for nios2_quartus2_project
+Tue Feb 23 06:15:13 2016
+Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Rapid Recompile Summary
+  5. Partition Merge Rapid Recompile Table of Changed Logic Entities
+  6. Partition Merge Rapid Recompile Table of Modified Assignments
+  7. Connections to In-System Debugging Instance "auto_signaltap_0"
+  8. Partition Merge Partition Pin Processing
+  9. Partition Merge Resource Usage Summary
+ 10. Partition Merge RAM Summary
+ 11. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                           ;
++---------------------------------+-------------------------------------------------+
+; Partition Merge Status          ; Successful - Tue Feb 23 06:15:13 2016           ;
+; Quartus Prime Version           ; 15.1.1 Build 189 12/02/2015 SJ Standard Edition ;
+; Revision Name                   ; nios2_quartus2_project                          ;
+; Top-level Entity Name           ; DE1_SoC                                         ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; 1,187 / 32,070 ( 4 % )                          ;
+; Total registers                 ; 1670                                            ;
+; Total pins                      ; 21 / 457 ( 5 % )                                ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 371,712 / 4,065,280 ( 9 % )                     ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                                   ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                                   ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used        ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Hybrid (Rapid Recompile) ; Source File            ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Hybrid (Rapid Recompile) ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis           ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Hybrid (Rapid Recompile) ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+--------------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Summary                                                                                          ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Partition Name                 ; Rapid Recompile Status ; Netlist Preservation Requested ; Netlist Preservation Achieved ; Notes ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+; Top                            ; Engaged                ; 99.96% (2334 / 2335)           ; 96.27% (2248 / 2335)          ;       ;
+; sld_hub:auto_hub               ; Engaged                ; 53.10% (257 / 484)             ; 28.93% (140 / 484)            ;       ;
+; hard_block:auto_generated_inst ; Engaged                ; 100.00% (23 / 23)              ; 100.00% (23 / 23)             ;       ;
++--------------------------------+------------------------+--------------------------------+-------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Table of Changed Logic Entities                                                                                                                                                                                                                                                                                            ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+; Changed Logic Entities                                                                                                                                                                                                                                                                                                           ; Number of Changed Nodes ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+; |DE1_SoC                                                                                                                                                                                                                                                                                                                         ; 1                       ;
+; |sld_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                         ; 161                     ;
+; |sld_hub                                                                                                                                                                                                                                                                                                                         ; 98                      ;
+; |sld_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg ; 52                      ;
+; |sld_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                  ; 3                       ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Rapid Recompile Table of Modified Assignments                                                                                             ;
++------------------------------------------+-----------------------------------------------------------------+----------------+-----------------------------+
+; Modified Assignments                     ; Target                                                          ; Previous Value ; Current Value               ;
++------------------------------------------+-----------------------------------------------------------------+----------------+-----------------------------+
+; USE_SIGNALTAP_FILE                       ;                                                                 ; --             ; stp1.stp                    ;
+; ENABLE_SIGNALTAP                         ;                                                                 ; --             ; ON                          ;
+; SLD_NODE_CREATOR_ID                      ;                                                                 ; --             ; 110                         ;
+; SLD_NODE_ENTITY_NAME                     ;                                                                 ; --             ; sld_signaltap               ;
+; CONNECT_TO_SLD_NODE_ENTITY_PORT          ; clock_divider19:cd|divided_clocks[15]                           ; --             ; acq_clk                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; SW[0]~input                                                     ; --             ; acq_trigger_in[0]           ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; SW[0]~input                                                     ; --             ; acq_data_in[0]              ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; SW[0]~input                                                     ; --             ; acq_storage_qualifier_in[0] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[1]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[5]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[15]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[23]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[24]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[27]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[29]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[30]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[9]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[11]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|gnd                                            ; --             ; crc[22]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[2]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[3]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[10]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[14]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[16]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[17]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[20]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[26]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[0]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[4]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[6]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[7]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[8]                      ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[12]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[13]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[18]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[19]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[21]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[25]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[28]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; auto_signaltap_0|vcc                                            ; --             ; crc[31]                     ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_load_output:load_output|data_out            ; --             ; acq_trigger_in[1]           ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_load_output:load_output|data_out            ; --             ; acq_data_in[1]              ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_load_output:load_output|data_out            ; --             ; acq_storage_qualifier_in[1] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out ; --             ; acq_trigger_in[2]           ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out ; --             ; acq_data_in[2]              ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out ; --             ; acq_storage_qualifier_in[2] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0] ; --             ; acq_trigger_in[3]           ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0] ; --             ; acq_data_in[3]              ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0] ; --             ; acq_storage_qualifier_in[3] ;
+; POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1] ; --             ; acq_trigger_in[4]           ;
++------------------------------------------+-----------------------------------------------------------------+----------------+-----------------------------+
+This list only includes the top 50 out of 101 changed assignments
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                               ;
++-----------------------------------------------------------------+---------------+-----------+--------------------------------+-------------------+-----------------------------------------------------------------+---------+
+; Name                                                            ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                                               ; Details ;
++-----------------------------------------------------------------+---------------+-----------+--------------------------------+-------------------+-----------------------------------------------------------------+---------+
+; clock_divider19:cd|divided_clocks[15]                           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clock_divider19:cd|divided_clocks[15]                           ; N/A     ;
+; SW[0]~input                                                     ; post-fitting  ; connected ; Top                            ; post-synthesis    ; SW[0]~input                                                     ; N/A     ;
+; SW[0]~input                                                     ; post-fitting  ; connected ; Top                            ; post-synthesis    ; SW[0]~input                                                     ; N/A     ;
+; SW[0]~input                                                     ; post-fitting  ; connected ; Top                            ; post-synthesis    ; SW[0]~input                                                     ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|gnd                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; auto_signaltap_0|vcc                                            ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC                             ; N/A     ;
+; lab4CPU:cpu|lab4CPU_load_output:load_output|data_out            ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_load_output:load_output|data_out            ; N/A     ;
+; lab4CPU:cpu|lab4CPU_load_output:load_output|data_out            ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_load_output:load_output|data_out            ; N/A     ;
+; lab4CPU:cpu|lab4CPU_load_output:load_output|data_out            ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_load_output:load_output|data_out            ; N/A     ;
+; lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out ; N/A     ;
+; lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out ; N/A     ;
+; lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9] ; N/A     ;
+; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9] ; post-fitting  ; connected ; Top                            ; post-synthesis    ; lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9] ; N/A     ;
++-----------------------------------------------------------------+---------------+-----------+--------------------------------+-------------------+-----------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                                                                                                                                                       ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+---------------+-------------------+---------------------------------------------+
+; Name                                                                                                                                                             ; Partition ; Type          ; Location          ; Status                                      ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+---------------+-------------------+---------------------------------------------+
+; LEDR[0]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[0]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X52_Y0_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[0]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X52_Y0_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; LEDR[1]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[1]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X52_Y0_N17  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[1]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X52_Y0_N19 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; LEDR[2]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[2]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X60_Y0_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[2]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X60_Y0_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; LEDR[3]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[3]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X80_Y0_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[3]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X80_Y0_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; LEDR[4]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[4]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X60_Y0_N17  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[4]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X60_Y0_N19 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; LEDR[5]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[5]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X80_Y0_N17  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[5]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X80_Y0_N19 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; LEDR[6]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[6]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X84_Y0_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[6]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X84_Y0_N2  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; LEDR[7]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[7]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X89_Y6_N3   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[7]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X89_Y6_N5  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; LEDR[8]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[8]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X89_Y8_N3   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[8]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X89_Y8_N5  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; LEDR[9]                                                                                                                                                          ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- LEDR[9]                                                                                                                                                   ; Top       ; Output Pad    ; IOPAD_X89_Y6_N20  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- LEDR[9]~output                                                                                                                                            ; Top       ; Output Buffer ; IOOBUF_X89_Y6_N22 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; PLD_CLOCKINPUT                                                                                                                                                   ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- PLD_CLOCKINPUT                                                                                                                                            ; Top       ; Input Pad     ; IOPAD_X32_Y0_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- PLD_CLOCKINPUT~input                                                                                                                                      ; Top       ; Input Buffer  ; IOIBUF_X32_Y0_N1  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[0]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[0]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X12_Y0_N17  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[0]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X12_Y0_N18 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[1]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[1]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X16_Y0_N0   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[1]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X16_Y0_N1  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[2]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[2]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X8_Y0_N34   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[2]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X8_Y0_N35  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[3]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[3]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X4_Y0_N51   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[3]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X4_Y0_N52  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[4]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[4]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X2_Y0_N40   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[4]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X2_Y0_N41  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[5]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[5]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X16_Y0_N17  ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[5]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X16_Y0_N18 ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[6]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[6]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X4_Y0_N34   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[6]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X4_Y0_N35  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[7]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[7]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X4_Y0_N0    ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[7]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X4_Y0_N1   ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[8]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[8]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X4_Y0_N17   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[8]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X4_Y0_N18  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; SW[9]                                                                                                                                                            ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- SW[9]                                                                                                                                                     ; Top       ; Input Pad     ; IOPAD_X2_Y0_N57   ; Preserved from Post-Fit or Imported Netlist ;
+;     -- SW[9]~input                                                                                                                                               ; Top       ; Input Buffer  ; IOIBUF_X2_Y0_N58  ; Preserved from Post-Fit or Imported Netlist ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; altera_reserved_tck                                                                                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- altera_reserved_tck                                                                                                                                       ; Top       ; Input Pad     ; Unplaced          ; Synthesized                                 ;
+;     -- altera_reserved_tck~input                                                                                                                                 ; Top       ; Input Buffer  ; Unplaced          ; Synthesized                                 ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; altera_reserved_tdi                                                                                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- altera_reserved_tdi                                                                                                                                       ; Top       ; Input Pad     ; Unplaced          ; Synthesized                                 ;
+;     -- altera_reserved_tdi~input                                                                                                                                 ; Top       ; Input Buffer  ; Unplaced          ; Synthesized                                 ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; altera_reserved_tdo                                                                                                                                              ; Top       ; Output Port   ; n/a               ;                                             ;
+;     -- altera_reserved_tdo                                                                                                                                       ; Top       ; Output Pad    ; Unplaced          ; Synthesized                                 ;
+;     -- altera_reserved_tdo~output                                                                                                                                ; Top       ; Output Buffer ; Unplaced          ; Synthesized                                 ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; altera_reserved_tms                                                                                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;     -- altera_reserved_tms                                                                                                                                       ; Top       ; Input Pad     ; Unplaced          ; Synthesized                                 ;
+;     -- altera_reserved_tms~input                                                                                                                                 ; Top       ; Input Buffer  ; Unplaced          ; Synthesized                                 ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_        ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_        ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_       ; Top       ; Output Port   ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_       ; Top       ; Output Port   ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir  ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck         ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms         ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo             ; Top       ; Output Port   ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_cpu_the_lab4CPU_cpu_nios2_oci_the_lab4CPU_cpu_jtag_debug_module_wrapper_lab4CPU_cpu_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1            ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_0_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_10_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_11_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_12_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_13_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_14_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_15_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_16_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_17_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_18_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_19_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_1_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_20_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_21_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_22_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_23_                                                                             ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_2_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_3_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_4_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_5_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_6_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_7_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_8_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_receive_9_                                                                              ; Top       ; Input Port    ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_send_0_                                                                                 ; Top       ; Output Port   ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_send_1_                                                                                 ; Top       ; Output Port   ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; jtag.bp.cpu_jtag_uart_lab4CPU_jtag_uart_alt_jtag_atlantic_inst_ep_fabric_send_2_                                                                                 ; Top       ; Output Port   ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
+; pre_syn.bp.cd_divided_clocks_15_                                                                                                                                 ; Top       ; Output Port   ; n/a               ;                                             ;
+;                                                                                                                                                                  ;           ;               ;                   ;                                             ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+---------------+-------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                    ;
++---------------------------------------------+-----------------------------+
+; Resource                                    ; Usage                       ;
++---------------------------------------------+-----------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1158                        ;
+;                                             ;                             ;
+; Combinational ALUT usage for logic          ; 1495                        ;
+;     -- 7 input functions                    ; 6                           ;
+;     -- 6 input functions                    ; 246                         ;
+;     -- 5 input functions                    ; 333                         ;
+;     -- 4 input functions                    ; 228                         ;
+;     -- <=3 input functions                  ; 682                         ;
+;                                             ;                             ;
+; Dedicated logic registers                   ; 1670                        ;
+;                                             ;                             ;
+; I/O pins                                    ; 21                          ;
+; Total MLAB memory bits                      ; 0                           ;
+; Total block memory bits                     ; 371712                      ;
+;                                             ;                             ;
+; Total DSP Blocks                            ; 0                           ;
+;                                             ;                             ;
+; Maximum fan-out node                        ; PLD_CLOCKINPUT~inputCLKENA0 ;
+; Maximum fan-out                             ; 863                         ;
+; Total fan-out                               ; 13314                       ;
+; Average fan-out                             ; 3.87                        ;
++---------------------------------------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                                                                                                               ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------+
+; Name                                                                                                                                                                                                                                                             ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                     ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------+
+; lab4CPU:cpu|lab4CPU_cpu:cpu|lab4CPU_cpu_nios2_oci:the_lab4CPU_cpu_nios2_oci|lab4CPU_cpu_nios2_ocimem:the_lab4CPU_cpu_nios2_ocimem|lab4CPU_cpu_ociram_sp_ram_module:lab4CPU_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_cng1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port      ; 256          ; 32           ; --           ; --           ; 8192   ; lab4CPU_cpu_ociram_default_contents.mif ;
+; lab4CPU:cpu|lab4CPU_cpu:cpu|lab4CPU_cpu_register_bank_a_module:lab4CPU_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_pgo1:auto_generated|ALTSYNCRAM                                                                                                   ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; lab4CPU_cpu_rf_ram_a.mif                ;
+; lab4CPU:cpu|lab4CPU_cpu:cpu|lab4CPU_cpu_register_bank_b_module:lab4CPU_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_qgo1:auto_generated|ALTSYNCRAM                                                                                                   ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; lab4CPU_cpu_rf_ram_b.mif                ;
+; lab4CPU:cpu|lab4CPU_jtag_uart:jtag_uart|lab4CPU_jtag_uart_scfifo_r:the_lab4CPU_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM                                                                ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                                    ;
+; lab4CPU:cpu|lab4CPU_jtag_uart:jtag_uart|lab4CPU_jtag_uart_scfifo_w:the_lab4CPU_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_3291:auto_generated|a_dpfifo_5771:dpfifo|altsyncram_7pu1:FIFOram|ALTSYNCRAM                                                                ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                                    ;
+; lab4CPU:cpu|lab4CPU_onchip_mem:onchip_mem|altsyncram:the_altsyncram|altsyncram_ntk1:auto_generated|ALTSYNCRAM                                                                                                                                                    ; AUTO ; Single Port      ; 4096         ; 32           ; --           ; --           ; 131072 ; lab4CPU_onchip_mem.hex                  ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_jea4:auto_generated|ALTSYNCRAM                                                            ; AUTO ; Simple Dual Port ; 16384        ; 14           ; 16384        ; 14           ; 229376 ; None                                    ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Partition Merge
+    Info: Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+    Info: Processing started: Tue Feb 23 06:15:09 2016
+Info: Command: quartus_cdb --read_settings_files=on --write_settings_files=off nios2_quartus2_project -c nios2_quartus2_project --merge=on --recompile=on
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "Top"
+Info (12849): Using Hybrid (Rapid Recompile) netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 72 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/DE1_SoC.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/DE1_SoC.sv Line: 4
+Info (21057): Implemented 2546 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 2469 logic cells
+    Info (21064): Implemented 50 RAM segments
+Info: Quartus Prime Partition Merge was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 1063 megabytes
+    Info: Processing ended: Tue Feb 23 06:15:13 2016
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+

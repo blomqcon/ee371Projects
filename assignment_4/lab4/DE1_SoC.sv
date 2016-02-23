@@ -6,12 +6,12 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 	
 	wire serialData;
 	
-	wire [7:0] parallelOutput;
+	wire [9:0] parallelOutput;
 	wire charSent;
 	wire transmitEnable;
 	wire load;
 	
-	wire [7:0] parallelInput;
+	wire [9:0] parallelInput;
 	wire charRecieved;
 	
 	wire [7:0] ledOutput;
@@ -27,6 +27,9 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 		.parallel_output_external_connection_export(parallelOutput),
 		.transmit_enable_output_external_connection_export(transmitEnable)
 	);
+	
+	wire slow_clock;
+	clock_divider19 cd(PLD_CLOCKINPUT, slow_clock);
 
 	
 	SerialOutput so(
@@ -35,17 +38,17 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 		.data(parallelOutput), 
 		.transmitEnable(transmitEnable), 
 		.load(load), 
-		.clock(PLD_CLOCKINPUT)
+		.clock(slow_clock)
 	);
 	
 	SerialInput si(
 		.parallelOut(parallelInput),
 		.charRecieved(charRecieved),
 		.data(serialData),
-		.clock(PLD_CLOCKINPUT)
+		.clock(slow_clock)
 	);
 	
 	assign LEDR[7:0] = ledOutput; 
-	assign LEDR[8] = 1;
-	assign LEDR[9] = 1;
+	assign LEDR[8] = transmitEnable;
+	assign LEDR[9] = charRecieved;
 endmodule 

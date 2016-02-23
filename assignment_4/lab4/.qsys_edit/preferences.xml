@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <preferences>
  <debug showDebugMenu="0" />
- <systemtable>
+ <systemtable filter="All Interfaces">
   <columns>
    <connections preferredWidth="143" />
    <irq preferredWidth="34" />
    <export preferredWidth="188" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
- <window width="1294" height="1407" x="1273" y="0" />
+ <library expandedCategories="Project,Library" />
+ <window width="1936" height="1176" x="-8" y="-8" />
  <generation
    testbench_simulation="NONE"
    testbench_system="NONE"

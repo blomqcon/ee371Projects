@@ -56,7 +56,7 @@ module Tester (parallelOut, charRecieved, data, clock);
 		end
 		
 		data = 0;
-		for(i = 0; i < 20; i = i + 1) begin
+		for(i = 0; i < 50; i = i + 1) begin
 			#stimDelay clock = 0; #stimDelay clock = 1;
 		end
 

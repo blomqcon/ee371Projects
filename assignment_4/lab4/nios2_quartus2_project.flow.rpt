@@ -1,5 +1,5 @@
 Flow report for nios2_quartus2_project
-Mon Feb 22 16:46:04 2016
+Tue Feb 23 03:41:14 2016
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Mon Feb 22 16:45:51 2016           ;
+; Flow Status                     ; Successful - Tue Feb 23 03:41:02 2016           ;
 ; Quartus Prime Version           ; 15.1.1 Build 189 12/02/2015 SJ Standard Edition ;
 ; Revision Name                   ; nios2_quartus2_project                          ;
 ; Top-level Entity Name           ; DE1_SoC                                         ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 755 / 32,070 ( 2 % )                            ;
-; Total registers                 ; 1098                                            ;
+; Logic utilization (in ALMs)     ; 771 / 32,070 ( 2 % )                            ;
+; Total registers                 ; 1122                                            ;
 ; Total pins                      ; 21 / 457 ( 5 % )                                ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 142,336 / 4,065,280 ( 4 % )                     ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
-; Start date & time ; 02/22/2016 16:42:18    ;
+; Start date & time ; 02/23/2016 03:38:51    ;
 ; Main task         ; Compilation            ;
 ; Revision Name     ; nios2_quartus2_project ;
 +-------------------+------------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+-----------------------------------------------------------+------------------------+-------------+------------+
 ; Assignment Name                     ; Value                                                     ; Default Value          ; Entity Name ; Section Id ;
 +-------------------------------------+-----------------------------------------------------------+------------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 278145011581519.145618813709116                           ; --                     ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 203178703705033.145622753105460                           ; --                     ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                        ; --                     ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                         ; --                     ; --          ; --         ;
 ; MISC_FILE                           ; lab4CPU/synthesis/../lab4CPU.cmp                          ; --                     ; --          ; --         ;
@@ -95,7 +95,7 @@ agreement for further details.
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                     ; --                     ; --          ; --         ;
 ; SLD_FILE                            ; lab4CPU/synthesis/lab4CPU.regmap                          ; --                     ; --          ; --         ;
 ; SLD_FILE                            ; lab4CPU/synthesis/lab4CPU.debuginfo                       ; --                     ; --          ; --         ;
-; SLD_INFO                            ; QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456188092 ; --                     ; lab4CPU     ; --         ;
+; SLD_INFO                            ; QSYS_NAME lab4CPU HAS_SOPCINFO 1 GENERATION_ID 1456227377 ; --                     ; lab4CPU     ; --         ;
 ; SMART_RECOMPILE                     ; On                                                        ; Off                    ; --          ; --         ;
 ; SOPCINFO_FILE                       ; lab4CPU/synthesis/../../lab4CPU.sopcinfo                  ; --                     ; --          ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                        ; --                     ; --          ; --         ;
@@ -108,11 +108,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:51     ; 1.0                     ; 1037 MB             ; 00:01:44                           ;
-; Fitter                    ; 00:02:23     ; 1.1                     ; 2767 MB             ; 00:03:27                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 903 MB              ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 1262 MB             ; 00:00:11                           ;
-; Total                     ; 00:03:34     ; --                      ; --                  ; 00:05:32                           ;
+; Analysis & Synthesis      ; 00:00:55     ; 1.0                     ; 1032 MB             ; 00:01:50                           ;
+; Fitter                    ; 00:00:56     ; 1.1                     ; 2787 MB             ; 00:02:00                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 897 MB              ; 00:00:11                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.9                     ; 1260 MB             ; 00:00:12                           ;
+; Total                     ; 00:02:11     ; --                      ; --                  ; 00:04:13                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,10 +121,10 @@ agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; EE-365PC10       ; Windows 8 ; 6.2        ; x86_64         ;
-; Fitter                    ; EE-365PC10       ; Windows 8 ; 6.2        ; x86_64         ;
-; Assembler                 ; EE-365PC10       ; Windows 8 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; EE-365PC10       ; Windows 8 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; EE-137PC32       ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; EE-137PC32       ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; EE-137PC32       ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; EE-137PC32       ; Windows 8 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1456244858 source:c:\users\blomqcon\desktop\ee371projects\assignment_4\test_c_code\parity_test\main.c
+	<stdio.h>
+	<stdlib.h>
+
