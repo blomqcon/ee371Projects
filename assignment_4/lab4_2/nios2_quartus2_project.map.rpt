@@ -1,5 +1,5 @@
 Analysis & Synthesis report for nios2_quartus2_project
-Tue Feb 23 07:49:45 2016
+Tue Feb 23 11:21:22 2016
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
 
 
@@ -240,7 +240,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Feb 23 07:49:45 2016           ;
+; Analysis & Synthesis Status     ; Successful - Tue Feb 23 11:21:22 2016           ;
 ; Quartus Prime Version           ; 15.1.1 Build 189 12/02/2015 SJ Standard Edition ;
 ; Revision Name                   ; nios2_quartus2_project                          ;
 ; Top-level Entity Name           ; DE1_SoC                                         ;
@@ -5615,7 +5615,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
-    Info: Processing started: Tue Feb 23 07:49:12 2016
+    Info: Processing started: Tue Feb 23 11:20:51 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off nios2_quartus2_project -c nios2_quartus2_project
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file serial_com_code/characterbitcount.v
@@ -6033,7 +6033,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/blomqcon/Desktop/ee371Projects/assignment_4/lab4_2/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (11170): Start IP generation for the debug fabric within sld_hub.
-Info (11172): 2016.02.23.07:49:34 Progress: Loading slde92cdb6f/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2016.02.23.11:21:11 Progress: Loading slde92cdb6f/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -6081,10 +6081,10 @@ Info (21057): Implemented 2518 device resources after synthesis - the final reso
     Info (21061): Implemented 2320 logic cells
     Info (21064): Implemented 172 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 1053 megabytes
-    Info: Processing ended: Tue Feb 23 07:49:45 2016
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:58
+    Info: Peak virtual memory: 1061 megabytes
+    Info: Processing ended: Tue Feb 23 11:21:22 2016
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:56
 
 
 +------------------------------------------+

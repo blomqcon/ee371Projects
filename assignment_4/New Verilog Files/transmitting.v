@@ -1,12 +1,4 @@
-/*	Joanna Mazer
-	EE 371 Peckol Winter 2016
-	Project 3: Extending a Microprocessor
-	transmitting.v
-	
-	This module combines the sub-modules PISO.v, startBit.v, 
-	characterBitCount.v and serial_buffer.v to simplify the
-	inputs and outputs of the system.
-*/
+
 
 `include "Tserial_buffer.v"
 `include "PISO.v"

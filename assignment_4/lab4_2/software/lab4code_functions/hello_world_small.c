@@ -80,8 +80,8 @@ void transmitIfBufferNotEmpty(char** pTransmit, char* pBufferHead, char* pBuffer
 			  *load = 1;
 			  *transmit_enable = 0;
 			  alt_putchar(c);
-			  //*data_bus_LEDs = (*load) | (*transmit_enable << 1) | (*character_sent << 2) | (*character_received << 3);
-			  *data_bus_LEDs = c;
+			  *data_bus_LEDs = (*load) | (*transmit_enable << 1) | (*character_sent << 2) | (*character_received << 3);
+			  //*data_bus_LEDs = c;
 			  usleep(10000);
 		  }
 	  }
@@ -119,7 +119,7 @@ int main() {
 
 	*load = 0;
 	*transmit_enable = 0;
-	*data_bus_output = 0x00;
+	*data_bus_output = 0xFF;
 	*data_bus_LEDs = 0x00;
 
   /* Event loop never exits. */

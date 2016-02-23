@@ -38,3 +38,4 @@ module TstartBit(enable, clk, reset, bitStream, BIC, BSC);
 	end
 
 endmodule
+

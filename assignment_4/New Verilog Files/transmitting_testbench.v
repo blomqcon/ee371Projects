@@ -1,12 +1,4 @@
-/*	Joanna Mazer
-	EE 371 Peckol Winter 2016
-	Project 3: Extending a Microprocessor
-	transmitting_testbench.v
-	
-	These modules function as the testbench to the receiving.v file.
-	A truth table will be generated, as well as a gtkwave output
-	waveform.
-*/
+
 
 `include "transmitting.v"
 
@@ -26,7 +18,7 @@ module transmitting_testbench;
 	initial
 		begin
 		// dump file is for dumping all the variables in a simulation
-		$dumpfile("transmitting.vcd");
+		$dumpfile("vvp/transmitting.vcd");
 		
 		// dumps all the variables in module myDesign and below
 		// but not modules instantiated in myDesign into the dump file.

@@ -1,9 +1,9 @@
-08:48:50 **** Incremental Build of configuration Nios II for project lab4code_functions ****
+11:24:02 **** Incremental Build of configuration Nios II for project lab4code_functions ****
 make all 
 Info: Building ../lab4code_functions_bsp/
 C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab4code_functions_bsp/
 [BSP build complete]
 [lab4code_functions build complete]
 
-08:48:50 Build Finished (took 680ms)
+11:24:03 Build Finished (took 700ms)
 

@@ -29,3 +29,4 @@ module transmitting (clk, reset, t_enable, data_in, data_out, charSent, load_n);
 	assign data_out = buffer_in;
 
 endmodule
+

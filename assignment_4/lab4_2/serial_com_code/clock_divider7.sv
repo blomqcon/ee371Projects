@@ -9,5 +9,5 @@ module clock_divider19 (clock, divided_clock15);
 
 	always @(posedge clock)
 	divided_clocks = divided_clocks + 1;
-	assign divided_clock15 = divided_clocks[13];
+	assign divided_clock15 = divided_clocks[8]; //*******************************
 endmodule 
