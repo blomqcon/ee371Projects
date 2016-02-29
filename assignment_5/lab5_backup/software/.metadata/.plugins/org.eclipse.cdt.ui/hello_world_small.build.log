@@ -1,0 +1,8 @@
+07:37:54 **** Build of configuration Nios II for project hello_world_small ****
+make all 
+makefile:242: ../hello_world_small_bsp//public.mk: No such file or directory
+makefile:448: ../hello_world_small_bsp//mem_init.mk: No such file or directory
+make: *** No rule to make target `../hello_world_small_bsp//mem_init.mk'.  Stop.
+
+07:37:54 Build Finished (took 80ms)
+
