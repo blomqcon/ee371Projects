@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+   <export preferredWidth="188" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project,Library" />
+<<<<<<< HEAD
+ <window width="1936" height="1176" x="-8" y="-8" />
+=======
+ <window width="1294" height="1407" x="1273" y="0" />
+>>>>>>> f6773cc3ced225fd535626b263df39f9344668ec
+ <generation
+   testbench_simulation="NONE"
+   testbench_system="NONE"
+   path="_PROJECT_NAME_"
+   block_symbol_file="0" />
+</preferences>

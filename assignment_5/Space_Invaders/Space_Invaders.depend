@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1456520182 source:d:\university_of_washington\classes\8_winter_2016\ee_371\ee371projects\assignment_5\space_invaders\main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<windows.h>
+
