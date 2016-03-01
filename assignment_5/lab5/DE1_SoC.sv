@@ -29,8 +29,7 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 		.parallel_output_external_connection_export(parallelOutput),
 		.transmit_enable_output_external_connection_export(transmitEnable),
 		.sram_address_external_connection_export(sram_address),
-		.sram_data_external_connection_in_port(sram_data),
-		.sram_data_external_connection_out_port(sram_data),
+		.sram_data_external_connection_export(sram_data),
 		.sram_enable_read_external_connection_export(sram_enable_read),
 		.sram_enable_write_external_connection_export(sram_enable_write),
 	);
@@ -38,7 +37,7 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 	wire [31:0] slow_clocks;
 	clock_divider cd(PLD_CLOCKINPUT, slow_clocks);
 	
-	Transmit transmit(
+	/*Transmit transmit(
 		.serialOut(serialData),
 		.charSent(charSent),
 		.parallelOut(parallelOut),
@@ -61,7 +60,7 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 		.address(sram_address),
 		.OE_n(sram_enable_read),
 		.WE_n(sram_enable_write)
-	);
+	);*/
 	
 	
 	

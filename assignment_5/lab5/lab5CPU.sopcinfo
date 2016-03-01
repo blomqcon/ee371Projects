@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="lab5CPU" kind="lab5CPU" version="1.0" fabric="QSYS">
  <!-- Format version 15.1 189 (Future versions may contain additional information.) -->
- <!-- 2016.02.29.16:51:23 -->
+ <!-- 2016.03.01.14:39:47 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1456793483</value>
+  <value>1456871987</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -7907,7 +7907,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.DATA_WIDTH</name>
-   <value>10</value>
+   <value>8</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.DO_TEST_BENCH_WIRING</name>
@@ -7959,7 +7959,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.altr,gpio-bank-width</name>
-   <value>10</value>
+   <value>8</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.resetvalue</name>
@@ -8051,7 +8051,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="width">
    <type>int</type>
-   <value>10</value>
+   <value>8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8641,7 +8641,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>in_port</name>
     <direction>Input</direction>
-    <width>10</width>
+    <width>8</width>
     <role>export</role>
    </port>
   </interface>
@@ -8667,7 +8667,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.DATA_WIDTH</name>
-   <value>10</value>
+   <value>8</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.DO_TEST_BENCH_WIRING</name>
@@ -8719,7 +8719,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.altr,gpio-bank-width</name>
-   <value>10</value>
+   <value>8</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.resetvalue</name>
@@ -8811,7 +8811,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="width">
    <type>int</type>
-   <value>10</value>
+   <value>8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9419,7 +9419,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>out_port</name>
     <direction>Output</direction>
-    <width>10</width>
+    <width>8</width>
     <role>export</role>
    </port>
   </interface>
@@ -10243,15 +10243,15 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.HAS_IN</name>
-   <value>1</value>
+   <value>0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.HAS_OUT</name>
-   <value>1</value>
+   <value>0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.HAS_TRI</name>
-   <value>0</value>
+   <value>1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.IRQ_TYPE</name>
@@ -10311,7 +10311,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="direction">
    <type>java.lang.String</type>
-   <value>InOut</value>
+   <value>Bidir</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -10385,7 +10385,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_has_tri">
    <type>boolean</type>
-   <value>false</value>
+   <value>true</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -10393,7 +10393,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_has_out">
    <type>boolean</type>
-   <value>true</value>
+   <value>false</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -10401,7 +10401,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_has_in">
    <type>boolean</type>
-   <value>true</value>
+   <value>false</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -10973,14 +10973,8 @@ parameters are a RESULT of the module parameters. -->
    <type>conduit</type>
    <isStart>false</isStart>
    <port>
-    <name>in_port</name>
-    <direction>Input</direction>
-    <width>8</width>
-    <role>export</role>
-   </port>
-   <port>
-    <name>out_port</name>
-    <direction>Output</direction>
+    <name>bidir_port</name>
+    <direction>Bidir</direction>
     <width>8</width>
     <role>export</role>
    </port>
