@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="lab5CPU" kind="lab5CPU" version="1.0" fabric="QSYS">
  <!-- Format version 15.1 189 (Future versions may contain additional information.) -->
- <!-- 2016.02.29.15:22:42 -->
+ <!-- 2016.02.29.16:51:23 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1456788161</value>
+  <value>1456793483</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>

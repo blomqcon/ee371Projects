@@ -1,5 +1,5 @@
 Flow report for nios2_quartus2_project
-Mon Feb 29 15:23:19 2016
+Mon Feb 29 16:52:00 2016
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Flow Status                 ; Successful - Mon Feb 29 15:23:19 2016           ;
+; Flow Status                 ; Successful - Mon Feb 29 16:51:59 2016           ;
 ; Quartus Prime Version       ; 15.1.1 Build 189 12/02/2015 SJ Standard Edition ;
 ; Revision Name               ; nios2_quartus2_project                          ;
 ; Top-level Entity Name       ; DE1_SoC                                         ;
@@ -63,7 +63,7 @@ agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
-; Start date & time ; 02/29/2016 15:22:26    ;
+; Start date & time ; 02/29/2016 16:51:07    ;
 ; Main task         ; Compilation            ;
 ; Revision Name     ; nios2_quartus2_project ;
 +-------------------+------------------------+
@@ -74,7 +74,7 @@ agreement for further details.
 +-------------------------------------+-----------------------------------------------------------+------------------------+-------------+------------+
 ; Assignment Name                     ; Value                                                     ; Default Value          ; Entity Name ; Section Id ;
 +-------------------------------------+-----------------------------------------------------------+------------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 273440549380963.145678814511200                           ; --                     ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 203178703705033.145679346706256                           ; --                     ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                        ; --                     ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                         ; --                     ; --          ; --         ;
 ; MISC_FILE                           ; lab5CPU/synthesis/../lab5CPU.cmp                          ; --                     ; --          ; --         ;
@@ -90,7 +90,7 @@ agreement for further details.
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                     ; --                     ; --          ; --         ;
 ; SLD_FILE                            ; lab5CPU/synthesis/lab5CPU.regmap                          ; --                     ; --          ; --         ;
 ; SLD_FILE                            ; lab5CPU/synthesis/lab5CPU.debuginfo                       ; --                     ; --          ; --         ;
-; SLD_INFO                            ; QSYS_NAME lab5CPU HAS_SOPCINFO 1 GENERATION_ID 1456787625 ; --                     ; lab5CPU     ; --         ;
+; SLD_INFO                            ; QSYS_NAME lab5CPU HAS_SOPCINFO 1 GENERATION_ID 1456793381 ; --                     ; lab5CPU     ; --         ;
 ; SMART_RECOMPILE                     ; On                                                        ; Off                    ; --          ; --         ;
 ; SOPCINFO_FILE                       ; lab5CPU/synthesis/../../lab5CPU.sopcinfo                  ; --                     ; --          ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                        ; --                     ; --          ; --         ;
@@ -103,8 +103,8 @@ agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:54     ; 1.0                     ; 1040 MB             ; 00:01:49                           ;
-; Total                  ; 00:00:54     ; --                      ; --                  ; 00:01:49                           ;
+; Analysis & Elaboration ; 00:00:53     ; 1.0                     ; 1046 MB             ; 00:01:54                           ;
+; Total                  ; 00:00:53     ; --                      ; --                  ; 00:01:54                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,7 +113,7 @@ agreement for further details.
 +------------------------+------------------+-----------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +------------------------+------------------+-----------+------------+----------------+
-; Analysis & Elaboration ; EE-137PC28       ; Windows 8 ; 6.2        ; x86_64         ;
+; Analysis & Elaboration ; EE-137PC32       ; Windows 8 ; 6.2        ; x86_64         ;
 +------------------------+------------------+-----------+------------+----------------+
 
 

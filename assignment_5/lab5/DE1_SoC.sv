@@ -37,19 +37,23 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 	
 	wire [31:0] slow_clocks;
 	clock_divider cd(PLD_CLOCKINPUT, slow_clocks);
-
 	
-	TopLevel com (
-		.SClk(slow_clocks[7]),
-		.serial_in(serialData),
+	Transmit transmit(
+		.serialOut(serialData),
+		.charSent(charSent),
+		.parallelOut(parallelOut),
+		.transmitEnable(transmitEnable),
 		.load(load),
 		.reset(1),
-		.transmit_enable(transmitEnable),
-		.parallel_in(parallelInput),
-		.serial_out(serialData),
-		.char_received(charRecieved),
-		.char_sent(charSent),
-		.parallel_out(parallelOutput)
+		.clock(slow_clocks[7])
+	);
+	
+	Receive receive(
+		.parallelIn(parallelIn),
+		.charReceived(charReceived),
+		.serialInput(serialData),
+		.reset(1),
+		.clock(slow_clocks[7])
 	);
 	
 	SRAM sram(
@@ -61,21 +65,7 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 	
 	
 	
-	/*SerialOutput so(
-		.serialOut(serialData), 
-		.charSent(charSent), 
-		.data(parallelOutput), 
-		.transmitEnable(transmitEnable), 
-		.load(load), 
-		.clock(slow_clock)
-	);
 	
-	SerialInput si(
-		.parallelOut(parallelInput),
-		.charRecieved(charRecieved),
-		.data(serialData),
-		.clock(slow_clock)
-	);*/
 	
 	assign LEDR[7:0] = ledOutput; 
 	//assign LEDR[8] = transmitEnable;
