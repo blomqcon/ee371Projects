@@ -31,9 +31,29 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="data_structures_constants.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="data_structures_constants.h" />
+		<Unit filename="display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="display.h" />
+		<Unit filename="gamelogic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gamelogic.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="sram.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sram.h" />
+		<Unit filename="sram_tests.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sram_tests.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
