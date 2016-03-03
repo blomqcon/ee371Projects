@@ -75,6 +75,9 @@ void printVoid() {
 }
 
 printGunnerSlice(int gunnerX, int slice) {
+//    if(gunnerX >= SCREEN_WIDTH) {
+//        gunnerX = gunnerX % SCREEN_WIDTH;
+//    }
     int y;
     for(y = 0; y < gunnerX; y++) {
         printf(" ");

@@ -12,6 +12,8 @@
 #define GUNNER_WIDTH 7
 #define GUNNER_HEIGHT 2
 
+#define SCREEN_WIDTH 73
+
 /*#define transmit_enable (volatile char *) 0x00003040
 #define character_sent (volatile char *) 0x00003050
 #define data_bus_output (volatile char *) 0x00003070
