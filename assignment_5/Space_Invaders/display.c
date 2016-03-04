@@ -75,15 +75,19 @@ void printVoid() {
 }
 
 printGunnerSlice(int gunnerX, int slice) {
-//    if(gunnerX >= SCREEN_WIDTH) {
-//        gunnerX = gunnerX % SCREEN_WIDTH;
-//    }
-    int y;
-    for(y = 0; y < gunnerX; y++) {
-        printf(" ");
+    int SCREEN_WIDTH = ALIEN_COLS * ALIEN_WIDTH;
+    int numberOfWraps = (gunnerX + GUNNER_WIDTH) - SCREEN_WIDTH;
+    if(numberOfWraps < 0) numberOfWraps = 0;
+
+    int i;
+    for(i = 0; i < numberOfWraps; i++) {
+        putchar(gunner[(slice * GUNNER_WIDTH) + (GUNNER_WIDTH - numberOfWraps + i)]);
     }
-    for(y = 0; y < GUNNER_WIDTH; y++) {
-        putchar(gunner[(slice * GUNNER_WIDTH) + y]);
+    for(i = 0; i < gunnerX - numberOfWraps; i++) {
+        putchar(' ');
+    }
+    for(i = 0; i < SCREEN_WIDTH - gunnerX; i++) {
+        putchar(gunner[(slice * GUNNER_WIDTH) + i]);
     }
 }
 

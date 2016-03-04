@@ -12,7 +12,6 @@
 #define GUNNER_WIDTH 7
 #define GUNNER_HEIGHT 2
 
-#define SCREEN_WIDTH 73
 
 /*#define transmit_enable (volatile char *) 0x00003040
 #define character_sent (volatile char *) 0x00003050
@@ -41,6 +40,12 @@ struct Alien {
     char alive;
     char type;
     char rowId;
+};
+
+struct Projectile {
+    char direction;
+    char symbol;
+    char speed;
 };
 
 #endif // data_struct_const_H_

@@ -28,7 +28,7 @@ int main()
 
     //New Game
     int gameTime = 0;
-    int gunnerX = 5;
+    int gunnerX = 32; //max value 39 (ALIEN_WIDTH * ALIEN_COLS)
     initRandomAliens(pSramAliens);
     int updateToggle = 1;
     int gunnerToggle = 1;
@@ -44,7 +44,7 @@ int main()
             updateToggle = 0;
         }
 
-        if((gameTime % 40 == 0) && gunnerToggle) {
+        if((gameTime % 20 == 0) && gunnerToggle) {
             gunnerX++;
             /*if(gunnerX >= SCREEN_WIDTH) {
                 gunnerX = 0;

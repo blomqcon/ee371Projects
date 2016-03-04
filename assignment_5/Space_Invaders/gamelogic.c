@@ -23,7 +23,7 @@ void updateToggleValues(int gameTime, int* updateToggle, int* gunnerToggle) {
         *updateToggle = 1;
     }
 
-    if(gameTime % 41 == 0) {
+    if(gameTime % 21 == 0) {
         *gunnerToggle = 1;
     }
 }
