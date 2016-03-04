@@ -10,6 +10,27 @@ void initializeGame(clock_t startTimer) {
     startTimer = clock();
 }
 
+void moveGunnerLeft(int* gunnerX) {
+    if((*gunnerX) == 0) {
+        gunnerX = (ALIEN_WIDTH * ALIEN_COLS) - 1;
+    } else {
+        gunnerX--;
+    }
+}
+
+void moveGunnerRight(int* gunnerX) {
+    if((*gunnerX) == (ALIEN_WIDTH * ALIEN_COLS) - 1) {
+        (*gunnerX) = 0;
+    } else {
+        (*gunnerX)++;
+    }
+}
+
+void shootGunner(int* gunnerX) {
+    struct Projectile p;
+    p.direction = 1;
+}
+
 void updateGameTime(int* gameTime, clock_t* startTimer) {
     float seconds = ((float)(clock() - (*startTimer)))/CLOCKS_PER_SEC;
     if(seconds > 0.1) {

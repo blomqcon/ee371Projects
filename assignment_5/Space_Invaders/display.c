@@ -80,8 +80,12 @@ printGunnerSlice(int gunnerX, int slice) {
     if(numberOfWraps < 0) numberOfWraps = 0;
 
     int i;
-    for(i = 0; i < numberOfWraps; i++) {
-        putchar(gunner[(slice * GUNNER_WIDTH) + (GUNNER_WIDTH - numberOfWraps + i)]);
+    //printf("numberofWraps: %i\n", numberOfWraps);
+    if(numberOfWraps != 0) {
+        for(i = 0; i < numberOfWraps; i++) {
+            //printf("INSIDE");
+            putchar(gunner[(slice * GUNNER_WIDTH) + (GUNNER_WIDTH - numberOfWraps + i)]);
+        }
     }
     for(i = 0; i < gunnerX - numberOfWraps; i++) {
         putchar(' ');
@@ -94,14 +98,16 @@ printGunnerSlice(int gunnerX, int slice) {
 void printGunner(int gunnerX) {
     int x;
     for(x = 0; x < GUNNER_HEIGHT; x++) {
-        printGunnerSlice(gunnerX, x);
+        //printGunnerSlice(gunnerX, x);
+        printf("gunner!");
         printf("\n");
     }
+    //printf("Gunner location: %i\n", gunnerX);
 }
 
 void updateDisplay(int pSramAliens, int gunnerX, int step, int shift) {
-    //printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    system("cls");
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    //system("cls");
     printAliens(pSramAliens, step, shift);
     printVoid();
     printGunner(gunnerX);
