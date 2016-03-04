@@ -1,0 +1,3 @@
+module GameTime();
+
+endmodule

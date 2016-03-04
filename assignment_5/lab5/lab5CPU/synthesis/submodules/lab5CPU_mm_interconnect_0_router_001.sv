@@ -47,23 +47,23 @@ module lab5CPU_mm_interconnect_0_router_001_default_decode
      parameter DEFAULT_CHANNEL = 1,
                DEFAULT_WR_CHANNEL = -1,
                DEFAULT_RD_CHANNEL = -1,
-               DEFAULT_DESTID = 6 
+               DEFAULT_DESTID = 9 
    )
-  (output [78 - 75 : 0] default_destination_id,
-   output [14-1 : 0] default_wr_channel,
-   output [14-1 : 0] default_rd_channel,
-   output [14-1 : 0] default_src_channel
+  (output [81 - 77 : 0] default_destination_id,
+   output [17-1 : 0] default_wr_channel,
+   output [17-1 : 0] default_rd_channel,
+   output [17-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
-    DEFAULT_DESTID[78 - 75 : 0];
+    DEFAULT_DESTID[81 - 77 : 0];
 
   generate
     if (DEFAULT_CHANNEL == -1) begin : no_default_channel_assignment
       assign default_src_channel = '0;
     end
     else begin : default_channel_assignment
-      assign default_src_channel = 14'b1 << DEFAULT_CHANNEL;
+      assign default_src_channel = 17'b1 << DEFAULT_CHANNEL;
     end
   endgenerate
 
@@ -73,8 +73,8 @@ module lab5CPU_mm_interconnect_0_router_001_default_decode
       assign default_rd_channel = '0;
     end
     else begin : default_rw_channel_assignment
-      assign default_wr_channel = 14'b1 << DEFAULT_WR_CHANNEL;
-      assign default_rd_channel = 14'b1 << DEFAULT_RD_CHANNEL;
+      assign default_wr_channel = 17'b1 << DEFAULT_WR_CHANNEL;
+      assign default_rd_channel = 17'b1 << DEFAULT_RD_CHANNEL;
     end
   endgenerate
 
@@ -93,7 +93,7 @@ module lab5CPU_mm_interconnect_0_router_001
     // Command Sink (Input)
     // -------------------
     input                       sink_valid,
-    input  [92-1 : 0]    sink_data,
+    input  [95-1 : 0]    sink_data,
     input                       sink_startofpacket,
     input                       sink_endofpacket,
     output                      sink_ready,
@@ -102,8 +102,8 @@ module lab5CPU_mm_interconnect_0_router_001
     // Command Source (Output)
     // -------------------
     output                          src_valid,
-    output reg [92-1    : 0] src_data,
-    output reg [14-1 : 0] src_channel,
+    output reg [95-1    : 0] src_data,
+    output reg [17-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
     input                           src_ready
@@ -112,18 +112,18 @@ module lab5CPU_mm_interconnect_0_router_001
     // -------------------------------------------------------
     // Local parameters and variables
     // -------------------------------------------------------
-    localparam PKT_ADDR_H = 49;
+    localparam PKT_ADDR_H = 50;
     localparam PKT_ADDR_L = 36;
-    localparam PKT_DEST_ID_H = 78;
-    localparam PKT_DEST_ID_L = 75;
-    localparam PKT_PROTECTION_H = 82;
-    localparam PKT_PROTECTION_L = 80;
-    localparam ST_DATA_W = 92;
-    localparam ST_CHANNEL_W = 14;
+    localparam PKT_DEST_ID_H = 81;
+    localparam PKT_DEST_ID_L = 77;
+    localparam PKT_PROTECTION_H = 85;
+    localparam PKT_PROTECTION_L = 83;
+    localparam ST_DATA_W = 95;
+    localparam ST_CHANNEL_W = 17;
     localparam DECODER_TYPE = 0;
 
-    localparam PKT_TRANS_WRITE = 52;
-    localparam PKT_TRANS_READ  = 53;
+    localparam PKT_TRANS_WRITE = 53;
+    localparam PKT_TRANS_READ  = 54;
 
     localparam PKT_ADDR_W = PKT_ADDR_H-PKT_ADDR_L + 1;
     localparam PKT_DEST_ID_W = PKT_DEST_ID_H-PKT_DEST_ID_L + 1;
@@ -134,14 +134,14 @@ module lab5CPU_mm_interconnect_0_router_001
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h2000 - 64'h0); 
-    localparam PAD1 = log2ceil(64'h3000 - 64'h2800); 
+    localparam PAD0 = log2ceil(64'h4000 - 64'h0); 
+    localparam PAD1 = log2ceil(64'h5000 - 64'h4800); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
     // address range of the slaves. If the required width is too
     // large or too small, we use the address field width instead.
     // -------------------------------------------------------
-    localparam ADDR_RANGE = 64'h3000;
+    localparam ADDR_RANGE = 64'h5000;
     localparam RANGE_ADDR_WIDTH = log2ceil(ADDR_RANGE);
     localparam OPTIMIZED_ADDR_H = (RANGE_ADDR_WIDTH > PKT_ADDR_W) ||
                                   (RANGE_ADDR_WIDTH == 0) ?
@@ -165,7 +165,7 @@ module lab5CPU_mm_interconnect_0_router_001
     assign src_startofpacket = sink_startofpacket;
     assign src_endofpacket   = sink_endofpacket;
     wire [PKT_DEST_ID_W-1:0] default_destid;
-    wire [14-1 : 0] default_src_channel;
+    wire [17-1 : 0] default_src_channel;
 
 
 
@@ -189,15 +189,15 @@ module lab5CPU_mm_interconnect_0_router_001
         // Sets the channel and destination ID based on the address
         // --------------------------------------------------
 
-    // ( 0x0 .. 0x2000 )
-    if ( {address[RG:PAD0],{PAD0{1'b0}}} == 14'h0   ) begin
-            src_channel = 14'b10;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 6;
+    // ( 0x0 .. 0x4000 )
+    if ( {address[RG:PAD0],{PAD0{1'b0}}} == 15'h0   ) begin
+            src_channel = 17'b10;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 9;
     end
 
-    // ( 0x2800 .. 0x3000 )
-    if ( {address[RG:PAD1],{PAD1{1'b0}}} == 14'h2800   ) begin
-            src_channel = 14'b01;
+    // ( 0x4800 .. 0x5000 )
+    if ( {address[RG:PAD1],{PAD1{1'b0}}} == 15'h4800   ) begin
+            src_channel = 17'b01;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
     end
 

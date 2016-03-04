@@ -45,12 +45,12 @@ int main()
         }
 
         if((gameTime % 40 == 0) && gunnerToggle) {
-            gunnerX--;
-            if(gunnerX >= SCREEN_WIDTH) {
+            gunnerX++;
+            /*if(gunnerX >= SCREEN_WIDTH) {
                 gunnerX = 0;
             } else if(gunnerX <= 0) {
                 gunnerX = SCREEN_WIDTH-1;
-            }
+            }*/
             gunnerToggle = 0;
         }
     }

@@ -12,7 +12,10 @@ module lab5CPU (
 	sram_data_external_connection_export,
 	sram_enable_read_external_connection_export,
 	sram_enable_write_external_connection_export,
-	transmit_enable_output_external_connection_export);	
+	transmit_enable_output_external_connection_export,
+	gun_right_external_connection_export,
+	gun_shoot_external_connection_export,
+	gun_left_external_connection_export);	
 
 	input		character_recieved_input_external_connection_export;
 	input		character_sent_input_external_connection_export;
@@ -27,4 +30,7 @@ module lab5CPU (
 	output		sram_enable_read_external_connection_export;
 	output		sram_enable_write_external_connection_export;
 	output		transmit_enable_output_external_connection_export;
+	input		gun_right_external_connection_export;
+	input	[1:0]	gun_shoot_external_connection_export;
+	input		gun_left_external_connection_export;
 endmodule

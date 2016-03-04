@@ -7,6 +7,9 @@ module lab5CPU (
 		input  wire        character_recieved_input_external_connection_export, // character_recieved_input_external_connection.export
 		input  wire        character_sent_input_external_connection_export,     //     character_sent_input_external_connection.export
 		input  wire        clk_clk,                                             //                                          clk.clk
+		input  wire        gun_left_external_connection_export,                 //                 gun_left_external_connection.export
+		input  wire        gun_right_external_connection_export,                //                gun_right_external_connection.export
+		input  wire [1:0]  gun_shoot_external_connection_export,                //                gun_shoot_external_connection.export
 		output wire [7:0]  led_output_external_connection_export,               //               led_output_external_connection.export
 		output wire        load_output_external_connection_export,              //              load_output_external_connection.export
 		input  wire [7:0]  parallel_input_external_connection_export,           //           parallel_input_external_connection.export
@@ -22,14 +25,14 @@ module lab5CPU (
 	wire  [31:0] cpu_data_master_readdata;                                  // mm_interconnect_0:cpu_data_master_readdata -> cpu:d_readdata
 	wire         cpu_data_master_waitrequest;                               // mm_interconnect_0:cpu_data_master_waitrequest -> cpu:d_waitrequest
 	wire         cpu_data_master_debugaccess;                               // cpu:jtag_debug_module_debugaccess_to_roms -> mm_interconnect_0:cpu_data_master_debugaccess
-	wire  [13:0] cpu_data_master_address;                                   // cpu:d_address -> mm_interconnect_0:cpu_data_master_address
+	wire  [14:0] cpu_data_master_address;                                   // cpu:d_address -> mm_interconnect_0:cpu_data_master_address
 	wire   [3:0] cpu_data_master_byteenable;                                // cpu:d_byteenable -> mm_interconnect_0:cpu_data_master_byteenable
 	wire         cpu_data_master_read;                                      // cpu:d_read -> mm_interconnect_0:cpu_data_master_read
 	wire         cpu_data_master_write;                                     // cpu:d_write -> mm_interconnect_0:cpu_data_master_write
 	wire  [31:0] cpu_data_master_writedata;                                 // cpu:d_writedata -> mm_interconnect_0:cpu_data_master_writedata
 	wire  [31:0] cpu_instruction_master_readdata;                           // mm_interconnect_0:cpu_instruction_master_readdata -> cpu:i_readdata
 	wire         cpu_instruction_master_waitrequest;                        // mm_interconnect_0:cpu_instruction_master_waitrequest -> cpu:i_waitrequest
-	wire  [13:0] cpu_instruction_master_address;                            // cpu:i_address -> mm_interconnect_0:cpu_instruction_master_address
+	wire  [14:0] cpu_instruction_master_address;                            // cpu:i_address -> mm_interconnect_0:cpu_instruction_master_address
 	wire         cpu_instruction_master_read;                               // cpu:i_read -> mm_interconnect_0:cpu_instruction_master_read
 	wire         mm_interconnect_0_jtag_uart_avalon_jtag_slave_chipselect;  // mm_interconnect_0:jtag_uart_avalon_jtag_slave_chipselect -> jtag_uart:av_chipselect
 	wire  [31:0] mm_interconnect_0_jtag_uart_avalon_jtag_slave_readdata;    // jtag_uart:av_readdata -> mm_interconnect_0:jtag_uart_avalon_jtag_slave_readdata
@@ -48,7 +51,7 @@ module lab5CPU (
 	wire  [31:0] mm_interconnect_0_cpu_jtag_debug_module_writedata;         // mm_interconnect_0:cpu_jtag_debug_module_writedata -> cpu:jtag_debug_module_writedata
 	wire         mm_interconnect_0_onchip_mem_s1_chipselect;                // mm_interconnect_0:onchip_mem_s1_chipselect -> onchip_mem:chipselect
 	wire  [31:0] mm_interconnect_0_onchip_mem_s1_readdata;                  // onchip_mem:readdata -> mm_interconnect_0:onchip_mem_s1_readdata
-	wire  [10:0] mm_interconnect_0_onchip_mem_s1_address;                   // mm_interconnect_0:onchip_mem_s1_address -> onchip_mem:address
+	wire  [11:0] mm_interconnect_0_onchip_mem_s1_address;                   // mm_interconnect_0:onchip_mem_s1_address -> onchip_mem:address
 	wire   [3:0] mm_interconnect_0_onchip_mem_s1_byteenable;                // mm_interconnect_0:onchip_mem_s1_byteenable -> onchip_mem:byteenable
 	wire         mm_interconnect_0_onchip_mem_s1_write;                     // mm_interconnect_0:onchip_mem_s1_write -> onchip_mem:write
 	wire  [31:0] mm_interconnect_0_onchip_mem_s1_writedata;                 // mm_interconnect_0:onchip_mem_s1_writedata -> onchip_mem:writedata
@@ -99,9 +102,15 @@ module lab5CPU (
 	wire   [1:0] mm_interconnect_0_sram_address_s1_address;                 // mm_interconnect_0:sram_address_s1_address -> sram_address:address
 	wire         mm_interconnect_0_sram_address_s1_write;                   // mm_interconnect_0:sram_address_s1_write -> sram_address:write_n
 	wire  [31:0] mm_interconnect_0_sram_address_s1_writedata;               // mm_interconnect_0:sram_address_s1_writedata -> sram_address:writedata
+	wire  [31:0] mm_interconnect_0_gun_left_s1_readdata;                    // gun_left:readdata -> mm_interconnect_0:gun_left_s1_readdata
+	wire   [1:0] mm_interconnect_0_gun_left_s1_address;                     // mm_interconnect_0:gun_left_s1_address -> gun_left:address
+	wire  [31:0] mm_interconnect_0_gun_right_s1_readdata;                   // gun_right:readdata -> mm_interconnect_0:gun_right_s1_readdata
+	wire   [1:0] mm_interconnect_0_gun_right_s1_address;                    // mm_interconnect_0:gun_right_s1_address -> gun_right:address
+	wire  [31:0] mm_interconnect_0_gun_shoot_s1_readdata;                   // gun_shoot:readdata -> mm_interconnect_0:gun_shoot_s1_readdata
+	wire   [1:0] mm_interconnect_0_gun_shoot_s1_address;                    // mm_interconnect_0:gun_shoot_s1_address -> gun_shoot:address
 	wire         irq_mapper_receiver0_irq;                                  // jtag_uart:av_irq -> irq_mapper:receiver0_irq
 	wire  [31:0] cpu_d_irq_irq;                                             // irq_mapper:sender_irq -> cpu:d_irq
-	wire         rst_controller_reset_out_reset;                            // rst_controller:reset_out -> [character_recieved_input:reset_n, character_sent_input:reset_n, cpu:reset_n, irq_mapper:reset, jtag_uart:rst_n, led_output:reset_n, load_output:reset_n, mm_interconnect_0:cpu_reset_n_reset_bridge_in_reset_reset, onchip_mem:reset, parallel_input:reset_n, parallel_output:reset_n, rst_translator:in_reset, sram_address:reset_n, sram_data:reset_n, sram_enable_read:reset_n, sram_enable_write:reset_n, transmit_enable_output:reset_n]
+	wire         rst_controller_reset_out_reset;                            // rst_controller:reset_out -> [character_recieved_input:reset_n, character_sent_input:reset_n, cpu:reset_n, gun_left:reset_n, gun_right:reset_n, gun_shoot:reset_n, irq_mapper:reset, jtag_uart:rst_n, led_output:reset_n, load_output:reset_n, mm_interconnect_0:cpu_reset_n_reset_bridge_in_reset_reset, onchip_mem:reset, parallel_input:reset_n, parallel_output:reset_n, rst_translator:in_reset, sram_address:reset_n, sram_data:reset_n, sram_enable_read:reset_n, sram_enable_write:reset_n, transmit_enable_output:reset_n]
 	wire         rst_controller_reset_out_reset_req;                        // rst_controller:reset_req -> [cpu:reset_req, onchip_mem:reset_req, rst_translator:reset_req_in]
 	wire         cpu_jtag_debug_module_reset_reset;                         // cpu:jtag_debug_module_resetrequest -> rst_controller:reset_in1
 
@@ -148,6 +157,30 @@ module lab5CPU (
 		.jtag_debug_module_write               (mm_interconnect_0_cpu_jtag_debug_module_write),       //                          .write
 		.jtag_debug_module_writedata           (mm_interconnect_0_cpu_jtag_debug_module_writedata),   //                          .writedata
 		.no_ci_readra                          ()                                                     // custom_instruction_master.readra
+	);
+
+	lab5CPU_character_recieved_input gun_left (
+		.clk      (clk_clk),                                //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),        //               reset.reset_n
+		.address  (mm_interconnect_0_gun_left_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_gun_left_s1_readdata), //                    .readdata
+		.in_port  (gun_left_external_connection_export)     // external_connection.export
+	);
+
+	lab5CPU_character_recieved_input gun_right (
+		.clk      (clk_clk),                                 //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),         //               reset.reset_n
+		.address  (mm_interconnect_0_gun_right_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_gun_right_s1_readdata), //                    .readdata
+		.in_port  (gun_right_external_connection_export)     // external_connection.export
+	);
+
+	lab5CPU_gun_shoot gun_shoot (
+		.clk      (clk_clk),                                 //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),         //               reset.reset_n
+		.address  (mm_interconnect_0_gun_shoot_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_gun_shoot_s1_readdata), //                    .readdata
+		.in_port  (gun_shoot_external_connection_export)     // external_connection.export
 	);
 
 	lab5CPU_jtag_uart jtag_uart (
@@ -299,6 +332,12 @@ module lab5CPU (
 		.cpu_jtag_debug_module_byteenable        (mm_interconnect_0_cpu_jtag_debug_module_byteenable),        //                                  .byteenable
 		.cpu_jtag_debug_module_waitrequest       (mm_interconnect_0_cpu_jtag_debug_module_waitrequest),       //                                  .waitrequest
 		.cpu_jtag_debug_module_debugaccess       (mm_interconnect_0_cpu_jtag_debug_module_debugaccess),       //                                  .debugaccess
+		.gun_left_s1_address                     (mm_interconnect_0_gun_left_s1_address),                     //                       gun_left_s1.address
+		.gun_left_s1_readdata                    (mm_interconnect_0_gun_left_s1_readdata),                    //                                  .readdata
+		.gun_right_s1_address                    (mm_interconnect_0_gun_right_s1_address),                    //                      gun_right_s1.address
+		.gun_right_s1_readdata                   (mm_interconnect_0_gun_right_s1_readdata),                   //                                  .readdata
+		.gun_shoot_s1_address                    (mm_interconnect_0_gun_shoot_s1_address),                    //                      gun_shoot_s1.address
+		.gun_shoot_s1_readdata                   (mm_interconnect_0_gun_shoot_s1_readdata),                   //                                  .readdata
 		.jtag_uart_avalon_jtag_slave_address     (mm_interconnect_0_jtag_uart_avalon_jtag_slave_address),     //       jtag_uart_avalon_jtag_slave.address
 		.jtag_uart_avalon_jtag_slave_write       (mm_interconnect_0_jtag_uart_avalon_jtag_slave_write),       //                                  .write
 		.jtag_uart_avalon_jtag_slave_read        (mm_interconnect_0_jtag_uart_avalon_jtag_slave_read),        //                                  .read

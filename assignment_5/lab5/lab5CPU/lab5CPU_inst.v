@@ -11,6 +11,9 @@
 		.sram_data_external_connection_export                (<connected-to-sram_data_external_connection_export>),                //                sram_data_external_connection.export
 		.sram_enable_read_external_connection_export         (<connected-to-sram_enable_read_external_connection_export>),         //         sram_enable_read_external_connection.export
 		.sram_enable_write_external_connection_export        (<connected-to-sram_enable_write_external_connection_export>),        //        sram_enable_write_external_connection.export
-		.transmit_enable_output_external_connection_export   (<connected-to-transmit_enable_output_external_connection_export>)    //   transmit_enable_output_external_connection.export
+		.transmit_enable_output_external_connection_export   (<connected-to-transmit_enable_output_external_connection_export>),   //   transmit_enable_output_external_connection.export
+		.gun_right_external_connection_export                (<connected-to-gun_right_external_connection_export>),                //                gun_right_external_connection.export
+		.gun_shoot_external_connection_export                (<connected-to-gun_shoot_external_connection_export>),                //                gun_shoot_external_connection.export
+		.gun_left_external_connection_export                 (<connected-to-gun_left_external_connection_export>)                  //                 gun_left_external_connection.export
 	);
 

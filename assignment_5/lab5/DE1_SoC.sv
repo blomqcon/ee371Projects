@@ -32,6 +32,9 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 		.sram_data_external_connection_export(sram_data),
 		.sram_enable_read_external_connection_export(sram_enable_read),
 		.sram_enable_write_external_connection_export(sram_enable_write),
+		.gun_left_external_connection_export(KEY),
+		.gun_right_external_connection_export(),
+		.gun_shoot_external_connection_export()
 	);
 	
 	wire [31:0] slow_clocks;

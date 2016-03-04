@@ -5,8 +5,8 @@
 #include "sram.h"
 
 void initializeGame(clock_t startTimer) {
-    resetSRAM();
-    srand(time(NULL)); //Seed random number generator
+    //resetSRAM();
+    //srand(time(NULL)); //Seed random number generator
     startTimer = clock();
 }
 

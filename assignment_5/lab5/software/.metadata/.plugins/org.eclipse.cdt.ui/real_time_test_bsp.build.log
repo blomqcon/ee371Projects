@@ -1,6 +1,18 @@
-14:44:37 **** Build of configuration Nios II for project real_time_test_bsp ****
+20:05:42 **** Build of configuration Nios II for project real_time_test_bsp ****
 make all 
-[BSP build complete]
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
 
-14:44:38 Build Finished (took 631ms)
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+
+20:05:43 Build Finished (took 640ms)
 

@@ -12,7 +12,10 @@
 			sram_data_external_connection_export                : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- export
 			sram_enable_read_external_connection_export         : out   std_logic;                                        -- export
 			sram_enable_write_external_connection_export        : out   std_logic;                                        -- export
-			transmit_enable_output_external_connection_export   : out   std_logic                                         -- export
+			transmit_enable_output_external_connection_export   : out   std_logic;                                        -- export
+			gun_right_external_connection_export                : in    std_logic                     := 'X';             -- export
+			gun_shoot_external_connection_export                : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- export
+			gun_left_external_connection_export                 : in    std_logic                     := 'X'              -- export
 		);
 	end component lab5CPU;
 
@@ -30,6 +33,9 @@
 			sram_data_external_connection_export                => CONNECTED_TO_sram_data_external_connection_export,                --                sram_data_external_connection.export
 			sram_enable_read_external_connection_export         => CONNECTED_TO_sram_enable_read_external_connection_export,         --         sram_enable_read_external_connection.export
 			sram_enable_write_external_connection_export        => CONNECTED_TO_sram_enable_write_external_connection_export,        --        sram_enable_write_external_connection.export
-			transmit_enable_output_external_connection_export   => CONNECTED_TO_transmit_enable_output_external_connection_export    --   transmit_enable_output_external_connection.export
+			transmit_enable_output_external_connection_export   => CONNECTED_TO_transmit_enable_output_external_connection_export,   --   transmit_enable_output_external_connection.export
+			gun_right_external_connection_export                => CONNECTED_TO_gun_right_external_connection_export,                --                gun_right_external_connection.export
+			gun_shoot_external_connection_export                => CONNECTED_TO_gun_shoot_external_connection_export,                --                gun_shoot_external_connection.export
+			gun_left_external_connection_export                 => CONNECTED_TO_gun_left_external_connection_export                  --                 gun_left_external_connection.export
 		);
 
