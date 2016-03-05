@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Feb 23, 2016 8:42:35 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1456245755996</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\Users\blomqcon\Desktop\ee371Projects\assignment_4\lab4_2\software\lab4code_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspGeneratedTimeStamp>Mar 4, 2016 7:01:51 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1457146911174</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\Users\jmazer\Desktop\ee371Projects\assignment_4\lab4_2\software\lab4code_bsp</BspGeneratedLocation>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\lab4CPU.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu</Cpu>

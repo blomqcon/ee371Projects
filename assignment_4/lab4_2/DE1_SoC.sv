@@ -1,7 +1,9 @@
-module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
+module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT, GPIO_in, GPIO_out);
 	output [9:0] LEDR;
 	input PLD_CLOCKINPUT; // 50MHz clock.
 	input [9:0] SW;
+	input  GPIO_in;
+	output GPIO_out;
 	
 	
 	wire serialData;
@@ -38,7 +40,7 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 		.reset(SW[0]), 
 		.t_enable(transmitEnable), 
 		.data_in(parallelInput), 
-		.data_out(serialData), 
+		.data_out(GPIO_out), 
 		.charSent(charSent),
 		.load_n(load)
 	);
@@ -46,7 +48,7 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 	receiving r(
 		.clk(slow_clock), 
 		.reset(SW[0]),
-		.data_in(serialData), 
+		.data_in(GPIO_in), 
 		.data_out(parallelOutput), 
 		.charReceived(charRecieved)
 	);

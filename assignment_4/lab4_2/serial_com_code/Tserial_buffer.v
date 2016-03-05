@@ -16,7 +16,11 @@ module Tserial_buffer (clk, reset, data_in, data_out);
 	
 	assign data_out = Q; 
 
-	always @(posedge clk or posedge reset) begin
+	initial begin 
+		Q = 1'b1;
+	end 
+
+	always @(*) begin
 		if (reset) begin
 			Q <= 1'b1;			
 		end

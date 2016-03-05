@@ -120,7 +120,7 @@ GND                          : AA11      : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA12      :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA15      :        :                   :         : 3B        :                
+GPIO_in                      : AA15      : input  : 1.8 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA16      :        :                   :         : 4A        :                
 VCCIO4A                      : AA17      : power  :                   : 1.8V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA18      :        :                   :         : 4A        :                
@@ -938,7 +938,7 @@ LEDR[8]                      : W21       : output : 1.8 V             :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : W22       :        :                   :         : 5A        :                
 VCCIO5A                      : W23       : power  :                   : 1.8V    : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W24       :        :                   :         : 5A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W25       :        :                   :         : 5B        :                
+GPIO_out                     : W25       : output : 1.8 V             :         : 5B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W26       :        :                   :         : 6B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W27       :        :                   :         : 6B        :                
 GND                          : W28       : gnd    :                   :         :           :                

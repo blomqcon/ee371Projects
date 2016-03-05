@@ -42,7 +42,7 @@ module TcharacterBitCount(charReceived, SRclk, BIC, BSC, clk, reset, enable, loa
 							SRclk = 1'b1; 
 						else 									// (4'b0111 != BSC)
 							SRclk = 1'b0;
-						if((combinedCounter[7:4] == 4'b1010) & (combinedCounter[3:0] == 4'b1000)) begin 
+						if((combinedCounter[7:4] == 4'b1001) & (combinedCounter[3:0] == 4'b1000)) begin 
 							charReceived = 1'b1;
 						end
 						combinedCounter = combinedCounter + 8'b1;
@@ -56,6 +56,5 @@ module TcharacterBitCount(charReceived, SRclk, BIC, BSC, clk, reset, enable, loa
 				end
 			//default: combinedCounter = 8'bx;
 		end
-
 
 endmodule

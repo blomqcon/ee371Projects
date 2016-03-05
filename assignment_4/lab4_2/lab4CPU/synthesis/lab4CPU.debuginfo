@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="lab4CPU" kind="system" version="15.1" fabric="QSYS">
  <!-- Format version 15.1 189 (Future versions may contain additional information.) -->
- <!-- 2016.02.23.00:52:23 -->
+ <!-- 2016.03.04.18:28:30 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1456217527</value>
+  <value>1457144893</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -17044,5 +17044,5 @@ parameters are a RESULT of the module parameters. -->
   <version>15.1</version>
  </plugin>
  <reportVersion>15.1 189</reportVersion>
- <uniqueIdentifier>B8CA3A75D3C9000001530D542093</uniqueIdentifier>
+ <uniqueIdentifier>00000000000000E000000153449A9A46</uniqueIdentifier>
 </EnsembleReport>

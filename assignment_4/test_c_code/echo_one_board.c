@@ -4,13 +4,13 @@
 #include "unistd.h"
 #define BUFFER_SIZE 50
 
-#define transmit_enable (volatile char *) 0x00005000
-#define character_sent (volatile char *) 0x00005010
-#define data_bus_output (volatile char *) 0x00005030
-#define load (volatile char *) 0x00005020
-#define data_bus_input (volatile char *) 0x00005060
-#define character_received (volatile char *) 0x00005050
-#define data_bus_LEDs (volatile char *) 0x00005040
+#define transmit_enable 	(volatile char *) 0x00005000
+#define character_sent 		(volatile char *) 0x00005010
+#define data_bus_output 	(volatile char *) 0x00005030
+#define load 				(volatile char *) 0x00005020
+#define data_bus_input 		(volatile char *) 0x00005060
+#define character_received 	(volatile char *) 0x00005050
+#define data_bus_LEDs 		(volatile char *) 0x00005040
 
 
 char readBuffer(char** pTransmit, char* pBufferHead, char* pBuffer) {
@@ -62,7 +62,7 @@ void transmitIfBufferNotEmpty(char** pTransmit, char* pBufferHead, char* pBuffer
 			  *data_bus_output = ((c << 2)>> 1)|0b0000000001;
 			  *load = 1;
 			  *transmit_enable = 0;
-			  alt_putchar(c);
+			  //alt_putchar(c);
 			  //*data_bus_LEDs = (*load) | (*transmit_enable << 1) | (*character_sent << 2) | (*character_received << 3);
 			  *data_bus_LEDs = c;
 			  usleep(10000);

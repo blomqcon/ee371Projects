@@ -3,14 +3,14 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="143" />
+   <connections preferredWidth="47" />
    <irq preferredWidth="34" />
    <export preferredWidth="188" />
    <name preferredWidth="208" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
- <window width="1920" height="1160" x="0" y="0" />
+ <library expandedCategories="Project,Library" />
+ <window width="1920" height="1160" x="-44" y="77" />
  <generation
    testbench_simulation="NONE"
    testbench_system="NONE"
