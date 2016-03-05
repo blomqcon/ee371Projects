@@ -1,0 +1,84 @@
+14:54:04 **** Incremental Build of configuration Nios II for project SRAM1 ****
+make all 
+Info: Building ../SRAM1_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../SRAM1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../SRAM1_bsp//HAL/inc -I../SRAM1_bsp/ -I../SRAM1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking SRAM1.elf
+nios2-elf-g++  -T'../SRAM1_bsp//linker.x' -msys-crt0='../SRAM1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../SRAM1_bsp/  -msmallc  -Wl,-Map=SRAM1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o SRAM1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert SRAM1.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name test --quartus_project_dir "E:/371_Lab_3/lights_and_switchs" --jdi E:/371_Lab_3/lights_and_switchs/software/SRAM1_bsp/../../nios2_quartus2_project.jdi --sopcinfo E:/371_Lab_3/lights_and_switchs/software/SRAM1_bsp/../../test.sopcinfo
+Info: (SRAM1.elf) 2200 Bytes program size (code + initialized data).
+Info:             1784 Bytes free for stack + heap.
+Info: Creating SRAM1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source SRAM1.elf >SRAM1.objdump
+[SRAM1 build complete]
+14:54:28 **** Build of configuration Nios II for project SRAM1 ****
+make all 
+Info: Building ../SRAM1_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../SRAM1_bsp/
+[BSP build complete]
+[SRAM1 build complete]
+14:54:52 **** Incremental Build of configuration Nios II for project SRAM1 ****
+make all 
+Info: Building ../SRAM1_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../SRAM1_bsp/
+[BSP build complete]
+[SRAM1 build complete]
+14:58:09 **** Incremental Build of configuration Nios II for project SRAM1 ****
+make all 
+Info: Building ../SRAM1_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../SRAM1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../SRAM1_bsp//HAL/inc -I../SRAM1_bsp/ -I../SRAM1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking SRAM1.elf
+nios2-elf-g++  -T'../SRAM1_bsp//linker.x' -msys-crt0='../SRAM1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../SRAM1_bsp/  -msmallc  -Wl,-Map=SRAM1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o SRAM1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert SRAM1.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name test --quartus_project_dir "E:/371_Lab_3/lights_and_switchs" --jdi E:/371_Lab_3/lights_and_switchs/software/SRAM1_bsp/../../nios2_quartus2_project.jdi --sopcinfo E:/371_Lab_3/lights_and_switchs/software/SRAM1_bsp/../../test.sopcinfo
+Info: (SRAM1.elf) 2200 Bytes program size (code + initialized data).
+Info:             1784 Bytes free for stack + heap.
+Info: Creating SRAM1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source SRAM1.elf >SRAM1.objdump
+[SRAM1 build complete]
+15:10:30 **** Build of configuration Nios II for project SRAM1 ****
+make all 
+Info: Building ../SRAM1_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../SRAM1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../SRAM1_bsp//HAL/inc -I../SRAM1_bsp/ -I../SRAM1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking SRAM1.elf
+nios2-elf-g++  -T'../SRAM1_bsp//linker.x' -msys-crt0='../SRAM1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../SRAM1_bsp/  -msmallc  -Wl,-Map=SRAM1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o SRAM1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert SRAM1.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name test --quartus_project_dir "E:/371_Lab_3/lights_and_switchs" --jdi E:/371_Lab_3/lights_and_switchs/software/SRAM1_bsp/../../nios2_quartus2_project.jdi --sopcinfo E:/371_Lab_3/lights_and_switchs/software/SRAM1_bsp/../../test.sopcinfo
+Info: (SRAM1.elf) 2204 Bytes program size (code + initialized data).
+Info:             1780 Bytes free for stack + heap.
+Info: Creating SRAM1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source SRAM1.elf >SRAM1.objdump
+[SRAM1 build complete]
+15:10:49 **** Incremental Build of configuration Nios II for project SRAM1 ****
+make all 
+Info: Building ../SRAM1_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../SRAM1_bsp/
+[BSP build complete]
+[SRAM1 build complete]
+15:12:30 **** Build of configuration Nios II for project SRAM1 ****
+make all 
+Info: Building ../SRAM1_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../SRAM1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../SRAM1_bsp//HAL/inc -I../SRAM1_bsp/ -I../SRAM1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking SRAM1.elf
+nios2-elf-g++  -T'../SRAM1_bsp//linker.x' -msys-crt0='../SRAM1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../SRAM1_bsp/  -msmallc  -Wl,-Map=SRAM1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o SRAM1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert SRAM1.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name test --quartus_project_dir "E:/371_Lab_3/lights_and_switchs" --jdi E:/371_Lab_3/lights_and_switchs/software/SRAM1_bsp/../../nios2_quartus2_project.jdi --sopcinfo E:/371_Lab_3/lights_and_switchs/software/SRAM1_bsp/../../test.sopcinfo
+Info: (SRAM1.elf) 2208 Bytes program size (code + initialized data).
+Info:             1776 Bytes free for stack + heap.
+Info: Creating SRAM1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source SRAM1.elf >SRAM1.objdump
+[SRAM1 build complete]
+15:12:51 **** Incremental Build of configuration Nios II for project SRAM1 ****
+make all 
+Info: Building ../SRAM1_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../SRAM1_bsp/
+[BSP build complete]
+[SRAM1 build complete]

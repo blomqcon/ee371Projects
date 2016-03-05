@@ -1,0 +1,12 @@
+	component test is
+		port (
+			address_external_connection_export   : out   std_logic_vector(10 downto 0);                    -- export
+			clk_clk                              : in    std_logic                     := 'X';             -- clk
+			data_external_connection_export      : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- export
+			enable_external_connection_export    : out   std_logic;                                        -- export
+			led_pio_external_connection_export   : out   std_logic_vector(7 downto 0);                     -- export
+			readwrite_external_connection_export : out   std_logic;                                        -- export
+			reset_reset_n                        : in    std_logic                     := 'X'              -- reset_n
+		);
+	end component test;
+

@@ -1,0 +1,235 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:\altera\14.0\quartus\qdesigns\371Project5Personal --output-directory=C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system --report-file=bsf:C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system\nios_system.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system.qsys
+Progress: Loading 371Project5Personal/nios_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.0]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_qsys 14.0]
+Progress: Parameterizing module cpu
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 14.0]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding RECEIVE_PARALLEL_TO_PROCESSOR [altera_avalon_pio 14.0]
+Progress: Parameterizing module RECEIVE_PARALLEL_TO_PROCESSOR
+Progress: Adding sys_clk_timer [altera_avalon_timer 14.0]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding TRANSMIT_PARALLEL_FROM_PROCESSOR [altera_avalon_pio 14.0]
+Progress: Parameterizing module TRANSMIT_PARALLEL_FROM_PROCESSOR
+Progress: Adding TRANSMIT_ENABLE [altera_avalon_pio 14.0]
+Progress: Parameterizing module TRANSMIT_ENABLE
+Progress: Adding TRANSMIT_CHARACTER_SENT [altera_avalon_pio 14.0]
+Progress: Parameterizing module TRANSMIT_CHARACTER_SENT
+Progress: Adding TRANSMIT_LOAD [altera_avalon_pio 14.0]
+Progress: Parameterizing module TRANSMIT_LOAD
+Progress: Adding RECEIVE_CHARACTER_RECEIVED [altera_avalon_pio 14.0]
+Progress: Parameterizing module RECEIVE_CHARACTER_RECEIVED
+Progress: Adding DataOut [altera_avalon_pio 14.0]
+Progress: Parameterizing module DataOut
+Progress: Adding DataIn [altera_avalon_pio 14.0]
+Progress: Parameterizing module DataIn
+Progress: Adding SRAM_ADDRESS [altera_avalon_pio 14.0]
+Progress: Parameterizing module SRAM_ADDRESS
+Progress: Adding SRAM_DATA [altera_avalon_pio 14.0]
+Progress: Parameterizing module SRAM_DATA
+Progress: Adding SRAM_ENABLE [altera_avalon_pio 14.0]
+Progress: Parameterizing module SRAM_ENABLE
+Progress: Adding SRAM_READ_WRITE [altera_avalon_pio 14.0]
+Progress: Parameterizing module SRAM_READ_WRITE
+Progress: Adding GUNNER_LEFT [altera_avalon_pio 14.0]
+Progress: Parameterizing module GUNNER_LEFT
+Progress: Adding GUNNER_RIGHT [altera_avalon_pio 14.0]
+Progress: Parameterizing module GUNNER_RIGHT
+Progress: Adding GUNNER_SHOOT [altera_avalon_pio 14.0]
+Progress: Parameterizing module GUNNER_SHOOT
+Progress: Adding ALIEN_SHOOT [altera_avalon_pio 14.0]
+Progress: Parameterizing module ALIEN_SHOOT
+Progress: Adding ALIEN_X_POSITION [altera_avalon_pio 14.0]
+Progress: Parameterizing module ALIEN_X_POSITION
+Progress: Adding ALIEN_Y_POSITION [altera_avalon_pio 14.0]
+Progress: Parameterizing module ALIEN_Y_POSITION
+Progress: Adding GAME_TIMER [altera_avalon_pio 14.0]
+Progress: Parameterizing module GAME_TIMER
+Progress: Adding RANDOM_NUMBER_LFSR_OUTPUT [altera_avalon_pio 14.0]
+Progress: Parameterizing module RANDOM_NUMBER_LFSR_OUTPUT
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system.cpu: Please note that for early evaluation, preview versions of new Nios II Gen2 Processors are available with this release.
+Info: nios_system.RECEIVE_PARALLEL_TO_PROCESSOR: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.TRANSMIT_CHARACTER_SENT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.RECEIVE_CHARACTER_RECEIVED: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.SRAM_DATA: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.GUNNER_LEFT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.GUNNER_RIGHT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.GUNNER_SHOOT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.ALIEN_SHOOT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.ALIEN_X_POSITION: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.ALIEN_Y_POSITION: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.GAME_TIMER: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.RANDOM_NUMBER_LFSR_OUTPUT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:\altera\14.0\quartus\qdesigns\371Project5Personal --output-directory=C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system\synthesis --file-set=QUARTUS_SYNTH --report-file=html:C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system\nios_system.html --report-file=sopcinfo:C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system.sopcinfo --report-file=cmp:C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system\nios_system.cmp --report-file=qip:C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system\synthesis\nios_system.qip --report-file=svd:C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system\synthesis\nios_system.svd --report-file=regmap:C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system\synthesis\nios_system.regmap --report-file=xml:C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system\nios_system.xml --report-file=debuginfo:C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system\synthesis\nios_system.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:\altera\14.0\quartus\qdesigns\371Project5Personal\nios_system.qsys --language=VERILOG
+Progress: Loading 371Project5Personal/nios_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.0]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_qsys 14.0]
+Progress: Parameterizing module cpu
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 14.0]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding RECEIVE_PARALLEL_TO_PROCESSOR [altera_avalon_pio 14.0]
+Progress: Parameterizing module RECEIVE_PARALLEL_TO_PROCESSOR
+Progress: Adding sys_clk_timer [altera_avalon_timer 14.0]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding TRANSMIT_PARALLEL_FROM_PROCESSOR [altera_avalon_pio 14.0]
+Progress: Parameterizing module TRANSMIT_PARALLEL_FROM_PROCESSOR
+Progress: Adding TRANSMIT_ENABLE [altera_avalon_pio 14.0]
+Progress: Parameterizing module TRANSMIT_ENABLE
+Progress: Adding TRANSMIT_CHARACTER_SENT [altera_avalon_pio 14.0]
+Progress: Parameterizing module TRANSMIT_CHARACTER_SENT
+Progress: Adding TRANSMIT_LOAD [altera_avalon_pio 14.0]
+Progress: Parameterizing module TRANSMIT_LOAD
+Progress: Adding RECEIVE_CHARACTER_RECEIVED [altera_avalon_pio 14.0]
+Progress: Parameterizing module RECEIVE_CHARACTER_RECEIVED
+Progress: Adding DataOut [altera_avalon_pio 14.0]
+Progress: Parameterizing module DataOut
+Progress: Adding DataIn [altera_avalon_pio 14.0]
+Progress: Parameterizing module DataIn
+Progress: Adding SRAM_ADDRESS [altera_avalon_pio 14.0]
+Progress: Parameterizing module SRAM_ADDRESS
+Progress: Adding SRAM_DATA [altera_avalon_pio 14.0]
+Progress: Parameterizing module SRAM_DATA
+Progress: Adding SRAM_ENABLE [altera_avalon_pio 14.0]
+Progress: Parameterizing module SRAM_ENABLE
+Progress: Adding SRAM_READ_WRITE [altera_avalon_pio 14.0]
+Progress: Parameterizing module SRAM_READ_WRITE
+Progress: Adding GUNNER_LEFT [altera_avalon_pio 14.0]
+Progress: Parameterizing module GUNNER_LEFT
+Progress: Adding GUNNER_RIGHT [altera_avalon_pio 14.0]
+Progress: Parameterizing module GUNNER_RIGHT
+Progress: Adding GUNNER_SHOOT [altera_avalon_pio 14.0]
+Progress: Parameterizing module GUNNER_SHOOT
+Progress: Adding ALIEN_SHOOT [altera_avalon_pio 14.0]
+Progress: Parameterizing module ALIEN_SHOOT
+Progress: Adding ALIEN_X_POSITION [altera_avalon_pio 14.0]
+Progress: Parameterizing module ALIEN_X_POSITION
+Progress: Adding ALIEN_Y_POSITION [altera_avalon_pio 14.0]
+Progress: Parameterizing module ALIEN_Y_POSITION
+Progress: Adding GAME_TIMER [altera_avalon_pio 14.0]
+Progress: Parameterizing module GAME_TIMER
+Progress: Adding RANDOM_NUMBER_LFSR_OUTPUT [altera_avalon_pio 14.0]
+Progress: Parameterizing module RANDOM_NUMBER_LFSR_OUTPUT
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system.cpu: Please note that for early evaluation, preview versions of new Nios II Gen2 Processors are available with this release.
+Info: nios_system.RECEIVE_PARALLEL_TO_PROCESSOR: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.TRANSMIT_CHARACTER_SENT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.RECEIVE_CHARACTER_RECEIVED: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.SRAM_DATA: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.GUNNER_LEFT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.GUNNER_RIGHT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.GUNNER_SHOOT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.ALIEN_SHOOT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.ALIEN_X_POSITION: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.ALIEN_Y_POSITION: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.GAME_TIMER: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system.RANDOM_NUMBER_LFSR_OUTPUT: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_system: Generating nios_system "nios_system" for QUARTUS_SYNTH
+Info: cpu: Starting RTL generation for module 'nios_system_cpu'
+Info: cpu:   Generation command is [exec C:/altera/14.0/quartus/bin64/eperlcmd.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_system_cpu --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0031_cpu_gen/ --quartus_bindir=C:/altera/14.0/quartus/bin64 --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0031_cpu_gen//nios_system_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2016.03.04 18:44:51 (*) Starting Nios II generation
+Info: cpu: # 2016.03.04 18:44:51 (*)   Checking for plaintext license.
+Info: cpu: # 2016.03.04 18:44:53 (*)   Couldn't query license setup in Quartus directory C:/altera/14.0/quartus/bin64
+Info: cpu: # 2016.03.04 18:44:53 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2016.03.04 18:44:53 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2016.03.04 18:44:53 (*)   Plaintext license not found.
+Info: cpu: # 2016.03.04 18:44:53 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2016.03.04 18:44:53 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2016.03.04 18:44:53 (*)   Creating all objects for CPU
+Info: cpu: # 2016.03.04 18:44:54 (*)   Generating RTL from CPU objects
+Info: cpu: # 2016.03.04 18:44:54 (*)   Creating plain-text RTL
+Info: cpu: # 2016.03.04 18:44:57 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'nios_system_cpu'
+Info: cpu: "nios_system" instantiated altera_nios2_qsys "cpu"
+Info: onchip_memory2_0: Starting RTL generation for module 'nios_system_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_system_onchip_memory2_0 --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0032_onchip_memory2_0_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0032_onchip_memory2_0_gen//nios_system_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'nios_system_onchip_memory2_0'
+Info: onchip_memory2_0: "nios_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart_0: Starting RTL generation for module 'nios_system_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_system_jtag_uart_0 --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0033_jtag_uart_0_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0033_jtag_uart_0_gen//nios_system_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'nios_system_jtag_uart_0'
+Info: jtag_uart_0: "nios_system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: RECEIVE_PARALLEL_TO_PROCESSOR: Starting RTL generation for module 'nios_system_RECEIVE_PARALLEL_TO_PROCESSOR'
+Info: RECEIVE_PARALLEL_TO_PROCESSOR:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_RECEIVE_PARALLEL_TO_PROCESSOR --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0034_RECEIVE_PARALLEL_TO_PROCESSOR_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0034_RECEIVE_PARALLEL_TO_PROCESSOR_gen//nios_system_RECEIVE_PARALLEL_TO_PROCESSOR_component_configuration.pl  --do_build_sim=0  ]
+Info: RECEIVE_PARALLEL_TO_PROCESSOR: Done RTL generation for module 'nios_system_RECEIVE_PARALLEL_TO_PROCESSOR'
+Info: RECEIVE_PARALLEL_TO_PROCESSOR: "nios_system" instantiated altera_avalon_pio "RECEIVE_PARALLEL_TO_PROCESSOR"
+Info: TRANSMIT_PARALLEL_FROM_PROCESSOR: Starting RTL generation for module 'nios_system_TRANSMIT_PARALLEL_FROM_PROCESSOR'
+Info: TRANSMIT_PARALLEL_FROM_PROCESSOR:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_TRANSMIT_PARALLEL_FROM_PROCESSOR --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0035_TRANSMIT_PARALLEL_FROM_PROCESSOR_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0035_TRANSMIT_PARALLEL_FROM_PROCESSOR_gen//nios_system_TRANSMIT_PARALLEL_FROM_PROCESSOR_component_configuration.pl  --do_build_sim=0  ]
+Info: TRANSMIT_PARALLEL_FROM_PROCESSOR: Done RTL generation for module 'nios_system_TRANSMIT_PARALLEL_FROM_PROCESSOR'
+Info: TRANSMIT_PARALLEL_FROM_PROCESSOR: "nios_system" instantiated altera_avalon_pio "TRANSMIT_PARALLEL_FROM_PROCESSOR"
+Info: TRANSMIT_ENABLE: Starting RTL generation for module 'nios_system_TRANSMIT_ENABLE'
+Info: TRANSMIT_ENABLE:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_TRANSMIT_ENABLE --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0036_TRANSMIT_ENABLE_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0036_TRANSMIT_ENABLE_gen//nios_system_TRANSMIT_ENABLE_component_configuration.pl  --do_build_sim=0  ]
+Info: TRANSMIT_ENABLE: Done RTL generation for module 'nios_system_TRANSMIT_ENABLE'
+Info: TRANSMIT_ENABLE: "nios_system" instantiated altera_avalon_pio "TRANSMIT_ENABLE"
+Info: TRANSMIT_CHARACTER_SENT: Starting RTL generation for module 'nios_system_TRANSMIT_CHARACTER_SENT'
+Info: TRANSMIT_CHARACTER_SENT:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_TRANSMIT_CHARACTER_SENT --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0037_TRANSMIT_CHARACTER_SENT_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0037_TRANSMIT_CHARACTER_SENT_gen//nios_system_TRANSMIT_CHARACTER_SENT_component_configuration.pl  --do_build_sim=0  ]
+Info: TRANSMIT_CHARACTER_SENT: Done RTL generation for module 'nios_system_TRANSMIT_CHARACTER_SENT'
+Info: TRANSMIT_CHARACTER_SENT: "nios_system" instantiated altera_avalon_pio "TRANSMIT_CHARACTER_SENT"
+Info: SRAM_ADDRESS: Starting RTL generation for module 'nios_system_SRAM_ADDRESS'
+Info: SRAM_ADDRESS:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_SRAM_ADDRESS --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0038_SRAM_ADDRESS_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0038_SRAM_ADDRESS_gen//nios_system_SRAM_ADDRESS_component_configuration.pl  --do_build_sim=0  ]
+Info: SRAM_ADDRESS: Done RTL generation for module 'nios_system_SRAM_ADDRESS'
+Info: SRAM_ADDRESS: "nios_system" instantiated altera_avalon_pio "SRAM_ADDRESS"
+Info: SRAM_DATA: Starting RTL generation for module 'nios_system_SRAM_DATA'
+Info: SRAM_DATA:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_SRAM_DATA --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0039_SRAM_DATA_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0039_SRAM_DATA_gen//nios_system_SRAM_DATA_component_configuration.pl  --do_build_sim=0  ]
+Info: SRAM_DATA: Done RTL generation for module 'nios_system_SRAM_DATA'
+Info: SRAM_DATA: "nios_system" instantiated altera_avalon_pio "SRAM_DATA"
+Info: GUNNER_SHOOT: Starting RTL generation for module 'nios_system_GUNNER_SHOOT'
+Info: GUNNER_SHOOT:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_GUNNER_SHOOT --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0040_GUNNER_SHOOT_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0040_GUNNER_SHOOT_gen//nios_system_GUNNER_SHOOT_component_configuration.pl  --do_build_sim=0  ]
+Info: GUNNER_SHOOT: Done RTL generation for module 'nios_system_GUNNER_SHOOT'
+Info: GUNNER_SHOOT: "nios_system" instantiated altera_avalon_pio "GUNNER_SHOOT"
+Info: ALIEN_X_POSITION: Starting RTL generation for module 'nios_system_ALIEN_X_POSITION'
+Info: ALIEN_X_POSITION:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_ALIEN_X_POSITION --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0041_ALIEN_X_POSITION_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0041_ALIEN_X_POSITION_gen//nios_system_ALIEN_X_POSITION_component_configuration.pl  --do_build_sim=0  ]
+Info: ALIEN_X_POSITION: Done RTL generation for module 'nios_system_ALIEN_X_POSITION'
+Info: ALIEN_X_POSITION: "nios_system" instantiated altera_avalon_pio "ALIEN_X_POSITION"
+Info: GAME_TIMER: Starting RTL generation for module 'nios_system_GAME_TIMER'
+Info: GAME_TIMER:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_GAME_TIMER --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0042_GAME_TIMER_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0042_GAME_TIMER_gen//nios_system_GAME_TIMER_component_configuration.pl  --do_build_sim=0  ]
+Info: GAME_TIMER: Done RTL generation for module 'nios_system_GAME_TIMER'
+Info: GAME_TIMER: "nios_system" instantiated altera_avalon_pio "GAME_TIMER"
+Info: RANDOM_NUMBER_LFSR_OUTPUT: Starting RTL generation for module 'nios_system_RANDOM_NUMBER_LFSR_OUTPUT'
+Info: RANDOM_NUMBER_LFSR_OUTPUT:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_RANDOM_NUMBER_LFSR_OUTPUT --dir=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0043_RANDOM_NUMBER_LFSR_OUTPUT_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/BRYANB~1/AppData/Local/Temp/alt6865_367444672088034092.dir/0043_RANDOM_NUMBER_LFSR_OUTPUT_gen//nios_system_RANDOM_NUMBER_LFSR_OUTPUT_component_configuration.pl  --do_build_sim=0  ]
+Info: RANDOM_NUMBER_LFSR_OUTPUT: Done RTL generation for module 'nios_system_RANDOM_NUMBER_LFSR_OUTPUT'
+Info: RANDOM_NUMBER_LFSR_OUTPUT: "nios_system" instantiated altera_avalon_pio "RANDOM_NUMBER_LFSR_OUTPUT"
+Info: mm_interconnect_0: "nios_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "nios_system" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "nios_system" instantiated altera_reset_controller "rst_controller"
+Info: cpu_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_instruction_master_translator"
+Info: cpu_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "cpu_jtag_debug_module_translator"
+Info: cpu_instruction_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_instruction_master_agent"
+Info: cpu_jtag_debug_module_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "cpu_jtag_debug_module_agent"
+Info: cpu_jtag_debug_module_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "cpu_jtag_debug_module_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file C:/altera/14.0/quartus/qdesigns/371Project5Personal/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/altera/14.0/quartus/qdesigns/371Project5Personal/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/altera/14.0/quartus/qdesigns/371Project5Personal/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: nios_system: Done "nios_system" with 33 modules, 47 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

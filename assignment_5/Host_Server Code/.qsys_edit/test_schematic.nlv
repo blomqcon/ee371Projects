@@ -1,0 +1,25 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst test.onchip_mem -pg 1 -lvl 3 -y 130
+preplace inst test.ReadWrite -pg 1 -lvl 3 -y 590
+preplace inst test.led_pio -pg 1 -lvl 3 -y 490
+preplace inst test.clk_0 -pg 1 -lvl 1 -y 390
+preplace inst test.Enable -pg 1 -lvl 3 -y 390
+preplace inst test.jtag_uart -pg 1 -lvl 3 -y 290
+preplace inst test.cpu -pg 1 -lvl 2 -y 310
+preplace inst test.Data -pg 1 -lvl 3 -y 30
+preplace inst test.Address -pg 1 -lvl 3 -y 690
+preplace inst test -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)ReadWrite.external_connection,(SLAVE)test.readwrite_external_connection) 1 0 3 NJ 620 NJ 620 NJ
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)Enable.external_connection,(SLAVE)test.enable_external_connection) 1 0 3 NJ 240 NJ 240 NJ
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)test.data_external_connection,(SLAVE)Data.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)test.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>test</net_container>(SLAVE)onchip_mem.s1,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)Address.s1,(SLAVE)Enable.s1,(MASTER)cpu.data_master,(SLAVE)Data.s1,(SLAVE)led_pio.s1,(MASTER)cpu.instruction_master,(SLAVE)cpu.jtag_debug_module,(SLAVE)ReadWrite.s1) 1 1 2 440 300 710
+preplace netloc INTERCONNECT<net_container>test</net_container>(MASTER)cpu.jtag_debug_module_reset,(MASTER)clk_0.clk_reset,(SLAVE)led_pio.reset,(SLAVE)onchip_mem.reset1,(SLAVE)jtag_uart.reset,(SLAVE)Address.reset,(SLAVE)Enable.reset,(SLAVE)ReadWrite.reset,(SLAVE)Data.reset,(SLAVE)cpu.reset_n) 1 1 2 420 280 730
+preplace netloc POINT_TO_POINT<net_container>test</net_container>(SLAVE)jtag_uart.irq,(MASTER)cpu.d_irq) 1 2 1 N
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)test.address_external_connection,(SLAVE)Address.external_connection) 1 0 3 NJ 720 NJ 720 NJ
+preplace netloc FAN_OUT<net_container>test</net_container>(SLAVE)jtag_uart.clk,(MASTER)clk_0.clk,(SLAVE)ReadWrite.clk,(SLAVE)Enable.clk,(SLAVE)cpu.clk,(SLAVE)Address.clk,(SLAVE)led_pio.clk,(SLAVE)Data.clk,(SLAVE)onchip_mem.clk1) 1 1 2 400 260 750
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)test.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>test</net_container>(SLAVE)led_pio.external_connection,(SLAVE)test.led_pio_external_connection) 1 0 3 NJ 520 NJ 520 NJ
+levelinfo -pg 1 0 190 950
+levelinfo -hier test 200 230 470 790 940
