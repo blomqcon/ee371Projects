@@ -1,0 +1,44 @@
+
+module nios_system (
+	reset_reset_n,
+	receive_parallel_to_processor_external_connection_export,
+	clk_clk,
+	transmit_parallel_from_processor_external_connection_export,
+	transmit_enable_external_connection_export,
+	transmit_character_sent_external_connection_export,
+	transmit_load_external_connection_export,
+	received_character_received_external_connection_export,
+	sram_address_external_connection_export,
+	sram_data_external_connection_export,
+	sram_enable_external_connection_export,
+	sram_read_write_external_connection_export,
+	gunner_left_external_connection_export,
+	gunner_right_external_connection_export,
+	gunner_shoot_external_connection_export,
+	alien_shoot_external_connection_export,
+	alien_x_position_external_connection_export,
+	alien_y_position_external_connection_export,
+	game_timer_external_connection_export,
+	random_number_lfsr_output_external_connection_export);	
+
+	input		reset_reset_n;
+	input	[7:0]	receive_parallel_to_processor_external_connection_export;
+	input		clk_clk;
+	output	[7:0]	transmit_parallel_from_processor_external_connection_export;
+	output		transmit_enable_external_connection_export;
+	input		transmit_character_sent_external_connection_export;
+	output		transmit_load_external_connection_export;
+	input		received_character_received_external_connection_export;
+	output	[10:0]	sram_address_external_connection_export;
+	inout	[7:0]	sram_data_external_connection_export;
+	output		sram_enable_external_connection_export;
+	output		sram_read_write_external_connection_export;
+	input		gunner_left_external_connection_export;
+	input		gunner_right_external_connection_export;
+	input	[1:0]	gunner_shoot_external_connection_export;
+	input		alien_shoot_external_connection_export;
+	input	[2:0]	alien_x_position_external_connection_export;
+	input	[1:0]	alien_y_position_external_connection_export;
+	input	[31:0]	game_timer_external_connection_export;
+	input	[15:0]	random_number_lfsr_output_external_connection_export;
+endmodule
