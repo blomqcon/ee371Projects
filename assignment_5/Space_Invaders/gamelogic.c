@@ -48,3 +48,29 @@ void updateToggleValues(int gameTime, int* updateToggle, int* gunnerToggle) {
         *gunnerToggle = 1;
     }
 }
+
+int checkCollideAliens(int pSramAliens, int projX, int projY) {
+    int x, y;
+    for (x = 0; x < ALIEN_ROWS; x++) {
+        for (y = 0; y < ALIEN_COLS; y++) {
+            if (projX == x && projY == y) {
+                struct Alien a = getAlien(pSramAliens, x, y);
+                a.alive = 0;
+                setAlien(pSramAliens, x, y, a);
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+    }
+}
+
+int checkCollideGunner(int gunnerX, int projX, int projY, int* gameOver) {
+    if (projX == gunnerX && projY == gunnerX) {
+        gunnerX = 0;
+        &gameOver = 1;
+        return 1;
+    } else {
+        return 0;
+    }
+}
