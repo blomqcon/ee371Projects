@@ -43,9 +43,12 @@ struct Alien {
 };
 
 struct Projectile {
+    char xVal;
+    char yVal;
     char direction;
     char symbol;
-    char speed;
+    char type;
+    char timeTick;
 };
 
 #endif // data_struct_const_H_
