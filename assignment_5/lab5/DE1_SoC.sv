@@ -1,7 +1,8 @@
-module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
+module DE1_SoC (LEDR, SW, KEY, PLD_CLOCKINPUT);
 	output [9:0] LEDR;
 	input PLD_CLOCKINPUT; // 50MHz clock.
 	input [9:0] SW;
+	input [3:0] KEY;
 	
 	//Wires for connecting communications
 	wire [7:0] parallelOutput;
@@ -32,9 +33,9 @@ module DE1_SoC (LEDR, SW, PLD_CLOCKINPUT);
 		.sram_data_external_connection_export(sram_data),
 		.sram_enable_read_external_connection_export(sram_enable_read),
 		.sram_enable_write_external_connection_export(sram_enable_write),
-		.gun_left_external_connection_export(KEY),
-		.gun_right_external_connection_export(),
-		.gun_shoot_external_connection_export()
+		.gun_left_external_connection_export(KEY[1]),
+		.gun_right_external_connection_export(KEY[0]),
+		.gun_shoot_external_connection_export(KEY[2])
 	);
 	
 	wire [31:0] slow_clocks;

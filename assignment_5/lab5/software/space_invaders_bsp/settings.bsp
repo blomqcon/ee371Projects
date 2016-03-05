@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 3, 2016 8:04:15 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1457064255050</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 4, 2016 6:31:52 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1457145112439</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\blomqcon\Desktop\ee371Projects\assignment_5\lab5\software\space_invaders_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>C:\Users\blomqcon\Desktop\ee371Projects\assignment_5\lab5\software\space_invaders_bsp\settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\lab5CPU.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu</Cpu>
@@ -782,7 +782,7 @@
                 <SettingName>hal.enable_reduced_device_drivers</SettingName>
                 <Identifier>ALT_USE_SMALL_DRIVERS</Identifier>
                 <Type>Boolean</Type>
-                <Value>1</Value>
+                <Value>0</Value>
                 <DefaultValue>0</DefaultValue>
                 <DestinationFile>public_mk_define</DestinationFile>
                 <Description>Certain drivers are compiled with reduced functionality to reduce code footprint. Not all drivers observe this setting. The altera_avalon_uart and altera_avalon_jtag_uart drivers switch from interrupt-driven to polled operation. CAUTION: Several device drivers are disabled entirely. These include the altera_avalon_cfi_flash, altera_avalon_epcs_flash_controller, and altera_avalon_lcd_16207 drivers. This can result in certain API (HAL flash access routines) to fail. You can define a symbol provided by each driver to prevent it from being removed. If true, adds -DALT_USE_SMALL_DRIVERS to ALT_CPPFLAGS in public.mk.</Description>
@@ -888,97 +888,97 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>onchip_mem</slaveDescriptor>
-                <addressRange>0x00000000 - 0x00003FFF</addressRange>
-                <addressSpan>16384</addressSpan>
+                <addressRange>0x00000000 - 0x0000FFFF</addressRange>
+                <addressSpan>65536</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>gun_shoot</slaveDescriptor>
-                <addressRange>0x00005000 - 0x0000500F</addressRange>
+                <addressRange>0x00011000 - 0x0001100F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>gun_right</slaveDescriptor>
-                <addressRange>0x00005010 - 0x0000501F</addressRange>
+                <addressRange>0x00011010 - 0x0001101F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>gun_left</slaveDescriptor>
-                <addressRange>0x00005020 - 0x0000502F</addressRange>
+                <addressRange>0x00011020 - 0x0001102F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sram_address</slaveDescriptor>
-                <addressRange>0x00005030 - 0x0000503F</addressRange>
+                <addressRange>0x00011030 - 0x0001103F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sram_enable_read</slaveDescriptor>
-                <addressRange>0x00005040 - 0x0000504F</addressRange>
+                <addressRange>0x00011040 - 0x0001104F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sram_enable_write</slaveDescriptor>
-                <addressRange>0x00005050 - 0x0000505F</addressRange>
+                <addressRange>0x00011050 - 0x0001105F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sram_data</slaveDescriptor>
-                <addressRange>0x00005060 - 0x0000506F</addressRange>
+                <addressRange>0x00011060 - 0x0001106F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>transmit_enable_output</slaveDescriptor>
-                <addressRange>0x00005070 - 0x0000507F</addressRange>
+                <addressRange>0x00011070 - 0x0001107F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>character_sent_input</slaveDescriptor>
-                <addressRange>0x00005080 - 0x0000508F</addressRange>
+                <addressRange>0x00011080 - 0x0001108F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>load_output</slaveDescriptor>
-                <addressRange>0x00005090 - 0x0000509F</addressRange>
+                <addressRange>0x00011090 - 0x0001109F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>parallel_output</slaveDescriptor>
-                <addressRange>0x000050A0 - 0x000050AF</addressRange>
+                <addressRange>0x000110A0 - 0x000110AF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>led_output</slaveDescriptor>
-                <addressRange>0x000050B0 - 0x000050BF</addressRange>
+                <addressRange>0x000110B0 - 0x000110BF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>character_recieved_input</slaveDescriptor>
-                <addressRange>0x000050C0 - 0x000050CF</addressRange>
+                <addressRange>0x000110C0 - 0x000110CF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>parallel_input</slaveDescriptor>
-                <addressRange>0x000050D0 - 0x000050DF</addressRange>
+                <addressRange>0x000110D0 - 0x000110DF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x000050E0 - 0x000050E7</addressRange>
+                <addressRange>0x000110E0 - 0x000110E7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

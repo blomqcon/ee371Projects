@@ -34,7 +34,7 @@
    {
       datum baseAddress
       {
-         value = "20672";
+         value = "69824";
          type = "String";
       }
    }
@@ -50,7 +50,7 @@
    {
       datum baseAddress
       {
-         value = "20608";
+         value = "69760";
          type = "String";
       }
    }
@@ -79,7 +79,7 @@
    {
       datum baseAddress
       {
-         value = "18432";
+         value = "67584";
          type = "String";
       }
    }
@@ -95,7 +95,7 @@
    {
       datum baseAddress
       {
-         value = "20512";
+         value = "69664";
          type = "String";
       }
    }
@@ -111,7 +111,7 @@
    {
       datum baseAddress
       {
-         value = "20496";
+         value = "69648";
          type = "String";
       }
    }
@@ -127,7 +127,7 @@
    {
       datum baseAddress
       {
-         value = "20480";
+         value = "69632";
          type = "String";
       }
    }
@@ -148,7 +148,7 @@
    {
       datum baseAddress
       {
-         value = "20704";
+         value = "69856";
          type = "String";
       }
    }
@@ -164,7 +164,7 @@
    {
       datum baseAddress
       {
-         value = "20656";
+         value = "69808";
          type = "String";
       }
    }
@@ -180,7 +180,7 @@
    {
       datum baseAddress
       {
-         value = "20624";
+         value = "69776";
          type = "String";
       }
    }
@@ -235,7 +235,7 @@
    {
       datum baseAddress
       {
-         value = "20688";
+         value = "69840";
          type = "String";
       }
    }
@@ -251,7 +251,7 @@
    {
       datum baseAddress
       {
-         value = "20640";
+         value = "69792";
          type = "String";
       }
    }
@@ -267,7 +267,7 @@
    {
       datum baseAddress
       {
-         value = "20528";
+         value = "69680";
          type = "String";
       }
    }
@@ -283,7 +283,7 @@
    {
       datum baseAddress
       {
-         value = "20576";
+         value = "69728";
          type = "String";
       }
    }
@@ -299,7 +299,7 @@
    {
       datum baseAddress
       {
-         value = "20544";
+         value = "69696";
          type = "String";
       }
    }
@@ -315,7 +315,7 @@
    {
       datum baseAddress
       {
-         value = "20560";
+         value = "69712";
          type = "String";
       }
    }
@@ -331,7 +331,7 @@
    {
       datum baseAddress
       {
-         value = "20592";
+         value = "69744";
          type = "String";
       }
    }
@@ -479,8 +479,8 @@
   <parameter name="cpuID_stored" value="0" />
   <parameter name="cpuReset" value="false" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
-  <parameter name="dataAddrWidth" value="15" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x4000' /><slave name='cpu.jtag_debug_module' start='0x4800' end='0x5000' /><slave name='gun_shoot.s1' start='0x5000' end='0x5010' /><slave name='gun_right.s1' start='0x5010' end='0x5020' /><slave name='gun_left.s1' start='0x5020' end='0x5030' /><slave name='sram_address.s1' start='0x5030' end='0x5040' /><slave name='sram_enable_read.s1' start='0x5040' end='0x5050' /><slave name='sram_enable_write.s1' start='0x5050' end='0x5060' /><slave name='sram_data.s1' start='0x5060' end='0x5070' /><slave name='transmit_enable_output.s1' start='0x5070' end='0x5080' /><slave name='character_sent_input.s1' start='0x5080' end='0x5090' /><slave name='load_output.s1' start='0x5090' end='0x50A0' /><slave name='parallel_output.s1' start='0x50A0' end='0x50B0' /><slave name='led_output.s1' start='0x50B0' end='0x50C0' /><slave name='character_recieved_input.s1' start='0x50C0' end='0x50D0' /><slave name='parallel_input.s1' start='0x50D0' end='0x50E0' /><slave name='jtag_uart.avalon_jtag_slave' start='0x50E0' end='0x50E8' /></address-map>]]></parameter>
+  <parameter name="dataAddrWidth" value="17" />
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x10000' /><slave name='cpu.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='gun_shoot.s1' start='0x11000' end='0x11010' /><slave name='gun_right.s1' start='0x11010' end='0x11020' /><slave name='gun_left.s1' start='0x11020' end='0x11030' /><slave name='sram_address.s1' start='0x11030' end='0x11040' /><slave name='sram_enable_read.s1' start='0x11040' end='0x11050' /><slave name='sram_enable_write.s1' start='0x11050' end='0x11060' /><slave name='sram_data.s1' start='0x11060' end='0x11070' /><slave name='transmit_enable_output.s1' start='0x11070' end='0x11080' /><slave name='character_sent_input.s1' start='0x11080' end='0x11090' /><slave name='load_output.s1' start='0x11090' end='0x110A0' /><slave name='parallel_output.s1' start='0x110A0' end='0x110B0' /><slave name='led_output.s1' start='0x110B0' end='0x110C0' /><slave name='character_recieved_input.s1' start='0x110C0' end='0x110D0' /><slave name='parallel_input.s1' start='0x110D0' end='0x110E0' /><slave name='jtag_uart.avalon_jtag_slave' start='0x110E0' end='0x110E8' /></address-map>]]></parameter>
   <parameter name="dcache_bursts" value="false" />
   <parameter name="dcache_lineSize" value="32" />
   <parameter name="dcache_numTCDM" value="0" />
@@ -506,8 +506,8 @@
   <parameter name="icache_size" value="2048" />
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
-  <parameter name="instAddrWidth" value="15" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x4000' /><slave name='cpu.jtag_debug_module' start='0x4800' end='0x5000' /></address-map>]]></parameter>
+  <parameter name="instAddrWidth" value="17" />
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x10000' /><slave name='cpu.jtag_debug_module' start='0x10800' end='0x11000' /></address-map>]]></parameter>
   <parameter name="internalIrqMaskSystemInfo" value="32" />
   <parameter name="manuallyAssignCpuID" value="true" />
   <parameter name="mmu_TLBMissExcOffset" value="0" />
@@ -707,7 +707,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="16384" />
+  <parameter name="memorySize" value="65536" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="resetrequest_enabled" value="true" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
@@ -847,7 +847,7 @@
    start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x50e0" />
+  <parameter name="baseAddress" value="0x000110e0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -856,7 +856,7 @@
    start="cpu.data_master"
    end="cpu.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x4800" />
+  <parameter name="baseAddress" value="0x00010800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -874,7 +874,7 @@
    start="cpu.data_master"
    end="parallel_input.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x50d0" />
+  <parameter name="baseAddress" value="0x000110d0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -883,7 +883,7 @@
    start="cpu.data_master"
    end="character_recieved_input.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x50c0" />
+  <parameter name="baseAddress" value="0x000110c0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -892,7 +892,7 @@
    start="cpu.data_master"
    end="led_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x50b0" />
+  <parameter name="baseAddress" value="0x000110b0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -901,7 +901,7 @@
    start="cpu.data_master"
    end="parallel_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x50a0" />
+  <parameter name="baseAddress" value="0x000110a0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -910,7 +910,7 @@
    start="cpu.data_master"
    end="load_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5090" />
+  <parameter name="baseAddress" value="0x00011090" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -919,7 +919,7 @@
    start="cpu.data_master"
    end="character_sent_input.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5080" />
+  <parameter name="baseAddress" value="0x00011080" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -928,7 +928,7 @@
    start="cpu.data_master"
    end="transmit_enable_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5070" />
+  <parameter name="baseAddress" value="0x00011070" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -937,7 +937,7 @@
    start="cpu.data_master"
    end="sram_data.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5060" />
+  <parameter name="baseAddress" value="0x00011060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -946,7 +946,7 @@
    start="cpu.data_master"
    end="sram_enable_write.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5050" />
+  <parameter name="baseAddress" value="0x00011050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -955,7 +955,7 @@
    start="cpu.data_master"
    end="sram_enable_read.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5040" />
+  <parameter name="baseAddress" value="0x00011040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -964,7 +964,7 @@
    start="cpu.data_master"
    end="sram_address.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5030" />
+  <parameter name="baseAddress" value="0x00011030" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -973,7 +973,7 @@
    start="cpu.data_master"
    end="gun_left.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5020" />
+  <parameter name="baseAddress" value="0x00011020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -982,7 +982,7 @@
    start="cpu.data_master"
    end="gun_right.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5010" />
+  <parameter name="baseAddress" value="0x00011010" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -991,7 +991,7 @@
    start="cpu.data_master"
    end="gun_shoot.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5000" />
+  <parameter name="baseAddress" value="0x00011000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1000,7 +1000,7 @@
    start="cpu.instruction_master"
    end="cpu.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x4800" />
+  <parameter name="baseAddress" value="0x00010800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection

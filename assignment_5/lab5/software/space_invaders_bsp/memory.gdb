@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu' in SOPC Builder design 'lab5CPU'
 # SOPC Builder design path: ../../lab5CPU.sopcinfo
 #
-# Generated: Thu Mar 03 20:04:15 PST 2016
+# Generated: Fri Mar 04 18:31:52 PST 2016
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,4 +47,4 @@
 # by allowing GDB to cache memory contents on the host.
 
 # onchip_mem
-memory 0x0 0x4000 cache
+memory 0x0 0x10000 cache

@@ -96,8 +96,8 @@ void printGunner(int gunnerX) {
 }
 
 void updateDisplay(int pSramAliens, int gunnerX, int step, int shift) {
-    //printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    system("cls");
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    //system("cls");
     printAliens(pSramAliens, step, shift);
     printVoid();
     printGunner(gunnerX);

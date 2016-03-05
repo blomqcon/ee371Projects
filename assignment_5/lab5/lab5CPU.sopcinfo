@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="lab5CPU" kind="lab5CPU" version="1.0" fabric="QSYS">
  <!-- Format version 15.1 189 (Future versions may contain additional information.) -->
- <!-- 2016.03.03.19:10:33 -->
+ <!-- 2016.03.04.18:26:50 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1457061033</value>
+  <value>1457144810</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -2028,7 +2028,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.BREAK_ADDR</name>
-   <value>0x00004820</value>
+   <value>0x00010820</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.CPU_FREQ</name>
@@ -2048,7 +2048,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.DATA_ADDR_WIDTH</name>
-   <value>15</value>
+   <value>17</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.DCACHE_LINE_SIZE</name>
@@ -2108,7 +2108,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.INST_ADDR_WIDTH</name>
-   <value>15</value>
+   <value>17</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.RESET_ADDR</name>
@@ -3012,7 +3012,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="breakAbsoluteAddr">
    <type>int</type>
-   <value>18464</value>
+   <value>67616</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -3068,7 +3068,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instAddrWidth">
    <type>int</type>
-   <value>15</value>
+   <value>17</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3078,7 +3078,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataAddrWidth">
    <type>int</type>
-   <value>15</value>
+   <value>17</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3168,7 +3168,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x4000' /><slave name='cpu.jtag_debug_module' start='0x4800' end='0x5000' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x10000' /><slave name='cpu.jtag_debug_module' start='0x10800' end='0x11000' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3178,7 +3178,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x4000' /><slave name='cpu.jtag_debug_module' start='0x4800' end='0x5000' /><slave name='gun_shoot.s1' start='0x5000' end='0x5010' /><slave name='gun_right.s1' start='0x5010' end='0x5020' /><slave name='gun_left.s1' start='0x5020' end='0x5030' /><slave name='sram_address.s1' start='0x5030' end='0x5040' /><slave name='sram_enable_read.s1' start='0x5040' end='0x5050' /><slave name='sram_enable_write.s1' start='0x5050' end='0x5060' /><slave name='sram_data.s1' start='0x5060' end='0x5070' /><slave name='transmit_enable_output.s1' start='0x5070' end='0x5080' /><slave name='character_sent_input.s1' start='0x5080' end='0x5090' /><slave name='load_output.s1' start='0x5090' end='0x50A0' /><slave name='parallel_output.s1' start='0x50A0' end='0x50B0' /><slave name='led_output.s1' start='0x50B0' end='0x50C0' /><slave name='character_recieved_input.s1' start='0x50C0' end='0x50D0' /><slave name='parallel_input.s1' start='0x50D0' end='0x50E0' /><slave name='jtag_uart.avalon_jtag_slave' start='0x50E0' end='0x50E8' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x10000' /><slave name='cpu.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='gun_shoot.s1' start='0x11000' end='0x11010' /><slave name='gun_right.s1' start='0x11010' end='0x11020' /><slave name='gun_left.s1' start='0x11020' end='0x11030' /><slave name='sram_address.s1' start='0x11030' end='0x11040' /><slave name='sram_enable_read.s1' start='0x11040' end='0x11050' /><slave name='sram_enable_write.s1' start='0x11050' end='0x11060' /><slave name='sram_data.s1' start='0x11060' end='0x11070' /><slave name='transmit_enable_output.s1' start='0x11070' end='0x11080' /><slave name='character_sent_input.s1' start='0x11080' end='0x11090' /><slave name='load_output.s1' start='0x11090' end='0x110A0' /><slave name='parallel_output.s1' start='0x110A0' end='0x110B0' /><slave name='led_output.s1' start='0x110B0' end='0x110C0' /><slave name='character_recieved_input.s1' start='0x110C0' end='0x110D0' /><slave name='parallel_input.s1' start='0x110D0' end='0x110E0' /><slave name='jtag_uart.avalon_jtag_slave' start='0x110E0' end='0x110E8' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3711,7 +3711,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>d_address</name>
     <direction>Output</direction>
-    <width>15</width>
+    <width>17</width>
     <role>address</role>
    </port>
    <port>
@@ -3761,7 +3761,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>jtag_uart</moduleName>
     <slaveName>avalon_jtag_slave</slaveName>
     <name>jtag_uart.avalon_jtag_slave</name>
-    <baseAddress>20704</baseAddress>
+    <baseAddress>69856</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -3769,7 +3769,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>cpu</moduleName>
     <slaveName>jtag_debug_module</slaveName>
     <name>cpu.jtag_debug_module</name>
-    <baseAddress>18432</baseAddress>
+    <baseAddress>67584</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
@@ -3778,14 +3778,14 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s1</slaveName>
     <name>onchip_mem.s1</name>
     <baseAddress>0</baseAddress>
-    <span>16384</span>
+    <span>65536</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
     <moduleName>parallel_input</moduleName>
     <slaveName>s1</slaveName>
     <name>parallel_input.s1</name>
-    <baseAddress>20688</baseAddress>
+    <baseAddress>69840</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3793,7 +3793,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>character_recieved_input</moduleName>
     <slaveName>s1</slaveName>
     <name>character_recieved_input.s1</name>
-    <baseAddress>20672</baseAddress>
+    <baseAddress>69824</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3801,7 +3801,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>led_output</moduleName>
     <slaveName>s1</slaveName>
     <name>led_output.s1</name>
-    <baseAddress>20656</baseAddress>
+    <baseAddress>69808</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3809,7 +3809,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>parallel_output</moduleName>
     <slaveName>s1</slaveName>
     <name>parallel_output.s1</name>
-    <baseAddress>20640</baseAddress>
+    <baseAddress>69792</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3817,7 +3817,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>load_output</moduleName>
     <slaveName>s1</slaveName>
     <name>load_output.s1</name>
-    <baseAddress>20624</baseAddress>
+    <baseAddress>69776</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3825,7 +3825,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>character_sent_input</moduleName>
     <slaveName>s1</slaveName>
     <name>character_sent_input.s1</name>
-    <baseAddress>20608</baseAddress>
+    <baseAddress>69760</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3833,7 +3833,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>transmit_enable_output</moduleName>
     <slaveName>s1</slaveName>
     <name>transmit_enable_output.s1</name>
-    <baseAddress>20592</baseAddress>
+    <baseAddress>69744</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3841,7 +3841,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>sram_data</moduleName>
     <slaveName>s1</slaveName>
     <name>sram_data.s1</name>
-    <baseAddress>20576</baseAddress>
+    <baseAddress>69728</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3849,7 +3849,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>sram_enable_write</moduleName>
     <slaveName>s1</slaveName>
     <name>sram_enable_write.s1</name>
-    <baseAddress>20560</baseAddress>
+    <baseAddress>69712</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3857,7 +3857,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>sram_enable_read</moduleName>
     <slaveName>s1</slaveName>
     <name>sram_enable_read.s1</name>
-    <baseAddress>20544</baseAddress>
+    <baseAddress>69696</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3865,7 +3865,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>sram_address</moduleName>
     <slaveName>s1</slaveName>
     <name>sram_address.s1</name>
-    <baseAddress>20528</baseAddress>
+    <baseAddress>69680</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3873,7 +3873,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>gun_left</moduleName>
     <slaveName>s1</slaveName>
     <name>gun_left.s1</name>
-    <baseAddress>20512</baseAddress>
+    <baseAddress>69664</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3881,7 +3881,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>gun_right</moduleName>
     <slaveName>s1</slaveName>
     <name>gun_right.s1</name>
-    <baseAddress>20496</baseAddress>
+    <baseAddress>69648</baseAddress>
     <span>16</span>
    </memoryBlock>
    <memoryBlock>
@@ -3889,7 +3889,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>gun_shoot</moduleName>
     <slaveName>s1</slaveName>
     <name>gun_shoot.s1</name>
-    <baseAddress>20480</baseAddress>
+    <baseAddress>69632</baseAddress>
     <span>16</span>
    </memoryBlock>
   </interface>
@@ -4158,7 +4158,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>i_address</name>
     <direction>Output</direction>
-    <width>15</width>
+    <width>17</width>
     <role>address</role>
    </port>
    <port>
@@ -4184,7 +4184,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>cpu</moduleName>
     <slaveName>jtag_debug_module</slaveName>
     <name>cpu.jtag_debug_module</name>
-    <baseAddress>18432</baseAddress>
+    <baseAddress>67584</baseAddress>
     <span>2048</span>
    </memoryBlock>
    <memoryBlock>
@@ -4193,7 +4193,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s1</slaveName>
     <name>onchip_mem.s1</name>
     <baseAddress>0</baseAddress>
-    <span>16384</span>
+    <span>65536</span>
    </memoryBlock>
   </interface>
   <interface name="d_irq" kind="interrupt_receiver" version="15.1">
@@ -9457,7 +9457,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.SIZE_VALUE</name>
-   <value>16384</value>
+   <value>65536</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.WRITABLE</name>
@@ -9557,7 +9557,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="memorySize">
    <type>long</type>
-   <value>16384</value>
+   <value>65536</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9688,7 +9688,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_set_addr_width">
    <type>int</type>
-   <value>12</value>
+   <value>14</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -9817,7 +9817,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="addressSpan">
     <type>java.math.BigInteger</type>
-    <value>16384</value>
+    <value>65536</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -9905,7 +9905,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="explicitAddressSpan">
     <type>java.math.BigInteger</type>
-    <value>16384</value>
+    <value>65536</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -10116,7 +10116,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>address</name>
     <direction>Input</direction>
-    <width>12</width>
+    <width>14</width>
     <role>address</role>
    </port>
    <port>
@@ -15652,7 +15652,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x50e0</value>
+   <value>0x000110e0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -15703,7 +15703,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x4800</value>
+   <value>0x00010800</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -15805,7 +15805,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x50d0</value>
+   <value>0x000110d0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -15856,7 +15856,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x50c0</value>
+   <value>0x000110c0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -15907,7 +15907,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x50b0</value>
+   <value>0x000110b0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -15958,7 +15958,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x50a0</value>
+   <value>0x000110a0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16009,7 +16009,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5090</value>
+   <value>0x00011090</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16060,7 +16060,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5080</value>
+   <value>0x00011080</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16111,7 +16111,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5070</value>
+   <value>0x00011070</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16162,7 +16162,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5060</value>
+   <value>0x00011060</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16213,7 +16213,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5050</value>
+   <value>0x00011050</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16264,7 +16264,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5040</value>
+   <value>0x00011040</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16315,7 +16315,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5030</value>
+   <value>0x00011030</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16366,7 +16366,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5020</value>
+   <value>0x00011020</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16417,7 +16417,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5010</value>
+   <value>0x00011010</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16468,7 +16468,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x5000</value>
+   <value>0x00011000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -16519,7 +16519,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x4800</value>
+   <value>0x00010800</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>

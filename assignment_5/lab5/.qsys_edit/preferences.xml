@@ -8,8 +8,7 @@
    <name preferredWidth="179" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Processors and Peripherals/Peripherals,Library,Library/Processors and Peripherals,Project" />
- <window width="1936" height="1176" x="-8" y="-8" />
+ <library expandedCategories="Project,Library" />
+ <window width="1920" height="1049" x="-9" y="0" />
  <generation block_symbol_file="0" />
 </preferences>

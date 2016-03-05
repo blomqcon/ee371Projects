@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Mar 04 22:00:03 2016
+Fitter Status : Successful - Fri Mar 04 22:13:39 2016
 Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Standard Edition
 Revision Name : nios2_quartus2_project
 Top-level Entity Name : DE1_SoC
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 1,042 / 32,070 ( 3 % )
-Total registers : 1695
+Logic utilization (in ALMs) : 1,039 / 32,070 ( 3 % )
+Total registers : 1712
 Total pins : 23 / 457 ( 5 % )
 Total virtual pins : 0
 Total block memory bits : 420,864 / 4,065,280 ( 10 % )
