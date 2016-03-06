@@ -31,7 +31,7 @@ module characterBitCount(charReceived, SRclk, BIC, BSC, clk, reset, enable);
 	// assign BSC = 4'b0;
 	
 	
-	always@(posedge clk or posedge combinedCounter or posedge reset or posedge enable)
+	always@(posedge clk)
 		begin
 			BIC[3:0] = combinedCounter[7:4];
 			BSC[3:0] = combinedCounter[3:0];
@@ -61,10 +61,6 @@ module characterBitCount(charReceived, SRclk, BIC, BSC, clk, reset, enable);
 					combinedCounter = 8'b0;		
 				end
 			//default: combinedCounter = 8'bx;
-		end
-
-		always@(*) begin 
-			
 		end
 
 endmodule

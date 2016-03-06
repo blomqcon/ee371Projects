@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu' in SOPC Builder design 'lab4CPU'
 # SOPC Builder design path: ../../lab4CPU.sopcinfo
 #
-# Generated: Tue Feb 23 08:42:36 PST 2016
+# Generated: Fri Mar 04 19:01:51 PST 2016
 
 # DO NOT MODIFY THIS FILE
 #

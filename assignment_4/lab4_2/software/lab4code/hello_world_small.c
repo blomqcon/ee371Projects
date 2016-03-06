@@ -1,91 +1,158 @@
-/* 
- * "Small Hello World" example. 
- * 
- * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
- * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example 
- * designs. It requires a STDOUT  device in your system's hardware. 
- *
- * The purpose of this example is to demonstrate the smallest possible Hello 
- * World application, using the Nios II HAL library.  The memory footprint
- * of this hosted application is ~332 bytes by default using the standard 
- * reference design.  For a more fully featured Hello World application
- * example, see the example titled "Hello World".
- *
- * The memory footprint of this example has been reduced by making the
- * following changes to the normal "Hello World" example.
- * Check in the Nios II Software Developers Manual for a more complete 
- * description.
- * 
- * In the SW Application project (small_hello_world):
- *
- *  - In the C/C++ Build page
- * 
- *    - Set the Optimization Level to -Os
- * 
- * In System Library project (small_hello_world_syslib):
- *  - In the C/C++ Build page
- * 
- *    - Set the Optimization Level to -Os
- * 
- *    - Define the preprocessor option ALT_NO_INSTRUCTION_EMULATION 
- *      This removes software exception handling, which means that you cannot 
- *      run code compiled for Nios II cpu with a hardware multiplier on a core 
- *      without a the multiply unit. Check the Nios II Software Developers 
- *      Manual for more details.
- *
- *  - In the System Library page:
- *    - Set Periodic system timer and Timestamp timer to none
- *      This prevents the automatic inclusion of the timer driver.
- *
- *    - Set Max file descriptors to 4
- *      This reduces the size of the file handle pool.
- *
- *    - Check Main function does not exit
- *    - Uncheck Clean exit (flush buffers)
- *      This removes the unneeded call to exit when main returns, since it
- *      won't.
- *
- *    - Check Don't use C++
- *      This builds without the C++ support code.
- *
- *    - Check Small C library
- *      This uses a reduced functionality C library, which lacks  
- *      support for buffering, file IO, floating point and getch(), etc. 
- *      Check the Nios II Software Developers Manual for a complete list.
- *
- *    - Check Reduced device drivers
- *      This uses reduced functionality drivers if they're available. For the
- *      standard design this means you get polled UART and JTAG UART drivers,
- *      no support for the LCD driver and you lose the ability to program 
- *      CFI compliant flash devices.
- *
- *    - Check Access device drivers directly
- *      This bypasses the device file system to access device drivers directly.
- *      This eliminates the space required for the device file system services.
- *      It also provides a HAL version of libc services that access the drivers
- *      directly, further reducing space. Only a limited number of libc
- *      functions are available in this configuration.
- *
- *    - Use ALT versions of stdio routines:
- *
- *           Function                  Description
- *        ===============  =====================================
- *        alt_printf       Only supports %s, %x, and %c ( < 1 Kbyte)
- *        alt_putstr       Smaller overhead than puts with direct drivers
- *                         Note this function doesn't add a newline.
- *        alt_putchar      Smaller overhead than putchar with direct drivers
- *        alt_getchar      Smaller overhead than getchar with direct drivers
- *
- */
-
 #include "sys/alt_stdio.h"
+#include "drivers/inc/altera_avalon_pio_regs.h"
+#include "fcntl.h"
+#include "unistd.h"
+#define BUFFER_SIZE 50
 
-int main()
-{ 
-  alt_putstr("Hello from Nios II!\n");
+#define transmit_enable 	(volatile char *) 0x00005000
+#define character_sent 		(volatile char *) 0x00005010
+#define data_bus_output 	(volatile char *) 0x00005030
+#define load 				(volatile char *) 0x00005020
+#define data_bus_input 		(volatile char *) 0x00005060
+#define character_received 	(volatile char *) 0x00005050
+#define data_bus_LEDs 		(volatile char *) 0x00005040
 
-  /* Event loop never exits. */
-  while (1);
+//int main() {
+//	alt_putstr("EE 371 Lab 4 - Adding Communication\n");
+//
+//	*load = 0;
+//	*transmit_enable = 0;
+//	*data_bus_output = 0xFF;
+//	*data_bus_LEDs = 0x00;
+//
+//	*data_bus_output = 0b0011111101;
+//	usleep(5000);
+//	*load = 1;
+//	usleep(5000);
+//	*load = 0;
+//	*transmit_enable = 1;
+//	while(!character_sent) {
+//		alt_putstr("char not sent\n");
+//	}
+//	alt_putchar(0b01111110);
+//
+//	return 0;
+//}
 
-  return 0;
+int main() {
+	alt_putstr("here\n");
+
+	while(!(*character_received)) {
+
+	}
+	alt_putchar(*data_bus_input);
+
 }
+
+
+//char readBuffer(char** pTransmit, char* pBufferHead, char* pBuffer) {
+//    //printf("%c %c %i\n", **pTransmit, 0xC8, **pTransmit == 0xC8);
+//    if(**pTransmit == 0x60 || **pTransmit == '\0') {
+//        return '\0';
+//    } else {
+//        char c = **pTransmit;
+//        **pTransmit = 0x60;
+//
+//        if((*pTransmit - pBuffer) == (BUFFER_SIZE - 1)) {
+//            *pTransmit = pBuffer;
+//        } else {
+//            *pTransmit = *pTransmit + sizeof(char);
+//        }
+//        return c;
+//    }
+//}
+//
+//void writeBuffer(char c, char** pBufferHead, char** pBuffer) {
+//    if(!(**pBufferHead == 0x60 || **pBufferHead == '\0')) return;
+//
+//    *(*pBufferHead) = c;
+//    if((*pBufferHead - *pBuffer) == (BUFFER_SIZE - 1)) {
+//        *pBufferHead = *pBuffer;
+//    } else {
+//        *pBufferHead = *pBufferHead + sizeof(char);
+//    }
+//}
+//
+//void readKeyboardToBuffer(char** pBufferHead, char** pBuffer) {
+//	char newC = alt_getchar();
+//	if(newC > 31 && newC < 128) {
+//		writeBuffer(newC, pBufferHead, pBuffer);
+//	}
+//}
+//
+//void transmitIfBufferNotEmpty(char** pTransmit, char* pBufferHead, char* pBuffer, int* write) {
+//	if(*load) {
+//		  *load = 0;
+//		  *transmit_enable = 1;
+//	  }
+//
+//	  char c = '\0';
+//	  if(*write) {
+//		  c = readBuffer(pTransmit, pBufferHead, pBuffer);
+//		  if(c != '\0' && c != 0x60 ) {
+//			  *write = 0;
+//			  //*data_bus_output = ((c << 2)>> 1)|0b0000000001;
+//			  //*data_bus_output = 0b1011111100;
+//			  *data_bus_output = 0b0011111101;
+//			  printf("Writing Char: %c\n", 0b01111110);
+//			  *load = 1;
+//			  *transmit_enable = 0;
+//			  //alt_putchar(c);
+//			  //*data_bus_LEDs = (*load) | (*transmit_enable << 1) | (*character_sent << 2) | (*character_received << 3);
+//			  //*data_bus_LEDs = c;
+//			  usleep(100);
+//		  }
+//	  }
+//	  if(*character_sent) {
+//		  printf("character sent\n");
+//		  //*data_bus_LEDs = 0xFF;
+//		  *write = 1;
+//		  *transmit_enable = 0;
+//	  }
+//}
+//
+//void printIfCharacterReceive(int* read) {
+//	if(*character_received & *read) {
+//		*read = 0;
+//		int parity = *data_bus_input & 0x01;
+//		char cRec = (*data_bus_input >> 1) & 0b0011111111;
+//		alt_putchar((*data_bus_input));
+//	} else if(!(*character_received)) {
+//		*read = 1;
+//	}
+//}
+//
+//
+//int main() {
+//	fcntl(STDIN_FILENO, F_SETFL, O_NONBLOCK);
+//
+//	alt_putstr("EE 371 Lab 4 - Adding Communication\n");
+//	int read = 1;
+//	int write = 1;
+//
+//	char* pBuffer = calloc(BUFFER_SIZE, sizeof(char));
+//	char* pBufferHead = pBuffer;
+//	char* pTransmit = pBuffer;
+//
+//	*load = 0;
+//	*transmit_enable = 0;
+//	*data_bus_output = 0x00;
+//	*data_bus_LEDs = 0x00;
+//
+//  /* Event loop never exits. */
+//  while (1) {
+//	  //*******read keyboard and put characters in buffer********
+//	  readKeyboardToBuffer(&pBufferHead, &pBuffer);
+//
+//	  //******transmit*******
+//	  transmitIfBufferNotEmpty(&pTransmit, pBufferHead, pBuffer, &write);
+//
+//	  //*****receive*********
+//	  printIfCharacterReceive(&read);
+//
+//	  //******Debug outputs
+//	  *data_bus_LEDs = (*load) | (*transmit_enable << 1) | (*character_sent << 2) | (*character_received << 3);
+//  }
+//
+//  return 0;
+//}

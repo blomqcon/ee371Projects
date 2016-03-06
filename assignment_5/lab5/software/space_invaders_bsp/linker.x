@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'lab5CPU'
  * SOPC Builder design path: ../../lab5CPU.sopcinfo
  *
- * Generated: Thu Mar 03 20:04:15 PST 2016
+ * Generated: Fri Mar 04 18:31:52 PST 2016
  */
 
 /*
@@ -51,7 +51,7 @@
 MEMORY
 {
     reset : ORIGIN = 0x0, LENGTH = 32
-    onchip_mem : ORIGIN = 0x20, LENGTH = 16352
+    onchip_mem : ORIGIN = 0x20, LENGTH = 65504
 }
 
 /* Define symbols for each memory base-address */
@@ -367,7 +367,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x4000;
+__alt_data_end = 0x10000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -383,4 +383,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x4000 );
+PROVIDE( __alt_heap_limit    = 0x10000 );

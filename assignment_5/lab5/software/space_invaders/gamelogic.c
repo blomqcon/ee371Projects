@@ -19,7 +19,7 @@ void updateGameTime(int* gameTime, clock_t* startTimer) {
 }
 
 void updateToggleValues(int gameTime, int* updateToggle, int* gunnerToggle) {
-    if(gameTime % 6 == 0) {
+    if(gameTime % 41 == 0) {
         *updateToggle = 1;
     }
 

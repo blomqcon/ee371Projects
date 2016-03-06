@@ -2,136 +2,154 @@
   <display_tree gui_logging_enabled="0">
     <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
   </display_tree>
-  <global_info>
-    <single attribute="active instance" value="0"/>
-    <single attribute="lock mode" value="0"/>
-    <multi attribute="frame size" size="2" value="1920,1137"/>
-    <single attribute="jtag widget visible" value="1"/>
-    <multi attribute="jtag widget size" size="2" value="334,120"/>
-    <single attribute="instance widget visible" value="1"/>
-    <single attribute="config widget visible" value="1"/>
-    <single attribute="hierarchy widget visible" value="1"/>
-    <single attribute="data log widget visible" value="1"/>
-  </global_info>
-  <instance enabled="true" entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+  <instance enabled="true" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
     <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
-    <position_info>
-      <single attribute="active tab" value="1"/>
-      <single attribute="setup vertical scroll position" value="0"/>
-      <single attribute="setup horizontal scroll position" value="0"/>
-    </position_info>
-    <signal_set global_temp="1" name="signal_set: 2016/02/23 06:14:33  #0">
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2016/03/04 20:13:47  #0">
       <clock name="clock_divider19:cd|divided_clocks[15]" polarity="posedge" tap_mode="classic"/>
       <config ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="16384" trigger_in_enable="no" trigger_out_enable="no"/>
       <top_entity/>
       <signal_vec>
         <trigger_input_vec>
-          <wire name="SW[0]~input" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_load_output:load_output|data_out" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9]" tap_mode="probeonly"/>
+          <wire name="receiving:r|charReceived" tap_mode="classic"/>
+          <wire name="receiving:r|data_in" tap_mode="classic"/>
+          <wire name="receiving:r|reset" tap_mode="classic"/>
+          <wire name="transmitting:t|charSent" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[0]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[1]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[2]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[3]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[4]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[5]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[6]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[7]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[8]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[9]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_out" tap_mode="classic"/>
+          <wire name="transmitting:t|load_n" tap_mode="classic"/>
+          <wire name="transmitting:t|t_enable" tap_mode="classic"/>
         </trigger_input_vec>
         <data_input_vec>
-          <wire name="SW[0]~input" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_load_output:load_output|data_out" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9]" tap_mode="probeonly"/>
+          <wire name="receiving:r|charReceived" tap_mode="classic"/>
+          <wire name="receiving:r|data_in" tap_mode="classic"/>
+          <wire name="receiving:r|reset" tap_mode="classic"/>
+          <wire name="transmitting:t|charSent" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[0]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[1]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[2]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[3]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[4]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[5]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[6]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[7]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[8]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[9]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_out" tap_mode="classic"/>
+          <wire name="transmitting:t|load_n" tap_mode="classic"/>
+          <wire name="transmitting:t|t_enable" tap_mode="classic"/>
         </data_input_vec>
         <storage_qualifier_input_vec>
-          <wire name="SW[0]~input" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_load_output:load_output|data_out" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8]" tap_mode="probeonly"/>
-          <wire name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9]" tap_mode="probeonly"/>
+          <wire name="receiving:r|charReceived" tap_mode="classic"/>
+          <wire name="receiving:r|data_in" tap_mode="classic"/>
+          <wire name="receiving:r|reset" tap_mode="classic"/>
+          <wire name="transmitting:t|charSent" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[0]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[1]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[2]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[3]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[4]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[5]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[6]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[7]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[8]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_in[9]" tap_mode="classic"/>
+          <wire name="transmitting:t|data_out" tap_mode="classic"/>
+          <wire name="transmitting:t|load_n" tap_mode="classic"/>
+          <wire name="transmitting:t|t_enable" tap_mode="classic"/>
         </storage_qualifier_input_vec>
       </signal_vec>
       <presentation>
         <unified_setup_data_view>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9]" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_load_output:load_output|data_out" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out" tap_mode="probeonly" type="register"/>
-          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="true" is_storage_input="true" is_trigger_input="true" level-0="high" name="SW[0]~input" tap_mode="probeonly" type="combinatorial"/>
+          <node data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="receiving:r|charReceived" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <node data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="receiving:r|data_in" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
+          <node data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="receiving:r|reset" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
+          <node data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="high" name="transmitting:t|charSent" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="unknown"/>
+          <node data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="transmitting:t|data_out" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="14" type="unknown"/>
+          <node data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|t_enable" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="classic" trigger_index="16" type="unknown"/>
+          <node data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|load_n" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="15" type="unknown"/>
+          <node is_selected="false" level-0="alt_or" name="transmitting:t|data_in[9..0]" order="msb_to_lsb" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
+            <node data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="classic" trigger_index="13" type="unknown"/>
+            <node data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="12" type="unknown"/>
+            <node data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="unknown"/>
+            <node data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="10" type="unknown"/>
+            <node data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="9" type="unknown"/>
+            <node data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="8" type="unknown"/>
+            <node data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="unknown"/>
+            <node data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
+            <node data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
+            <node data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="unknown"/>
+          </node>
         </unified_setup_data_view>
         <data_view>
-          <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0]" storage_index="3" tap_mode="probeonly" trigger_index="3" type="unknown"/>
-          <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1]" storage_index="4" tap_mode="probeonly" trigger_index="4" type="unknown"/>
-          <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2]" storage_index="5" tap_mode="probeonly" trigger_index="5" type="unknown"/>
-          <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3]" storage_index="6" tap_mode="probeonly" trigger_index="6" type="unknown"/>
-          <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4]" storage_index="7" tap_mode="probeonly" trigger_index="7" type="unknown"/>
-          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5]" storage_index="8" tap_mode="probeonly" trigger_index="8" type="unknown"/>
-          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6]" storage_index="9" tap_mode="probeonly" trigger_index="9" type="unknown"/>
-          <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7]" storage_index="10" tap_mode="probeonly" trigger_index="10" type="unknown"/>
-          <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8]" storage_index="11" tap_mode="probeonly" trigger_index="11" type="unknown"/>
-          <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9]" storage_index="12" tap_mode="probeonly" trigger_index="12" type="unknown"/>
-          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_load_output:load_output|data_out" storage_index="1" tap_mode="probeonly" trigger_index="1" type="unknown"/>
-          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out" storage_index="2" tap_mode="probeonly" trigger_index="2" type="unknown"/>
-          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="true" is_storage_input="true" is_trigger_input="true" level-0="high" name="SW[0]~input" storage_index="0" tap_mode="probeonly" trigger_index="0" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="receiving:r|charReceived" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="receiving:r|data_in" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="receiving:r|reset" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
+          <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="high" name="transmitting:t|charSent" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="unknown"/>
+          <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="transmitting:t|data_out" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="14" type="unknown"/>
+          <net data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|t_enable" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="classic" trigger_index="16" type="unknown"/>
+          <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|load_n" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="15" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="transmitting:t|data_in[9..0]" order="msb_to_lsb" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="classic" trigger_index="13" type="unknown"/>
+            <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="12" type="unknown"/>
+            <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="unknown"/>
+            <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="10" type="unknown"/>
+            <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="9" type="unknown"/>
+            <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="8" type="unknown"/>
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="unknown"/>
+          </bus>
         </data_view>
         <setup_view>
-          <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[0]" storage_index="3" tap_mode="probeonly" trigger_index="3" type="unknown"/>
-          <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[1]" storage_index="4" tap_mode="probeonly" trigger_index="4" type="unknown"/>
-          <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[2]" storage_index="5" tap_mode="probeonly" trigger_index="5" type="unknown"/>
-          <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[3]" storage_index="6" tap_mode="probeonly" trigger_index="6" type="unknown"/>
-          <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[4]" storage_index="7" tap_mode="probeonly" trigger_index="7" type="unknown"/>
-          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[5]" storage_index="8" tap_mode="probeonly" trigger_index="8" type="unknown"/>
-          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[6]" storage_index="9" tap_mode="probeonly" trigger_index="9" type="unknown"/>
-          <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[7]" storage_index="10" tap_mode="probeonly" trigger_index="10" type="unknown"/>
-          <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[8]" storage_index="11" tap_mode="probeonly" trigger_index="11" type="unknown"/>
-          <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_parallel_output:parallel_output|data_out[9]" storage_index="12" tap_mode="probeonly" trigger_index="12" type="unknown"/>
-          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_load_output:load_output|data_out" storage_index="1" tap_mode="probeonly" trigger_index="1" type="unknown"/>
-          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="lab4CPU:cpu|lab4CPU_load_output:transmit_enable_output|data_out" storage_index="2" tap_mode="probeonly" trigger_index="2" type="unknown"/>
-          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="true" is_storage_input="true" is_trigger_input="true" level-0="high" name="SW[0]~input" storage_index="0" tap_mode="probeonly" trigger_index="0" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="receiving:r|charReceived" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="receiving:r|data_in" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="receiving:r|reset" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
+          <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="high" name="transmitting:t|charSent" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="unknown"/>
+          <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="low" name="transmitting:t|data_out" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="14" type="unknown"/>
+          <net data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|t_enable" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="classic" trigger_index="16" type="unknown"/>
+          <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|load_n" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="15" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="transmitting:t|data_in[9..0]" order="msb_to_lsb" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="classic" trigger_index="13" type="unknown"/>
+            <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="12" type="unknown"/>
+            <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="unknown"/>
+            <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="10" type="unknown"/>
+            <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="9" type="unknown"/>
+            <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="8" type="unknown"/>
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="transmitting:t|data_in[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="unknown"/>
+          </bus>
         </setup_view>
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2016/02/23 06:14:33  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="16384" storage_mode="transitional" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2016/03/04 20:26:34  #0" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
-          <level enabled="yes" name="condition1" type="basic">'SW[0]~input' == high
+          <level editor="basic_or" enabled="yes" name="condition1" type="advanced">
             <power_up enabled="yes">
+              <power_up_expression><![CDATA[alt_reduction(alt_true, {((mbpm('X', 'receiving:r|charReceived') && variable(1))), ((mbpm('X', 'receiving:r|data_in') && variable(1))), ((mbpm('X', 'receiving:r|reset') && variable(1))), ((mbpm('X', 'transmitting:t|charSent') && variable(1))), ((mbpm('X', 'transmitting:t|data_out') && variable(1))), ((mbpm('X', 'transmitting:t|load_n') && variable(1))), ((mbpm('X', 'transmitting:t|t_enable') && variable(1))), (alt_reduction(alt_false, {(mbpm('X', 'transmitting:t|data_in[0]') && variable(1)), (mbpm('X', 'transmitting:t|data_in[1]') && variable(1)), (mbpm('X', 'transmitting:t|data_in[2]') && variable(1)), (mbpm('X', 'transmitting:t|data_in[3]') && variable(1)), (mbpm('X', 'transmitting:t|data_in[4]') && variable(1)), (mbpm('X', 'transmitting:t|data_in[5]') && variable(1)), (mbpm('X', 'transmitting:t|data_in[6]') && variable(1)), (mbpm('X', 'transmitting:t|data_in[7]') && variable(1)), (mbpm('X', 'transmitting:t|data_in[8]') && variable(1)), (mbpm('X', 'transmitting:t|data_in[9]') && variable(1))}))})]]>
+              </power_up_expression>
             </power_up>
+            <expression><![CDATA[alt_reduction(alt_or, {((mbpm('X', 'receiving:r|charReceived') && variable(0))), ((mbpm('X', 'receiving:r|data_in') && variable(0))), ((mbpm('X', 'receiving:r|reset') && variable(0))), ((mbpm('1', 'transmitting:t|charSent') && variable(1))), ((mbpm('0', 'transmitting:t|data_out') && variable(1))), ((mbpm('X', 'transmitting:t|load_n') && variable(0))), ((mbpm('X', 'transmitting:t|t_enable') && variable(0))), (alt_reduction(alt_false, {(mbpm('X', 'transmitting:t|data_in[0]') && variable(0)), (mbpm('X', 'transmitting:t|data_in[1]') && variable(0)), (mbpm('X', 'transmitting:t|data_in[2]') && variable(0)), (mbpm('X', 'transmitting:t|data_in[3]') && variable(0)), (mbpm('X', 'transmitting:t|data_in[4]') && variable(0)), (mbpm('X', 'transmitting:t|data_in[5]') && variable(0)), (mbpm('X', 'transmitting:t|data_in[6]') && variable(0)), (mbpm('X', 'transmitting:t|data_in[7]') && variable(0)), (mbpm('X', 'transmitting:t|data_in[8]') && variable(0)), (mbpm('X', 'transmitting:t|data_in[9]') && variable(0))}))})]]>
+            </expression>
             <op_node/>
           </level>
         </events>
         <storage_qualifier_events>
-          <transitional>1111111111111
-            <pwr_up_transitional>1111111111111</pwr_up_transitional>
+          <transitional>11111111111111111
+            <pwr_up_transitional>11111111111111111</pwr_up_transitional>
           </transitional>
           <storage_qualifier_level type="basic">
             <power_up>
@@ -151,7 +169,22 @@
         </storage_qualifier_events>
       </trigger>
     </signal_set>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+    </position_info>
   </instance>
   <mnemonics/>
-  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <single attribute="lock mode" value="0"/>
+    <multi attribute="frame size" size="2" value="1920,1137"/>
+    <multi attribute="jtag widget size" size="2" value="334,120"/>
+  </global_info>
 </session>
