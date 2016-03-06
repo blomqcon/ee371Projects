@@ -6,9 +6,9 @@
         struct ProjectileNode *next;
     };
 
-    void updateProjectileNode();
+    void updateProjectileNodes();
     void addProjectileNode(struct Projectile proj);
-    //void removeProjectileNode(Projectile proj);
+    struct Projectile createProjectile(char x, char dir, char symb, char t);
 
 #endif // projectile_node_H_
 

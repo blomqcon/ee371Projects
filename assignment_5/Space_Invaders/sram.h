@@ -13,4 +13,7 @@ void clearAliens();
 struct Alien getAlien(int pSramAliens, int x, int y);
 void setAlien(int pSramAliens, int x, int y, struct Alien alien);
 
+struct Projectile getProjectile(int pSramBulletBuffer, int x, int y);
+void setProjectile (int pSramBulletBuffer, int x, int y, struct Projectile bullet);
+
 #endif // SRAM_H_

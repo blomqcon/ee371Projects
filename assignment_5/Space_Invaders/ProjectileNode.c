@@ -5,70 +5,75 @@
 //for std malloc
 #include <stdlib.h>
 
-struct ProjectileNode *head;
-struct ProjectileNode *current;
+struct ProjectileNode *head = NULL;
+struct ProjectileNode *end = NULL;
 
-void updateProjectileNode() {
+void updateProjectileNodes() {
     //if head is null, return
-    if(!head) return;
+    if(head == NULL) return;
 
-    struct Projectile bullet;
-    struct ProjectileNode* nextProj = head;
-    do {
-        bullet = nextProj->bullet;
-        if(bullet.timeTick < abs(bullet.direction)) {
-            nextProj->bullet.timeTick++;
+    struct ProjectileNode* current = head;
+    while(current != NULL) {
+        if(current->bullet.timeTick < abs(current->bullet.direction)) {
+            current->bullet.timeTick++;
         } else {
-            nextProj->bullet.timeTick = 0;
-            if(bullet.type == 1) {
-                if(bullet.direction < 0) {
-                    nextProj->bullet.yVal--;
-
-                    if(nextProj->bullet.yVal < GUNNER_HEIGHT) {
-                        //int collide = checkCollideGunner(nextProj->bullet.xVal, nextProj->bullet.yVal);
-                        //if(collide) removeProjectileNode(nextProj->bullet);
-                    }
-                } else if(bullet.direction > 0) {
-                    nextProj->bullet.yVal++;
-
-                    if(nextProj->bullet.yVal > GUNNER_HEIGHT + VOID_HEIGHT) {
-                        //int collide = checkCollideAliens(nextProj->bullet.xVal, nextProj->bullet.yVal);
-                        //if(collide) removeProjectileNode(nextProj->bullet);
-                    }
-                } else {
-                    continue;
-                }
-            } else {
-                continue;
+            current->bullet.timeTick = 0;
+            if(current->bullet.type == 1) { //Straight Line
+                current->bullet.yVal -= (current->bullet.direction < 0);
+                current->bullet.yVal += (current->bullet.direction > 0);
             }
         }
-        nextProj = nextProj->next;
-    } while(nextProj);
+        //printf("New Bullet Loc (%i, %i)\n", current->bullet.xVal, current->bullet.yVal);
+
+        struct ProjectileNode* tempCurrent = current;
+        current = current->next;
+
+        if(tempCurrent->bullet.yVal < 0) {
+            //checkCollideGunner();
+            removeProjectileNode(tempCurrent);
+        } else if (tempCurrent->bullet.yVal > VOID_HEIGHT) {
+            //checkCollideAliens();
+            removeProjectileNode(tempCurrent);
+        }
+    }
+    printf("\n");
 }
 
 void addProjectileNode(struct Projectile proj) {
-    if(!head) {
+    if(head == NULL) {
         head = (struct ProjectileNode*)malloc(sizeof(struct ProjectileNode));
         head->bullet = proj;
-        current = head;
+        head->next = NULL;
+        end = head;
     } else {
         struct ProjectileNode* nextProj = (struct ProjectileNode*)malloc(sizeof(struct ProjectileNode));
         nextProj->bullet = proj;
-        current->next = nextProj;
-        current = nextProj;
+        nextProj->next = NULL;
+        end->next = nextProj;
+        end = nextProj;
     }
 }
 
-void removeProjectileNode(struct Projectile proj) {
-    struct ProjectileNode* nextProj = head;
-
-    //if there is only one projectile in the list
-    if(!nextProj->next) {
-        head = NULL;
-        current = head;
+void removeProjectileNode(struct ProjectileNode* proj) {
+    if(head == proj) {
+        if(proj == end) end = NULL;
+        head = proj->next;
     } else {
-        while(nextProj->next) {
-
-        }
+        struct ProjectileNode* current = head;
+        while(current->next != proj) { }
+        current->next = proj->next;
+        if(proj == end) end = current->next;
     }
+    free(proj);
+}
+
+struct Projectile createProjectile(char x, char dir, char symb, char t) {
+    struct Projectile proj;
+    proj.xVal = x;
+    proj.yVal = 0;
+    proj.direction = dir;
+    proj.symbol = symb;
+    proj.type = t;
+    proj.timeTick = 0;
+    return proj;
 }

@@ -9,6 +9,7 @@
 #include "display.h"
 #include "gamelogic.h"
 #include "sram_tests.h"
+#include "ProjectileNode.h"
 
 
 clock_t startTimer;
@@ -25,33 +26,34 @@ int main()
     //Game Init
     initializeGame(startTimer);
     int pSramAliens = sram_malloc(sizeof(struct Alien) * (ALIEN_COLS * ALIEN_ROWS));
+    int pSramBulletBuffer = sram_malloc(sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT));
 
+    printf("%i\n", sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT));
     //New Game
     int gameTime = 0;
-    int gunnerX = 39; //max value 39 (ALIEN_WIDTH * ALIEN_COLS)
+    int gunnerX = 37; //max value 39 (ALIEN_WIDTH * ALIEN_COLS)
     initRandomAliens(pSramAliens);
     int updateToggle = 1;
     int gunnerToggle = 1;
+
+    addProjectileNode(createProjectile(3, 1, '^', 1));
+    addProjectileNode(createProjectile(2, 1, '^', 1));
 
     //Game Event Loop
     while(1) {
         updateGameTime(&gameTime, &startTimer);
         updateToggleValues(gameTime, &updateToggle, &gunnerToggle);
 
-        if((gameTime % 5 == 0) && updateToggle) {
+        if((gameTime % 10 == 0) && updateToggle) {
             int shift = (gameTime / 20) % 8;
-            updateDisplay(pSramAliens, gunnerX, gameTime % 2, shift);
+            updateDisplay(pSramAliens, pSramBulletBuffer, gunnerX, gameTime % 2, shift);
             updateToggle = 0;
         }
 
         if((gameTime % 20 == 0) && gunnerToggle) {
             moveGunnerRight(&gunnerX);
-            /*if(gunnerX >= SCREEN_WIDTH) {
-                gunnerX = 0;
-            } else if(gunnerX <= 0) {
-                gunnerX = SCREEN_WIDTH-1;
-            }*/
             gunnerToggle = 0;
+            updateProjectileNodes();
         }
     }
 

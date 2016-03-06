@@ -12,9 +12,9 @@ void initializeGame(clock_t startTimer) {
 
 void moveGunnerLeft(int* gunnerX) {
     if((*gunnerX) == 0) {
-        gunnerX = (ALIEN_WIDTH * ALIEN_COLS) - 1;
+        (*gunnerX) = (ALIEN_WIDTH * ALIEN_COLS) - 1;
     } else {
-        gunnerX--;
+        (*gunnerX)--;
     }
 }
 
@@ -40,7 +40,7 @@ void updateGameTime(int* gameTime, clock_t* startTimer) {
 }
 
 void updateToggleValues(int gameTime, int* updateToggle, int* gunnerToggle) {
-    if(gameTime % 6 == 0) {
+    if(gameTime % 11 == 0) {
         *updateToggle = 1;
     }
 
@@ -63,12 +63,12 @@ int checkCollideAliens(int pSramAliens, int projX, int projY) {
             }
         }
     }
+    return 0;
 }
 
 int checkCollideGunner(int gunnerX, int projX, int projY, int* gameOver) {
     if (projX == gunnerX && projY == gunnerX) {
-        gunnerX = 0;
-        &gameOver = 1;
+        *gameOver = 1;
         return 1;
     } else {
         return 0;

@@ -7,7 +7,7 @@
 #define ALIEN_WIDTH 5
 #define ALIEN_HEIGHT 3
 
-#define VOID_HEIGHT 5
+#define VOID_HEIGHT 3
 
 #define GUNNER_WIDTH 7
 #define GUNNER_HEIGHT 2

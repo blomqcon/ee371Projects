@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="ProjectileNode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ProjectileNode.h" />
 		<Unit filename="data_structures_constants.c">
 			<Option compilerVar="CC" />
 		</Unit>
