@@ -8,16 +8,19 @@
 struct ProjectileNode *head = NULL;
 struct ProjectileNode *end = NULL;
 
-void updateProjectileNodes() {
+void updateProjectileNodes(int pSramBulletBuffer) {
     //if head is null, return
     if(head == NULL) return;
+    struct Projectile empty = createProjectile(0, 0, 0, 0);
 
+    //clearProjectileBuffer(pSramBulletBuffer);
     struct ProjectileNode* current = head;
     while(current != NULL) {
         if(current->bullet.timeTick < abs(current->bullet.direction)) {
             current->bullet.timeTick++;
         } else {
             current->bullet.timeTick = 0;
+            setProjectile(pSramBulletBuffer, current->bullet.xVal, current->bullet.yVal, empty);
             if(current->bullet.type == 1) { //Straight Line
                 current->bullet.yVal -= (current->bullet.direction < 0);
                 current->bullet.yVal += (current->bullet.direction > 0);
@@ -36,8 +39,32 @@ void updateProjectileNodes() {
             removeProjectileNode(tempCurrent);
         }
     }
+    updateProjectileBuffer(pSramBulletBuffer);
     printf("\n");
 }
+
+void updateProjectileBuffer(int pSramBulletBuffer) {
+    if(head == NULL) return;
+
+    struct ProjectileNode* current = head;
+    while(current != NULL) {
+        setProjectile(pSramBulletBuffer, current->bullet.xVal, current->bullet.yVal, current->bullet);
+        current = current->next;
+    }
+}
+
+/*
+void clearProjectileBuffer(int pSramBulletBuffer) {
+    int x;
+    int y;;
+    struct Projectile bullet = createProjectile(0, 0, 0, 0);
+    for(x = 0; x <= 7; x++) {
+        for(y = 0; y < VOID_HEIGHT; y++) {
+            setProjectile(pSramBulletBuffer, x, y, bullet);
+        }
+    }
+}
+*/
 
 void addProjectileNode(struct Projectile proj) {
     if(head == NULL) {

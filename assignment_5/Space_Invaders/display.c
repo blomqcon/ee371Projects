@@ -83,12 +83,6 @@ void printVoid(int pSramBulletBuffer) {
     }
 }
 
-
-
-void updateProjectileBuffer() {
-
-}
-
 printGunnerSlice(int gunnerX, int slice) {
     int SCREEN_WIDTH = ALIEN_COLS * ALIEN_WIDTH;
     int numberOfWraps = (gunnerX + GUNNER_WIDTH) - SCREEN_WIDTH;

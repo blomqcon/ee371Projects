@@ -53,7 +53,7 @@ int main()
         if((gameTime % 20 == 0) && gunnerToggle) {
             moveGunnerRight(&gunnerX);
             gunnerToggle = 0;
-            updateProjectileNodes();
+            updateProjectileNodes(pSramBulletBuffer);
         }
     }
 
