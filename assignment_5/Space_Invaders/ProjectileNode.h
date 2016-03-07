@@ -6,9 +6,12 @@
         struct ProjectileNode *next;
     };
 
+	
     void updateProjectileNodes(int pSramBulletBuffer);
     void addProjectileNode(struct Projectile proj);
     struct Projectile createProjectile(char x, char dir, char symb, char t);
+	
+    void updateProjectileBuffer(int pSramBulletBuffer);
 
 #endif // projectile_node_H_
 

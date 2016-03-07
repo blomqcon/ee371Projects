@@ -4,9 +4,13 @@
 
 `timescale 1 ps / 1 ps
 module lab5CPU (
+		input  wire        alien_shoot_external_connection_export,              //              alien_shoot_external_connection.export
+		input  wire [2:0]  alien_x_external_connection_export,                  //                  alien_x_external_connection.export
+		input  wire [1:0]  alien_y_external_connection_export,                  //                  alien_y_external_connection.export
 		input  wire        character_recieved_input_external_connection_export, // character_recieved_input_external_connection.export
 		input  wire        character_sent_input_external_connection_export,     //     character_sent_input_external_connection.export
 		input  wire        clk_clk,                                             //                                          clk.clk
+		input  wire [31:0] game_time_external_connection_export,                //                game_time_external_connection.export
 		input  wire        gun_left_external_connection_export,                 //                 gun_left_external_connection.export
 		input  wire        gun_right_external_connection_export,                //                gun_right_external_connection.export
 		input  wire [1:0]  gun_shoot_external_connection_export,                //                gun_shoot_external_connection.export
@@ -14,6 +18,7 @@ module lab5CPU (
 		output wire        load_output_external_connection_export,              //              load_output_external_connection.export
 		input  wire [7:0]  parallel_input_external_connection_export,           //           parallel_input_external_connection.export
 		output wire [7:0]  parallel_output_external_connection_export,          //          parallel_output_external_connection.export
+		input  wire [15:0] random_number_external_connection_export,            //            random_number_external_connection.export
 		input  wire        reset_reset_n,                                       //                                        reset.reset_n
 		output wire [10:0] sram_address_external_connection_export,             //             sram_address_external_connection.export
 		inout  wire [7:0]  sram_data_external_connection_export,                //                sram_data_external_connection.export
@@ -25,14 +30,14 @@ module lab5CPU (
 	wire  [31:0] cpu_data_master_readdata;                                  // mm_interconnect_0:cpu_data_master_readdata -> cpu:d_readdata
 	wire         cpu_data_master_waitrequest;                               // mm_interconnect_0:cpu_data_master_waitrequest -> cpu:d_waitrequest
 	wire         cpu_data_master_debugaccess;                               // cpu:jtag_debug_module_debugaccess_to_roms -> mm_interconnect_0:cpu_data_master_debugaccess
-	wire  [16:0] cpu_data_master_address;                                   // cpu:d_address -> mm_interconnect_0:cpu_data_master_address
+	wire  [14:0] cpu_data_master_address;                                   // cpu:d_address -> mm_interconnect_0:cpu_data_master_address
 	wire   [3:0] cpu_data_master_byteenable;                                // cpu:d_byteenable -> mm_interconnect_0:cpu_data_master_byteenable
 	wire         cpu_data_master_read;                                      // cpu:d_read -> mm_interconnect_0:cpu_data_master_read
 	wire         cpu_data_master_write;                                     // cpu:d_write -> mm_interconnect_0:cpu_data_master_write
 	wire  [31:0] cpu_data_master_writedata;                                 // cpu:d_writedata -> mm_interconnect_0:cpu_data_master_writedata
 	wire  [31:0] cpu_instruction_master_readdata;                           // mm_interconnect_0:cpu_instruction_master_readdata -> cpu:i_readdata
 	wire         cpu_instruction_master_waitrequest;                        // mm_interconnect_0:cpu_instruction_master_waitrequest -> cpu:i_waitrequest
-	wire  [16:0] cpu_instruction_master_address;                            // cpu:i_address -> mm_interconnect_0:cpu_instruction_master_address
+	wire  [14:0] cpu_instruction_master_address;                            // cpu:i_address -> mm_interconnect_0:cpu_instruction_master_address
 	wire         cpu_instruction_master_read;                               // cpu:i_read -> mm_interconnect_0:cpu_instruction_master_read
 	wire         mm_interconnect_0_jtag_uart_avalon_jtag_slave_chipselect;  // mm_interconnect_0:jtag_uart_avalon_jtag_slave_chipselect -> jtag_uart:av_chipselect
 	wire  [31:0] mm_interconnect_0_jtag_uart_avalon_jtag_slave_readdata;    // jtag_uart:av_readdata -> mm_interconnect_0:jtag_uart_avalon_jtag_slave_readdata
@@ -51,7 +56,7 @@ module lab5CPU (
 	wire  [31:0] mm_interconnect_0_cpu_jtag_debug_module_writedata;         // mm_interconnect_0:cpu_jtag_debug_module_writedata -> cpu:jtag_debug_module_writedata
 	wire         mm_interconnect_0_onchip_mem_s1_chipselect;                // mm_interconnect_0:onchip_mem_s1_chipselect -> onchip_mem:chipselect
 	wire  [31:0] mm_interconnect_0_onchip_mem_s1_readdata;                  // onchip_mem:readdata -> mm_interconnect_0:onchip_mem_s1_readdata
-	wire  [13:0] mm_interconnect_0_onchip_mem_s1_address;                   // mm_interconnect_0:onchip_mem_s1_address -> onchip_mem:address
+	wire  [11:0] mm_interconnect_0_onchip_mem_s1_address;                   // mm_interconnect_0:onchip_mem_s1_address -> onchip_mem:address
 	wire   [3:0] mm_interconnect_0_onchip_mem_s1_byteenable;                // mm_interconnect_0:onchip_mem_s1_byteenable -> onchip_mem:byteenable
 	wire         mm_interconnect_0_onchip_mem_s1_write;                     // mm_interconnect_0:onchip_mem_s1_write -> onchip_mem:write
 	wire  [31:0] mm_interconnect_0_onchip_mem_s1_writedata;                 // mm_interconnect_0:onchip_mem_s1_writedata -> onchip_mem:writedata
@@ -108,13 +113,47 @@ module lab5CPU (
 	wire   [1:0] mm_interconnect_0_gun_right_s1_address;                    // mm_interconnect_0:gun_right_s1_address -> gun_right:address
 	wire  [31:0] mm_interconnect_0_gun_shoot_s1_readdata;                   // gun_shoot:readdata -> mm_interconnect_0:gun_shoot_s1_readdata
 	wire   [1:0] mm_interconnect_0_gun_shoot_s1_address;                    // mm_interconnect_0:gun_shoot_s1_address -> gun_shoot:address
+	wire  [31:0] mm_interconnect_0_alien_x_s1_readdata;                     // alien_x:readdata -> mm_interconnect_0:alien_x_s1_readdata
+	wire   [1:0] mm_interconnect_0_alien_x_s1_address;                      // mm_interconnect_0:alien_x_s1_address -> alien_x:address
+	wire  [31:0] mm_interconnect_0_alien_y_s1_readdata;                     // alien_y:readdata -> mm_interconnect_0:alien_y_s1_readdata
+	wire   [1:0] mm_interconnect_0_alien_y_s1_address;                      // mm_interconnect_0:alien_y_s1_address -> alien_y:address
+	wire  [31:0] mm_interconnect_0_alien_shoot_s1_readdata;                 // alien_shoot:readdata -> mm_interconnect_0:alien_shoot_s1_readdata
+	wire   [1:0] mm_interconnect_0_alien_shoot_s1_address;                  // mm_interconnect_0:alien_shoot_s1_address -> alien_shoot:address
+	wire  [31:0] mm_interconnect_0_random_number_s1_readdata;               // random_number:readdata -> mm_interconnect_0:random_number_s1_readdata
+	wire   [1:0] mm_interconnect_0_random_number_s1_address;                // mm_interconnect_0:random_number_s1_address -> random_number:address
+	wire  [31:0] mm_interconnect_0_game_time_s1_readdata;                   // game_time:readdata -> mm_interconnect_0:game_time_s1_readdata
+	wire   [1:0] mm_interconnect_0_game_time_s1_address;                    // mm_interconnect_0:game_time_s1_address -> game_time:address
 	wire         irq_mapper_receiver0_irq;                                  // jtag_uart:av_irq -> irq_mapper:receiver0_irq
 	wire  [31:0] cpu_d_irq_irq;                                             // irq_mapper:sender_irq -> cpu:d_irq
-	wire         rst_controller_reset_out_reset;                            // rst_controller:reset_out -> [character_recieved_input:reset_n, character_sent_input:reset_n, cpu:reset_n, gun_left:reset_n, gun_right:reset_n, gun_shoot:reset_n, irq_mapper:reset, jtag_uart:rst_n, led_output:reset_n, load_output:reset_n, mm_interconnect_0:cpu_reset_n_reset_bridge_in_reset_reset, onchip_mem:reset, parallel_input:reset_n, parallel_output:reset_n, rst_translator:in_reset, sram_address:reset_n, sram_data:reset_n, sram_enable_read:reset_n, sram_enable_write:reset_n, transmit_enable_output:reset_n]
+	wire         rst_controller_reset_out_reset;                            // rst_controller:reset_out -> [alien_shoot:reset_n, alien_x:reset_n, alien_y:reset_n, character_recieved_input:reset_n, character_sent_input:reset_n, cpu:reset_n, game_time:reset_n, gun_left:reset_n, gun_right:reset_n, gun_shoot:reset_n, irq_mapper:reset, jtag_uart:rst_n, led_output:reset_n, load_output:reset_n, mm_interconnect_0:cpu_reset_n_reset_bridge_in_reset_reset, onchip_mem:reset, parallel_input:reset_n, parallel_output:reset_n, random_number:reset_n, rst_translator:in_reset, sram_address:reset_n, sram_data:reset_n, sram_enable_read:reset_n, sram_enable_write:reset_n, transmit_enable_output:reset_n]
 	wire         rst_controller_reset_out_reset_req;                        // rst_controller:reset_req -> [cpu:reset_req, onchip_mem:reset_req, rst_translator:reset_req_in]
 	wire         cpu_jtag_debug_module_reset_reset;                         // cpu:jtag_debug_module_resetrequest -> rst_controller:reset_in1
 
-	lab5CPU_character_recieved_input character_recieved_input (
+	lab5CPU_alien_shoot alien_shoot (
+		.clk      (clk_clk),                                   //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),           //               reset.reset_n
+		.address  (mm_interconnect_0_alien_shoot_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_alien_shoot_s1_readdata), //                    .readdata
+		.in_port  (alien_shoot_external_connection_export)     // external_connection.export
+	);
+
+	lab5CPU_alien_x alien_x (
+		.clk      (clk_clk),                               //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address  (mm_interconnect_0_alien_x_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_alien_x_s1_readdata), //                    .readdata
+		.in_port  (alien_x_external_connection_export)     // external_connection.export
+	);
+
+	lab5CPU_alien_y alien_y (
+		.clk      (clk_clk),                               //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),       //               reset.reset_n
+		.address  (mm_interconnect_0_alien_y_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_alien_y_s1_readdata), //                    .readdata
+		.in_port  (alien_y_external_connection_export)     // external_connection.export
+	);
+
+	lab5CPU_alien_shoot character_recieved_input (
 		.clk      (clk_clk),                                                //                 clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),                        //               reset.reset_n
 		.address  (mm_interconnect_0_character_recieved_input_s1_address),  //                  s1.address
@@ -122,7 +161,7 @@ module lab5CPU (
 		.in_port  (character_recieved_input_external_connection_export)     // external_connection.export
 	);
 
-	lab5CPU_character_recieved_input character_sent_input (
+	lab5CPU_alien_shoot character_sent_input (
 		.clk      (clk_clk),                                            //                 clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),                    //               reset.reset_n
 		.address  (mm_interconnect_0_character_sent_input_s1_address),  //                  s1.address
@@ -159,7 +198,15 @@ module lab5CPU (
 		.no_ci_readra                          ()                                                     // custom_instruction_master.readra
 	);
 
-	lab5CPU_character_recieved_input gun_left (
+	lab5CPU_game_time game_time (
+		.clk      (clk_clk),                                 //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),         //               reset.reset_n
+		.address  (mm_interconnect_0_game_time_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_game_time_s1_readdata), //                    .readdata
+		.in_port  (game_time_external_connection_export)     // external_connection.export
+	);
+
+	lab5CPU_alien_shoot gun_left (
 		.clk      (clk_clk),                                //                 clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),        //               reset.reset_n
 		.address  (mm_interconnect_0_gun_left_s1_address),  //                  s1.address
@@ -167,7 +214,7 @@ module lab5CPU (
 		.in_port  (gun_left_external_connection_export)     // external_connection.export
 	);
 
-	lab5CPU_character_recieved_input gun_right (
+	lab5CPU_alien_shoot gun_right (
 		.clk      (clk_clk),                                 //                 clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),         //               reset.reset_n
 		.address  (mm_interconnect_0_gun_right_s1_address),  //                  s1.address
@@ -175,7 +222,7 @@ module lab5CPU (
 		.in_port  (gun_right_external_connection_export)     // external_connection.export
 	);
 
-	lab5CPU_gun_shoot gun_shoot (
+	lab5CPU_alien_y gun_shoot (
 		.clk      (clk_clk),                                 //                 clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),         //               reset.reset_n
 		.address  (mm_interconnect_0_gun_shoot_s1_address),  //                  s1.address
@@ -250,6 +297,14 @@ module lab5CPU (
 		.out_port   (parallel_output_external_connection_export)       // external_connection.export
 	);
 
+	lab5CPU_random_number random_number (
+		.clk      (clk_clk),                                     //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),             //               reset.reset_n
+		.address  (mm_interconnect_0_random_number_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_random_number_s1_readdata), //                    .readdata
+		.in_port  (random_number_external_connection_export)     // external_connection.export
+	);
+
 	lab5CPU_sram_address sram_address (
 		.clk        (clk_clk),                                      //                 clk.clk
 		.reset_n    (~rst_controller_reset_out_reset),              //               reset.reset_n
@@ -320,6 +375,12 @@ module lab5CPU (
 		.cpu_instruction_master_waitrequest      (cpu_instruction_master_waitrequest),                        //                                  .waitrequest
 		.cpu_instruction_master_read             (cpu_instruction_master_read),                               //                                  .read
 		.cpu_instruction_master_readdata         (cpu_instruction_master_readdata),                           //                                  .readdata
+		.alien_shoot_s1_address                  (mm_interconnect_0_alien_shoot_s1_address),                  //                    alien_shoot_s1.address
+		.alien_shoot_s1_readdata                 (mm_interconnect_0_alien_shoot_s1_readdata),                 //                                  .readdata
+		.alien_x_s1_address                      (mm_interconnect_0_alien_x_s1_address),                      //                        alien_x_s1.address
+		.alien_x_s1_readdata                     (mm_interconnect_0_alien_x_s1_readdata),                     //                                  .readdata
+		.alien_y_s1_address                      (mm_interconnect_0_alien_y_s1_address),                      //                        alien_y_s1.address
+		.alien_y_s1_readdata                     (mm_interconnect_0_alien_y_s1_readdata),                     //                                  .readdata
 		.character_recieved_input_s1_address     (mm_interconnect_0_character_recieved_input_s1_address),     //       character_recieved_input_s1.address
 		.character_recieved_input_s1_readdata    (mm_interconnect_0_character_recieved_input_s1_readdata),    //                                  .readdata
 		.character_sent_input_s1_address         (mm_interconnect_0_character_sent_input_s1_address),         //           character_sent_input_s1.address
@@ -332,6 +393,8 @@ module lab5CPU (
 		.cpu_jtag_debug_module_byteenable        (mm_interconnect_0_cpu_jtag_debug_module_byteenable),        //                                  .byteenable
 		.cpu_jtag_debug_module_waitrequest       (mm_interconnect_0_cpu_jtag_debug_module_waitrequest),       //                                  .waitrequest
 		.cpu_jtag_debug_module_debugaccess       (mm_interconnect_0_cpu_jtag_debug_module_debugaccess),       //                                  .debugaccess
+		.game_time_s1_address                    (mm_interconnect_0_game_time_s1_address),                    //                      game_time_s1.address
+		.game_time_s1_readdata                   (mm_interconnect_0_game_time_s1_readdata),                   //                                  .readdata
 		.gun_left_s1_address                     (mm_interconnect_0_gun_left_s1_address),                     //                       gun_left_s1.address
 		.gun_left_s1_readdata                    (mm_interconnect_0_gun_left_s1_readdata),                    //                                  .readdata
 		.gun_right_s1_address                    (mm_interconnect_0_gun_right_s1_address),                    //                      gun_right_s1.address
@@ -369,6 +432,8 @@ module lab5CPU (
 		.parallel_output_s1_readdata             (mm_interconnect_0_parallel_output_s1_readdata),             //                                  .readdata
 		.parallel_output_s1_writedata            (mm_interconnect_0_parallel_output_s1_writedata),            //                                  .writedata
 		.parallel_output_s1_chipselect           (mm_interconnect_0_parallel_output_s1_chipselect),           //                                  .chipselect
+		.random_number_s1_address                (mm_interconnect_0_random_number_s1_address),                //                  random_number_s1.address
+		.random_number_s1_readdata               (mm_interconnect_0_random_number_s1_readdata),               //                                  .readdata
 		.sram_address_s1_address                 (mm_interconnect_0_sram_address_s1_address),                 //                   sram_address_s1.address
 		.sram_address_s1_write                   (mm_interconnect_0_sram_address_s1_write),                   //                                  .write
 		.sram_address_s1_readdata                (mm_interconnect_0_sram_address_s1_readdata),                //                                  .readdata

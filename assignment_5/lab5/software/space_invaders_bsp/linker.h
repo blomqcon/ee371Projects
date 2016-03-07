@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'lab5CPU'
  * SOPC Builder design path: ../../lab5CPU.sopcinfo
  *
- * Generated: Fri Mar 04 18:31:52 PST 2016
+ * Generated: Sun Mar 06 15:52:39 PST 2016
  */
 
 /*
@@ -66,7 +66,7 @@
  */
 
 #define ONCHIP_MEM_REGION_BASE 0x20
-#define ONCHIP_MEM_REGION_SPAN 65504
+#define ONCHIP_MEM_REGION_SPAN 16352
 #define RESET_REGION_BASE 0x0
 #define RESET_REGION_SPAN 32
 

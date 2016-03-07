@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Mar 04 18:27:36 2016
+Analysis & Synthesis Status : Successful - Sun Mar 06 18:27:19 2016
 Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Standard Edition
 Revision Name : nios2_quartus2_project
 Top-level Entity Name : DE1_SoC
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1042
+Total registers : 1241
 Total pins : 25
 Total virtual pins : 0
-Total block memory bits : 535,552
+Total block memory bits : 142,336
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

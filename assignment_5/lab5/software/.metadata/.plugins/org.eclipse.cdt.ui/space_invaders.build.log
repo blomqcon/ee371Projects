@@ -1,9 +1,9 @@
-18:36:44 **** Incremental Build of configuration Nios II for project space_invaders ****
+15:53:38 **** Incremental Build of configuration Nios II for project space_invaders ****
 make all 
 Info: Building ../space_invaders_bsp/
 C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
 [BSP build complete]
 [space_invaders build complete]
 
-18:36:44 Build Finished (took 681ms)
+15:53:39 Build Finished (took 709ms)
 

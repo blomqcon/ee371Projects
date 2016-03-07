@@ -2,6 +2,12 @@ Info: Starting: Create HDL design files for synthesis
 Info: qsys-generate C:\Users\blomqcon\Desktop\ee371Projects\assignment_5\lab5\lab5CPU.qsys --synthesis=VERILOG --output-directory=C:\Users\blomqcon\Desktop\ee371Projects\assignment_5\lab5\lab5CPU\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
 Progress: Loading lab5/lab5CPU.qsys
 Progress: Reading input file
+Progress: Adding alien_shoot [altera_avalon_pio 15.1]
+Progress: Parameterizing module alien_shoot
+Progress: Adding alien_x [altera_avalon_pio 15.1]
+Progress: Parameterizing module alien_x
+Progress: Adding alien_y [altera_avalon_pio 15.1]
+Progress: Parameterizing module alien_y
 Progress: Adding character_recieved_input [altera_avalon_pio 15.1]
 Progress: Parameterizing module character_recieved_input
 Progress: Adding character_sent_input [altera_avalon_pio 15.1]
@@ -10,6 +16,8 @@ Progress: Adding clk_0 [clock_source 15.1]
 Progress: Parameterizing module clk_0
 Progress: Adding cpu [altera_nios2_qsys 15.1]
 Progress: Parameterizing module cpu
+Progress: Adding game_time [altera_avalon_pio 15.1]
+Progress: Parameterizing module game_time
 Progress: Adding gun_left [altera_avalon_pio 15.1]
 Progress: Parameterizing module gun_left
 Progress: Adding gun_right [altera_avalon_pio 15.1]
@@ -28,6 +36,8 @@ Progress: Adding parallel_input [altera_avalon_pio 15.1]
 Progress: Parameterizing module parallel_input
 Progress: Adding parallel_output [altera_avalon_pio 15.1]
 Progress: Parameterizing module parallel_output
+Progress: Adding random_number [altera_avalon_pio 15.1]
+Progress: Parameterizing module random_number
 Progress: Adding sram_address [altera_avalon_pio 15.1]
 Progress: Parameterizing module sram_address
 Progress: Adding sram_data [altera_avalon_pio 15.1]
@@ -42,64 +52,81 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Info: lab5CPU.alien_shoot: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: lab5CPU.alien_x: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: lab5CPU.alien_y: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: lab5CPU.character_recieved_input: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: lab5CPU.character_sent_input: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Warning: lab5CPU.cpu: Nios II Classic cores are no longer recommended for new projects
+Info: lab5CPU.game_time: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: lab5CPU.gun_left: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: lab5CPU.gun_right: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: lab5CPU.gun_shoot: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: lab5CPU.parallel_input: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: lab5CPU.random_number: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: lab5CPU.sram_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: lab5CPU: Generating lab5CPU "lab5CPU" for QUARTUS_SYNTH
-Info: character_recieved_input: Starting RTL generation for module 'lab5CPU_character_recieved_input'
-Info: character_recieved_input:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_character_recieved_input --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0001_character_recieved_input_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0001_character_recieved_input_gen//lab5CPU_character_recieved_input_component_configuration.pl  --do_build_sim=0  ]
-Info: character_recieved_input: Done RTL generation for module 'lab5CPU_character_recieved_input'
-Info: character_recieved_input: "lab5CPU" instantiated altera_avalon_pio "character_recieved_input"
+Info: alien_shoot: Starting RTL generation for module 'lab5CPU_alien_shoot'
+Info: alien_shoot:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_alien_shoot --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0001_alien_shoot_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0001_alien_shoot_gen//lab5CPU_alien_shoot_component_configuration.pl  --do_build_sim=0  ]
+Info: alien_shoot: Done RTL generation for module 'lab5CPU_alien_shoot'
+Info: alien_shoot: "lab5CPU" instantiated altera_avalon_pio "alien_shoot"
+Info: alien_x: Starting RTL generation for module 'lab5CPU_alien_x'
+Info: alien_x:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_alien_x --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0002_alien_x_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0002_alien_x_gen//lab5CPU_alien_x_component_configuration.pl  --do_build_sim=0  ]
+Info: alien_x: Done RTL generation for module 'lab5CPU_alien_x'
+Info: alien_x: "lab5CPU" instantiated altera_avalon_pio "alien_x"
+Info: alien_y: Starting RTL generation for module 'lab5CPU_alien_y'
+Info: alien_y:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_alien_y --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0003_alien_y_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0003_alien_y_gen//lab5CPU_alien_y_component_configuration.pl  --do_build_sim=0  ]
+Info: alien_y: Done RTL generation for module 'lab5CPU_alien_y'
+Info: alien_y: "lab5CPU" instantiated altera_avalon_pio "alien_y"
 Info: cpu: Starting RTL generation for module 'lab5CPU_cpu'
-Info: cpu:   Generation command is [exec C:/altera/15.1/quartus/bin64/eperlcmd.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lab5CPU_cpu --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0002_cpu_gen/ --quartus_bindir=C:/altera/15.1/quartus/bin64 --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0002_cpu_gen//lab5CPU_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2016.03.04 18:25:33 (*) Starting Nios II generation
-Info: cpu: # 2016.03.04 18:25:33 (*)   Checking for plaintext license.
-Info: cpu: # 2016.03.04 18:25:36 (*)   Couldn't query license setup in Quartus directory C:/altera/15.1/quartus/bin64
-Info: cpu: # 2016.03.04 18:25:36 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2016.03.04 18:25:36 (*)   Plaintext license not found.
-Info: cpu: # 2016.03.04 18:25:36 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2016.03.04 18:25:36 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2016.03.04 18:25:36 (*)   Creating all objects for CPU
-Info: cpu: # 2016.03.04 18:25:37 (*)   Generating RTL from CPU objects
-Info: cpu: # 2016.03.04 18:25:37 (*)   Creating plain-text RTL
-Info: cpu: # 2016.03.04 18:25:39 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/altera/15.1/quartus/bin64/eperlcmd.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lab5CPU_cpu --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0004_cpu_gen/ --quartus_bindir=C:/altera/15.1/quartus/bin64 --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0004_cpu_gen//lab5CPU_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2016.03.06 17:40:05 (*) Starting Nios II generation
+Info: cpu: # 2016.03.06 17:40:05 (*)   Checking for plaintext license.
+Info: cpu: # 2016.03.06 17:40:08 (*)   Couldn't query license setup in Quartus directory C:/altera/15.1/quartus/bin64
+Info: cpu: # 2016.03.06 17:40:08 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2016.03.06 17:40:08 (*)   Plaintext license not found.
+Info: cpu: # 2016.03.06 17:40:08 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2016.03.06 17:40:08 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2016.03.06 17:40:08 (*)   Creating all objects for CPU
+Info: cpu: # 2016.03.06 17:40:09 (*)   Generating RTL from CPU objects
+Info: cpu: # 2016.03.06 17:40:09 (*)   Creating plain-text RTL
+Info: cpu: # 2016.03.06 17:40:11 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'lab5CPU_cpu'
 Info: cpu: "lab5CPU" instantiated altera_nios2_qsys "cpu"
-Info: gun_shoot: Starting RTL generation for module 'lab5CPU_gun_shoot'
-Info: gun_shoot:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_gun_shoot --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0003_gun_shoot_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0003_gun_shoot_gen//lab5CPU_gun_shoot_component_configuration.pl  --do_build_sim=0  ]
-Info: gun_shoot: Done RTL generation for module 'lab5CPU_gun_shoot'
-Info: gun_shoot: "lab5CPU" instantiated altera_avalon_pio "gun_shoot"
+Info: game_time: Starting RTL generation for module 'lab5CPU_game_time'
+Info: game_time:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_game_time --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0005_game_time_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0005_game_time_gen//lab5CPU_game_time_component_configuration.pl  --do_build_sim=0  ]
+Info: game_time: Done RTL generation for module 'lab5CPU_game_time'
+Info: game_time: "lab5CPU" instantiated altera_avalon_pio "game_time"
 Info: jtag_uart: Starting RTL generation for module 'lab5CPU_jtag_uart'
-Info: jtag_uart:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lab5CPU_jtag_uart --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0004_jtag_uart_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0004_jtag_uart_gen//lab5CPU_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lab5CPU_jtag_uart --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0006_jtag_uart_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0006_jtag_uart_gen//lab5CPU_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart: Done RTL generation for module 'lab5CPU_jtag_uart'
 Info: jtag_uart: "lab5CPU" instantiated altera_avalon_jtag_uart "jtag_uart"
 Info: led_output: Starting RTL generation for module 'lab5CPU_led_output'
-Info: led_output:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_led_output --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0005_led_output_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0005_led_output_gen//lab5CPU_led_output_component_configuration.pl  --do_build_sim=0  ]
+Info: led_output:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_led_output --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0007_led_output_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0007_led_output_gen//lab5CPU_led_output_component_configuration.pl  --do_build_sim=0  ]
 Info: led_output: Done RTL generation for module 'lab5CPU_led_output'
 Info: led_output: "lab5CPU" instantiated altera_avalon_pio "led_output"
 Info: load_output: Starting RTL generation for module 'lab5CPU_load_output'
-Info: load_output:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_load_output --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0006_load_output_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0006_load_output_gen//lab5CPU_load_output_component_configuration.pl  --do_build_sim=0  ]
+Info: load_output:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_load_output --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0008_load_output_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0008_load_output_gen//lab5CPU_load_output_component_configuration.pl  --do_build_sim=0  ]
 Info: load_output: Done RTL generation for module 'lab5CPU_load_output'
 Info: load_output: "lab5CPU" instantiated altera_avalon_pio "load_output"
 Info: onchip_mem: Starting RTL generation for module 'lab5CPU_onchip_mem'
-Info: onchip_mem:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=lab5CPU_onchip_mem --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0007_onchip_mem_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0007_onchip_mem_gen//lab5CPU_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=lab5CPU_onchip_mem --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0009_onchip_mem_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0009_onchip_mem_gen//lab5CPU_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_mem: Done RTL generation for module 'lab5CPU_onchip_mem'
 Info: onchip_mem: "lab5CPU" instantiated altera_avalon_onchip_memory2 "onchip_mem"
 Info: parallel_input: Starting RTL generation for module 'lab5CPU_parallel_input'
-Info: parallel_input:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_parallel_input --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0008_parallel_input_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0008_parallel_input_gen//lab5CPU_parallel_input_component_configuration.pl  --do_build_sim=0  ]
+Info: parallel_input:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_parallel_input --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0010_parallel_input_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0010_parallel_input_gen//lab5CPU_parallel_input_component_configuration.pl  --do_build_sim=0  ]
 Info: parallel_input: Done RTL generation for module 'lab5CPU_parallel_input'
 Info: parallel_input: "lab5CPU" instantiated altera_avalon_pio "parallel_input"
+Info: random_number: Starting RTL generation for module 'lab5CPU_random_number'
+Info: random_number:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_random_number --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0011_random_number_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0011_random_number_gen//lab5CPU_random_number_component_configuration.pl  --do_build_sim=0  ]
+Info: random_number: Done RTL generation for module 'lab5CPU_random_number'
+Info: random_number: "lab5CPU" instantiated altera_avalon_pio "random_number"
 Info: sram_address: Starting RTL generation for module 'lab5CPU_sram_address'
-Info: sram_address:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_sram_address --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0009_sram_address_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0009_sram_address_gen//lab5CPU_sram_address_component_configuration.pl  --do_build_sim=0  ]
+Info: sram_address:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_sram_address --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0012_sram_address_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0012_sram_address_gen//lab5CPU_sram_address_component_configuration.pl  --do_build_sim=0  ]
 Info: sram_address: Done RTL generation for module 'lab5CPU_sram_address'
 Info: sram_address: "lab5CPU" instantiated altera_avalon_pio "sram_address"
 Info: sram_data: Starting RTL generation for module 'lab5CPU_sram_data'
-Info: sram_data:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_sram_data --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0010_sram_data_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6865_2020620692921258956.dir/0010_sram_data_gen//lab5CPU_sram_data_component_configuration.pl  --do_build_sim=0  ]
+Info: sram_data:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=lab5CPU_sram_data --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0013_sram_data_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6867_2181977340501214272.dir/0013_sram_data_gen//lab5CPU_sram_data_component_configuration.pl  --do_build_sim=0  ]
 Info: sram_data: Done RTL generation for module 'lab5CPU_sram_data'
 Info: sram_data: "lab5CPU" instantiated altera_avalon_pio "sram_data"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -119,6 +146,11 @@ Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_015: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_016: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_017: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_018: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_019: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_020: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_021: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "lab5CPU" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "lab5CPU" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "lab5CPU" instantiated altera_reset_controller "rst_controller"
@@ -143,6 +175,6 @@ Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "r
 Info: Reusing file C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/lab5CPU/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: lab5CPU: Done "lab5CPU" with 32 modules, 46 files
+Info: lab5CPU: Done "lab5CPU" with 35 modules, 49 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

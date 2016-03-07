@@ -9,6 +9,54 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element alien_shoot
+   {
+      datum _sortIndex
+      {
+         value = "19";
+         type = "int";
+      }
+   }
+   element alien_shoot.s1
+   {
+      datum baseAddress
+      {
+         value = "20512";
+         type = "String";
+      }
+   }
+   element alien_x
+   {
+      datum _sortIndex
+      {
+         value = "17";
+         type = "int";
+      }
+   }
+   element alien_x.s1
+   {
+      datum baseAddress
+      {
+         value = "20544";
+         type = "String";
+      }
+   }
+   element alien_y
+   {
+      datum _sortIndex
+      {
+         value = "18";
+         type = "int";
+      }
+   }
+   element alien_y.s1
+   {
+      datum baseAddress
+      {
+         value = "20528";
+         type = "String";
+      }
+   }
    element character_recieved_input
    {
       datum _sortIndex
@@ -34,7 +82,7 @@
    {
       datum baseAddress
       {
-         value = "69824";
+         value = "20752";
          type = "String";
       }
    }
@@ -50,7 +98,7 @@
    {
       datum baseAddress
       {
-         value = "69760";
+         value = "20688";
          type = "String";
       }
    }
@@ -79,7 +127,23 @@
    {
       datum baseAddress
       {
-         value = "67584";
+         value = "18432";
+         type = "String";
+      }
+   }
+   element game_time
+   {
+      datum _sortIndex
+      {
+         value = "21";
+         type = "int";
+      }
+   }
+   element game_time.s1
+   {
+      datum baseAddress
+      {
+         value = "16640";
          type = "String";
       }
    }
@@ -95,7 +159,7 @@
    {
       datum baseAddress
       {
-         value = "69664";
+         value = "20592";
          type = "String";
       }
    }
@@ -111,7 +175,7 @@
    {
       datum baseAddress
       {
-         value = "69648";
+         value = "20576";
          type = "String";
       }
    }
@@ -127,7 +191,7 @@
    {
       datum baseAddress
       {
-         value = "69632";
+         value = "20560";
          type = "String";
       }
    }
@@ -135,7 +199,7 @@
    {
       datum _sortIndex
       {
-         value = "17";
+         value = "22";
          type = "int";
       }
       datum sopceditor_expanded
@@ -148,7 +212,7 @@
    {
       datum baseAddress
       {
-         value = "69856";
+         value = "20784";
          type = "String";
       }
    }
@@ -164,7 +228,7 @@
    {
       datum baseAddress
       {
-         value = "69808";
+         value = "20736";
          type = "String";
       }
    }
@@ -180,7 +244,7 @@
    {
       datum baseAddress
       {
-         value = "69776";
+         value = "20704";
          type = "String";
       }
    }
@@ -235,7 +299,7 @@
    {
       datum baseAddress
       {
-         value = "69840";
+         value = "20768";
          type = "String";
       }
    }
@@ -251,7 +315,23 @@
    {
       datum baseAddress
       {
-         value = "69792";
+         value = "20720";
+         type = "String";
+      }
+   }
+   element random_number
+   {
+      datum _sortIndex
+      {
+         value = "20";
+         type = "int";
+      }
+   }
+   element random_number.s1
+   {
+      datum baseAddress
+      {
+         value = "20496";
          type = "String";
       }
    }
@@ -267,7 +347,7 @@
    {
       datum baseAddress
       {
-         value = "69680";
+         value = "20608";
          type = "String";
       }
    }
@@ -283,7 +363,7 @@
    {
       datum baseAddress
       {
-         value = "69728";
+         value = "20656";
          type = "String";
       }
    }
@@ -299,7 +379,7 @@
    {
       datum baseAddress
       {
-         value = "69696";
+         value = "20624";
          type = "String";
       }
    }
@@ -315,7 +395,7 @@
    {
       datum baseAddress
       {
-         value = "69712";
+         value = "20640";
          type = "String";
       }
    }
@@ -331,7 +411,7 @@
    {
       datum baseAddress
       {
-         value = "69744";
+         value = "20672";
          type = "String";
       }
    }
@@ -357,6 +437,21 @@
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface
+   name="alien_shoot_external_connection"
+   internal="alien_shoot.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="alien_x_external_connection"
+   internal="alien_x.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="alien_y_external_connection"
+   internal="alien_y.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
    name="character_recieved_input_external_connection"
    internal="character_recieved_input.external_connection"
    type="conduit"
@@ -367,6 +462,11 @@
    type="conduit"
    dir="end" />
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface
+   name="game_time_external_connection"
+   internal="game_time.external_connection"
+   type="conduit"
+   dir="end" />
  <interface
    name="gun_left_external_connection"
    internal="gun_left.external_connection"
@@ -402,6 +502,11 @@
    internal="parallel_output.external_connection"
    type="conduit"
    dir="end" />
+ <interface
+   name="random_number_external_connection"
+   internal="random_number.external_connection"
+   type="conduit"
+   dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <interface
    name="sram_address_external_connection"
@@ -428,6 +533,52 @@
    internal="transmit_enable_output.external_connection"
    type="conduit"
    dir="end" />
+ <module
+   name="alien_shoot"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module name="alien_x" kind="altera_avalon_pio" version="15.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="3" />
+ </module>
+ <module name="alien_y" kind="altera_avalon_pio" version="15.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="2" />
+ </module>
  <module
    name="character_recieved_input"
    kind="altera_avalon_pio"
@@ -479,8 +630,8 @@
   <parameter name="cpuID_stored" value="0" />
   <parameter name="cpuReset" value="false" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
-  <parameter name="dataAddrWidth" value="17" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x10000' /><slave name='cpu.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='gun_shoot.s1' start='0x11000' end='0x11010' /><slave name='gun_right.s1' start='0x11010' end='0x11020' /><slave name='gun_left.s1' start='0x11020' end='0x11030' /><slave name='sram_address.s1' start='0x11030' end='0x11040' /><slave name='sram_enable_read.s1' start='0x11040' end='0x11050' /><slave name='sram_enable_write.s1' start='0x11050' end='0x11060' /><slave name='sram_data.s1' start='0x11060' end='0x11070' /><slave name='transmit_enable_output.s1' start='0x11070' end='0x11080' /><slave name='character_sent_input.s1' start='0x11080' end='0x11090' /><slave name='load_output.s1' start='0x11090' end='0x110A0' /><slave name='parallel_output.s1' start='0x110A0' end='0x110B0' /><slave name='led_output.s1' start='0x110B0' end='0x110C0' /><slave name='character_recieved_input.s1' start='0x110C0' end='0x110D0' /><slave name='parallel_input.s1' start='0x110D0' end='0x110E0' /><slave name='jtag_uart.avalon_jtag_slave' start='0x110E0' end='0x110E8' /></address-map>]]></parameter>
+  <parameter name="dataAddrWidth" value="15" />
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x4000' /><slave name='game_time.s1' start='0x4100' end='0x4110' /><slave name='cpu.jtag_debug_module' start='0x4800' end='0x5000' /><slave name='random_number.s1' start='0x5010' end='0x5020' /><slave name='alien_shoot.s1' start='0x5020' end='0x5030' /><slave name='alien_y.s1' start='0x5030' end='0x5040' /><slave name='alien_x.s1' start='0x5040' end='0x5050' /><slave name='gun_shoot.s1' start='0x5050' end='0x5060' /><slave name='gun_right.s1' start='0x5060' end='0x5070' /><slave name='gun_left.s1' start='0x5070' end='0x5080' /><slave name='sram_address.s1' start='0x5080' end='0x5090' /><slave name='sram_enable_read.s1' start='0x5090' end='0x50A0' /><slave name='sram_enable_write.s1' start='0x50A0' end='0x50B0' /><slave name='sram_data.s1' start='0x50B0' end='0x50C0' /><slave name='transmit_enable_output.s1' start='0x50C0' end='0x50D0' /><slave name='character_sent_input.s1' start='0x50D0' end='0x50E0' /><slave name='load_output.s1' start='0x50E0' end='0x50F0' /><slave name='parallel_output.s1' start='0x50F0' end='0x5100' /><slave name='led_output.s1' start='0x5100' end='0x5110' /><slave name='character_recieved_input.s1' start='0x5110' end='0x5120' /><slave name='parallel_input.s1' start='0x5120' end='0x5130' /><slave name='jtag_uart.avalon_jtag_slave' start='0x5130' end='0x5138' /></address-map>]]></parameter>
   <parameter name="dcache_bursts" value="false" />
   <parameter name="dcache_lineSize" value="32" />
   <parameter name="dcache_numTCDM" value="0" />
@@ -506,8 +657,8 @@
   <parameter name="icache_size" value="2048" />
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Tiny" />
-  <parameter name="instAddrWidth" value="17" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x10000' /><slave name='cpu.jtag_debug_module' start='0x10800' end='0x11000' /></address-map>]]></parameter>
+  <parameter name="instAddrWidth" value="15" />
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_mem.s1' start='0x0' end='0x4000' /><slave name='cpu.jtag_debug_module' start='0x4800' end='0x5000' /></address-map>]]></parameter>
   <parameter name="internalIrqMaskSystemInfo" value="32" />
   <parameter name="manuallyAssignCpuID" value="true" />
   <parameter name="mmu_TLBMissExcOffset" value="0" />
@@ -596,6 +747,20 @@
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3MapParam" value="" />
   <parameter name="userDefinedSettings" value="" />
+ </module>
+ <module name="game_time" kind="altera_avalon_pio" version="15.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
  </module>
  <module name="gun_left" kind="altera_avalon_pio" version="15.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
@@ -707,7 +872,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="65536" />
+  <parameter name="memorySize" value="16384" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="resetrequest_enabled" value="true" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
@@ -754,6 +919,24 @@
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="8" />
+ </module>
+ <module
+   name="random_number"
+   kind="altera_avalon_pio"
+   version="15.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="16" />
  </module>
  <module
    name="sram_address"
@@ -847,7 +1030,7 @@
    start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x000110e0" />
+  <parameter name="baseAddress" value="0x5130" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -856,7 +1039,7 @@
    start="cpu.data_master"
    end="cpu.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00010800" />
+  <parameter name="baseAddress" value="0x4800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -874,7 +1057,7 @@
    start="cpu.data_master"
    end="parallel_input.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x000110d0" />
+  <parameter name="baseAddress" value="0x5120" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -883,7 +1066,7 @@
    start="cpu.data_master"
    end="character_recieved_input.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x000110c0" />
+  <parameter name="baseAddress" value="0x5110" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -892,7 +1075,7 @@
    start="cpu.data_master"
    end="led_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x000110b0" />
+  <parameter name="baseAddress" value="0x5100" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -901,7 +1084,7 @@
    start="cpu.data_master"
    end="parallel_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x000110a0" />
+  <parameter name="baseAddress" value="0x50f0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -910,7 +1093,7 @@
    start="cpu.data_master"
    end="load_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011090" />
+  <parameter name="baseAddress" value="0x50e0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -919,7 +1102,7 @@
    start="cpu.data_master"
    end="character_sent_input.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011080" />
+  <parameter name="baseAddress" value="0x50d0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -928,7 +1111,7 @@
    start="cpu.data_master"
    end="transmit_enable_output.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011070" />
+  <parameter name="baseAddress" value="0x50c0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -937,7 +1120,7 @@
    start="cpu.data_master"
    end="sram_data.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011060" />
+  <parameter name="baseAddress" value="0x50b0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -946,7 +1129,7 @@
    start="cpu.data_master"
    end="sram_enable_write.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011050" />
+  <parameter name="baseAddress" value="0x50a0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -955,7 +1138,7 @@
    start="cpu.data_master"
    end="sram_enable_read.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011040" />
+  <parameter name="baseAddress" value="0x5090" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -964,7 +1147,7 @@
    start="cpu.data_master"
    end="sram_address.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011030" />
+  <parameter name="baseAddress" value="0x5080" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -973,7 +1156,7 @@
    start="cpu.data_master"
    end="gun_left.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011020" />
+  <parameter name="baseAddress" value="0x5070" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -982,7 +1165,7 @@
    start="cpu.data_master"
    end="gun_right.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011010" />
+  <parameter name="baseAddress" value="0x5060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -991,7 +1174,44 @@
    start="cpu.data_master"
    end="gun_shoot.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011000" />
+  <parameter name="baseAddress" value="0x5050" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="avalon" version="15.1" start="cpu.data_master" end="alien_x.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x5040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="avalon" version="15.1" start="cpu.data_master" end="alien_y.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x5030" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="cpu.data_master"
+   end="alien_shoot.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x5020" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="cpu.data_master"
+   end="random_number.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x5010" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="15.1"
+   start="cpu.data_master"
+   end="game_time.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x4100" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1000,7 +1220,7 @@
    start="cpu.instruction_master"
    end="cpu.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00010800" />
+  <parameter name="baseAddress" value="0x4800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1056,6 +1276,11 @@
  <connection kind="clock" version="15.1" start="clk_0.clk" end="gun_left.clk" />
  <connection kind="clock" version="15.1" start="clk_0.clk" end="gun_right.clk" />
  <connection kind="clock" version="15.1" start="clk_0.clk" end="gun_shoot.clk" />
+ <connection kind="clock" version="15.1" start="clk_0.clk" end="alien_x.clk" />
+ <connection kind="clock" version="15.1" start="clk_0.clk" end="alien_y.clk" />
+ <connection kind="clock" version="15.1" start="clk_0.clk" end="alien_shoot.clk" />
+ <connection kind="clock" version="15.1" start="clk_0.clk" end="random_number.clk" />
+ <connection kind="clock" version="15.1" start="clk_0.clk" end="game_time.clk" />
  <connection kind="clock" version="15.1" start="clk_0.clk" end="onchip_mem.clk1" />
  <connection kind="interrupt" version="15.1" start="cpu.d_irq" end="jtag_uart.irq">
   <parameter name="irqNumber" value="5" />
@@ -1139,6 +1364,31 @@
    kind="reset"
    version="15.1"
    start="clk_0.clk_reset"
+   end="alien_x.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="alien_y.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="alien_shoot.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="random_number.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
+   end="game_time.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="clk_0.clk_reset"
    end="onchip_mem.reset1" />
  <connection kind="reset" version="15.1" start="clk_0.clk_reset" end="cpu.reset_n" />
  <connection
@@ -1216,6 +1466,31 @@
    version="15.1"
    start="cpu.jtag_debug_module_reset"
    end="gun_shoot.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="cpu.jtag_debug_module_reset"
+   end="alien_x.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="cpu.jtag_debug_module_reset"
+   end="alien_y.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="cpu.jtag_debug_module_reset"
+   end="alien_shoot.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="cpu.jtag_debug_module_reset"
+   end="random_number.reset" />
+ <connection
+   kind="reset"
+   version="15.1"
+   start="cpu.jtag_debug_module_reset"
+   end="game_time.reset" />
  <connection
    kind="reset"
    version="15.1"

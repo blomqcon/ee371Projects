@@ -21,15 +21,6 @@ void initRandomAliens(int pSramAliens) {
     }
 }
 
-void initEmptyBullets(int pSramBulletBuffer) {
-    int x, y;
-    for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
-        for(y = 0; y < VOID_HEIGHT; y++) {
-
-        }
-    }
-}
-
 const char* getAlienApperence(int type) {
     if(type == 0) {
         return alien0;

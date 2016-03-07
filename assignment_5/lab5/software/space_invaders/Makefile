@@ -147,6 +147,7 @@ C_SRCS += gamelogic.c
 C_SRCS += sram.c
 C_SRCS += data_structures_constants.c
 C_SRCS += display.c
+C_SRCS += ProjectileNode.c
 CXX_SRCS :=
 ASM_SRCS :=
 

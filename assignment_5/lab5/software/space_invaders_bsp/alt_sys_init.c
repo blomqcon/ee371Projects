@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'lab5CPU'
  * SOPC Builder design path: ../../lab5CPU.sopcinfo
  *
- * Generated: Fri Mar 04 16:27:59 PST 2016
+ * Generated: Sun Mar 06 15:52:39 PST 2016
  */
 
 /*

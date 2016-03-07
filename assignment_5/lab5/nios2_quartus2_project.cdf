@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Ign)
-		Device PartName(5CSEBA5) MfrSpec(OpMask(0));
+		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
 		Device PartName(5CSEMA5F31) Path("C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/") File("nios2_quartus2_project.sof") MfrSpec(OpMask(1));
 

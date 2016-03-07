@@ -45,15 +45,20 @@ void printAlienSlice(int pSramAliens, int x, int y, int slice, int step) {
                 putchar(alienApperence[index]);
             }
         }
-    }
+    } else {
+		int i;
+		for(i = 0; i < ALIEN_WIDTH; i++) {
+			alt_putchar(' ');
+		}
+	}
 }
 
 void printSlice(int pSramAliens, int x, int slice, int step, int shift) {
     int y;
     for(y = 0; y < ALIEN_COLS; y++) {
         //printf("real position: %i\n", (y + shift) % ALIEN_COLS);
-        //printAlienSlice(pSramAliens, x, y, slice, step);
         printAlienSlice(pSramAliens, x, (y + (7-shift)) % ALIEN_COLS, slice, step);
+		//printAlienSlice(pSramAliens, x, y, slice, step);
     }
     printf("\n");
 }
@@ -67,38 +72,56 @@ void printAliens(int pSramAliens, int step, int shift) {
     }
 }
 
-void printVoid() {
-    int i;
-    for(i = 0; i < VOID_HEIGHT; i++) {
-        printf("\n");
+void printVoid(int pSramBulletBuffer) {
+	updateProjectileBuffer(pSramBulletBuffer);
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+		for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+			struct Projectile empty = getProjectile(pSramBulletBuffer, x, y);
+			if(empty.type != 0) {
+				alt_putchar(empty.symbol);
+			} else {
+				alt_putchar(' ');
+			}
+        }
+		printf("\n");
     }
 }
 
 printGunnerSlice(int gunnerX, int slice) {
-//    if(gunnerX >= SCREEN_WIDTH) {
-//        gunnerX = gunnerX % SCREEN_WIDTH;
-//    }
-    int y;
-    for(y = 0; y < gunnerX; y++) {
-        printf(" ");
+    int SCREEN_WIDTH = ALIEN_COLS * ALIEN_WIDTH;
+    int numberOfWraps = (gunnerX + GUNNER_WIDTH) - SCREEN_WIDTH;
+    if(numberOfWraps < 0) numberOfWraps = 0;
+
+    int i;
+
+    for(i = 0; i < numberOfWraps; i++) {
+        putchar(gunner[(slice * GUNNER_WIDTH) + (GUNNER_WIDTH - numberOfWraps + i)]);
     }
-    for(y = 0; y < GUNNER_WIDTH; y++) {
-        putchar(gunner[(slice * GUNNER_WIDTH) + y]);
+    for(i = 0; i < (gunnerX - numberOfWraps); i++) {
+        putchar(' ');
     }
+    for(i = 0; i < GUNNER_WIDTH - numberOfWraps; i++) {
+        putchar(gunner[(slice * GUNNER_WIDTH) + i]);
+    }
+    //printf("numberofWraps: %i %i %i", numberOfWraps, gunnerX, gunnerX - numberOfWraps);
+
 }
 
 void printGunner(int gunnerX) {
     int x;
     for(x = 0; x < GUNNER_HEIGHT; x++) {
         printGunnerSlice(gunnerX, x);
+        //printf("gunner!");
         printf("\n");
     }
+    //printf("Gunner location: %i\n", gunnerX);
 }
 
-void updateDisplay(int pSramAliens, int gunnerX, int step, int shift) {
-    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    //system("cls");
+void updateDisplay(int pSramAliens, int pSramBulletBuffer, int gunnerX, int step, int shift) {
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     printAliens(pSramAliens, step, shift);
-    printVoid();
+    printVoid(pSramBulletBuffer);
     printGunner(gunnerX);
+	//printf("List Length: %i\n", listLength());
 }

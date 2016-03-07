@@ -15,6 +15,26 @@ void setAlien(int pSramAliens, int x, int y, struct Alien a) {
     sram[(pSramAliens + 2) + (sizeof(struct Alien) * ((x * 8) + y))] = a.rowId;
 }
 
+struct Projectile getProjectile(int pSramBulletBuffer, int x, int y) {
+    struct Projectile p;
+    p.xVal = sram[(pSramBulletBuffer + 0) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    p.yVal = sram[(pSramBulletBuffer + 1) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    p.direction = sram[(pSramBulletBuffer + 2) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    p.symbol = sram[(pSramBulletBuffer + 3) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    p.type = sram[(pSramBulletBuffer + 4) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    p.timeTick = sram[(pSramBulletBuffer + 5) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    return p;
+}
+
+void setProjectile(int pSramBulletBuffer, int x, int y, struct Projectile bullet) {
+    sram[(pSramBulletBuffer + 0) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.xVal;
+    sram[(pSramBulletBuffer + 1) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.yVal;
+    sram[(pSramBulletBuffer + 2) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.direction;
+    sram[(pSramBulletBuffer + 3) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.symbol;
+    sram[(pSramBulletBuffer + 4) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.type;
+    sram[(pSramBulletBuffer + 5) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.timeTick;
+}
+
 void resetSRAM() {
     int i;
     for (i = 0; i < 2048; i++ ) {

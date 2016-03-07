@@ -49,7 +49,7 @@ module Tester (clk, reset, gameTime);
 	
 	initial begin // Stimulus 
 		#(stimDelay);  clk = 0; reset = 0;
-		#(stimDelay);  reset = 1;
+		//#(stimDelay);  reset = 1;
 		#(stimDelay);  reset = 0;
 		#(100*stimDelay);
 		
