@@ -1,5 +1,5 @@
 #include "sram.h"
-#include "data_structures_constants.h";
+#include "data_structures_constants.h"
 #include "ProjectileNode.h"
 
 //for std malloc
@@ -8,7 +8,7 @@
 struct ProjectileNode *head = NULL;
 struct ProjectileNode *end = NULL;
 
-void updateProjectileNodes(int pSramBulletBuffer) {
+void updateProjectileNodes(int pSramAliens, int pSramBulletBuffer, int gunnerX) {
     //if head is null, return
     if(head == NULL) return;
     struct Projectile empty = createProjectile(0, 0, 0, 0);
@@ -32,11 +32,13 @@ void updateProjectileNodes(int pSramBulletBuffer) {
         current = current->next;
 
         if(tempCurrent->bullet.yVal < 0) {
-            //checkCollideGunner();
-            removeProjectileNode(tempCurrent);
+            if(checkCollideGunner(gunnerX, tempCurrent->bullet.xVal, tempCurrent->bullet.yVal)) {
+                removeProjectileNode(tempCurrent);
+            }
         } else if (tempCurrent->bullet.yVal > VOID_HEIGHT) {
-            //checkCollideAliens();
-            removeProjectileNode(tempCurrent);
+            if(checkCollideAliens(pSramAliens, tempCurrent->bullet.xVal, tempCurrent->bullet.yVal)) {
+                removeProjectileNode(tempCurrent);
+            }
         }
     }
     updateProjectileBuffer(pSramBulletBuffer);
