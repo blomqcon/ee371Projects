@@ -66,9 +66,8 @@ int checkCollideAliens(int pSramAliens, int projX, int projY) {
     return 0;
 }
 
-int checkCollideGunner(int gunnerX, int projX, int projY, int* gameOver) {
-    if (projX == gunnerX && projY == gunnerX) {
-        *gameOver = 1;
+int checkCollideGunner(int gunnerX, int projX, int projY) {
+    if (projX == gunnerX && projY == GUNNER_HEIGHT) {
         return 1;
     } else {
         return 0;

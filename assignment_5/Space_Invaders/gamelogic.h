@@ -9,6 +9,6 @@ void moveGunnerRight(int* gunnerX);
 void moveGunnerLeft(int* gunnerX);
 
 int checkCollideAliens(int pSramAliens, int projX, int projY);
-int checkCollideGunner(int gunnerX, int projX, int projY, int* gameOver);
+int checkCollideGunner(int gunnerX, int projX, int projY);
 
 #endif // game_logic_H_
