@@ -38,9 +38,6 @@
 #define game_time (volatile unsigned int *) 0x00004100
 
 
-
-
-
 extern const char* empty_space;
 extern const char* alien0; //straight line, slow but 'reloads' quickly
 extern const char* alien1;//straight line, fast but 'reloads' slowly
@@ -49,6 +46,7 @@ extern const char* gunner;// straight line, very fast, 'reloads very fast'
 
 extern int pSramAliens;
 extern int alienShift;
+extern int gameOver;
 
 struct Alien {
     //instead of using multiple chars this data could be stored

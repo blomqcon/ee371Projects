@@ -71,19 +71,6 @@ void shootAliens() {
 }
 
 void checkCollideAliens(int pSramAliens, int x) {
-    /*int x, y;
-    for (x = 0; x < ALIEN_ROWS; x++) {
-        for (y = 0; y < ALIEN_COLS; y++) {
-            if (projX == x && projY == y) {
-                struct Alien a = getAlien(pSramAliens, x, y);
-                a.alive = 0;
-                setAlien(pSramAliens, x, y, a);
-                return 1;
-            } else {
-                return 0;
-            }
-        }
-    }*/
 	int y;
 	for(y = ALIEN_ROWS - 1; y >= 0; y--) {
 		struct Alien a = getAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS);

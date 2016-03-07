@@ -32,7 +32,8 @@ void updateProjectileNodes() {
             //checkCollideGunner();
             removeProjectileNode(tempCurrent);
         } else if (tempCurrent->bullet.yVal > VOID_HEIGHT) {
-            checkCollideAliens(pSramAliens, ((tempCurrent->bullet.xVal)));
+						int alienX = ((int) tempCurrent->bullet.xVal) / ALIEN_WIDTH;
+            checkCollideAliens(pSramAliens, alienX);
             removeProjectileNode(tempCurrent);
         }
     }
