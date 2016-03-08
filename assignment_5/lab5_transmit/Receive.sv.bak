@@ -1,0 +1,27 @@
+module Transmit(clock, reset, serialInput, charReceived, parallelIn);
+	input clock, reset;
+	input serialInput, charReceived;
+	output [7:0] parallelIn;
+
+	wire [3:0] BSC_in_Count;
+	wire in_enable;
+	
+	// start bit detector
+	StartBitDetect SBD (
+		.SClk(clock),
+		.reset(reset),
+		.data_in(serial_in),
+		.char_received(char_received),
+		.in_enable(in_enable)
+	);
+	
+	// Bit Sample Count
+	BSC BSC_in (.SClk(SClk), .enable(in_enable), .Count(BSC_in_Count));
+	
+	// BIC 
+	BIC BIC_in (.BSC_clk(BSC_in_Count[3]), .enable(in_enable), .char_received(char_received));
+	
+	// Serial to Parallel 
+	S2P_ShiftRegister S2P (.SR_Clk(BSC_in_Count[3]), .serial_data(serial_in), .data_bus(parallel_in));
+
+endmodule 

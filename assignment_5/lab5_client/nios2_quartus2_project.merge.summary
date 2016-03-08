@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Tue Mar 08 14:00:00 2016
+Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Standard Edition
+Revision Name : nios2_quartus2_project
+Top-level Entity Name : DE1_SoC
+Family : Cyclone V
+Logic utilization (in ALMs) : 1,405 / 32,070 ( 4 % )
+Total registers : 1953
+Total pins : 55 / 457 ( 12 % )
+Total virtual pins : 0
+Total block memory bits : 470,016 / 4,065,280 ( 12 % )
+Total DSP Blocks : 0 / 87 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

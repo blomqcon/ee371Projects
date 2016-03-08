@@ -1,0 +1,40 @@
+
+#include "sys/alt_stdio.h"
+#include "altera_avalon_pio_regs.h"
+#include "unistd.h"
+#include "fcntl.h"
+//IOWR_ALTERA_AVALON_PIO_DATA(targetAddress, aValue);
+//aValue = IOWR_ALTERA_AVALON_PIO_DATA(sourceAddress);
+#define transmit_enable (volatile char *) 0x000050c0
+#define character_sent (volatile char *) 0x000050d0
+#define data_bus_output (volatile unsigned char *) 0x000050f0
+#define load (volatile char *) 0x000050e0
+#define data_bus_input (volatile unsigned char *) 0x00005120
+#define character_received (volatile char *) 0x00005110
+#define data_bus_LEDs (volatile char *) 0x00005100
+
+unsigned int setParity(unsigned int c);
+unsigned int getParity(unsigned int c);
+unsigned int getCharacter(unsigned int c);
+unsigned int getBits(unsigned int c);
+
+int main()
+{ 
+	fcntl(STDIN_FILENO, F_SETFL, O_NONBLOCK);
+	alt_putstr("Hello from Nios II!\n");
+	*char_received = 0;
+	char *msg = "Hello from a different Nios II!";
+	int j;
+	unsigned char incoming;
+	while (1) {
+		//msg = fcntl(STDIN_FILENO, F_SETFL, O_NONBLOCK);
+
+		if (*character_received) {
+			incoming = getCharacter(*data_bus_input);
+			alt_printf("Incoming: %c \n", incoming);
+
+			while(*character_received) {
+			}
+		}
+	}
+}

@@ -1,0 +1,136 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\blomqcon\Desktop\lab5\nios_sram.qsys --synthesis=VERILOG --output-directory=C:\Users\blomqcon\Desktop\lab5\nios_sram\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading lab5/nios_sram.qsys
+Progress: Reading input file
+Progress: Adding OE_n [altera_avalon_pio 15.1]
+Progress: Parameterizing module OE_n
+Progress: Adding WE_n [altera_avalon_pio 15.1]
+Progress: Parameterizing module WE_n
+Progress: Adding address [altera_avalon_pio 15.1]
+Progress: Parameterizing module address
+Progress: Adding char_received [altera_avalon_pio 15.1]
+Progress: Parameterizing module char_received
+Progress: Adding char_sent [altera_avalon_pio 15.1]
+Progress: Parameterizing module char_sent
+Progress: Adding clk_0 [clock_source 15.1]
+Progress: Parameterizing module clk_0
+Progress: Adding data [altera_avalon_pio 15.1]
+Progress: Parameterizing module data
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 15.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lights [altera_avalon_pio 15.1]
+Progress: Parameterizing module lights
+Progress: Adding load [altera_avalon_pio 15.1]
+Progress: Parameterizing module load
+Progress: Adding nios2_processor [altera_nios2_gen2 15.1]
+Progress: Parameterizing module nios2_processor
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 15.1]
+Progress: Parameterizing module onchip_memory
+Progress: Adding parallel_in [altera_avalon_pio 15.1]
+Progress: Parameterizing module parallel_in
+Progress: Adding parallel_out [altera_avalon_pio 15.1]
+Progress: Parameterizing module parallel_out
+Progress: Adding switches [altera_avalon_pio 15.1]
+Progress: Parameterizing module switches
+Progress: Adding transmit_enable [altera_avalon_pio 15.1]
+Progress: Parameterizing module transmit_enable
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_sram.char_received: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_sram.char_sent: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_sram.data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_sram.parallel_in: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_sram.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_sram: Generating nios_sram "nios_sram" for QUARTUS_SYNTH
+Info: OE_n: Starting RTL generation for module 'nios_sram_OE_n'
+Info: OE_n:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_sram_OE_n --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0001_OE_n_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0001_OE_n_gen//nios_sram_OE_n_component_configuration.pl  --do_build_sim=0  ]
+Info: OE_n: Done RTL generation for module 'nios_sram_OE_n'
+Info: OE_n: "nios_sram" instantiated altera_avalon_pio "OE_n"
+Info: address: Starting RTL generation for module 'nios_sram_address'
+Info: address:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_sram_address --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0002_address_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0002_address_gen//nios_sram_address_component_configuration.pl  --do_build_sim=0  ]
+Info: address: Done RTL generation for module 'nios_sram_address'
+Info: address: "nios_sram" instantiated altera_avalon_pio "address"
+Info: char_received: Starting RTL generation for module 'nios_sram_char_received'
+Info: char_received:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_sram_char_received --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0003_char_received_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0003_char_received_gen//nios_sram_char_received_component_configuration.pl  --do_build_sim=0  ]
+Info: char_received: Done RTL generation for module 'nios_sram_char_received'
+Info: char_received: "nios_sram" instantiated altera_avalon_pio "char_received"
+Info: data: Starting RTL generation for module 'nios_sram_data'
+Info: data:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_sram_data --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0004_data_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0004_data_gen//nios_sram_data_component_configuration.pl  --do_build_sim=0  ]
+Info: data: Done RTL generation for module 'nios_sram_data'
+Info: data: "nios_sram" instantiated altera_avalon_pio "data"
+Info: jtag_uart_0: Starting RTL generation for module 'nios_sram_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_sram_jtag_uart_0 --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0005_jtag_uart_0_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0005_jtag_uart_0_gen//nios_sram_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'nios_sram_jtag_uart_0'
+Info: jtag_uart_0: "nios_sram" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: lights: Starting RTL generation for module 'nios_sram_lights'
+Info: lights:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_sram_lights --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0006_lights_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0006_lights_gen//nios_sram_lights_component_configuration.pl  --do_build_sim=0  ]
+Info: lights: Done RTL generation for module 'nios_sram_lights'
+Info: lights: "nios_sram" instantiated altera_avalon_pio "lights"
+Info: nios2_processor: "nios_sram" instantiated altera_nios2_gen2 "nios2_processor"
+Info: onchip_memory: Starting RTL generation for module 'nios_sram_onchip_memory'
+Info: onchip_memory:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_sram_onchip_memory --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0007_onchip_memory_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0007_onchip_memory_gen//nios_sram_onchip_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory: Done RTL generation for module 'nios_sram_onchip_memory'
+Info: onchip_memory: "nios_sram" instantiated altera_avalon_onchip_memory2 "onchip_memory"
+Info: parallel_in: Starting RTL generation for module 'nios_sram_parallel_in'
+Info: parallel_in:   Generation command is [exec C:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.1/quartus/bin64/perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_sram_parallel_in --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0008_parallel_in_gen/ --quartus_dir=C:/altera/15.1/quartus --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0008_parallel_in_gen//nios_sram_parallel_in_component_configuration.pl  --do_build_sim=0  ]
+Info: parallel_in: Done RTL generation for module 'nios_sram_parallel_in'
+Info: parallel_in: "nios_sram" instantiated altera_avalon_pio "parallel_in"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "nios_sram" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "nios_sram" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "nios_sram" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'nios_sram_nios2_processor_cpu'
+Info: cpu:   Generation command is [exec C:/altera/15.1/quartus/bin64//eperlcmd.exe -I C:/altera/15.1/quartus/bin64//perl/lib -I C:/altera/15.1/quartus/sopc_builder/bin/europa -I C:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.1/quartus/sopc_builder/bin -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=nios_sram_nios2_processor_cpu --dir=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0011_cpu_gen/ --quartus_bindir=C:/altera/15.1/quartus/bin64/ --verilog --config=C:/Users/blomqcon/AppData/Local/Temp/alt6861_6714281282595198258.dir/0011_cpu_gen//nios_sram_nios2_processor_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2016.03.01 13:59:10 (*) Starting Nios II generation
+Info: cpu: # 2016.03.01 13:59:10 (*)   Checking for plaintext license.
+Info: cpu: # 2016.03.01 13:59:13 (*)   Couldn't query license setup in Quartus directory C:/altera/15.1/quartus/bin64/
+Info: cpu: # 2016.03.01 13:59:13 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2016.03.01 13:59:13 (*)   Plaintext license not found.
+Info: cpu: # 2016.03.01 13:59:13 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2016.03.01 13:59:13 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2016.03.01 13:59:13 (*)   Creating all objects for CPU
+Info: cpu: # 2016.03.01 13:59:15 (*)   Generating RTL from CPU objects
+Info: cpu: # 2016.03.01 13:59:15 (*)   Creating plain-text RTL
+Info: cpu: # 2016.03.01 13:59:16 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'nios_sram_nios2_processor_cpu'
+Info: cpu: "nios2_processor" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_processor_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_processor_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_processor_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_processor_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/blomqcon/Desktop/lab5/nios_sram/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/blomqcon/Desktop/lab5/nios_sram/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/blomqcon/Desktop/lab5/nios_sram/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: nios_sram: Done "nios_sram" with 32 modules, 45 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

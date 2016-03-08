@@ -1,0 +1,15 @@
+01:46:02 **** Incremental Build of configuration Nios II for project interrupt_test2 ****
+make all 
+Info: Building ../interrupt_test2_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../interrupt_test2_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../interrupt_test2_bsp//HAL/inc -I../interrupt_test2_bsp/ -I../interrupt_test2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:4:38: fatal error: altera_avalon_timer_regs.h: No such file or directory
+ #include "altera_avalon_timer_regs.h"
+                                      ^
+compilation terminated.
+make: *** [obj/default/hello_world_small.o] Error 1
+
+01:46:03 Build Finished (took 724ms)
+

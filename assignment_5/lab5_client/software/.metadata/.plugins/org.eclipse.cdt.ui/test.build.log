@@ -1,0 +1,9 @@
+11:35:57 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+
+11:35:58 Build Finished (took 627ms)
+

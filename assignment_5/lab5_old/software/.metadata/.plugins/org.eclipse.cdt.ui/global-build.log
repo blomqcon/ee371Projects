@@ -1,0 +1,552 @@
+09:26:48 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../transmit_test_4_bsp//HAL/inc -I../transmit_test_4_bsp/ -I../transmit_test_4_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:27:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+hello_world_small.c:26:8: warning: unused variable 'msg' [-Wunused-variable]
+  char *msg = "Hello from a different Nios II!";
+        ^
+hello_world_small.c: In function 'getBits':
+hello_world_small.c:152:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking transmit_test_4.elf
+nios2-elf-g++  -T'../transmit_test_4_bsp//linker.x' -msys-crt0='../transmit_test_4_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../transmit_test_4_bsp/  -msmallc  -Wl,-Map=transmit_test_4.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o transmit_test_4.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert transmit_test_4.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name lab5CPU --quartus_project_dir "C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5" --jdi C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../nios2_quartus2_project.jdi --sopcinfo C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../lab5CPU.sopcinfo
+Info: (transmit_test_4.elf) 1848 Bytes program size (code + initialized data).
+Info:                       14 KBytes free for stack + heap.
+Info: Creating transmit_test_4.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source transmit_test_4.elf >transmit_test_4.objdump
+[transmit_test_4 build complete]
+09:27:00 **** Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+09:27:01 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:27:35 **** Incremental Build of configuration Nios II for project space_invaders ****
+make all 
+Info: Building ../space_invaders_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../space_invaders_bsp/-recurs-make-lib] Error 2
+10:27:36 **** Incremental Build of configuration Nios II for project space_invaders_bsp ****
+make all 
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+10:27:37 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../transmit_test_4_bsp//HAL/inc -I../transmit_test_4_bsp/ -I../transmit_test_4_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'getBits':
+hello_world_small.c:89:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:89:1: error: expected declaration or statement at end of input
+hello_world_small.c:27:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+hello_world_small.c:26:8: warning: unused variable 'msg' [-Wunused-variable]
+  char *msg = "Hello from a different Nios II!";
+        ^
+make: *** [obj/default/hello_world_small.o] Error 1
+10:27:37 **** Incremental Build of configuration Nios II for project transmit_test_4_bsp ****
+make all 
+[BSP build complete]
+10:28:13 **** Incremental Build of configuration Nios II for project space_invaders ****
+make all 
+Info: Building ../space_invaders_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../space_invaders_bsp/-recurs-make-lib] Error 2
+10:28:14 **** Incremental Build of configuration Nios II for project space_invaders_bsp ****
+make all 
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+10:28:14 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../transmit_test_4_bsp//HAL/inc -I../transmit_test_4_bsp/ -I../transmit_test_4_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:27:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+hello_world_small.c:26:8: warning: unused variable 'msg' [-Wunused-variable]
+  char *msg = "Hello from a different Nios II!";
+        ^
+hello_world_small.c: In function 'getBits':
+hello_world_small.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking transmit_test_4.elf
+nios2-elf-g++  -T'../transmit_test_4_bsp//linker.x' -msys-crt0='../transmit_test_4_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../transmit_test_4_bsp/  -msmallc  -Wl,-Map=transmit_test_4.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o transmit_test_4.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert transmit_test_4.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name lab5CPU --quartus_project_dir "C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5" --jdi C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../nios2_quartus2_project.jdi --sopcinfo C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../lab5CPU.sopcinfo
+Info: (transmit_test_4.elf) 1368 Bytes program size (code + initialized data).
+Info:                       14 KBytes free for stack + heap.
+Info: Creating transmit_test_4.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source transmit_test_4.elf >transmit_test_4.objdump
+[transmit_test_4 build complete]
+10:28:16 **** Incremental Build of configuration Nios II for project transmit_test_4_bsp ****
+make all 
+[BSP build complete]
+10:28:25 **** Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:28:26 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:31:19 **** Incremental Build of configuration Nios II for project space_invaders ****
+make all 
+Info: Building ../space_invaders_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../space_invaders_bsp/-recurs-make-lib] Error 2
+10:31:20 **** Incremental Build of configuration Nios II for project space_invaders_bsp ****
+make all 
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+10:31:20 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:31:21 **** Incremental Build of configuration Nios II for project transmit_test_4_bsp ****
+make all 
+[BSP build complete]
+10:31:42 **** Incremental Build of configuration Nios II for project space_invaders ****
+make all 
+Info: Building ../space_invaders_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../space_invaders_bsp/-recurs-make-lib] Error 2
+10:31:43 **** Incremental Build of configuration Nios II for project space_invaders_bsp ****
+make all 
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+10:31:43 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../transmit_test_4_bsp//HAL/inc -I../transmit_test_4_bsp/ -I../transmit_test_4_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:27:6: warning: unused variable 'j' [-Wunused-variable]
+  int j;
+      ^
+hello_world_small.c:26:8: warning: unused variable 'msg' [-Wunused-variable]
+  char *msg = "Hello from a different Nios II!";
+        ^
+hello_world_small.c: In function 'getBits':
+hello_world_small.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking transmit_test_4.elf
+nios2-elf-g++  -T'../transmit_test_4_bsp//linker.x' -msys-crt0='../transmit_test_4_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../transmit_test_4_bsp/  -msmallc  -Wl,-Map=transmit_test_4.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o transmit_test_4.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert transmit_test_4.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name lab5CPU --quartus_project_dir "C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5" --jdi C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../nios2_quartus2_project.jdi --sopcinfo C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../lab5CPU.sopcinfo
+Info: (transmit_test_4.elf) 1368 Bytes program size (code + initialized data).
+Info:                       14 KBytes free for stack + heap.
+Info: Creating transmit_test_4.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source transmit_test_4.elf >transmit_test_4.objdump
+[transmit_test_4 build complete]
+10:31:45 **** Incremental Build of configuration Nios II for project transmit_test_4_bsp ****
+make all 
+[BSP build complete]
+10:31:51 **** Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:31:52 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:33:56 **** Incremental Build of configuration Nios II for project space_invaders ****
+make all 
+Info: Building ../space_invaders_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../space_invaders_bsp/-recurs-make-lib] Error 2
+10:33:57 **** Incremental Build of configuration Nios II for project space_invaders_bsp ****
+make all 
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+10:33:57 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:33:58 **** Incremental Build of configuration Nios II for project transmit_test_4_bsp ****
+make all 
+[BSP build complete]
+10:34:52 **** Incremental Build of configuration Nios II for project space_invaders ****
+make all 
+Info: Building ../space_invaders_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../space_invaders_bsp/-recurs-make-lib] Error 2
+10:34:53 **** Incremental Build of configuration Nios II for project space_invaders_bsp ****
+make all 
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+10:34:53 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../transmit_test_4_bsp//HAL/inc -I../transmit_test_4_bsp/ -I../transmit_test_4_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:27:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  for (j = 0; j < strlen(msg); j++) {
+  ^
+hello_world_small.c:27:18: warning: incompatible implicit declaration of built-in function 'strlen'
+  for (j = 0; j < strlen(msg); j++) {
+                  ^
+hello_world_small.c: In function 'getBits':
+hello_world_small.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking transmit_test_4.elf
+nios2-elf-g++  -T'../transmit_test_4_bsp//linker.x' -msys-crt0='../transmit_test_4_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../transmit_test_4_bsp/  -msmallc  -Wl,-Map=transmit_test_4.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o transmit_test_4.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert transmit_test_4.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name lab5CPU --quartus_project_dir "C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5" --jdi C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../nios2_quartus2_project.jdi --sopcinfo C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../lab5CPU.sopcinfo
+Info: (transmit_test_4.elf) 2004 Bytes program size (code + initialized data).
+Info:                       14 KBytes free for stack + heap.
+Info: Creating transmit_test_4.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source transmit_test_4.elf >transmit_test_4.objdump
+[transmit_test_4 build complete]
+10:34:55 **** Incremental Build of configuration Nios II for project transmit_test_4_bsp ****
+make all 
+[BSP build complete]
+10:35:13 **** Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:35:14 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:36:01 **** Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:36:02 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:36:12 **** Incremental Build of configuration Nios II for project space_invaders ****
+make all 
+Info: Building ../space_invaders_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../space_invaders_bsp/-recurs-make-lib] Error 2
+10:36:12 **** Incremental Build of configuration Nios II for project space_invaders_bsp ****
+make all 
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+10:36:13 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../transmit_test_4_bsp//HAL/inc -I../transmit_test_4_bsp/ -I../transmit_test_4_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:27:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  for (j = 0; j < strlen(msg); j++) {
+  ^
+hello_world_small.c:27:18: warning: incompatible implicit declaration of built-in function 'strlen'
+  for (j = 0; j < strlen(msg); j++) {
+                  ^
+hello_world_small.c: In function 'getBits':
+hello_world_small.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking transmit_test_4.elf
+nios2-elf-g++  -T'../transmit_test_4_bsp//linker.x' -msys-crt0='../transmit_test_4_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../transmit_test_4_bsp/  -msmallc  -Wl,-Map=transmit_test_4.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o transmit_test_4.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert transmit_test_4.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name lab5CPU --quartus_project_dir "C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5" --jdi C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../nios2_quartus2_project.jdi --sopcinfo C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/transmit_test_4_bsp/../../lab5CPU.sopcinfo
+Info: (transmit_test_4.elf) 2004 Bytes program size (code + initialized data).
+Info:                       14 KBytes free for stack + heap.
+Info: Creating transmit_test_4.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source transmit_test_4.elf >transmit_test_4.objdump
+[transmit_test_4 build complete]
+10:36:14 **** Incremental Build of configuration Nios II for project transmit_test_4_bsp ****
+make all 
+[BSP build complete]
+10:36:20 **** Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:36:21 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:36:49 **** Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:36:50 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:37:35 **** Incremental Build of configuration Nios II for project space_invaders ****
+make all 
+Info: Building ../space_invaders_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../space_invaders_bsp/-recurs-make-lib] Error 2
+10:37:36 **** Incremental Build of configuration Nios II for project space_invaders_bsp ****
+make all 
+Makefile not up to date.
+../../lab5CPU.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+10:37:37 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:37:38 **** Incremental Build of configuration Nios II for project transmit_test_4_bsp ****
+make all 
+[BSP build complete]
+10:38:28 **** Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]
+10:38:29 **** Incremental Build of configuration Nios II for project transmit_test_4 ****
+make all 
+Info: Building ../transmit_test_4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmit_test_4_bsp/
+[BSP build complete]
+[transmit_test_4 build complete]

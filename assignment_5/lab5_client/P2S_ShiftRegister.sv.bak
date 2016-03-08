@@ -1,0 +1,19 @@
+module P2S_ShiftRegister(SRClk, reset, load, data_bus, serial_data); 
+	input SRClk, load,reset;
+	input [7:0] data_bus;
+	output serial_data;
+	
+	reg [9:0] data;
+	wire parity;
+	
+	assign serial_data = data[9];
+	
+	always @(posedge SRClk) begin
+		if (reset) 
+			data = 10'b1111111111;
+		else if (load) 
+			data <= { 1'b1, data_bus, 1'b1 };
+		else 
+			data = { data[8:0], 1'b1 };
+	end
+endmodule

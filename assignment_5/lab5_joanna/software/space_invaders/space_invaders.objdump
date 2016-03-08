@@ -1,0 +1,5465 @@
+
+space_invaders.elf:     file format elf32-littlenios2
+space_invaders.elf
+architecture: nios2:r1, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00000150
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00000020 memsz 0x00000020 flags r-x
+    LOAD off    0x00001020 vaddr 0x00000020 paddr 0x00000020 align 2**12
+         filesz 0x000029f4 memsz 0x000029f4 flags r-x
+    LOAD off    0x00003a14 vaddr 0x00002a14 paddr 0x00002b34 align 2**12
+         filesz 0x00000120 memsz 0x00000120 flags rw-
+    LOAD off    0x00003c54 vaddr 0x00002c54 paddr 0x00002c54 align 2**12
+         filesz 0x00000000 memsz 0x00000950 flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000020  00000000  00000000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .exceptions   00000130  00000020  00000020  00001020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .text         000027ac  00000150  00000150  00001150  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .rodata       00000118  000028fc  000028fc  000038fc  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .rwdata       00000120  00002a14  00002b34  00003a14  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  5 .bss          00000950  00002c54  00002c54  00003c54  2**2
+                  ALLOC, SMALL_DATA
+  6 .onchip_mem   00000000  000035a4  000035a4  00003b34  2**0
+                  CONTENTS
+  7 .comment      00000023  00000000  00000000  00003b34  2**0
+                  CONTENTS, READONLY
+  8 .debug_aranges 00000668  00000000  00000000  00003b58  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_info   0000a3b1  00000000  00000000  000041c0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_abbrev 00003a2e  00000000  00000000  0000e571  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_line   00003a11  00000000  00000000  00011f9f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_frame  00000d58  00000000  00000000  000159b0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str    00001c5e  00000000  00000000  00016708  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_loc    0000305d  00000000  00000000  00018366  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_alt_sim_info 00000040  00000000  00000000  0001b3c4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_ranges 00000528  00000000  00000000  0001b408  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .thread_model 00000003  00000000  00000000  0001d88c  2**0
+                  CONTENTS, READONLY
+ 18 .cpu          00000003  00000000  00000000  0001d88f  2**0
+                  CONTENTS, READONLY
+ 19 .qsys         00000001  00000000  00000000  0001d892  2**0
+                  CONTENTS, READONLY
+ 20 .simulation_enabled 00000001  00000000  00000000  0001d893  2**0
+                  CONTENTS, READONLY
+ 21 .stderr_dev   00000009  00000000  00000000  0001d894  2**0
+                  CONTENTS, READONLY
+ 22 .stdin_dev    00000009  00000000  00000000  0001d89d  2**0
+                  CONTENTS, READONLY
+ 23 .stdout_dev   00000009  00000000  00000000  0001d8a6  2**0
+                  CONTENTS, READONLY
+ 24 .sopc_system_name 00000007  00000000  00000000  0001d8af  2**0
+                  CONTENTS, READONLY
+ 25 .quartus_project_dir 00000039  00000000  00000000  0001d8b6  2**0
+                  CONTENTS, READONLY
+ 26 .jdi          00003673  00000000  00000000  0001d8ef  2**0
+                  CONTENTS, READONLY
+ 27 .sopcinfo     0009f5ca  00000000  00000000  00020f62  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00000000 l    d  .entry	00000000 .entry
+00000020 l    d  .exceptions	00000000 .exceptions
+00000150 l    d  .text	00000000 .text
+000028fc l    d  .rodata	00000000 .rodata
+00002a14 l    d  .rwdata	00000000 .rwdata
+00002c54 l    d  .bss	00000000 .bss
+000035a4 l    d  .onchip_mem	00000000 .onchip_mem
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_alt_sim_info	00000000 .debug_alt_sim_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 ../space_invaders_bsp//obj/HAL/src/crt0.o
+00000188 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 alt_exception_entry.o
+00000094 l       .exceptions	00000000 alt_exception_unknown
+00000000 l    df *ABS*	00000000 alt_irq_handler.c
+00000000 l    df *ABS*	00000000 ProjectileNode.c
+00000000 l    df *ABS*	00000000 communication.c
+00000000 l    df *ABS*	00000000 data_structures_constants.c
+00000000 l    df *ABS*	00000000 display.c
+00000000 l    df *ABS*	00000000 gamelogic.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 sram.c
+00000000 l    df *ABS*	00000000 lib2-divmod.c
+0000158c l     F .text	0000006c udivmodsi4
+00000000 l    df *ABS*	00000000 lib2-mul.c
+00000000 l    df *ABS*	00000000 calloc.c
+00000000 l    df *ABS*	00000000 impure.c
+00002a14 l     O .rwdata	000000e0 impure_data
+00000000 l    df *ABS*	00000000 malloc.c
+00000000 l    df *ABS*	00000000 memcpy.c
+00000000 l    df *ABS*	00000000 nano-mallocr.c
+00000000 l    df *ABS*	00000000 nano-mallocr.c
+00000000 l    df *ABS*	00000000 nano-mallocr.c
+00000000 l    df *ABS*	00000000 printf.c
+00000000 l    df *ABS*	00000000 putchar.c
+00000000 l    df *ABS*	00000000 puts.c
+00000000 l    df *ABS*	00000000 rand.c
+00002c88 l     O .bss	00000008 _randbits
+00000000 l    df *ABS*	00000000 sbrkr.c
+00000000 l    df *ABS*	00000000 strlen.c
+00000000 l    df *ABS*	00000000 vfprintf.c
+00001c08 l     F .text	0000006c print_repeat
+00000000 l    df *ABS*	00000000 fvwrite_small_dev.c
+00000000 l    df *ABS*	00000000 int_errno.c
+00000000 l    df *ABS*	00000000 memset.c
+00000000 l    df *ABS*	00000000 putc.c
+00000000 l    df *ABS*	00000000 writer.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 alt_iic.c
+00000000 l    df *ABS*	00000000 alt_iic_isr_register.c
+00000000 l    df *ABS*	00000000 alt_irq_vars.c
+00000000 l    df *ABS*	00000000 alt_load.c
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_putchar.c
+00000000 l    df *ABS*	00000000 alt_sbrk.c
+00002b28 l     O .rwdata	00000004 heap_end
+00000000 l    df *ABS*	00000000 alt_usleep.c
+00000000 l    df *ABS*	00000000 alt_write.c
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_write.c
+00000000 l    df *ABS*	00000000 alt_busy_sleep.c
+00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_errno.c
+00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
+00000000 l    df *ABS*	00000000 altera_nios2_qsys_irq.c
+00001568 g     F .text	00000024 sram_free
+00001a7c g     F .text	00000018 putchar
+00001060 g     F .text	00000114 checkCollideAliens
+000026dc g     F .text	0000002c alt_main
+00001a94 g     F .text	00000080 _puts_r
+00002c5c g     O .bss	00000004 edge_capture_receive
+000034a4 g     O .bss	00000100 alt_irq
+00002b34 g       *ABS*	00000000 __flash_rwdata_start
+000035a4 g     O *ABS*	00000000 __alt_heap_start
+00001390 g     F .text	00000098 getProjectile
+00001a28 g     F .text	0000004c printf
+00002b14 g     O .rwdata	00000004 gunnerLeftToggle
+000001c8 g     F .text	00000144 updateProjectileNodes
+00000764 g     F .text	00000008 setParity
+0000059c g     F .text	00000054 writeBuffer
+00002b2c g     O .rwdata	00000004 jtag_uart
+00000000  w      *UND*	00000000 __errno
+00000000 g     F .entry	0000000c __reset
+00000020 g       *ABS*	00000000 __flash_exceptions_start
+00002c90 g     O .bss	00000004 errno
+00001304 g     F .text	00000048 getAlien
+00002c9c g     O .bss	00000004 alt_argv
+0000aaf4 g       *ABS*	00000000 _gp
+0000279c g     F .text	00000004 usleep
+00002c6c g     O .bss	00000004 alienShift
+00002b10 g     O .rwdata	00000004 gunnerRightToggle
+00001428 g     F .text	00000090 setProjectile
+00001a74 g     F .text	00000008 _putchar_r
+000008c8 g     F .text	00000034 getAlienApperence
+00001724 g     F .text	00000028 memcpy
+00000d60 g     F .text	00000068 moveGunnerLeft
+00001b14 g     F .text	00000014 puts
+00002b0c g     O .rwdata	00000004 gunnerShootToggle
+0000082c g     F .text	0000009c initRandomAliens
+000016fc g     F .text	00000014 malloc
+000019ec g     F .text	0000003c _printf_r
+000016a8 g     F .text	00000008 .hidden __udivsi3
+00000dc8 g     F .text	0000006c moveGunnerRight
+00001b9c g     F .text	00000050 _sbrk_r
+00000494 g     F .text	00000028 createProjectile
+00002c70 g     O .bss	00000004 pSramAliens
+000003a0 g     F .text	00000068 updateProjectileBuffer
+00000fcc g     F .text	00000094 checkGunnerWin
+0000053c g     F .text	00000060 readBuffer
+00002af4 g     O .rwdata	00000004 gunner
+0000030c g     F .text	00000094 initProjectileBuffer
+00002b1c g     O .rwdata	00000004 _global_impure_ptr
+000004bc g     F .text	0000003c gun_handler
+000035a4 g       *ABS*	00000000 __bss_end
+0000257c g     F .text	00000068 alt_iic_isr_register
+00002564 g     F .text	00000018 alt_ic_irq_enabled
+00002c94 g     O .bss	00000004 alt_irq_active
+00000804 g     F .text	00000028 newAlien
+00002b08 g     O .rwdata	00000004 alienShootToggle
+00000000 g       *ABS*	00000000 __alt_mem_onchip_mem
+000000ec g     F .exceptions	00000064 alt_irq_handler
+000028ec g     F .text	00000004 alt_dcache_flush_all
+00002c74 g     O .bss	00000004 pTransmit
+000016e0 g     F .text	0000001c calloc
+00002b34 g       *ABS*	00000000 __ram_rwdata_end
+000027a0 g     F .text	0000006c write
+00002324 g     F .text	00000058 _putc_r
+00002a14 g       *ABS*	00000000 __ram_rodata_end
+00001174 g     F .text	00000030 checkCollideGunner
+00002c68 g     O .bss	00000004 gameOver
+000016b0 g     F .text	00000008 .hidden __umodsi3
+00000bc4 g     F .text	000000d0 printGunnerSlice
+00000b18 g     F .text	000000ac printVoid
+00002afc g     O .rwdata	00000004 alien1
+000035a4 g     O *ABS*	00000004 end
+0000134c g     F .text	00000044 setAlien
+00002c58 g     O .bss	00000004 head
+00002c60 g     O .bss	00000004 edge_capture_gun
+00004000 g       *ABS*	00000000 __alt_stack_pointer
+00002830 g     F .text	00000034 altera_avalon_jtag_uart_write
+00001c74 g     F .text	0000056c ___vfprintf_internal_r
+000017ac g     F .text	000000e4 _free_r
+00000678 g     F .text	0000003c character_sent_handler
+00000150 g     F .text	0000003c _start
+00002c78 g     O .bss	00000004 pBufferHead
+00001b3c g     F .text	00000060 rand
+0000282c g     F .text	00000004 alt_sys_init
+00000a94 g     F .text	00000084 printAliens
+000016b8 g     F .text	00000028 .hidden __mulsi3
+00002a14 g       *ABS*	00000000 __ram_rwdata_start
+000028fc g       *ABS*	00000000 __ram_rodata_start
+00002ca4 g     O .bss	00000800 sram
+00002864 g     F .text	00000088 alt_busy_sleep
+00000794 g     F .text	00000070 getBits
+000035a4 g       *ABS*	00000000 __alt_stack_base
+0000076c g     F .text	00000020 getParity
+000004f8 g     F .text	00000044 character_recieved_handler
+00002750 g     F .text	0000004c sbrk
+000009dc g     F .text	000000b8 printSlice
+0000174c g     F .text	00000060 _calloc_r
+00002204 g     F .text	000000ac __sfvwrite_small_dev
+00002c54 g       *ABS*	00000000 __bss_start
+000022b0 g     F .text	00000020 memset
+000011a4 g     F .text	00000160 main
+00002c98 g     O .bss	00000004 alt_envp
+00001b28 g     F .text	00000014 srand
+000005f0 g     F .text	00000088 transmitIfBufferNotEmpty
+00004000 g       *ABS*	00000000 __alt_heap_limit
+00001890 g     F .text	0000015c _malloc_r
+00002b30 g     O .rwdata	00000004 alt_errno
+000014dc g     F .text	0000008c sram_malloc
+000022d0 g     F .text	00000054 putc
+0000078c g     F .text	00000008 getCharacter
+000015f8 g     F .text	00000054 .hidden __divsi3
+000006b4 g     F .text	000000b0 setup_interrupt
+000028fc g       *ABS*	00000000 __flash_rodata_start
+00000d5c g     F .text	00000004 initializeGame
+0000280c g     F .text	00000020 alt_irq_init
+000014b8 g     F .text	00000024 resetSRAM
+0000237c g     F .text	00000058 _write_r
+00000e34 g     F .text	000000a0 shootGunner
+00002b20 g     O .rwdata	00000004 _impure_ptr
+00002ca0 g     O .bss	00000004 alt_argc
+00000408 g     F .text	0000006c addProjectileNode
+00000020 g       .exceptions	00000000 alt_irq_entry
+00002b00 g     O .rwdata	00000004 alien0
+00000474 g     F .text	00000020 listLength
+00000020 g       *ABS*	00000000 __ram_exceptions_start
+000024e0 g     F .text	00000004 alt_ic_isr_register
+0000018c g     F .text	0000003c removeProjectileNode
+00002b34 g       *ABS*	00000000 _edata
+000035a4 g       *ABS*	00000000 _end
+00000c94 g     F .text	0000004c printGunner
+00000150 g       *ABS*	00000000 __ram_exceptions_end
+00002524 g     F .text	00000040 alt_ic_irq_disable
+000028f4 g     F .text	00000008 altera_nios2_qsys_irq_init
+0000164c g     F .text	0000005c .hidden __modsi3
+00004000 g       *ABS*	00000000 __alt_data_end
+00000020 g     F .exceptions	00000000 alt_exception
+00002b18 g     O .rwdata	00000004 gunnerX
+0000000c g       .entry	00000000 _exit
+000023d4 g     F .text	0000010c .hidden __muldi3
+00001bec g     F .text	0000001c strlen
+000008fc g     F .text	000000e0 printAlienSlice
+00002708 g     F .text	00000048 alt_putchar
+00002c80 g     O .bss	00000004 __malloc_sbrk_start
+000028f0 g     F .text	00000004 alt_icache_flush_all
+00002c7c g     O .bss	00000004 pBuffer
+00002b24 g     O .rwdata	00000004 alt_priority_mask
+00000ed4 g     F .text	000000f8 shootAliens
+00002c84 g     O .bss	00000004 __malloc_free_list
+000024e4 g     F .text	00000040 alt_ic_irq_enable
+000021e0 g     F .text	00000024 __vfprintf_internal
+00002c64 g     O .bss	00000004 edge_capture_sent
+00002b04 g     O .rwdata	00000004 empty_space
+000025e4 g     F .text	000000f8 alt_load
+00002af8 g     O .rwdata	00000004 alien2
+00000ce0 g     F .text	0000007c updateDisplay
+00001710 g     F .text	00000014 free
+
+
+
+Disassembly of section .entry:
+
+00000000 <__reset>:
+ * Jump to the _start entry point in the .text section if reset code
+ * is allowed or if optimizing for RTL simulation.
+ */
+#if defined(ALT_ALLOW_CODE_AT_RESET) || defined(ALT_SIM_OPTIMIZE)
+    /* Jump to the _start entry point in the .text section. */
+    movhi r1, %hi(_start)
+   0:	00400034 	movhi	at,0
+    ori r1, r1, %lo(_start)
+   4:	08405414 	ori	at,at,336
+    jmp r1
+   8:	0800683a 	jmp	at
+
+0000000c <_exit>:
+	...
+
+Disassembly of section .exceptions:
+
+00000020 <alt_exception>:
+
+#else /* ALT_EXCEPTION_STACK disabled */
+        /* 
+         * Reserve space on normal stack for registers about to be pushed.
+         */
+        addi  sp, sp, -76
+  20:	deffed04 	addi	sp,sp,-76
+         * documentation for details).
+         *
+         * Leave a gap in the stack frame at 4(sp) for the muldiv handler to
+         * store zero into.
+         */
+        stw   ra,  0(sp)
+  24:	dfc00015 	stw	ra,0(sp)
+        stw   r1,   8(sp)
+  28:	d8400215 	stw	at,8(sp)
+        stw   r2,  12(sp)
+  2c:	d8800315 	stw	r2,12(sp)
+        stw   r3,  16(sp)
+  30:	d8c00415 	stw	r3,16(sp)
+        stw   r4,  20(sp)
+  34:	d9000515 	stw	r4,20(sp)
+        stw   r5,  24(sp)
+  38:	d9400615 	stw	r5,24(sp)
+        stw   r6,  28(sp)
+  3c:	d9800715 	stw	r6,28(sp)
+        stw   r7,  32(sp)
+  40:	d9c00815 	stw	r7,32(sp)
+        rdctl r5, estatus   /* Read early to avoid usage stall */
+  44:	000b307a 	rdctl	r5,estatus
+        stw   r8,  36(sp)
+  48:	da000915 	stw	r8,36(sp)
+        stw   r9,  40(sp)
+  4c:	da400a15 	stw	r9,40(sp)
+        stw   r10, 44(sp)
+  50:	da800b15 	stw	r10,44(sp)
+        stw   r11, 48(sp)
+  54:	dac00c15 	stw	r11,48(sp)
+        stw   r12, 52(sp)
+  58:	db000d15 	stw	r12,52(sp)
+        stw   r13, 56(sp)
+  5c:	db400e15 	stw	r13,56(sp)
+        stw   r14, 60(sp)
+  60:	db800f15 	stw	r14,60(sp)
+        stw   r15, 64(sp)
+  64:	dbc01015 	stw	r15,64(sp)
+        /*
+         * ea-4 contains the address of the instruction being executed
+         * when the exception occured. For interrupt exceptions, we will
+         * will be re-issue the isntruction. Store it in 72(sp)
+         */
+        stw   r5,  68(sp)  /* estatus */
+  68:	d9401115 	stw	r5,68(sp)
+        addi  r15, ea, -4  /* instruction that caused exception */
+  6c:	ebffff04 	addi	r15,ea,-4
+        stw   r15,  72(sp)
+  70:	dbc01215 	stw	r15,72(sp)
+#else
+        /*
+         * Test to see if the exception was a software exception or caused 
+         * by an external interrupt, and vector accordingly.
+         */
+        rdctl r4, ipending
+  74:	0009313a 	rdctl	r4,ipending
+        andi  r2, r5, 1
+  78:	2880004c 	andi	r2,r5,1
+        beq   r2, zero, .Lnot_irq
+  7c:	10000326 	beq	r2,zero,8c <alt_exception+0x6c>
+        beq   r4, zero, .Lnot_irq
+  80:	20000226 	beq	r4,zero,8c <alt_exception+0x6c>
+        /*
+         * Now that all necessary registers have been preserved, call 
+         * alt_irq_handler() to process the interrupts.
+         */
+
+        call alt_irq_handler
+  84:	00000ec0 	call	ec <alt_irq_handler>
+
+        .section .exceptions.irqreturn, "xa"
+
+        br    .Lexception_exit
+  88:	00000306 	br	98 <alt_exception_unknown+0x4>
+         * upon completion, so we write ea (address of instruction *after*
+         * the one where the exception occured) into 72(sp). The actual
+         * instruction that caused the exception is written in r2, which these
+         * handlers will utilize.
+         */
+        stw   ea,  72(sp)  /* Don't re-issue */
+  8c:	df401215 	stw	ea,72(sp)
+        ldw   r2, -4(ea)   /* Instruction that caused exception */
+  90:	e8bfff17 	ldw	r2,-4(ea)
+
+00000094 <alt_exception_unknown>:
+#ifdef NIOS2_HAS_DEBUG_STUB
+       /*
+        *  Either tell the user now (if there is a debugger attached) or go into
+        *  the debug monitor which will loop until a debugger is attached.
+        */
+        break
+  94:	003da03a 	break	0
+        /* 
+         * Restore the saved registers, so that all general purpose registers 
+         * have been restored to their state at the time the interrupt occured.
+         */
+
+        ldw   r5,  68(sp)
+  98:	d9401117 	ldw	r5,68(sp)
+        ldw   ea,  72(sp)  /* This becomes the PC once eret is executed */
+  9c:	df401217 	ldw	ea,72(sp)
+        ldw   ra,   0(sp)
+  a0:	dfc00017 	ldw	ra,0(sp)
+
+        wrctl estatus, r5
+  a4:	2801707a 	wrctl	estatus,r5
+
+        ldw   r1,   8(sp)
+  a8:	d8400217 	ldw	at,8(sp)
+        ldw   r2,  12(sp)
+  ac:	d8800317 	ldw	r2,12(sp)
+        ldw   r3,  16(sp)
+  b0:	d8c00417 	ldw	r3,16(sp)
+        ldw   r4,  20(sp)
+  b4:	d9000517 	ldw	r4,20(sp)
+        ldw   r5,  24(sp)
+  b8:	d9400617 	ldw	r5,24(sp)
+        ldw   r6,  28(sp)
+  bc:	d9800717 	ldw	r6,28(sp)
+        ldw   r7,  32(sp)
+  c0:	d9c00817 	ldw	r7,32(sp)
+
+#if defined(ALT_EXCEPTION_STACK) && defined(ALT_STACK_CHECK)
+        ldw   et, %gprel(alt_exception_old_stack_limit)(gp)
+#endif
+
+        ldw   r8,  36(sp)
+  c4:	da000917 	ldw	r8,36(sp)
+        ldw   r9,  40(sp)
+  c8:	da400a17 	ldw	r9,40(sp)
+        ldw   r10, 44(sp)
+  cc:	da800b17 	ldw	r10,44(sp)
+        ldw   r11, 48(sp)
+  d0:	dac00c17 	ldw	r11,48(sp)
+        ldw   r12, 52(sp)
+  d4:	db000d17 	ldw	r12,52(sp)
+        ldw   r13, 56(sp)
+  d8:	db400e17 	ldw	r13,56(sp)
+        ldw   r14, 60(sp)
+  dc:	db800f17 	ldw	r14,60(sp)
+        ldw   r15, 64(sp)
+  e0:	dbc01017 	ldw	r15,64(sp)
+        stw   et, %gprel(alt_stack_limit_value)(gp)
+        stw   zero, %gprel(alt_exception_old_stack_limit)(gp)
+#endif /* ALT_STACK_CHECK */
+        ldw   sp,  76(sp)
+#else /* ALT_EXCEPTION_STACK disabled */
+        addi  sp, sp, 76
+  e4:	dec01304 	addi	sp,sp,76
+
+        /*
+         * Return to the interrupted instruction.
+         */
+
+        eret
+  e8:	ef80083a 	eret
+
+000000ec <alt_irq_handler>:
+ * instruction is present if the macro ALT_CI_INTERRUPT_VECTOR defined.
+ */
+
+void alt_irq_handler (void) __attribute__ ((section (".exceptions")));
+void alt_irq_handler (void)
+{
+  ec:	defffe04 	addi	sp,sp,-8
+  f0:	dfc00115 	stw	ra,4(sp)
+  f4:	dc000015 	stw	r16,0(sp)
+#ifndef NIOS2_EIC_PRESENT
+static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_irq_pending (void)
+{
+  alt_u32 active;
+
+  NIOS2_READ_IPENDING (active);
+  f8:	0009313a 	rdctl	r4,ipending
+    do
+    {
+      if (active & mask)
+      { 
+#ifdef ALT_ENHANCED_INTERRUPT_API_PRESENT
+        alt_irq[i].handler(alt_irq[i].context); 
+  fc:	04000034 	movhi	r16,0
+ 100:	840d2904 	addi	r16,r16,13476
+
+  active = alt_irq_pending ();
+
+  do
+  {
+    i = 0;
+ 104:	0005883a 	mov	r2,zero
+    mask = 1;
+ 108:	00c00044 	movi	r3,1
+     * called to clear the interrupt condition.
+     */
+
+    do
+    {
+      if (active & mask)
+ 10c:	190a703a 	and	r5,r3,r4
+ 110:	28000c26 	beq	r5,zero,144 <alt_irq_handler+0x58>
+      { 
+#ifdef ALT_ENHANCED_INTERRUPT_API_PRESENT
+        alt_irq[i].handler(alt_irq[i].context); 
+ 114:	100490fa 	slli	r2,r2,3
+ 118:	8087883a 	add	r3,r16,r2
+ 11c:	1805883a 	mov	r2,r3
+ 120:	11000117 	ldw	r4,4(r2)
+ 124:	18c00017 	ldw	r3,0(r3)
+ 128:	183ee83a 	callr	r3
+ 12c:	0009313a 	rdctl	r4,ipending
+
+    } while (1);
+
+    active = alt_irq_pending ();
+    
+  } while (active);
+ 130:	203ff41e 	bne	r4,zero,104 <_gp+0xffff5610>
+  /*
+   * Notify the operating system that interrupt processing is complete.
+   */ 
+
+  ALT_OS_INT_EXIT();
+}
+ 134:	dfc00117 	ldw	ra,4(sp)
+ 138:	dc000017 	ldw	r16,0(sp)
+ 13c:	dec00204 	addi	sp,sp,8
+ 140:	f800283a 	ret
+#else
+        alt_irq[i].handler(alt_irq[i].context, i); 
+#endif
+        break;
+      }
+      mask <<= 1;
+ 144:	18c7883a 	add	r3,r3,r3
+      i++;
+ 148:	10800044 	addi	r2,r2,1
+
+    } while (1);
+ 14c:	003fef06 	br	10c <_gp+0xffff5618>
+
+Disassembly of section .text:
+
+00000150 <_start>:
+
+    /*
+     * Now that the caches are initialized, set up the stack pointer and global pointer.
+     * The values provided by the linker are assumed to be correctly aligned.
+     */
+    movhi sp, %hi(__alt_stack_pointer)
+     150:	06c00034 	movhi	sp,0
+    ori sp, sp, %lo(__alt_stack_pointer)
+     154:	ded00014 	ori	sp,sp,16384
+    movhi gp, %hi(_gp)
+     158:	06800034 	movhi	gp,0
+    ori gp, gp, %lo(_gp)
+     15c:	d6aabd14 	ori	gp,gp,43764
+ */
+#ifndef ALT_SIM_OPTIMIZE
+    /* Log that the BSS is about to be cleared. */
+    ALT_LOG_PUTS(alt_log_msg_bss)
+
+    movhi r2, %hi(__bss_start)
+     160:	00800034 	movhi	r2,0
+    ori r2, r2, %lo(__bss_start)
+     164:	108b1514 	ori	r2,r2,11348
+
+    movhi r3, %hi(__bss_end)
+     168:	00c00034 	movhi	r3,0
+    ori r3, r3, %lo(__bss_end)
+     16c:	18cd6914 	ori	r3,r3,13732
+
+    beq r2, r3, 1f
+     170:	10c00326 	beq	r2,r3,180 <_start+0x30>
+
+0:
+    stw zero, (r2)
+     174:	10000015 	stw	zero,0(r2)
+    addi r2, r2, 4
+     178:	10800104 	addi	r2,r2,4
+    bltu r2, r3, 0b
+     17c:	10fffd36 	bltu	r2,r3,174 <_gp+0xffff5680>
+     * section aren't defined until alt_load() has been called).
+     */
+    mov   et, zero
+#endif
+
+    call alt_load
+     180:	00025e40 	call	25e4 <alt_load>
+
+    /* Log that alt_main is about to be called. */
+    ALT_LOG_PUTS(alt_log_msg_alt_main)
+
+    /* Call the C entry point. It should never return. */
+    call alt_main
+     184:	00026dc0 	call	26dc <alt_main>
+
+00000188 <alt_after_alt_main>:
+
+    /* Wait in infinite loop in case alt_main does return. */
+alt_after_alt_main:
+    br alt_after_alt_main
+     188:	003fff06 	br	188 <_gp+0xffff5694>
+
+0000018c <removeProjectileNode>:
+
+struct ProjectileNode *head = NULL;
+struct ProjectileNode *end = NULL;
+
+void removeProjectileNode(struct ProjectileNode* proj) {
+    if(head == proj) {
+     18c:	d0e05917 	ldw	r3,-32412(gp)
+     190:	18800217 	ldw	r2,8(r3)
+     194:	1900051e 	bne	r3,r4,1ac <removeProjectileNode+0x20>
+        if(proj == end) end = NULL;
+     198:	d122ac17 	ldw	r4,-30032(gp)
+     19c:	1900011e 	bne	r3,r4,1a4 <removeProjectileNode+0x18>
+     1a0:	d022ac15 	stw	zero,-30032(gp)
+        head = proj->next;
+     1a4:	d0a05915 	stw	r2,-32412(gp)
+     1a8:	f800283a 	ret
+    } else {
+        struct ProjectileNode* current = head;
+        while(current->next != proj) { }
+     1ac:	113fff1e 	bne	r2,r4,1ac <_gp+0xffff56b8>
+        current->next = proj->next;
+     1b0:	11000217 	ldw	r4,8(r2)
+     1b4:	19000215 	stw	r4,8(r3)
+        if(proj == end) end = current->next;
+     1b8:	d0e2ac17 	ldw	r3,-30032(gp)
+     1bc:	10c0011e 	bne	r2,r3,1c4 <removeProjectileNode+0x38>
+     1c0:	d122ac15 	stw	r4,-30032(gp)
+     1c4:	f800283a 	ret
+
+000001c8 <updateProjectileNodes>:
+    }
+	//printf("removed success x:%i y:%i", proj->bullet.xVal, proj->bullet.yVal);
+    //free(proj);
+}
+
+void updateProjectileNodes() {
+     1c8:	defffa04 	addi	sp,sp,-24
+     1cc:	dc000015 	stw	r16,0(sp)
+    //if head is null, return
+    if(head == NULL) return;
+     1d0:	d4205917 	ldw	r16,-32412(gp)
+    }
+	//printf("removed success x:%i y:%i", proj->bullet.xVal, proj->bullet.yVal);
+    //free(proj);
+}
+
+void updateProjectileNodes() {
+     1d4:	dfc00515 	stw	ra,20(sp)
+     1d8:	dd000415 	stw	r20,16(sp)
+     1dc:	dcc00315 	stw	r19,12(sp)
+     1e0:	dc800215 	stw	r18,8(sp)
+     1e4:	dc400115 	stw	r17,4(sp)
+    //if head is null, return
+    if(head == NULL) return;
+     1e8:	80004026 	beq	r16,zero,2ec <updateProjectileNodes+0x124>
+			//printf("Check Gunner Collison: %i", (int)tempCurrent->bullet.xVal % (ALIEN_COLS * ALIEN_WIDTH));
+            checkCollideGunner((int)tempCurrent->bullet.xVal % (ALIEN_COLS * ALIEN_WIDTH));
+            removeProjectileNode(tempCurrent);
+        } else if (tempCurrent->bullet.yVal > VOID_HEIGHT && (int)tempCurrent->bullet.direction >= 1) {
+			int alienX = ((int) tempCurrent->bullet.xVal) / ALIEN_WIDTH;
+            checkCollideAliens(pSramAliens, alienX);
+     1ec:	04c00034 	movhi	r19,0
+    while(current != NULL) {
+        if(current->bullet.timeTick < abs(current->bullet.direction)) {
+            current->bullet.timeTick++;
+        } else {
+            current->bullet.timeTick = 0;
+            if(current->bullet.type == 1) { //Straight Line
+     1f0:	04400044 	movi	r17,1
+
+        if(tempCurrent->bullet.yVal < 0) {
+			//printf("Check Gunner Collison: %i", (int)tempCurrent->bullet.xVal % (ALIEN_COLS * ALIEN_WIDTH));
+            checkCollideGunner((int)tempCurrent->bullet.xVal % (ALIEN_COLS * ALIEN_WIDTH));
+            removeProjectileNode(tempCurrent);
+        } else if (tempCurrent->bullet.yVal > VOID_HEIGHT && (int)tempCurrent->bullet.direction >= 1) {
+     1f4:	048000c4 	movi	r18,3
+			int alienX = ((int) tempCurrent->bullet.xVal) / ALIEN_WIDTH;
+            checkCollideAliens(pSramAliens, alienX);
+     1f8:	9ccb1c04 	addi	r19,r19,11376
+    //if head is null, return
+    if(head == NULL) return;
+
+    struct ProjectileNode* current = head;
+    while(current != NULL) {
+        if(current->bullet.timeTick < abs(current->bullet.direction)) {
+     1fc:	80800083 	ldbu	r2,2(r16)
+     200:	81000143 	ldbu	r4,5(r16)
+     204:	10c03fcc 	andi	r3,r2,255
+     208:	21803fcc 	andi	r6,r4,255
+     20c:	18c0201c 	xori	r3,r3,128
+     210:	3180201c 	xori	r6,r6,128
+     214:	18ffe004 	addi	r3,r3,-128
+     218:	31bfe004 	addi	r6,r6,-128
+     21c:	180b883a 	mov	r5,r3
+     220:	1800010e 	bge	r3,zero,228 <updateProjectileNodes+0x60>
+     224:	00c7c83a 	sub	r3,zero,r3
+     228:	30c0030e 	bge	r6,r3,238 <updateProjectileNodes+0x70>
+            current->bullet.timeTick++;
+     22c:	21000044 	addi	r4,r4,1
+     230:	81000145 	stb	r4,5(r16)
+     234:	00000a06 	br	260 <updateProjectileNodes+0x98>
+        } else {
+            current->bullet.timeTick = 0;
+            if(current->bullet.type == 1) { //Straight Line
+     238:	80c00107 	ldb	r3,4(r16)
+    struct ProjectileNode* current = head;
+    while(current != NULL) {
+        if(current->bullet.timeTick < abs(current->bullet.direction)) {
+            current->bullet.timeTick++;
+        } else {
+            current->bullet.timeTick = 0;
+     23c:	80000145 	stb	zero,5(r16)
+            if(current->bullet.type == 1) { //Straight Line
+     240:	1c40071e 	bne	r3,r17,260 <updateProjectileNodes+0x98>
+     244:	81000043 	ldbu	r4,1(r16)
+                current->bullet.yVal -= (current->bullet.direction < 0);
+     248:	10803fcc 	andi	r2,r2,255
+     24c:	1004d1fa 	srli	r2,r2,7
+                current->bullet.yVal += (current->bullet.direction > 0);
+     250:	0146803a 	cmplt	r3,zero,r5
+     254:	1907883a 	add	r3,r3,r4
+     258:	1885c83a 	sub	r2,r3,r2
+     25c:	80800045 	stb	r2,1(r16)
+        //printf("New Bullet Loc (%i, %i)\n", current->bullet.xVal, current->bullet.yVal);
+
+        struct ProjectileNode* tempCurrent = current;
+        current = current->next;
+
+        if(tempCurrent->bullet.yVal < 0) {
+     260:	80800047 	ldb	r2,1(r16)
+            }
+        }
+        //printf("New Bullet Loc (%i, %i)\n", current->bullet.xVal, current->bullet.yVal);
+
+        struct ProjectileNode* tempCurrent = current;
+        current = current->next;
+     264:	85000217 	ldw	r20,8(r16)
+
+        if(tempCurrent->bullet.yVal < 0) {
+     268:	1000080e 	bge	r2,zero,28c <updateProjectileNodes+0xc4>
+			//printf("Check Gunner Collison: %i", (int)tempCurrent->bullet.xVal % (ALIEN_COLS * ALIEN_WIDTH));
+            checkCollideGunner((int)tempCurrent->bullet.xVal % (ALIEN_COLS * ALIEN_WIDTH));
+     26c:	81000007 	ldb	r4,0(r16)
+     270:	01400a04 	movi	r5,40
+     274:	000164c0 	call	164c <__modsi3>
+     278:	11003fcc 	andi	r4,r2,255
+     27c:	2100201c 	xori	r4,r4,128
+     280:	213fe004 	addi	r4,r4,-128
+     284:	00011740 	call	1174 <checkCollideGunner>
+     288:	00000a06 	br	2b4 <updateProjectileNodes+0xec>
+            removeProjectileNode(tempCurrent);
+        } else if (tempCurrent->bullet.yVal > VOID_HEIGHT && (int)tempCurrent->bullet.direction >= 1) {
+     28c:	90800b0e 	bge	r18,r2,2bc <updateProjectileNodes+0xf4>
+     290:	01400a0e 	bge	zero,r5,2bc <updateProjectileNodes+0xf4>
+			int alienX = ((int) tempCurrent->bullet.xVal) / ALIEN_WIDTH;
+     294:	81000007 	ldb	r4,0(r16)
+     298:	01400144 	movi	r5,5
+     29c:	00015f80 	call	15f8 <__divsi3>
+            checkCollideAliens(pSramAliens, alienX);
+     2a0:	11403fcc 	andi	r5,r2,255
+     2a4:	99000017 	ldw	r4,0(r19)
+     2a8:	2940201c 	xori	r5,r5,128
+     2ac:	297fe004 	addi	r5,r5,-128
+     2b0:	00010600 	call	1060 <checkCollideAliens>
+            removeProjectileNode(tempCurrent);
+     2b4:	8009883a 	mov	r4,r16
+     2b8:	000018c0 	call	18c <removeProjectileNode>
+void updateProjectileNodes() {
+    //if head is null, return
+    if(head == NULL) return;
+
+    struct ProjectileNode* current = head;
+    while(current != NULL) {
+     2bc:	a0000226 	beq	r20,zero,2c8 <updateProjectileNodes+0x100>
+     2c0:	a021883a 	mov	r16,r20
+     2c4:	003fcd06 	br	1fc <_gp+0xffff5708>
+			int alienX = ((int) tempCurrent->bullet.xVal) / ALIEN_WIDTH;
+            checkCollideAliens(pSramAliens, alienX);
+            removeProjectileNode(tempCurrent);
+        }
+    }
+    printf("\n");
+     2c8:	01000284 	movi	r4,10
+}
+     2cc:	dfc00517 	ldw	ra,20(sp)
+     2d0:	dd000417 	ldw	r20,16(sp)
+     2d4:	dcc00317 	ldw	r19,12(sp)
+     2d8:	dc800217 	ldw	r18,8(sp)
+     2dc:	dc400117 	ldw	r17,4(sp)
+     2e0:	dc000017 	ldw	r16,0(sp)
+     2e4:	dec00604 	addi	sp,sp,24
+			int alienX = ((int) tempCurrent->bullet.xVal) / ALIEN_WIDTH;
+            checkCollideAliens(pSramAliens, alienX);
+            removeProjectileNode(tempCurrent);
+        }
+    }
+    printf("\n");
+     2e8:	0001a7c1 	jmpi	1a7c <putchar>
+}
+     2ec:	dfc00517 	ldw	ra,20(sp)
+     2f0:	dd000417 	ldw	r20,16(sp)
+     2f4:	dcc00317 	ldw	r19,12(sp)
+     2f8:	dc800217 	ldw	r18,8(sp)
+     2fc:	dc400117 	ldw	r17,4(sp)
+     300:	dc000017 	ldw	r16,0(sp)
+     304:	dec00604 	addi	sp,sp,24
+     308:	f800283a 	ret
+
+0000030c <initProjectileBuffer>:
+
+void initProjectileBuffer(int pSramBulletBuffer) {
+     30c:	defff704 	addi	sp,sp,-36
+     310:	dd000715 	stw	r20,28(sp)
+     314:	dcc00615 	stw	r19,24(sp)
+     318:	dc800515 	stw	r18,20(sp)
+     31c:	dc400415 	stw	r17,16(sp)
+     320:	dfc00815 	stw	ra,32(sp)
+     324:	dc000315 	stw	r16,12(sp)
+     328:	2025883a 	mov	r18,r4
+	int x, y;
+    for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+     32c:	0023883a 	mov	r17,zero
+        for(y = 0; y < VOID_HEIGHT; y++) {
+     330:	04c000c4 	movi	r19,3
+    printf("\n");
+}
+
+void initProjectileBuffer(int pSramBulletBuffer) {
+	int x, y;
+    for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+     334:	05000a04 	movi	r20,40
+        }
+    }
+    printf("\n");
+}
+
+void initProjectileBuffer(int pSramBulletBuffer) {
+     338:	0021883a 	mov	r16,zero
+     33c:	d8000205 	stb	zero,8(sp)
+     340:	d8000245 	stb	zero,9(sp)
+     344:	d8000105 	stb	zero,4(sp)
+     348:	d8000145 	stb	zero,5(sp)
+     34c:	d8000185 	stb	zero,6(sp)
+     350:	d80001c5 	stb	zero,7(sp)
+	int x, y;
+    for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+        for(y = 0; y < VOID_HEIGHT; y++) {
+			struct Projectile empty = createProjectile(0, 0, 0, 0);
+			setProjectile(pSramBulletBuffer, x, y, empty);
+     354:	d880020b 	ldhu	r2,8(sp)
+     358:	d9c00117 	ldw	r7,4(sp)
+     35c:	800d883a 	mov	r6,r16
+     360:	d880000d 	sth	r2,0(sp)
+     364:	9009883a 	mov	r4,r18
+     368:	880b883a 	mov	r5,r17
+}
+
+void initProjectileBuffer(int pSramBulletBuffer) {
+	int x, y;
+    for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+        for(y = 0; y < VOID_HEIGHT; y++) {
+     36c:	84000044 	addi	r16,r16,1
+			struct Projectile empty = createProjectile(0, 0, 0, 0);
+			setProjectile(pSramBulletBuffer, x, y, empty);
+     370:	00014280 	call	1428 <setProjectile>
+}
+
+void initProjectileBuffer(int pSramBulletBuffer) {
+	int x, y;
+    for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+        for(y = 0; y < VOID_HEIGHT; y++) {
+     374:	84fff11e 	bne	r16,r19,33c <_gp+0xffff5848>
+    printf("\n");
+}
+
+void initProjectileBuffer(int pSramBulletBuffer) {
+	int x, y;
+    for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+     378:	8c400044 	addi	r17,r17,1
+     37c:	8d3fee1e 	bne	r17,r20,338 <_gp+0xffff5844>
+        for(y = 0; y < VOID_HEIGHT; y++) {
+			struct Projectile empty = createProjectile(0, 0, 0, 0);
+			setProjectile(pSramBulletBuffer, x, y, empty);
+        }
+    }
+}
+     380:	dfc00817 	ldw	ra,32(sp)
+     384:	dd000717 	ldw	r20,28(sp)
+     388:	dcc00617 	ldw	r19,24(sp)
+     38c:	dc800517 	ldw	r18,20(sp)
+     390:	dc400417 	ldw	r17,16(sp)
+     394:	dc000317 	ldw	r16,12(sp)
+     398:	dec00904 	addi	sp,sp,36
+     39c:	f800283a 	ret
+
+000003a0 <updateProjectileBuffer>:
+
+void updateProjectileBuffer(int pSramBulletBuffer) {
+    if(head == NULL) return;
+     3a0:	d0a05917 	ldw	r2,-32412(gp)
+     3a4:	10001726 	beq	r2,zero,404 <updateProjectileBuffer+0x64>
+			setProjectile(pSramBulletBuffer, x, y, empty);
+        }
+    }
+}
+
+void updateProjectileBuffer(int pSramBulletBuffer) {
+     3a8:	defffa04 	addi	sp,sp,-24
+     3ac:	dc400415 	stw	r17,16(sp)
+     3b0:	dc000315 	stw	r16,12(sp)
+     3b4:	dfc00515 	stw	ra,20(sp)
+     3b8:	2023883a 	mov	r17,r4
+    if(head == NULL) return;
+	initProjectileBuffer(pSramBulletBuffer);
+     3bc:	000030c0 	call	30c <initProjectileBuffer>
+    struct ProjectileNode* current = head;
+     3c0:	d4205917 	ldw	r16,-32412(gp)
+    while(current != NULL) {
+     3c4:	80000b26 	beq	r16,zero,3f4 <updateProjectileBuffer+0x54>
+        //printf("Values: %i, %i - %i\n", current->bullet.xVal, current->bullet.yVal, current->bullet.type);
+		
+		struct Projectile p = current->bullet;
+     3c8:	8080010b 	ldhu	r2,4(r16)
+     3cc:	81c00017 	ldw	r7,0(r16)
+		setProjectile(pSramBulletBuffer, current->bullet.xVal, current->bullet.yVal, p);
+     3d0:	81400007 	ldb	r5,0(r16)
+     3d4:	81800047 	ldb	r6,1(r16)
+     3d8:	8809883a 	mov	r4,r17
+     3dc:	d880000d 	sth	r2,0(sp)
+	initProjectileBuffer(pSramBulletBuffer);
+    struct ProjectileNode* current = head;
+    while(current != NULL) {
+        //printf("Values: %i, %i - %i\n", current->bullet.xVal, current->bullet.yVal, current->bullet.type);
+		
+		struct Projectile p = current->bullet;
+     3e0:	d9c00115 	stw	r7,4(sp)
+     3e4:	d880020d 	sth	r2,8(sp)
+		setProjectile(pSramBulletBuffer, current->bullet.xVal, current->bullet.yVal, p);
+     3e8:	00014280 	call	1428 <setProjectile>
+        current = current->next;
+     3ec:	84000217 	ldw	r16,8(r16)
+     3f0:	003ff406 	br	3c4 <_gp+0xffff58d0>
+    }
+}
+     3f4:	dfc00517 	ldw	ra,20(sp)
+     3f8:	dc400417 	ldw	r17,16(sp)
+     3fc:	dc000317 	ldw	r16,12(sp)
+     400:	dec00604 	addi	sp,sp,24
+     404:	f800283a 	ret
+
+00000408 <addProjectileNode>:
+
+void addProjectileNode(struct Projectile proj) {
+    if(head == NULL) {
+     408:	d0a05917 	ldw	r2,-32412(gp)
+		setProjectile(pSramBulletBuffer, current->bullet.xVal, current->bullet.yVal, p);
+        current = current->next;
+    }
+}
+
+void addProjectileNode(struct Projectile proj) {
+     40c:	defffd04 	addi	sp,sp,-12
+     410:	d9000015 	stw	r4,0(sp)
+     414:	dfc00215 	stw	ra,8(sp)
+     418:	d9400115 	stw	r5,4(sp)
+    if(head == NULL) {
+        head = (struct ProjectileNode*)malloc(sizeof(struct ProjectileNode));
+     41c:	01000304 	movi	r4,12
+        current = current->next;
+    }
+}
+
+void addProjectileNode(struct Projectile proj) {
+    if(head == NULL) {
+     420:	1000081e 	bne	r2,zero,444 <addProjectileNode+0x3c>
+        head = (struct ProjectileNode*)malloc(sizeof(struct ProjectileNode));
+     424:	00016fc0 	call	16fc <malloc>
+        head->bullet = proj;
+     428:	d8c00017 	ldw	r3,0(sp)
+    }
+}
+
+void addProjectileNode(struct Projectile proj) {
+    if(head == NULL) {
+        head = (struct ProjectileNode*)malloc(sizeof(struct ProjectileNode));
+     42c:	d0a05915 	stw	r2,-32412(gp)
+        head->bullet = proj;
+        head->next = NULL;
+     430:	10000215 	stw	zero,8(r2)
+}
+
+void addProjectileNode(struct Projectile proj) {
+    if(head == NULL) {
+        head = (struct ProjectileNode*)malloc(sizeof(struct ProjectileNode));
+        head->bullet = proj;
+     434:	10c00015 	stw	r3,0(r2)
+     438:	d8c0010b 	ldhu	r3,4(sp)
+     43c:	10c0010d 	sth	r3,4(r2)
+     440:	00000806 	br	464 <addProjectileNode+0x5c>
+        head->next = NULL;
+        end = head;
+    } else {
+        struct ProjectileNode* nextProj = (struct ProjectileNode*)malloc(sizeof(struct ProjectileNode));
+     444:	00016fc0 	call	16fc <malloc>
+        nextProj->bullet = proj;
+     448:	d8c00017 	ldw	r3,0(sp)
+        nextProj->next = NULL;
+     44c:	10000215 	stw	zero,8(r2)
+        head->bullet = proj;
+        head->next = NULL;
+        end = head;
+    } else {
+        struct ProjectileNode* nextProj = (struct ProjectileNode*)malloc(sizeof(struct ProjectileNode));
+        nextProj->bullet = proj;
+     450:	10c00015 	stw	r3,0(r2)
+     454:	d8c0010b 	ldhu	r3,4(sp)
+     458:	10c0010d 	sth	r3,4(r2)
+        nextProj->next = NULL;
+		
+        end->next = nextProj;
+     45c:	d0e2ac17 	ldw	r3,-30032(gp)
+     460:	18800215 	stw	r2,8(r3)
+        end = nextProj;
+     464:	d0a2ac15 	stw	r2,-30032(gp)
+    }
+}
+     468:	dfc00217 	ldw	ra,8(sp)
+     46c:	dec00304 	addi	sp,sp,12
+     470:	f800283a 	ret
+
+00000474 <listLength>:
+
+int listLength() {
+	if(head == NULL) return 0;
+     474:	d0e05917 	ldw	r3,-32412(gp)
+     478:	0005883a 	mov	r2,zero
+     47c:	18000426 	beq	r3,zero,490 <listLength+0x1c>
+	
+	struct ProjectileNode* current = head;
+    while(current != NULL) {
+        size++;
+		struct Projectile p = current->bullet;
+		current = current->next;
+     480:	18c00217 	ldw	r3,8(r3)
+	if(head == NULL) return 0;
+	int size = 0;
+	
+	struct ProjectileNode* current = head;
+    while(current != NULL) {
+        size++;
+     484:	10800044 	addi	r2,r2,1
+int listLength() {
+	if(head == NULL) return 0;
+	int size = 0;
+	
+	struct ProjectileNode* current = head;
+    while(current != NULL) {
+     488:	183ffd1e 	bne	r3,zero,480 <_gp+0xffff598c>
+     48c:	f800283a 	ret
+        size++;
+		struct Projectile p = current->bullet;
+		current = current->next;
+    }
+	return size;
+}
+     490:	f800283a 	ret
+
+00000494 <createProjectile>:
+    proj.yVal = 0;
+    proj.direction = dir;
+    proj.symbol = symb;
+    proj.type = t;
+    proj.timeTick = 0;
+    return proj;
+     494:	29403fcc 	andi	r5,r5,255
+     498:	280a943a 	slli	r5,r5,16
+     49c:	300c963a 	slli	r6,r6,24
+     4a0:	21003fcc 	andi	r4,r4,255
+     4a4:	2144b03a 	or	r2,r4,r5
+     4a8:	1184b03a 	or	r2,r2,r6
+     4ac:	38c03fcc 	andi	r3,r7,255
+		current = current->next;
+    }
+	return size;
+}
+
+struct Projectile createProjectile(char x, char dir, char symb, char t) {
+     4b0:	defffe04 	addi	sp,sp,-8
+    proj.direction = dir;
+    proj.symbol = symb;
+    proj.type = t;
+    proj.timeTick = 0;
+    return proj;
+     4b4:	dec00204 	addi	sp,sp,8
+     4b8:	f800283a 	ret
+
+000004bc <gun_handler>:
+		*load = 0x0;
+	  }
+}
+
+
+void gun_handler(void* context) {
+     4bc:	defffe04 	addi	sp,sp,-8
+     4c0:	dc000015 	stw	r16,0(sp)
+     4c4:	2021883a 	mov	r16,r4
+	printf("gun!\n");
+     4c8:	01000034 	movhi	r4,0
+     4cc:	210a3f04 	addi	r4,r4,10492
+		*load = 0x0;
+	  }
+}
+
+
+void gun_handler(void* context) {
+     4d0:	dfc00115 	stw	ra,4(sp)
+	printf("gun!\n");
+     4d4:	0001b140 	call	1b14 <puts>
+
+	volatile int* edge_capture_gun_ptr = (volatile int*) context; //volatile variable to avoid optimization...
+	*edge_capture_gun_ptr = IORD_ALTERA_AVALON_PIO_EDGE_CAP(GUN_LEFT_BASE); //Store edge capture register in *context.
+     4d8:	00941f04 	movi	r2,20604
+     4dc:	10c00037 	ldwio	r3,0(r2)
+     4e0:	80c00015 	stw	r3,0(r16)
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(GUN_LEFT_BASE, 0x0); //Reset edge capture register
+     4e4:	10000035 	stwio	zero,0(r2)
+}
+     4e8:	dfc00117 	ldw	ra,4(sp)
+     4ec:	dc000017 	ldw	r16,0(sp)
+     4f0:	dec00204 	addi	sp,sp,8
+     4f4:	f800283a 	ret
+
+000004f8 <character_recieved_handler>:
+
+void character_recieved_handler(void* context) {
+     4f8:	defffe04 	addi	sp,sp,-8
+     4fc:	dc000015 	stw	r16,0(sp)
+     500:	dfc00115 	stw	ra,4(sp)
+	alt_putchar(getCharacter(*data_bus_input));
+     504:	00944804 	movi	r2,20768
+     508:	10800003 	ldbu	r2,0(r2)
+	volatile int* edge_capture_gun_ptr = (volatile int*) context; //volatile variable to avoid optimization...
+	*edge_capture_gun_ptr = IORD_ALTERA_AVALON_PIO_EDGE_CAP(GUN_LEFT_BASE); //Store edge capture register in *context.
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(GUN_LEFT_BASE, 0x0); //Reset edge capture register
+}
+
+void character_recieved_handler(void* context) {
+     50c:	2021883a 	mov	r16,r4
+     510:	11003fcc 	andi	r4,r2,255
+	alt_putchar(getCharacter(*data_bus_input));
+     514:	2008d07a 	srli	r4,r4,1
+     518:	00027080 	call	2708 <alt_putchar>
+	
+	volatile int* edge_capture_receive_ptr = (volatile int*) context; //volatile variable to avoid optimization...
+	*edge_capture_receive_ptr = IORD_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_RECIEVED_INPUT_BASE); //Store edge capture register in *context.
+     51c:	00944704 	movi	r2,20764
+     520:	10c00037 	ldwio	r3,0(r2)
+     524:	80c00015 	stw	r3,0(r16)
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_RECIEVED_INPUT_BASE, 0x0); //Reset edge capture register
+     528:	10000035 	stwio	zero,0(r2)
+}
+     52c:	dfc00117 	ldw	ra,4(sp)
+     530:	dc000017 	ldw	r16,0(sp)
+     534:	dec00204 	addi	sp,sp,8
+     538:	f800283a 	ret
+
+0000053c <readBuffer>:
+void* edge_capture_sent;
+
+
+
+char readBuffer() {
+    if(*pTransmit == 0x60 || *pTransmit == '\0') {
+     53c:	00c00034 	movhi	r3,0
+     540:	18cb1d04 	addi	r3,r3,11380
+     544:	19000017 	ldw	r4,0(r3)
+     548:	01401804 	movi	r5,96
+     54c:	20800003 	ldbu	r2,0(r4)
+     550:	11803fcc 	andi	r6,r2,255
+     554:	3180201c 	xori	r6,r6,128
+     558:	31bfe004 	addi	r6,r6,-128
+     55c:	31400d26 	beq	r6,r5,594 <readBuffer+0x58>
+     560:	30000d26 	beq	r6,zero,598 <readBuffer+0x5c>
+        return '\0';
+    } else {
+        char c = *pTransmit;
+        *pTransmit = 0x60;
+     564:	21400005 	stb	r5,0(r4)
+
+        if((pTransmit - pBuffer) == (TRANSMIT_BUFFER_SIZE - 1)) {
+     568:	01400034 	movhi	r5,0
+     56c:	19000017 	ldw	r4,0(r3)
+     570:	294b1f04 	addi	r5,r5,11388
+     574:	29400017 	ldw	r5,0(r5)
+     578:	21bff3c4 	addi	r6,r4,-49
+     57c:	3140021e 	bne	r6,r5,588 <readBuffer+0x4c>
+            pTransmit = pBuffer;
+     580:	19400015 	stw	r5,0(r3)
+     584:	f800283a 	ret
+        } else {
+            pTransmit = pTransmit + sizeof(char);
+     588:	21000044 	addi	r4,r4,1
+     58c:	19000015 	stw	r4,0(r3)
+     590:	f800283a 	ret
+
+
+
+char readBuffer() {
+    if(*pTransmit == 0x60 || *pTransmit == '\0') {
+        return '\0';
+     594:	0005883a 	mov	r2,zero
+        } else {
+            pTransmit = pTransmit + sizeof(char);
+        }
+        return c;
+    }
+}
+     598:	f800283a 	ret
+
+0000059c <writeBuffer>:
+
+void writeBuffer(char c) {
+    if(!(*pBufferHead == 0x60 || *pBufferHead == '\0')) return;
+     59c:	00800034 	movhi	r2,0
+     5a0:	108b1e04 	addi	r2,r2,11384
+     5a4:	10c00017 	ldw	r3,0(r2)
+     5a8:	01801804 	movi	r6,96
+     5ac:	19400007 	ldb	r5,0(r3)
+     5b0:	29800126 	beq	r5,r6,5b8 <writeBuffer+0x1c>
+     5b4:	28000d1e 	bne	r5,zero,5ec <writeBuffer+0x50>
+
+    *(pBufferHead) = c;
+     5b8:	19000005 	stb	r4,0(r3)
+    if((pBufferHead - pBuffer) == (TRANSMIT_BUFFER_SIZE - 1)) {
+     5bc:	01000034 	movhi	r4,0
+     5c0:	10800017 	ldw	r2,0(r2)
+     5c4:	210b1f04 	addi	r4,r4,11388
+     5c8:	21000017 	ldw	r4,0(r4)
+     5cc:	00c00034 	movhi	r3,0
+     5d0:	117ff3c4 	addi	r5,r2,-49
+     5d4:	18cb1e04 	addi	r3,r3,11384
+     5d8:	2900021e 	bne	r5,r4,5e4 <writeBuffer+0x48>
+        pBufferHead = pBuffer;
+     5dc:	19000015 	stw	r4,0(r3)
+     5e0:	f800283a 	ret
+    } else {
+        pBufferHead = pBufferHead + sizeof(char);
+     5e4:	10800044 	addi	r2,r2,1
+     5e8:	18800015 	stw	r2,0(r3)
+     5ec:	f800283a 	ret
+
+000005f0 <transmitIfBufferNotEmpty>:
+    }
+}
+
+
+void transmitIfBufferNotEmpty() {
+     5f0:	defffd04 	addi	sp,sp,-12
+     5f4:	dfc00215 	stw	ra,8(sp)
+     5f8:	dc400115 	stw	r17,4(sp)
+     5fc:	dc000015 	stw	r16,0(sp)
+	  char c = '\0';
+	  c = readBuffer();
+     600:	000053c0 	call	53c <readBuffer>
+	  if(c != '\0' && c != 0x60 ) {
+     604:	10c03fcc 	andi	r3,r2,255
+     608:	18c0201c 	xori	r3,r3,128
+     60c:	18ffe004 	addi	r3,r3,-128
+     610:	18001426 	beq	r3,zero,664 <transmitIfBufferNotEmpty+0x74>
+     614:	01001804 	movi	r4,96
+     618:	19001226 	beq	r3,r4,664 <transmitIfBufferNotEmpty+0x74>
+		*transmit_enable = 0x0;
+     61c:	04543004 	movi	r17,20672
+     620:	88000005 	stb	zero,0(r17)
+		*load = 0x0;
+     624:	04143804 	movi	r16,20704
+		
+		*data_bus_output = (c);
+     628:	00d43c04 	movi	r3,20720
+void transmitIfBufferNotEmpty() {
+	  char c = '\0';
+	  c = readBuffer();
+	  if(c != '\0' && c != 0x60 ) {
+		*transmit_enable = 0x0;
+		*load = 0x0;
+     62c:	80000005 	stb	zero,0(r16)
+		
+		*data_bus_output = (c);
+     630:	18800005 	stb	r2,0(r3)
+		*data_bus_output = setParity(*data_bus_output);
+     634:	18800003 	ldbu	r2,0(r3)
+		
+		usleep(1000);
+     638:	0100fa04 	movi	r4,1000
+     63c:	10803fcc 	andi	r2,r2,255
+	int parity = c;
+	parity ^= parity >> 4;
+	parity ^= parity >> 2;
+	parity ^= parity >> 1;
+
+	int out = ((c  << 1));
+     640:	1085883a 	add	r2,r2,r2
+	  if(c != '\0' && c != 0x60 ) {
+		*transmit_enable = 0x0;
+		*load = 0x0;
+		
+		*data_bus_output = (c);
+		*data_bus_output = setParity(*data_bus_output);
+     644:	18800005 	stb	r2,0(r3)
+		
+		usleep(1000);
+     648:	000279c0 	call	279c <usleep>
+		*transmit_enable = 0x1;
+     64c:	00800044 	movi	r2,1
+     650:	88800005 	stb	r2,0(r17)
+		*load = 0x1;
+     654:	80800005 	stb	r2,0(r16)
+		usleep(50);
+     658:	01000c84 	movi	r4,50
+     65c:	000279c0 	call	279c <usleep>
+		*load = 0x0;
+     660:	80000005 	stb	zero,0(r16)
+	  }
+}
+     664:	dfc00217 	ldw	ra,8(sp)
+     668:	dc400117 	ldw	r17,4(sp)
+     66c:	dc000017 	ldw	r16,0(sp)
+     670:	dec00304 	addi	sp,sp,12
+     674:	f800283a 	ret
+
+00000678 <character_sent_handler>:
+	volatile int* edge_capture_receive_ptr = (volatile int*) context; //volatile variable to avoid optimization...
+	*edge_capture_receive_ptr = IORD_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_RECIEVED_INPUT_BASE); //Store edge capture register in *context.
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_RECIEVED_INPUT_BASE, 0x0); //Reset edge capture register
+}
+
+void character_sent_handler(void* context) {
+     678:	defffe04 	addi	sp,sp,-8
+     67c:	dc000015 	stw	r16,0(sp)
+     680:	dfc00115 	stw	ra,4(sp)
+	*transmit_enable = 0x0;
+     684:	00943004 	movi	r2,20672
+     688:	10000005 	stb	zero,0(r2)
+	volatile int* edge_capture_receive_ptr = (volatile int*) context; //volatile variable to avoid optimization...
+	*edge_capture_receive_ptr = IORD_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_RECIEVED_INPUT_BASE); //Store edge capture register in *context.
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_RECIEVED_INPUT_BASE, 0x0); //Reset edge capture register
+}
+
+void character_sent_handler(void* context) {
+     68c:	2021883a 	mov	r16,r4
+	*transmit_enable = 0x0;
+	transmitIfBufferNotEmpty();
+     690:	00005f00 	call	5f0 <transmitIfBufferNotEmpty>
+
+	volatile int* edge_capture_sent_ptr = (volatile int*) context; //volatile variable to avoid optimization...
+	*edge_capture_sent_ptr = IORD_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_SENT_INPUT_BASE); //Store edge capture register in *context.
+     694:	00943704 	movi	r2,20700
+     698:	10c00037 	ldwio	r3,0(r2)
+     69c:	80c00015 	stw	r3,0(r16)
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_SENT_INPUT_BASE, 0x0); //Reset edge capture register
+     6a0:	10000035 	stwio	zero,0(r2)
+}
+     6a4:	dfc00117 	ldw	ra,4(sp)
+     6a8:	dc000017 	ldw	r16,0(sp)
+     6ac:	dec00204 	addi	sp,sp,8
+     6b0:	f800283a 	ret
+
+000006b4 <setup_interrupt>:
+
+void setup_interrupt() {
+     6b4:	defffc04 	addi	sp,sp,-16
+     6b8:	dc400215 	stw	r17,8(sp)
+     6bc:	dfc00315 	stw	ra,12(sp)
+     6c0:	dc000115 	stw	r16,4(sp)
+	void* edge_capture_gun_ptr = (void*) &edge_capture_gun; //volatile variable to avoid optimization
+	IOWR_ALTERA_AVALON_PIO_IRQ_MASK(GUN_LEFT_BASE, 0x1); //Enable first  button interrupts.
+     6c4:	04400044 	movi	r17,1
+     6c8:	00941e04 	movi	r2,20600
+     6cc:	14400035 	stwio	r17,0(r2)
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(GUN_LEFT_BASE, 0x0); //Reset the edge capture register.
+     6d0:	0021883a 	mov	r16,zero
+     6d4:	00941f04 	movi	r2,20604
+     6d8:	14000035 	stwio	r16,0(r2)
+	alt_ic_isr_register(GUN_LEFT_IRQ_INTERRUPT_CONTROLLER_ID, GUN_LEFT_IRQ, gun_handler, edge_capture_gun_ptr, 0x0); //Sets the interrupt handler
+     6dc:	01800034 	movhi	r6,0
+     6e0:	d8000015 	stw	zero,0(sp)
+     6e4:	0009883a 	mov	r4,zero
+     6e8:	01400084 	movi	r5,2
+     6ec:	31812f04 	addi	r6,r6,1212
+     6f0:	d1e05b04 	addi	r7,gp,-32404
+     6f4:	00024e00 	call	24e0 <alt_ic_isr_register>
+
+	void* edge_capture_receive_ptr = (void*) &edge_capture_receive; //volatile variable to avoid optimization
+	IOWR_ALTERA_AVALON_PIO_IRQ_MASK(CHARACTER_RECIEVED_INPUT_BASE, 0x1); //Enable first  button interrupts.
+     6f8:	00944604 	movi	r2,20760
+     6fc:	14400035 	stwio	r17,0(r2)
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_RECIEVED_INPUT_BASE, 0x0); //Reset the edge capture register.
+     700:	00944704 	movi	r2,20764
+     704:	14000035 	stwio	r16,0(r2)
+	alt_ic_isr_register(CHARACTER_RECIEVED_INPUT_IRQ_INTERRUPT_CONTROLLER_ID, CHARACTER_RECIEVED_INPUT_IRQ, character_recieved_handler, edge_capture_receive_ptr, 0x0); //Sets the interrupt handler
+     708:	01800034 	movhi	r6,0
+     70c:	d8000015 	stw	zero,0(sp)
+     710:	0009883a 	mov	r4,zero
+     714:	01400284 	movi	r5,10
+     718:	31813e04 	addi	r6,r6,1272
+     71c:	d1e05a04 	addi	r7,gp,-32408
+     720:	00024e00 	call	24e0 <alt_ic_isr_register>
+	
+	void* edge_capture_sent_ptr = (void*) &edge_capture_sent; //volatile variable to avoid optimization
+	IOWR_ALTERA_AVALON_PIO_IRQ_MASK(CHARACTER_SENT_INPUT_BASE, 0x1); //Enable first  button interrupts.
+     724:	00943604 	movi	r2,20696
+     728:	14400035 	stwio	r17,0(r2)
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(CHARACTER_SENT_INPUT_BASE, 0x0); //Reset the edge capture register.
+     72c:	00943704 	movi	r2,20700
+     730:	14000035 	stwio	r16,0(r2)
+	alt_ic_isr_register(CHARACTER_SENT_INPUT_IRQ_INTERRUPT_CONTROLLER_ID, CHARACTER_SENT_INPUT_IRQ, character_sent_handler, edge_capture_sent_ptr, 0x0); //Sets the interrupt handler
+     734:	01800034 	movhi	r6,0
+     738:	d8000015 	stw	zero,0(sp)
+     73c:	0009883a 	mov	r4,zero
+     740:	014002c4 	movi	r5,11
+     744:	31819e04 	addi	r6,r6,1656
+     748:	d1e05c04 	addi	r7,gp,-32400
+     74c:	00024e00 	call	24e0 <alt_ic_isr_register>
+}
+     750:	dfc00317 	ldw	ra,12(sp)
+     754:	dc400217 	ldw	r17,8(sp)
+     758:	dc000117 	ldw	r16,4(sp)
+     75c:	dec00404 	addi	sp,sp,16
+     760:	f800283a 	ret
+
+00000764 <setParity>:
+	int out = ((c  << 1));
+	if (parity & 1) {
+		out ^= 1 >> 7;
+	}
+	return out;
+}
+     764:	2105883a 	add	r2,r4,r4
+     768:	f800283a 	ret
+
+0000076c <getParity>:
+
+int getParity(unsigned int c) {
+	int parity = c;
+	parity ^= parity >> 4;
+     76c:	2005d13a 	srai	r2,r4,4
+     770:	1108f03a 	xor	r4,r2,r4
+	parity ^= parity >> 2;
+     774:	2005d0ba 	srai	r2,r4,2
+     778:	1108f03a 	xor	r4,r2,r4
+	parity ^= parity >> 1;
+     77c:	2005d07a 	srai	r2,r4,1
+     780:	1104f03a 	xor	r2,r2,r4
+	return parity & 1;
+}
+     784:	1080004c 	andi	r2,r2,1
+     788:	f800283a 	ret
+
+0000078c <getCharacter>:
+
+int getCharacter(unsigned int c) {
+	return ((c >> 1));
+}
+     78c:	2004d07a 	srli	r2,r4,1
+     790:	f800283a 	ret
+
+00000794 <getBits>:
+int getBits(unsigned int c) {
+	printf("%x%x%x%x%x%x%x%x\n",
+			(c >> 7) & 0b00000001,
+			(c >> 6) & 0b00000001,
+			(c >> 5) & 0b00000001,
+			(c >> 4) & 0b00000001,
+     794:	2004d13a 	srli	r2,r4,4
+
+int getCharacter(unsigned int c) {
+	return ((c >> 1));
+}
+
+int getBits(unsigned int c) {
+     798:	defffa04 	addi	sp,sp,-24
+	printf("%x%x%x%x%x%x%x%x\n",
+			(c >> 7) & 0b00000001,
+     79c:	200ad1fa 	srli	r5,r4,7
+int getCharacter(unsigned int c) {
+	return ((c >> 1));
+}
+
+int getBits(unsigned int c) {
+	printf("%x%x%x%x%x%x%x%x\n",
+     7a0:	1080004c 	andi	r2,r2,1
+     7a4:	d8800015 	stw	r2,0(sp)
+			(c >> 7) & 0b00000001,
+			(c >> 6) & 0b00000001,
+			(c >> 5) & 0b00000001,
+			(c >> 4) & 0b00000001,
+			(c >> 3) & 0b00000001,
+     7a8:	2004d0fa 	srli	r2,r4,3
+}
+
+int getBits(unsigned int c) {
+	printf("%x%x%x%x%x%x%x%x\n",
+			(c >> 7) & 0b00000001,
+			(c >> 6) & 0b00000001,
+     7ac:	200cd1ba 	srli	r6,r4,6
+			(c >> 5) & 0b00000001,
+     7b0:	200ed17a 	srli	r7,r4,5
+int getCharacter(unsigned int c) {
+	return ((c >> 1));
+}
+
+int getBits(unsigned int c) {
+	printf("%x%x%x%x%x%x%x%x\n",
+     7b4:	1080004c 	andi	r2,r2,1
+     7b8:	d8800115 	stw	r2,4(sp)
+			(c >> 7) & 0b00000001,
+			(c >> 6) & 0b00000001,
+			(c >> 5) & 0b00000001,
+			(c >> 4) & 0b00000001,
+			(c >> 3) & 0b00000001,
+			(c >> 2) & 0b00000001,
+     7bc:	2004d0ba 	srli	r2,r4,2
+int getCharacter(unsigned int c) {
+	return ((c >> 1));
+}
+
+int getBits(unsigned int c) {
+	printf("%x%x%x%x%x%x%x%x\n",
+     7c0:	2940004c 	andi	r5,r5,1
+     7c4:	3180004c 	andi	r6,r6,1
+     7c8:	1080004c 	andi	r2,r2,1
+     7cc:	d8800215 	stw	r2,8(sp)
+			(c >> 6) & 0b00000001,
+			(c >> 5) & 0b00000001,
+			(c >> 4) & 0b00000001,
+			(c >> 3) & 0b00000001,
+			(c >> 2) & 0b00000001,
+			(c >> 1) & 0b00000001,
+     7d0:	2004d07a 	srli	r2,r4,1
+int getCharacter(unsigned int c) {
+	return ((c >> 1));
+}
+
+int getBits(unsigned int c) {
+	printf("%x%x%x%x%x%x%x%x\n",
+     7d4:	2100004c 	andi	r4,r4,1
+     7d8:	d9000415 	stw	r4,16(sp)
+     7dc:	1080004c 	andi	r2,r2,1
+     7e0:	01000034 	movhi	r4,0
+     7e4:	d8800315 	stw	r2,12(sp)
+     7e8:	210a4104 	addi	r4,r4,10500
+     7ec:	39c0004c 	andi	r7,r7,1
+
+int getCharacter(unsigned int c) {
+	return ((c >> 1));
+}
+
+int getBits(unsigned int c) {
+     7f0:	dfc00515 	stw	ra,20(sp)
+	printf("%x%x%x%x%x%x%x%x\n",
+     7f4:	0001a280 	call	1a28 <printf>
+			(c >> 4) & 0b00000001,
+			(c >> 3) & 0b00000001,
+			(c >> 2) & 0b00000001,
+			(c >> 1) & 0b00000001,
+			(c >> 0) & 0b00000001);
+}
+     7f8:	dfc00517 	ldw	ra,20(sp)
+     7fc:	dec00604 	addi	sp,sp,24
+     800:	f800283a 	ret
+
+00000804 <newAlien>:
+struct Alien newAlien(char alive, char type, char id) {
+    struct Alien a;
+    a.alive = alive;
+    a.type = type;
+    a.rowId = id;
+    return a;
+     804:	29403fcc 	andi	r5,r5,255
+     808:	31803fcc 	andi	r6,r6,255
+     80c:	280a923a 	slli	r5,r5,8
+     810:	3004943a 	slli	r2,r6,16
+     814:	21003fcc 	andi	r4,r4,255
+     818:	214ab03a 	or	r5,r4,r5
+};
+     81c:	2884b03a 	or	r2,r5,r2
+#include "data_structures_constants.h"
+#include "sram.h"
+#include "display.h"
+
+
+struct Alien newAlien(char alive, char type, char id) {
+     820:	deffff04 	addi	sp,sp,-4
+    struct Alien a;
+    a.alive = alive;
+    a.type = type;
+    a.rowId = id;
+    return a;
+};
+     824:	dec00104 	addi	sp,sp,4
+     828:	f800283a 	ret
+
+0000082c <initRandomAliens>:
+
+void initRandomAliens(int pSramAliens) {
+     82c:	defff804 	addi	sp,sp,-32
+     830:	dd400615 	stw	r21,24(sp)
+     834:	dd000515 	stw	r20,20(sp)
+     838:	dcc00415 	stw	r19,16(sp)
+     83c:	dc800315 	stw	r18,12(sp)
+     840:	dc400215 	stw	r17,8(sp)
+     844:	dfc00715 	stw	ra,28(sp)
+     848:	dc000115 	stw	r16,4(sp)
+     84c:	2025883a 	mov	r18,r4
+    int x, y;
+    for(x = 0; x < 3; x++) {
+     850:	0023883a 	mov	r17,zero
+     854:	04c00044 	movi	r19,1
+        for(y = 0; y < 8; y++) {
+            int type = rand() % 3;
+     858:	050000c4 	movi	r20,3
+};
+
+void initRandomAliens(int pSramAliens) {
+    int x, y;
+    for(x = 0; x < 3; x++) {
+        for(y = 0; y < 8; y++) {
+     85c:	05400204 	movi	r21,8
+    a.type = type;
+    a.rowId = id;
+    return a;
+};
+
+void initRandomAliens(int pSramAliens) {
+     860:	0021883a 	mov	r16,zero
+    int x, y;
+    for(x = 0; x < 3; x++) {
+        for(y = 0; y < 8; y++) {
+            int type = rand() % 3;
+     864:	0001b3c0 	call	1b3c <rand>
+     868:	1009883a 	mov	r4,r2
+     86c:	014000c4 	movi	r5,3
+     870:	dcc00005 	stb	r19,0(sp)
+     874:	000164c0 	call	164c <__modsi3>
+            setAlien(pSramAliens, x, y, newAlien(1, type, y));
+     878:	d8800045 	stb	r2,1(sp)
+     87c:	dc000085 	stb	r16,2(sp)
+     880:	d9c00017 	ldw	r7,0(sp)
+     884:	800d883a 	mov	r6,r16
+     888:	9009883a 	mov	r4,r18
+     88c:	880b883a 	mov	r5,r17
+};
+
+void initRandomAliens(int pSramAliens) {
+    int x, y;
+    for(x = 0; x < 3; x++) {
+        for(y = 0; y < 8; y++) {
+     890:	84000044 	addi	r16,r16,1
+            int type = rand() % 3;
+            setAlien(pSramAliens, x, y, newAlien(1, type, y));
+     894:	000134c0 	call	134c <setAlien>
+};
+
+void initRandomAliens(int pSramAliens) {
+    int x, y;
+    for(x = 0; x < 3; x++) {
+        for(y = 0; y < 8; y++) {
+     898:	857ff21e 	bne	r16,r21,864 <_gp+0xffff5d70>
+    return a;
+};
+
+void initRandomAliens(int pSramAliens) {
+    int x, y;
+    for(x = 0; x < 3; x++) {
+     89c:	8c400044 	addi	r17,r17,1
+     8a0:	8d3fef1e 	bne	r17,r20,860 <_gp+0xffff5d6c>
+        for(y = 0; y < 8; y++) {
+            int type = rand() % 3;
+            setAlien(pSramAliens, x, y, newAlien(1, type, y));
+        }
+    }
+}
+     8a4:	dfc00717 	ldw	ra,28(sp)
+     8a8:	dd400617 	ldw	r21,24(sp)
+     8ac:	dd000517 	ldw	r20,20(sp)
+     8b0:	dcc00417 	ldw	r19,16(sp)
+     8b4:	dc800317 	ldw	r18,12(sp)
+     8b8:	dc400217 	ldw	r17,8(sp)
+     8bc:	dc000117 	ldw	r16,4(sp)
+     8c0:	dec00804 	addi	sp,sp,32
+     8c4:	f800283a 	ret
+
+000008c8 <getAlienApperence>:
+
+const char* getAlienApperence(int type) {
+    if(type == 0) {
+     8c8:	2000031e 	bne	r4,zero,8d8 <getAlienApperence+0x10>
+        return alien0;
+     8cc:	00800034 	movhi	r2,0
+     8d0:	108ac004 	addi	r2,r2,11008
+     8d4:	00000706 	br	8f4 <getAlienApperence+0x2c>
+    } else if(type == 1) {
+     8d8:	00800044 	movi	r2,1
+     8dc:	2080031e 	bne	r4,r2,8ec <getAlienApperence+0x24>
+        return alien1;
+     8e0:	00800034 	movhi	r2,0
+     8e4:	108abf04 	addi	r2,r2,11004
+     8e8:	00000206 	br	8f4 <getAlienApperence+0x2c>
+    } else {
+        return alien2;
+     8ec:	00800034 	movhi	r2,0
+     8f0:	108abe04 	addi	r2,r2,11000
+     8f4:	10800017 	ldw	r2,0(r2)
+    }
+}
+     8f8:	f800283a 	ret
+
+000008fc <printAlienSlice>:
+
+void printAlienSlice(int pSramAliens, int x, int y, int slice, int step) {
+     8fc:	defff904 	addi	sp,sp,-28
+     900:	dc000115 	stw	r16,4(sp)
+     904:	dfc00615 	stw	ra,24(sp)
+     908:	dd000515 	stw	r20,20(sp)
+     90c:	dcc00415 	stw	r19,16(sp)
+     910:	dc800315 	stw	r18,12(sp)
+     914:	dc400215 	stw	r17,8(sp)
+     918:	3821883a 	mov	r16,r7
+    struct Alien alien = getAlien(pSramAliens, x, y);
+     91c:	00013040 	call	1304 <getAlien>
+     920:	1006d23a 	srli	r3,r2,8
+     924:	d8800005 	stb	r2,0(sp)
+     928:	d8c00045 	stb	r3,1(sp)
+     92c:	1006d43a 	srli	r3,r2,16
+    if(alien.alive == 1) {
+     930:	10803fcc 	andi	r2,r2,255
+     934:	1080201c 	xori	r2,r2,128
+        return alien2;
+    }
+}
+
+void printAlienSlice(int pSramAliens, int x, int y, int slice, int step) {
+    struct Alien alien = getAlien(pSramAliens, x, y);
+     938:	d8c00085 	stb	r3,2(sp)
+    if(alien.alive == 1) {
+     93c:	10bfe004 	addi	r2,r2,-128
+     940:	00c00044 	movi	r3,1
+     944:	10c0181e 	bne	r2,r3,9a8 <printAlienSlice+0xac>
+        char* alienApperence = getAlienApperence(alien.type);
+     948:	d9000047 	ldb	r4,1(sp)
+        int offset = step * ALIEN_WIDTH * ALIEN_HEIGHT;
+        int i;
+        for(i = 0; i < ALIEN_WIDTH; i++) {
+            int index = offset + (slice * ALIEN_WIDTH) + i;
+            if(alienApperence[index] == '0') {
+     94c:	05000c04 	movi	r20,48
+    struct Alien alien = getAlien(pSramAliens, x, y);
+    if(alien.alive == 1) {
+        char* alienApperence = getAlienApperence(alien.type);
+        int offset = step * ALIEN_WIDTH * ALIEN_HEIGHT;
+        int i;
+        for(i = 0; i < ALIEN_WIDTH; i++) {
+     950:	04800144 	movi	r18,5
+}
+
+void printAlienSlice(int pSramAliens, int x, int y, int slice, int step) {
+    struct Alien alien = getAlien(pSramAliens, x, y);
+    if(alien.alive == 1) {
+        char* alienApperence = getAlienApperence(alien.type);
+     954:	00008c80 	call	8c8 <getAlienApperence>
+        int offset = step * ALIEN_WIDTH * ALIEN_HEIGHT;
+     958:	d9000717 	ldw	r4,28(sp)
+     95c:	014003c4 	movi	r5,15
+}
+
+void printAlienSlice(int pSramAliens, int x, int y, int slice, int step) {
+    struct Alien alien = getAlien(pSramAliens, x, y);
+    if(alien.alive == 1) {
+        char* alienApperence = getAlienApperence(alien.type);
+     960:	1027883a 	mov	r19,r2
+        int offset = step * ALIEN_WIDTH * ALIEN_HEIGHT;
+     964:	00016b80 	call	16b8 <__mulsi3>
+        int i;
+        for(i = 0; i < ALIEN_WIDTH; i++) {
+            int index = offset + (slice * ALIEN_WIDTH) + i;
+     968:	8009883a 	mov	r4,r16
+     96c:	01400144 	movi	r5,5
+
+void printAlienSlice(int pSramAliens, int x, int y, int slice, int step) {
+    struct Alien alien = getAlien(pSramAliens, x, y);
+    if(alien.alive == 1) {
+        char* alienApperence = getAlienApperence(alien.type);
+        int offset = step * ALIEN_WIDTH * ALIEN_HEIGHT;
+     970:	1023883a 	mov	r17,r2
+        int i;
+        for(i = 0; i < ALIEN_WIDTH; i++) {
+            int index = offset + (slice * ALIEN_WIDTH) + i;
+     974:	00016b80 	call	16b8 <__mulsi3>
+     978:	88a3883a 	add	r17,r17,r2
+    struct Alien alien = getAlien(pSramAliens, x, y);
+    if(alien.alive == 1) {
+        char* alienApperence = getAlienApperence(alien.type);
+        int offset = step * ALIEN_WIDTH * ALIEN_HEIGHT;
+        int i;
+        for(i = 0; i < ALIEN_WIDTH; i++) {
+     97c:	0021883a 	mov	r16,zero
+     980:	8447883a 	add	r3,r16,r17
+     984:	98c7883a 	add	r3,r19,r3
+            int index = offset + (slice * ALIEN_WIDTH) + i;
+            if(alienApperence[index] == '0') {
+     988:	19000007 	ldb	r4,0(r3)
+     98c:	2500021e 	bne	r4,r20,998 <printAlienSlice+0x9c>
+                putchar(alien.rowId + 48);
+     990:	d9000087 	ldb	r4,2(sp)
+     994:	21000c04 	addi	r4,r4,48
+    struct Alien alien = getAlien(pSramAliens, x, y);
+    if(alien.alive == 1) {
+        char* alienApperence = getAlienApperence(alien.type);
+        int offset = step * ALIEN_WIDTH * ALIEN_HEIGHT;
+        int i;
+        for(i = 0; i < ALIEN_WIDTH; i++) {
+     998:	84000044 	addi	r16,r16,1
+            int index = offset + (slice * ALIEN_WIDTH) + i;
+            if(alienApperence[index] == '0') {
+                putchar(alien.rowId + 48);
+            } else {
+                putchar(alienApperence[index]);
+     99c:	0001a7c0 	call	1a7c <putchar>
+    struct Alien alien = getAlien(pSramAliens, x, y);
+    if(alien.alive == 1) {
+        char* alienApperence = getAlienApperence(alien.type);
+        int offset = step * ALIEN_WIDTH * ALIEN_HEIGHT;
+        int i;
+        for(i = 0; i < ALIEN_WIDTH; i++) {
+     9a0:	84bff71e 	bne	r16,r18,980 <_gp+0xffff5e8c>
+     9a4:	00000506 	br	9bc <printAlienSlice+0xc0>
+     9a8:	04000144 	movi	r16,5
+        }
+    } else {
+		int i;
+		for(i = 0; i < ALIEN_WIDTH; i++) {
+			//alt_putchar('-');
+			alt_putchar(' ');
+     9ac:	01000804 	movi	r4,32
+     9b0:	843fffc4 	addi	r16,r16,-1
+     9b4:	00027080 	call	2708 <alt_putchar>
+                putchar(alienApperence[index]);
+            }
+        }
+    } else {
+		int i;
+		for(i = 0; i < ALIEN_WIDTH; i++) {
+     9b8:	803ffc1e 	bne	r16,zero,9ac <_gp+0xffff5eb8>
+			//alt_putchar('-');
+			alt_putchar(' ');
+		}
+	}
+}
+     9bc:	dfc00617 	ldw	ra,24(sp)
+     9c0:	dd000517 	ldw	r20,20(sp)
+     9c4:	dcc00417 	ldw	r19,16(sp)
+     9c8:	dc800317 	ldw	r18,12(sp)
+     9cc:	dc400217 	ldw	r17,8(sp)
+     9d0:	dc000117 	ldw	r16,4(sp)
+     9d4:	dec00704 	addi	sp,sp,28
+     9d8:	f800283a 	ret
+
+000009dc <printSlice>:
+
+void printSlice(int pSramAliens, int x, int slice, int step, int shift) {
+     9dc:	defff604 	addi	sp,sp,-40
+     9e0:	dc400215 	stw	r17,8(sp)
+     9e4:	dc400a17 	ldw	r17,40(sp)
+     9e8:	dd800715 	stw	r22,28(sp)
+     9ec:	dc000115 	stw	r16,4(sp)
+     9f0:	008003c4 	movi	r2,15
+     9f4:	040001c4 	movi	r16,7
+    int y;
+    for(y = 0; y < ALIEN_COLS; y++) {
+        //printf("real position: %i\n", (y + shift) % ALIEN_COLS);
+        printAlienSlice(pSramAliens, x, (y + (7-shift)) % ALIEN_COLS, slice, step);
+     9f8:	05a00034 	movhi	r22,32768
+			alt_putchar(' ');
+		}
+	}
+}
+
+void printSlice(int pSramAliens, int x, int slice, int step, int shift) {
+     9fc:	ddc00815 	stw	r23,32(sp)
+     a00:	dd400615 	stw	r21,24(sp)
+     a04:	dd000515 	stw	r20,20(sp)
+     a08:	dcc00415 	stw	r19,16(sp)
+     a0c:	dc800315 	stw	r18,12(sp)
+     a10:	8461c83a 	sub	r16,r16,r17
+     a14:	dfc00915 	stw	ra,36(sp)
+     a18:	2029883a 	mov	r20,r4
+     a1c:	2827883a 	mov	r19,r5
+     a20:	3025883a 	mov	r18,r6
+     a24:	382b883a 	mov	r21,r7
+     a28:	1463c83a 	sub	r17,r2,r17
+    int y;
+    for(y = 0; y < ALIEN_COLS; y++) {
+        //printf("real position: %i\n", (y + shift) % ALIEN_COLS);
+        printAlienSlice(pSramAliens, x, (y + (7-shift)) % ALIEN_COLS, slice, step);
+     a2c:	b58001c4 	addi	r22,r22,7
+     a30:	05fffe04 	movi	r23,-8
+     a34:	858c703a 	and	r6,r16,r22
+     a38:	3000030e 	bge	r6,zero,a48 <printSlice+0x6c>
+     a3c:	31bfffc4 	addi	r6,r6,-1
+     a40:	35ccb03a 	or	r6,r6,r23
+     a44:	31800044 	addi	r6,r6,1
+     a48:	dd400015 	stw	r21,0(sp)
+     a4c:	a009883a 	mov	r4,r20
+     a50:	980b883a 	mov	r5,r19
+     a54:	900f883a 	mov	r7,r18
+     a58:	84000044 	addi	r16,r16,1
+     a5c:	00008fc0 	call	8fc <printAlienSlice>
+	}
+}
+
+void printSlice(int pSramAliens, int x, int slice, int step, int shift) {
+    int y;
+    for(y = 0; y < ALIEN_COLS; y++) {
+     a60:	847ff41e 	bne	r16,r17,a34 <_gp+0xffff5f40>
+        //printf("real position: %i\n", (y + shift) % ALIEN_COLS);
+        printAlienSlice(pSramAliens, x, (y + (7-shift)) % ALIEN_COLS, slice, step);
+		//printAlienSlice(pSramAliens, x, y, slice, step);
+    }
+    printf("\n");
+     a64:	01000284 	movi	r4,10
+}
+     a68:	dfc00917 	ldw	ra,36(sp)
+     a6c:	ddc00817 	ldw	r23,32(sp)
+     a70:	dd800717 	ldw	r22,28(sp)
+     a74:	dd400617 	ldw	r21,24(sp)
+     a78:	dd000517 	ldw	r20,20(sp)
+     a7c:	dcc00417 	ldw	r19,16(sp)
+     a80:	dc800317 	ldw	r18,12(sp)
+     a84:	dc400217 	ldw	r17,8(sp)
+     a88:	dc000117 	ldw	r16,4(sp)
+     a8c:	dec00a04 	addi	sp,sp,40
+    for(y = 0; y < ALIEN_COLS; y++) {
+        //printf("real position: %i\n", (y + shift) % ALIEN_COLS);
+        printAlienSlice(pSramAliens, x, (y + (7-shift)) % ALIEN_COLS, slice, step);
+		//printAlienSlice(pSramAliens, x, y, slice, step);
+    }
+    printf("\n");
+     a90:	0001a7c1 	jmpi	1a7c <putchar>
+
+00000a94 <printAliens>:
+}
+
+void printAliens(int pSramAliens, int step, int shift) {
+     a94:	defff804 	addi	sp,sp,-32
+     a98:	dd400615 	stw	r21,24(sp)
+     a9c:	dd000515 	stw	r20,20(sp)
+     aa0:	dcc00415 	stw	r19,16(sp)
+     aa4:	dc800315 	stw	r18,12(sp)
+     aa8:	dc400215 	stw	r17,8(sp)
+     aac:	dfc00715 	stw	ra,28(sp)
+     ab0:	dc000115 	stw	r16,4(sp)
+     ab4:	2025883a 	mov	r18,r4
+     ab8:	2827883a 	mov	r19,r5
+     abc:	3029883a 	mov	r20,r6
+    int x, slice;
+    for(x = 0; x < ALIEN_ROWS; x++) {
+     ac0:	0023883a 	mov	r17,zero
+        for(slice = 0; slice < ALIEN_HEIGHT; slice++) {
+     ac4:	054000c4 	movi	r21,3
+		//printAlienSlice(pSramAliens, x, y, slice, step);
+    }
+    printf("\n");
+}
+
+void printAliens(int pSramAliens, int step, int shift) {
+     ac8:	0021883a 	mov	r16,zero
+    int x, slice;
+    for(x = 0; x < ALIEN_ROWS; x++) {
+        for(slice = 0; slice < ALIEN_HEIGHT; slice++) {
+            printSlice(pSramAliens, x, slice, step, shift);
+     acc:	800d883a 	mov	r6,r16
+     ad0:	dd000015 	stw	r20,0(sp)
+     ad4:	9009883a 	mov	r4,r18
+     ad8:	880b883a 	mov	r5,r17
+     adc:	980f883a 	mov	r7,r19
+}
+
+void printAliens(int pSramAliens, int step, int shift) {
+    int x, slice;
+    for(x = 0; x < ALIEN_ROWS; x++) {
+        for(slice = 0; slice < ALIEN_HEIGHT; slice++) {
+     ae0:	84000044 	addi	r16,r16,1
+            printSlice(pSramAliens, x, slice, step, shift);
+     ae4:	00009dc0 	call	9dc <printSlice>
+}
+
+void printAliens(int pSramAliens, int step, int shift) {
+    int x, slice;
+    for(x = 0; x < ALIEN_ROWS; x++) {
+        for(slice = 0; slice < ALIEN_HEIGHT; slice++) {
+     ae8:	857ff81e 	bne	r16,r21,acc <_gp+0xffff5fd8>
+    printf("\n");
+}
+
+void printAliens(int pSramAliens, int step, int shift) {
+    int x, slice;
+    for(x = 0; x < ALIEN_ROWS; x++) {
+     aec:	8c400044 	addi	r17,r17,1
+     af0:	8c3ff51e 	bne	r17,r16,ac8 <_gp+0xffff5fd4>
+        for(slice = 0; slice < ALIEN_HEIGHT; slice++) {
+            printSlice(pSramAliens, x, slice, step, shift);
+        }
+    }
+}
+     af4:	dfc00717 	ldw	ra,28(sp)
+     af8:	dd400617 	ldw	r21,24(sp)
+     afc:	dd000517 	ldw	r20,20(sp)
+     b00:	dcc00417 	ldw	r19,16(sp)
+     b04:	dc800317 	ldw	r18,12(sp)
+     b08:	dc400217 	ldw	r17,8(sp)
+     b0c:	dc000117 	ldw	r16,4(sp)
+     b10:	dec00804 	addi	sp,sp,32
+     b14:	f800283a 	ret
+
+00000b18 <printVoid>:
+
+void printVoid(int pSramBulletBuffer) {
+     b18:	defff804 	addi	sp,sp,-32
+     b1c:	dd000615 	stw	r20,24(sp)
+     b20:	dcc00515 	stw	r19,20(sp)
+     b24:	dc800415 	stw	r18,16(sp)
+     b28:	dc400315 	stw	r17,12(sp)
+     b2c:	dfc00715 	stw	ra,28(sp)
+     b30:	dc000215 	stw	r16,8(sp)
+     b34:	2025883a 	mov	r18,r4
+	updateProjectileBuffer(pSramBulletBuffer);
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+     b38:	04400084 	movi	r17,2
+        }
+    }
+}
+
+void printVoid(int pSramBulletBuffer) {
+	updateProjectileBuffer(pSramBulletBuffer);
+     b3c:	00003a00 	call	3a0 <updateProjectileBuffer>
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+		for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+     b40:	04c00a04 	movi	r19,40
+}
+
+void printVoid(int pSramBulletBuffer) {
+	updateProjectileBuffer(pSramBulletBuffer);
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+     b44:	053fffc4 	movi	r20,-1
+            printSlice(pSramAliens, x, slice, step, shift);
+        }
+    }
+}
+
+void printVoid(int pSramBulletBuffer) {
+     b48:	0021883a 	mov	r16,zero
+	updateProjectileBuffer(pSramBulletBuffer);
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+		for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+			struct Projectile empty = getProjectile(pSramBulletBuffer, x, y);
+     b4c:	9009883a 	mov	r4,r18
+     b50:	800b883a 	mov	r5,r16
+     b54:	880d883a 	mov	r6,r17
+     b58:	00013900 	call	1390 <getProjectile>
+     b5c:	1004d63a 	srli	r2,r2,24
+			if(empty.type != 0) {
+     b60:	18c03fcc 	andi	r3,r3,255
+     b64:	18c0201c 	xori	r3,r3,128
+void printVoid(int pSramBulletBuffer) {
+	updateProjectileBuffer(pSramBulletBuffer);
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+		for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+			struct Projectile empty = getProjectile(pSramBulletBuffer, x, y);
+     b68:	d88000c5 	stb	r2,3(sp)
+			if(empty.type != 0) {
+     b6c:	18ffe004 	addi	r3,r3,-128
+     b70:	18000426 	beq	r3,zero,b84 <printVoid+0x6c>
+				alt_putchar(empty.symbol);
+     b74:	11003fcc 	andi	r4,r2,255
+     b78:	2100201c 	xori	r4,r4,128
+     b7c:	213fe004 	addi	r4,r4,-128
+     b80:	00000106 	br	b88 <printVoid+0x70>
+			} else {
+				//alt_putchar('-');
+				alt_putchar(' ');
+     b84:	01000804 	movi	r4,32
+
+void printVoid(int pSramBulletBuffer) {
+	updateProjectileBuffer(pSramBulletBuffer);
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+		for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+     b88:	84000044 	addi	r16,r16,1
+			struct Projectile empty = getProjectile(pSramBulletBuffer, x, y);
+			if(empty.type != 0) {
+				alt_putchar(empty.symbol);
+			} else {
+				//alt_putchar('-');
+				alt_putchar(' ');
+     b8c:	00027080 	call	2708 <alt_putchar>
+
+void printVoid(int pSramBulletBuffer) {
+	updateProjectileBuffer(pSramBulletBuffer);
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+		for(x = 0; x < (ALIEN_COLS * ALIEN_WIDTH); x++) {
+     b90:	84ffee1e 	bne	r16,r19,b4c <_gp+0xffff6058>
+			} else {
+				//alt_putchar('-');
+				alt_putchar(' ');
+			}
+        }
+		printf("\n");
+     b94:	01000284 	movi	r4,10
+}
+
+void printVoid(int pSramBulletBuffer) {
+	updateProjectileBuffer(pSramBulletBuffer);
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+     b98:	8c7fffc4 	addi	r17,r17,-1
+			} else {
+				//alt_putchar('-');
+				alt_putchar(' ');
+			}
+        }
+		printf("\n");
+     b9c:	0001a7c0 	call	1a7c <putchar>
+}
+
+void printVoid(int pSramBulletBuffer) {
+	updateProjectileBuffer(pSramBulletBuffer);
+    	int x, y;
+	for(y = VOID_HEIGHT-1; y >= 0 ; y--) {
+     ba0:	8d3fe91e 	bne	r17,r20,b48 <_gp+0xffff6054>
+				alt_putchar(' ');
+			}
+        }
+		printf("\n");
+    }
+}
+     ba4:	dfc00717 	ldw	ra,28(sp)
+     ba8:	dd000617 	ldw	r20,24(sp)
+     bac:	dcc00517 	ldw	r19,20(sp)
+     bb0:	dc800417 	ldw	r18,16(sp)
+     bb4:	dc400317 	ldw	r17,12(sp)
+     bb8:	dc000217 	ldw	r16,8(sp)
+     bbc:	dec00804 	addi	sp,sp,32
+     bc0:	f800283a 	ret
+
+00000bc4 <printGunnerSlice>:
+
+printGunnerSlice(int gunnerX, int slice) {
+     bc4:	defffa04 	addi	sp,sp,-24
+     bc8:	dc800215 	stw	r18,8(sp)
+     bcc:	2025883a 	mov	r18,r4
+     bd0:	dc400115 	stw	r17,4(sp)
+     bd4:	dfc00515 	stw	ra,20(sp)
+     bd8:	dd000415 	stw	r20,16(sp)
+     bdc:	dcc00315 	stw	r19,12(sp)
+     be0:	dc000015 	stw	r16,0(sp)
+    int SCREEN_WIDTH = ALIEN_COLS * ALIEN_WIDTH;
+    int numberOfWraps = (gunnerX + GUNNER_WIDTH) - SCREEN_WIDTH;
+     be4:	947ff7c4 	addi	r17,r18,-33
+        }
+		printf("\n");
+    }
+}
+
+printGunnerSlice(int gunnerX, int slice) {
+     be8:	2809883a 	mov	r4,r5
+     bec:	8800010e 	bge	r17,zero,bf4 <printGunnerSlice+0x30>
+     bf0:	0023883a 	mov	r17,zero
+    if(numberOfWraps < 0) numberOfWraps = 0;
+
+    int i;
+
+    for(i = 0; i < numberOfWraps; i++) {
+        putchar(gunner[(slice * GUNNER_WIDTH) + (GUNNER_WIDTH - numberOfWraps + i)]);
+     bf4:	014001c4 	movi	r5,7
+     bf8:	00016b80 	call	16b8 <__mulsi3>
+     bfc:	05000034 	movhi	r20,0
+     c00:	1027883a 	mov	r19,r2
+     c04:	1461c83a 	sub	r16,r2,r17
+     c08:	a50abd04 	addi	r20,r20,10996
+    int numberOfWraps = (gunnerX + GUNNER_WIDTH) - SCREEN_WIDTH;
+    if(numberOfWraps < 0) numberOfWraps = 0;
+
+    int i;
+
+    for(i = 0; i < numberOfWraps; i++) {
+     c0c:	84c00626 	beq	r16,r19,c28 <printGunnerSlice+0x64>
+        putchar(gunner[(slice * GUNNER_WIDTH) + (GUNNER_WIDTH - numberOfWraps + i)]);
+     c10:	a0800017 	ldw	r2,0(r20)
+     c14:	1405883a 	add	r2,r2,r16
+     c18:	110001c7 	ldb	r4,7(r2)
+     c1c:	84000044 	addi	r16,r16,1
+     c20:	0001a7c0 	call	1a7c <putchar>
+     c24:	003ff906 	br	c0c <_gp+0xffff6118>
+     c28:	0029883a 	mov	r20,zero
+    }
+    for(i = 0; i < (gunnerX - numberOfWraps); i++) {
+     c2c:	9465c83a 	sub	r18,r18,r17
+     c30:	a480040e 	bge	r20,r18,c44 <printGunnerSlice+0x80>
+        //putchar('-');
+		putchar(' ');
+     c34:	01000804 	movi	r4,32
+     c38:	0001a7c0 	call	1a7c <putchar>
+    int i;
+
+    for(i = 0; i < numberOfWraps; i++) {
+        putchar(gunner[(slice * GUNNER_WIDTH) + (GUNNER_WIDTH - numberOfWraps + i)]);
+    }
+    for(i = 0; i < (gunnerX - numberOfWraps); i++) {
+     c3c:	a5000044 	addi	r20,r20,1
+     c40:	003ffb06 	br	c30 <_gp+0xffff613c>
+        //putchar('-');
+		putchar(' ');
+    }
+    for(i = 0; i < GUNNER_WIDTH - numberOfWraps; i++) {
+     c44:	00c001c4 	movi	r3,7
+        putchar(gunner[(slice * GUNNER_WIDTH) + i]);
+     c48:	04800034 	movhi	r18,0
+    }
+    for(i = 0; i < (gunnerX - numberOfWraps); i++) {
+        //putchar('-');
+		putchar(' ');
+    }
+    for(i = 0; i < GUNNER_WIDTH - numberOfWraps; i++) {
+     c4c:	1c63c83a 	sub	r17,r3,r17
+        putchar(gunner[(slice * GUNNER_WIDTH) + i]);
+     c50:	948abd04 	addi	r18,r18,10996
+     c54:	84c5c83a 	sub	r2,r16,r19
+    }
+    for(i = 0; i < (gunnerX - numberOfWraps); i++) {
+        //putchar('-');
+		putchar(' ');
+    }
+    for(i = 0; i < GUNNER_WIDTH - numberOfWraps; i++) {
+     c58:	1440060e 	bge	r2,r17,c74 <printGunnerSlice+0xb0>
+        putchar(gunner[(slice * GUNNER_WIDTH) + i]);
+     c5c:	90800017 	ldw	r2,0(r18)
+     c60:	1405883a 	add	r2,r2,r16
+     c64:	11000007 	ldb	r4,0(r2)
+     c68:	84000044 	addi	r16,r16,1
+     c6c:	0001a7c0 	call	1a7c <putchar>
+     c70:	003ff806 	br	c54 <_gp+0xffff6160>
+    }
+    //printf("numberofWraps: %i %i %i", numberOfWraps, gunnerX, gunnerX - numberOfWraps);
+
+}
+     c74:	dfc00517 	ldw	ra,20(sp)
+     c78:	dd000417 	ldw	r20,16(sp)
+     c7c:	dcc00317 	ldw	r19,12(sp)
+     c80:	dc800217 	ldw	r18,8(sp)
+     c84:	dc400117 	ldw	r17,4(sp)
+     c88:	dc000017 	ldw	r16,0(sp)
+     c8c:	dec00604 	addi	sp,sp,24
+     c90:	f800283a 	ret
+
+00000c94 <printGunner>:
+
+void printGunner(int gunnerX) {
+     c94:	defffd04 	addi	sp,sp,-12
+    int x;
+    for(x = 0; x < GUNNER_HEIGHT; x++) {
+        printGunnerSlice(gunnerX, x);
+     c98:	000b883a 	mov	r5,zero
+    }
+    //printf("numberofWraps: %i %i %i", numberOfWraps, gunnerX, gunnerX - numberOfWraps);
+
+}
+
+void printGunner(int gunnerX) {
+     c9c:	dfc00215 	stw	ra,8(sp)
+     ca0:	dc400115 	stw	r17,4(sp)
+     ca4:	dc000015 	stw	r16,0(sp)
+     ca8:	2023883a 	mov	r17,r4
+    int x;
+    for(x = 0; x < GUNNER_HEIGHT; x++) {
+        printGunnerSlice(gunnerX, x);
+        //printf("gunner!");
+        printf("\n");
+     cac:	04000284 	movi	r16,10
+}
+
+void printGunner(int gunnerX) {
+    int x;
+    for(x = 0; x < GUNNER_HEIGHT; x++) {
+        printGunnerSlice(gunnerX, x);
+     cb0:	0000bc40 	call	bc4 <printGunnerSlice>
+        //printf("gunner!");
+        printf("\n");
+     cb4:	8009883a 	mov	r4,r16
+     cb8:	0001a7c0 	call	1a7c <putchar>
+}
+
+void printGunner(int gunnerX) {
+    int x;
+    for(x = 0; x < GUNNER_HEIGHT; x++) {
+        printGunnerSlice(gunnerX, x);
+     cbc:	8809883a 	mov	r4,r17
+     cc0:	01400044 	movi	r5,1
+     cc4:	0000bc40 	call	bc4 <printGunnerSlice>
+        //printf("gunner!");
+        printf("\n");
+     cc8:	8009883a 	mov	r4,r16
+    }
+    //printf("Gunner location: %i\n", gunnerX);
+}
+     ccc:	dfc00217 	ldw	ra,8(sp)
+     cd0:	dc400117 	ldw	r17,4(sp)
+     cd4:	dc000017 	ldw	r16,0(sp)
+     cd8:	dec00304 	addi	sp,sp,12
+void printGunner(int gunnerX) {
+    int x;
+    for(x = 0; x < GUNNER_HEIGHT; x++) {
+        printGunnerSlice(gunnerX, x);
+        //printf("gunner!");
+        printf("\n");
+     cdc:	0001a7c1 	jmpi	1a7c <putchar>
+
+00000ce0 <updateDisplay>:
+    }
+    //printf("Gunner location: %i\n", gunnerX);
+}
+
+void updateDisplay(int pSramAliens, int pSramBulletBuffer, int gunnerX, int step, int shift) {
+     ce0:	defffa04 	addi	sp,sp,-24
+     ce4:	dd000415 	stw	r20,16(sp)
+     ce8:	dc800215 	stw	r18,8(sp)
+     cec:	2029883a 	mov	r20,r4
+     cf0:	dc800617 	ldw	r18,24(sp)
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+     cf4:	01000034 	movhi	r4,0
+     cf8:	210a6a04 	addi	r4,r4,10664
+        printf("\n");
+    }
+    //printf("Gunner location: %i\n", gunnerX);
+}
+
+void updateDisplay(int pSramAliens, int pSramBulletBuffer, int gunnerX, int step, int shift) {
+     cfc:	dfc00515 	stw	ra,20(sp)
+     d00:	dcc00315 	stw	r19,12(sp)
+     d04:	dc400115 	stw	r17,4(sp)
+     d08:	3827883a 	mov	r19,r7
+     d0c:	2823883a 	mov	r17,r5
+     d10:	dc000015 	stw	r16,0(sp)
+     d14:	3021883a 	mov	r16,r6
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+     d18:	0001b140 	call	1b14 <puts>
+    printAliens(pSramAliens, step, shift);
+     d1c:	980b883a 	mov	r5,r19
+     d20:	900d883a 	mov	r6,r18
+     d24:	a009883a 	mov	r4,r20
+     d28:	0000a940 	call	a94 <printAliens>
+    printVoid(pSramBulletBuffer);
+     d2c:	8809883a 	mov	r4,r17
+     d30:	0000b180 	call	b18 <printVoid>
+    printGunner(gunnerX);
+     d34:	8009883a 	mov	r4,r16
+     d38:	0000c940 	call	c94 <printGunner>
+	checkGunnerWin();
+	//printf("List Length: %i\n", listLength());
+}
+     d3c:	dfc00517 	ldw	ra,20(sp)
+     d40:	dd000417 	ldw	r20,16(sp)
+     d44:	dcc00317 	ldw	r19,12(sp)
+     d48:	dc800217 	ldw	r18,8(sp)
+     d4c:	dc400117 	ldw	r17,4(sp)
+     d50:	dc000017 	ldw	r16,0(sp)
+     d54:	dec00604 	addi	sp,sp,24
+void updateDisplay(int pSramAliens, int pSramBulletBuffer, int gunnerX, int step, int shift) {
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    printAliens(pSramAliens, step, shift);
+    printVoid(pSramBulletBuffer);
+    printGunner(gunnerX);
+	checkGunnerWin();
+     d58:	0000fcc1 	jmpi	fcc <checkGunnerWin>
+
+00000d5c <initializeGame>:
+
+#include "gamelogic.h"
+#include "data_structures_constants.h"
+#include "sram.h"
+
+void initializeGame() {
+     d5c:	f800283a 	ret
+
+00000d60 <moveGunnerLeft>:
+}
+
+
+int gunnerLeftToggle = 1;
+void moveGunnerLeft(int* gunnerX) {
+	if((*gun_left) && gunnerLeftToggle) {
+     d60:	00941c04 	movi	r2,20592
+     d64:	10c00003 	ldbu	r3,0(r2)
+     d68:	18c03fcc 	andi	r3,r3,255
+     d6c:	18c0201c 	xori	r3,r3,128
+     d70:	18ffe004 	addi	r3,r3,-128
+     d74:	18000a26 	beq	r3,zero,da0 <moveGunnerLeft+0x40>
+     d78:	d0e00817 	ldw	r3,-32736(gp)
+     d7c:	18000826 	beq	r3,zero,da0 <moveGunnerLeft+0x40>
+		gunnerLeftToggle = 0;
+     d80:	d0200815 	stw	zero,-32736(gp)
+		if((*gunnerX) == 0) {
+     d84:	20800017 	ldw	r2,0(r4)
+     d88:	1000021e 	bne	r2,zero,d94 <moveGunnerLeft+0x34>
+			(*gunnerX) = (ALIEN_WIDTH * ALIEN_COLS) - 1;
+     d8c:	008009c4 	movi	r2,39
+     d90:	00000106 	br	d98 <moveGunnerLeft+0x38>
+		} else {
+			(*gunnerX)--;
+     d94:	10bfffc4 	addi	r2,r2,-1
+     d98:	20800015 	stw	r2,0(r4)
+     d9c:	f800283a 	ret
+		}		
+	} else if (!(*gun_left) && !(gunnerLeftToggle)) {
+     da0:	10800003 	ldbu	r2,0(r2)
+     da4:	10803fcc 	andi	r2,r2,255
+     da8:	1080201c 	xori	r2,r2,128
+     dac:	10bfe004 	addi	r2,r2,-128
+     db0:	1000041e 	bne	r2,zero,dc4 <moveGunnerLeft+0x64>
+     db4:	d0a00817 	ldw	r2,-32736(gp)
+     db8:	1000021e 	bne	r2,zero,dc4 <moveGunnerLeft+0x64>
+		gunnerLeftToggle = 1;
+     dbc:	00800044 	movi	r2,1
+     dc0:	d0a00815 	stw	r2,-32736(gp)
+     dc4:	f800283a 	ret
+
+00000dc8 <moveGunnerRight>:
+	}
+}
+
+int gunnerRightToggle = 1;
+void moveGunnerRight(int* gunnerX) {	
+	if((*gun_right) && gunnerRightToggle) {
+     dc8:	00941804 	movi	r2,20576
+     dcc:	10c00003 	ldbu	r3,0(r2)
+     dd0:	18c03fcc 	andi	r3,r3,255
+     dd4:	18c0201c 	xori	r3,r3,128
+     dd8:	18ffe004 	addi	r3,r3,-128
+     ddc:	18000b26 	beq	r3,zero,e0c <moveGunnerRight+0x44>
+     de0:	d0e00717 	ldw	r3,-32740(gp)
+     de4:	18000926 	beq	r3,zero,e0c <moveGunnerRight+0x44>
+		gunnerRightToggle = 0;
+     de8:	d0200715 	stw	zero,-32740(gp)
+		if((*gunnerX) == (ALIEN_WIDTH * ALIEN_COLS) - 1) {
+     dec:	20800017 	ldw	r2,0(r4)
+     df0:	00c009c4 	movi	r3,39
+     df4:	10c0021e 	bne	r2,r3,e00 <moveGunnerRight+0x38>
+			(*gunnerX) = 0;
+     df8:	20000015 	stw	zero,0(r4)
+     dfc:	f800283a 	ret
+		} else {
+			(*gunnerX)++;
+     e00:	10800044 	addi	r2,r2,1
+     e04:	20800015 	stw	r2,0(r4)
+     e08:	f800283a 	ret
+		}		
+	} else if (!(*gun_right) && !(gunnerRightToggle)) {
+     e0c:	10800003 	ldbu	r2,0(r2)
+     e10:	10803fcc 	andi	r2,r2,255
+     e14:	1080201c 	xori	r2,r2,128
+     e18:	10bfe004 	addi	r2,r2,-128
+     e1c:	1000041e 	bne	r2,zero,e30 <moveGunnerRight+0x68>
+     e20:	d0a00717 	ldw	r2,-32740(gp)
+     e24:	1000021e 	bne	r2,zero,e30 <moveGunnerRight+0x68>
+		gunnerRightToggle = 1;
+     e28:	00800044 	movi	r2,1
+     e2c:	d0a00715 	stw	r2,-32740(gp)
+     e30:	f800283a 	ret
+
+00000e34 <shootGunner>:
+}
+
+
+int gunnerShootToggle = 1;
+void shootGunner(int* gunnerX) {
+	if((*gun_shoot) && gunnerShootToggle) {
+     e34:	00941404 	movi	r2,20560
+     e38:	10c00003 	ldbu	r3,0(r2)
+     e3c:	18c03fcc 	andi	r3,r3,255
+     e40:	18c0201c 	xori	r3,r3,128
+     e44:	18ffe004 	addi	r3,r3,-128
+     e48:	18001726 	beq	r3,zero,ea8 <shootGunner+0x74>
+     e4c:	d0e00617 	ldw	r3,-32744(gp)
+     e50:	18001526 	beq	r3,zero,ea8 <shootGunner+0x74>
+		gunnerShootToggle = 0;
+     e54:	d0200615 	stw	zero,-32744(gp)
+		struct Projectile proj;
+		proj.xVal = ((*gunnerX) + (GUNNER_WIDTH/2)) % (ALIEN_COLS * ALIEN_WIDTH);
+     e58:	21000017 	ldw	r4,0(r4)
+	}
+}
+
+
+int gunnerShootToggle = 1;
+void shootGunner(int* gunnerX) {
+     e5c:	defffd04 	addi	sp,sp,-12
+	if((*gun_shoot) && gunnerShootToggle) {
+		gunnerShootToggle = 0;
+		struct Projectile proj;
+		proj.xVal = ((*gunnerX) + (GUNNER_WIDTH/2)) % (ALIEN_COLS * ALIEN_WIDTH);
+     e60:	01400a04 	movi	r5,40
+     e64:	210000c4 	addi	r4,r4,3
+	}
+}
+
+
+int gunnerShootToggle = 1;
+void shootGunner(int* gunnerX) {
+     e68:	dfc00215 	stw	ra,8(sp)
+	if((*gun_shoot) && gunnerShootToggle) {
+		gunnerShootToggle = 0;
+		struct Projectile proj;
+		proj.xVal = ((*gunnerX) + (GUNNER_WIDTH/2)) % (ALIEN_COLS * ALIEN_WIDTH);
+     e6c:	000164c0 	call	164c <__modsi3>
+     e70:	d8800005 	stb	r2,0(sp)
+		proj.yVal = 0;
+		proj.direction = 1;
+		proj.symbol = '^';
+     e74:	00c01784 	movi	r3,94
+	if((*gun_shoot) && gunnerShootToggle) {
+		gunnerShootToggle = 0;
+		struct Projectile proj;
+		proj.xVal = ((*gunnerX) + (GUNNER_WIDTH/2)) % (ALIEN_COLS * ALIEN_WIDTH);
+		proj.yVal = 0;
+		proj.direction = 1;
+     e78:	00800044 	movi	r2,1
+void shootGunner(int* gunnerX) {
+	if((*gun_shoot) && gunnerShootToggle) {
+		gunnerShootToggle = 0;
+		struct Projectile proj;
+		proj.xVal = ((*gunnerX) + (GUNNER_WIDTH/2)) % (ALIEN_COLS * ALIEN_WIDTH);
+		proj.yVal = 0;
+     e7c:	d8000045 	stb	zero,1(sp)
+		proj.direction = 1;
+     e80:	d8800085 	stb	r2,2(sp)
+		proj.symbol = '^';
+     e84:	d8c000c5 	stb	r3,3(sp)
+		proj.type = 1;
+     e88:	d8800105 	stb	r2,4(sp)
+		proj.timeTick = 0;
+     e8c:	d8000145 	stb	zero,5(sp)
+		
+		//checkCollideAliens(pSramAliens, 2);
+		addProjectileNode(proj);
+     e90:	d9000017 	ldw	r4,0(sp)
+     e94:	d9400117 	ldw	r5,4(sp)
+     e98:	00004080 	call	408 <addProjectileNode>
+	} else if (!(*gun_shoot) && !(gunnerShootToggle)) {
+		gunnerShootToggle = 1;
+	}
+}
+     e9c:	dfc00217 	ldw	ra,8(sp)
+     ea0:	dec00304 	addi	sp,sp,12
+     ea4:	00000a06 	br	ed0 <shootGunner+0x9c>
+		proj.type = 1;
+		proj.timeTick = 0;
+		
+		//checkCollideAliens(pSramAliens, 2);
+		addProjectileNode(proj);
+	} else if (!(*gun_shoot) && !(gunnerShootToggle)) {
+     ea8:	10800003 	ldbu	r2,0(r2)
+     eac:	10803fcc 	andi	r2,r2,255
+     eb0:	1080201c 	xori	r2,r2,128
+     eb4:	10bfe004 	addi	r2,r2,-128
+     eb8:	1000051e 	bne	r2,zero,ed0 <shootGunner+0x9c>
+     ebc:	d0a00617 	ldw	r2,-32744(gp)
+     ec0:	1000031e 	bne	r2,zero,ed0 <shootGunner+0x9c>
+		gunnerShootToggle = 1;
+     ec4:	00800044 	movi	r2,1
+     ec8:	d0a00615 	stw	r2,-32744(gp)
+     ecc:	f800283a 	ret
+	}
+}
+     ed0:	f800283a 	ret
+
+00000ed4 <shootAliens>:
+
+
+int alienShootToggle = 1;
+void shootAliens() {
+	if((*gun_shoot) && alienShootToggle) {
+     ed4:	00941404 	movi	r2,20560
+     ed8:	10c00003 	ldbu	r3,0(r2)
+     edc:	18c03fcc 	andi	r3,r3,255
+     ee0:	18c0201c 	xori	r3,r3,128
+     ee4:	18ffe004 	addi	r3,r3,-128
+     ee8:	18002d26 	beq	r3,zero,fa0 <shootAliens+0xcc>
+     eec:	d0e00517 	ldw	r3,-32748(gp)
+     ef0:	18002b26 	beq	r3,zero,fa0 <shootAliens+0xcc>
+		alienShootToggle = 0;
+     ef4:	d0200515 	stw	zero,-32748(gp)
+		//printf("X, Y: (%i, %i)\n", (*alien_x), (*alien_y));
+		
+		if(*alien_x == 0 || *alien_y == 0) {
+     ef8:	00d41004 	movi	r3,20544
+     efc:	18800003 	ldbu	r2,0(r3)
+     f00:	10803fcc 	andi	r2,r2,255
+     f04:	1080201c 	xori	r2,r2,128
+     f08:	10bfe004 	addi	r2,r2,-128
+     f0c:	10002e26 	beq	r2,zero,fc8 <shootAliens+0xf4>
+     f10:	00940c04 	movi	r2,20528
+     f14:	10800003 	ldbu	r2,0(r2)
+     f18:	10803fcc 	andi	r2,r2,255
+     f1c:	1080201c 	xori	r2,r2,128
+     f20:	10bfe004 	addi	r2,r2,-128
+     f24:	10002826 	beq	r2,zero,fc8 <shootAliens+0xf4>
+	}
+}
+
+
+int alienShootToggle = 1;
+void shootAliens() {
+     f28:	defffd04 	addi	sp,sp,-12
+     f2c:	dfc00215 	stw	ra,8(sp)
+		if(*alien_x == 0 || *alien_y == 0) {
+			return;
+		}
+		struct Projectile proj;
+		//proj.xVal = (((*alien_x + alienShift) % ALIEN_COLS) * ALIEN_COLS) + (ALIEN_WIDTH / 2) + 1;
+		proj.xVal = (((*alien_x) + alienShift + 1) * ALIEN_WIDTH) + (ALIEN_WIDTH / 2);
+     f30:	19000003 	ldbu	r4,0(r3)
+     f34:	00800034 	movhi	r2,0
+     f38:	108b1b04 	addi	r2,r2,11372
+     f3c:	10800017 	ldw	r2,0(r2)
+     f40:	21003fcc 	andi	r4,r4,255
+     f44:	2100201c 	xori	r4,r4,128
+     f48:	213fe004 	addi	r4,r4,-128
+     f4c:	2089883a 	add	r4,r4,r2
+     f50:	21000044 	addi	r4,r4,1
+     f54:	01400144 	movi	r5,5
+     f58:	00016b80 	call	16b8 <__mulsi3>
+     f5c:	10800084 	addi	r2,r2,2
+     f60:	d8800005 	stb	r2,0(sp)
+		proj.yVal = VOID_HEIGHT - 1;
+     f64:	00800084 	movi	r2,2
+     f68:	d8800045 	stb	r2,1(sp)
+		proj.direction = -1;
+     f6c:	00bfffc4 	movi	r2,-1
+     f70:	d8800085 	stb	r2,2(sp)
+		proj.symbol = '*';
+     f74:	00800a84 	movi	r2,42
+     f78:	d88000c5 	stb	r2,3(sp)
+		proj.type = 1;
+     f7c:	00800044 	movi	r2,1
+     f80:	d8800105 	stb	r2,4(sp)
+		proj.timeTick = 0;
+     f84:	d8000145 	stb	zero,5(sp)
+		
+		addProjectileNode(proj);
+     f88:	d9000017 	ldw	r4,0(sp)
+     f8c:	d9400117 	ldw	r5,4(sp)
+     f90:	00004080 	call	408 <addProjectileNode>
+		
+	} else if (!(*gun_shoot) && !(alienShootToggle)) {
+		alienShootToggle = 1;
+	}
+}
+     f94:	dfc00217 	ldw	ra,8(sp)
+     f98:	dec00304 	addi	sp,sp,12
+     f9c:	00000a06 	br	fc8 <shootAliens+0xf4>
+		proj.type = 1;
+		proj.timeTick = 0;
+		
+		addProjectileNode(proj);
+		
+	} else if (!(*gun_shoot) && !(alienShootToggle)) {
+     fa0:	10800003 	ldbu	r2,0(r2)
+     fa4:	10803fcc 	andi	r2,r2,255
+     fa8:	1080201c 	xori	r2,r2,128
+     fac:	10bfe004 	addi	r2,r2,-128
+     fb0:	1000051e 	bne	r2,zero,fc8 <shootAliens+0xf4>
+     fb4:	d0a00517 	ldw	r2,-32748(gp)
+     fb8:	1000031e 	bne	r2,zero,fc8 <shootAliens+0xf4>
+		alienShootToggle = 1;
+     fbc:	00800044 	movi	r2,1
+     fc0:	d0a00515 	stw	r2,-32748(gp)
+     fc4:	f800283a 	ret
+	}
+}
+     fc8:	f800283a 	ret
+
+00000fcc <checkGunnerWin>:
+
+void checkGunnerWin() {
+     fcc:	defff904 	addi	sp,sp,-28
+     fd0:	dc800315 	stw	r18,12(sp)
+	int x, y;
+	for(x = 0; x < ALIEN_COLS; x++) {
+		for(y = 0; y < ALIEN_ROWS; y++) {
+			struct Alien a = getAlien(pSramAliens, y, x);
+     fd4:	04800034 	movhi	r18,0
+	} else if (!(*gun_shoot) && !(alienShootToggle)) {
+		alienShootToggle = 1;
+	}
+}
+
+void checkGunnerWin() {
+     fd8:	dd000515 	stw	r20,20(sp)
+     fdc:	dcc00415 	stw	r19,16(sp)
+     fe0:	dc400215 	stw	r17,8(sp)
+     fe4:	dfc00615 	stw	ra,24(sp)
+     fe8:	dc000115 	stw	r16,4(sp)
+	int x, y;
+	for(x = 0; x < ALIEN_COLS; x++) {
+     fec:	0023883a 	mov	r17,zero
+		for(y = 0; y < ALIEN_ROWS; y++) {
+			struct Alien a = getAlien(pSramAliens, y, x);
+     ff0:	948b1c04 	addi	r18,r18,11376
+}
+
+void checkGunnerWin() {
+	int x, y;
+	for(x = 0; x < ALIEN_COLS; x++) {
+		for(y = 0; y < ALIEN_ROWS; y++) {
+     ff4:	04c000c4 	movi	r19,3
+	}
+}
+
+void checkGunnerWin() {
+	int x, y;
+	for(x = 0; x < ALIEN_COLS; x++) {
+     ff8:	05000204 	movi	r20,8
+	} else if (!(*gun_shoot) && !(alienShootToggle)) {
+		alienShootToggle = 1;
+	}
+}
+
+void checkGunnerWin() {
+     ffc:	0021883a 	mov	r16,zero
+	int x, y;
+	for(x = 0; x < ALIEN_COLS; x++) {
+		for(y = 0; y < ALIEN_ROWS; y++) {
+			struct Alien a = getAlien(pSramAliens, y, x);
+    1000:	91000017 	ldw	r4,0(r18)
+    1004:	800b883a 	mov	r5,r16
+    1008:	880d883a 	mov	r6,r17
+    100c:	00013040 	call	1304 <getAlien>
+			if(a.alive) {
+    1010:	10803fcc 	andi	r2,r2,255
+    1014:	1080201c 	xori	r2,r2,128
+    1018:	10bfe004 	addi	r2,r2,-128
+    101c:	1000081e 	bne	r2,zero,1040 <checkGunnerWin+0x74>
+}
+
+void checkGunnerWin() {
+	int x, y;
+	for(x = 0; x < ALIEN_COLS; x++) {
+		for(y = 0; y < ALIEN_ROWS; y++) {
+    1020:	84000044 	addi	r16,r16,1
+    1024:	84fff61e 	bne	r16,r19,1000 <_gp+0xffff650c>
+	}
+}
+
+void checkGunnerWin() {
+	int x, y;
+	for(x = 0; x < ALIEN_COLS; x++) {
+    1028:	8c400044 	addi	r17,r17,1
+    102c:	8d3ff31e 	bne	r17,r20,ffc <_gp+0xffff6508>
+			if(a.alive) {
+				return;
+			}
+		}
+	}
+	gameOver = 2;
+    1030:	00800034 	movhi	r2,0
+    1034:	00c00084 	movi	r3,2
+    1038:	108b1a04 	addi	r2,r2,11368
+    103c:	10c00015 	stw	r3,0(r2)
+}
+    1040:	dfc00617 	ldw	ra,24(sp)
+    1044:	dd000517 	ldw	r20,20(sp)
+    1048:	dcc00417 	ldw	r19,16(sp)
+    104c:	dc800317 	ldw	r18,12(sp)
+    1050:	dc400217 	ldw	r17,8(sp)
+    1054:	dc000117 	ldw	r16,4(sp)
+    1058:	dec00704 	addi	sp,sp,28
+    105c:	f800283a 	ret
+
+00001060 <checkCollideAliens>:
+
+void checkCollideAliens(int pSramAliens, int x) {
+    1060:	defff704 	addi	sp,sp,-36
+    1064:	dd400615 	stw	r21,24(sp)
+    1068:	dd000515 	stw	r20,20(sp)
+    106c:	dcc00415 	stw	r19,16(sp)
+	int y;
+	for(y = ALIEN_ROWS - 1; y >= 0; y--) {
+		struct Alien a = getAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS);
+    1070:	050001c4 	movi	r20,7
+    1074:	04c00034 	movhi	r19,0
+    1078:	05600034 	movhi	r21,32768
+		}
+	}
+	gameOver = 2;
+}
+
+void checkCollideAliens(int pSramAliens, int x) {
+    107c:	dd800715 	stw	r22,28(sp)
+    1080:	dc800315 	stw	r18,12(sp)
+    1084:	dc400215 	stw	r17,8(sp)
+    1088:	dc000115 	stw	r16,4(sp)
+    108c:	dfc00815 	stw	ra,32(sp)
+    1090:	2025883a 	mov	r18,r4
+    1094:	2821883a 	mov	r16,r5
+	int y;
+	for(y = ALIEN_ROWS - 1; y >= 0; y--) {
+    1098:	04400084 	movi	r17,2
+		struct Alien a = getAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS);
+    109c:	9ccb1b04 	addi	r19,r19,11372
+    10a0:	ad2b883a 	add	r21,r21,r20
+    10a4:	05bffe04 	movi	r22,-8
+    10a8:	99800017 	ldw	r6,0(r19)
+    10ac:	a18dc83a 	sub	r6,r20,r6
+    10b0:	818d883a 	add	r6,r16,r6
+    10b4:	354c703a 	and	r6,r6,r21
+    10b8:	3000030e 	bge	r6,zero,10c8 <checkCollideAliens+0x68>
+    10bc:	31bfffc4 	addi	r6,r6,-1
+    10c0:	358cb03a 	or	r6,r6,r22
+    10c4:	31800044 	addi	r6,r6,1
+    10c8:	9009883a 	mov	r4,r18
+    10cc:	880b883a 	mov	r5,r17
+    10d0:	00013040 	call	1304 <getAlien>
+    10d4:	1006d23a 	srli	r3,r2,8
+    10d8:	d8c00045 	stb	r3,1(sp)
+    10dc:	1006d43a 	srli	r3,r2,16
+		if(a.alive) {
+    10e0:	10803fcc 	andi	r2,r2,255
+    10e4:	1080201c 	xori	r2,r2,128
+}
+
+void checkCollideAliens(int pSramAliens, int x) {
+	int y;
+	for(y = ALIEN_ROWS - 1; y >= 0; y--) {
+		struct Alien a = getAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS);
+    10e8:	d8c00085 	stb	r3,2(sp)
+		if(a.alive) {
+    10ec:	10bfe004 	addi	r2,r2,-128
+    10f0:	10001326 	beq	r2,zero,1140 <checkCollideAliens+0xe0>
+			//printf("KILL (%i, %i)\n", (x + (7-alienShift)) % ALIEN_COLS, y);
+			a.alive = 0;
+			setAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS, a);
+    10f4:	00800034 	movhi	r2,0
+    10f8:	108b1b04 	addi	r2,r2,11372
+    10fc:	11800017 	ldw	r6,0(r2)
+    1100:	840001c4 	addi	r16,r16,7
+    1104:	00a00034 	movhi	r2,32768
+    1108:	818dc83a 	sub	r6,r16,r6
+    110c:	108001c4 	addi	r2,r2,7
+    1110:	308c703a 	and	r6,r6,r2
+    1114:	3000040e 	bge	r6,zero,1128 <checkCollideAliens+0xc8>
+    1118:	31bfffc4 	addi	r6,r6,-1
+    111c:	00bffe04 	movi	r2,-8
+    1120:	308cb03a 	or	r6,r6,r2
+    1124:	31800044 	addi	r6,r6,1
+    1128:	d8000005 	stb	zero,0(sp)
+    112c:	d9c00017 	ldw	r7,0(sp)
+    1130:	9009883a 	mov	r4,r18
+    1134:	880b883a 	mov	r5,r17
+    1138:	000134c0 	call	134c <setAlien>
+    113c:	00000306 	br	114c <checkCollideAliens+0xec>
+	gameOver = 2;
+}
+
+void checkCollideAliens(int pSramAliens, int x) {
+	int y;
+	for(y = ALIEN_ROWS - 1; y >= 0; y--) {
+    1140:	8c7fffc4 	addi	r17,r17,-1
+    1144:	00bfffc4 	movi	r2,-1
+    1148:	88bfd71e 	bne	r17,r2,10a8 <_gp+0xffff65b4>
+			setAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS, a);
+			break;
+		}
+	}
+	//checkGunnerWin();
+}
+    114c:	dfc00817 	ldw	ra,32(sp)
+    1150:	dd800717 	ldw	r22,28(sp)
+    1154:	dd400617 	ldw	r21,24(sp)
+    1158:	dd000517 	ldw	r20,20(sp)
+    115c:	dcc00417 	ldw	r19,16(sp)
+    1160:	dc800317 	ldw	r18,12(sp)
+    1164:	dc400217 	ldw	r17,8(sp)
+    1168:	dc000117 	ldw	r16,4(sp)
+    116c:	dec00904 	addi	sp,sp,36
+    1170:	f800283a 	ret
+
+00001174 <checkCollideGunner>:
+
+
+void checkCollideGunner(int projX) {
+	int gunnerCenter = gunnerX + (GUNNER_WIDTH / 2);
+    if ((projX > (gunnerX + 2)) && (projX < (gunnerX + GUNNER_WIDTH - 2))) {
+    1174:	00800034 	movhi	r2,0
+    1178:	108ac604 	addi	r2,r2,11032
+    117c:	10800017 	ldw	r2,0(r2)
+    1180:	10c00084 	addi	r3,r2,2
+    1184:	1900060e 	bge	r3,r4,11a0 <checkCollideGunner+0x2c>
+    1188:	10800104 	addi	r2,r2,4
+    118c:	11000416 	blt	r2,r4,11a0 <checkCollideGunner+0x2c>
+        gameOver = 1;
+    1190:	00800034 	movhi	r2,0
+    1194:	00c00044 	movi	r3,1
+    1198:	108b1a04 	addi	r2,r2,11368
+    119c:	10c00015 	stw	r3,0(r2)
+    11a0:	f800283a 	ret
+
+000011a4 <main>:
+char* pTransmit;
+
+
+
+int main()
+{
+    11a4:	defff504 	addi	sp,sp,-44
+    11a8:	dfc00a15 	stw	ra,40(sp)
+    11ac:	dcc00815 	stw	r19,32(sp)
+    11b0:	dc800715 	stw	r18,28(sp)
+    11b4:	dc400615 	stw	r17,24(sp)
+    11b8:	dc000515 	stw	r16,20(sp)
+    11bc:	dd000915 	stw	r20,36(sp)
+    //Tests
+    //sram_malloc_test();
+    //sram_free_test();
+
+    //Game Init
+	setup_interrupt();
+    11c0:	00006b40 	call	6b4 <setup_interrupt>
+    initializeGame();
+    11c4:	0000d5c0 	call	d5c <initializeGame>
+	
+    pSramAliens = sram_malloc(sizeof(struct Alien) * (ALIEN_COLS * ALIEN_ROWS));
+    11c8:	01001204 	movi	r4,72
+    11cc:	00014dc0 	call	14dc <sram_malloc>
+    int pSramBulletBuffer = sram_malloc((sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT)) + sizeof(struct Projectile));
+    11d0:	0100b584 	movi	r4,726
+
+    //Game Init
+	setup_interrupt();
+    initializeGame();
+	
+    pSramAliens = sram_malloc(sizeof(struct Alien) * (ALIEN_COLS * ALIEN_ROWS));
+    11d4:	d0a05f15 	stw	r2,-32388(gp)
+    int pSramBulletBuffer = sram_malloc((sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT)) + sizeof(struct Projectile));
+    11d8:	00014dc0 	call	14dc <sram_malloc>
+	
+	
+    //printf("%i\n", sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT));
+    //New Game
+	gameOver = 0;
+	unsigned int  gameStartTime = *game_time;
+    11dc:	00d04004 	movi	r3,16640
+
+	
+	
+    //printf("%i\n", sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT));
+    //New Game
+	gameOver = 0;
+    11e0:	d0205d15 	stw	zero,-32396(gp)
+	unsigned int  gameStartTime = *game_time;
+	unsigned int  previousUpdateBoard = *game_time;
+	unsigned int  previousUpdateBullets = *game_time;
+    
+	initRandomAliens(pSramAliens);
+    11e4:	d1205f17 	ldw	r4,-32388(gp)
+    //Game Init
+	setup_interrupt();
+    initializeGame();
+	
+    pSramAliens = sram_malloc(sizeof(struct Alien) * (ALIEN_COLS * ALIEN_ROWS));
+    int pSramBulletBuffer = sram_malloc((sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT)) + sizeof(struct Projectile));
+    11e8:	1021883a 	mov	r16,r2
+	
+	
+    //printf("%i\n", sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT));
+    //New Game
+	gameOver = 0;
+	unsigned int  gameStartTime = *game_time;
+    11ec:	18800017 	ldw	r2,0(r3)
+	unsigned int  previousUpdateBoard = *game_time;
+    11f0:	1c400017 	ldw	r17,0(r3)
+	unsigned int  previousUpdateBullets = *game_time;
+    11f4:	1c800017 	ldw	r18,0(r3)
+    
+	initRandomAliens(pSramAliens);
+    11f8:	000082c0 	call	82c <initRandomAliens>
+	initProjectileBuffer(pSramBulletBuffer);
+    11fc:	8009883a 	mov	r4,r16
+    1200:	000030c0 	call	30c <initProjectileBuffer>
+	pBuffer = calloc(TRANSMIT_BUFFER_SIZE, sizeof(char));
+    1204:	01000c84 	movi	r4,50
+    1208:	01400044 	movi	r5,1
+    120c:	00016e00 	call	16e0 <calloc>
+	pBufferHead = pBuffer;
+	pTransmit = pBuffer;
+	
+	
+	char hello[20] = "Hello, world! abc123";
+    1210:	01400034 	movhi	r5,0
+    1214:	d809883a 	mov	r4,sp
+    1218:	294a7f04 	addi	r5,r5,10748
+    121c:	01800504 	movi	r6,20
+	unsigned int  previousUpdateBoard = *game_time;
+	unsigned int  previousUpdateBullets = *game_time;
+    
+	initRandomAliens(pSramAliens);
+	initProjectileBuffer(pSramBulletBuffer);
+	pBuffer = calloc(TRANSMIT_BUFFER_SIZE, sizeof(char));
+    1220:	d0a06215 	stw	r2,-32376(gp)
+	pBufferHead = pBuffer;
+    1224:	d0a06115 	stw	r2,-32380(gp)
+	pTransmit = pBuffer;
+    1228:	d0a06015 	stw	r2,-32384(gp)
+	
+	
+	char hello[20] = "Hello, world! abc123";
+	int i;
+	for(i = 0; i < 20; i++) {
+    122c:	0021883a 	mov	r16,zero
+	pBuffer = calloc(TRANSMIT_BUFFER_SIZE, sizeof(char));
+	pBufferHead = pBuffer;
+	pTransmit = pBuffer;
+	
+	
+	char hello[20] = "Hello, world! abc123";
+    1230:	00017240 	call	1724 <memcpy>
+	int i;
+	for(i = 0; i < 20; i++) {
+    1234:	04c00504 	movi	r19,20
+    1238:	dc05883a 	add	r2,sp,r16
+		writeBuffer(hello[i]);
+    123c:	11000007 	ldb	r4,0(r2)
+	pTransmit = pBuffer;
+	
+	
+	char hello[20] = "Hello, world! abc123";
+	int i;
+	for(i = 0; i < 20; i++) {
+    1240:	84000044 	addi	r16,r16,1
+		writeBuffer(hello[i]);
+    1244:	000059c0 	call	59c <writeBuffer>
+	pTransmit = pBuffer;
+	
+	
+	char hello[20] = "Hello, world! abc123";
+	int i;
+	for(i = 0; i < 20; i++) {
+    1248:	84fffb1e 	bne	r16,r19,1238 <_gp+0xffff6744>
+		writeBuffer(hello[i]);
+	}
+	transmitIfBufferNotEmpty();
+    124c:	00005f00 	call	5f0 <transmitIfBufferNotEmpty>
+			}
+			return 0;
+		}
+		//gameOver =1;
+		
+		if(((*game_time) - previousUpdateBoard) > 10) {
+    1250:	04104004 	movi	r16,16640
+    1254:	04c00284 	movi	r19,10
+			//alienShift = 2;
+			//updateDisplay(pSramAliens, pSramBulletBuffer, gunnerX, (*game_time) % 2, alienShift);			
+			previousUpdateBoard = (*game_time);
+		}
+		
+		if(((*game_time) - previousUpdateBullets) > 5) {
+    1258:	05000144 	movi	r20,5
+	}
+	transmitIfBufferNotEmpty();
+	
+	//Game Event Loop
+    while(1) {
+		if(gameOver) {
+    125c:	d0a05d17 	ldw	r2,-32396(gp)
+    1260:	10000b26 	beq	r2,zero,1290 <main+0xec>
+			if(gameOver == 1) {
+    1264:	00c00044 	movi	r3,1
+    1268:	10c0031e 	bne	r2,r3,1278 <main+0xd4>
+				printf("\nAliens Win!\n");
+    126c:	01000034 	movhi	r4,0
+    1270:	210a7704 	addi	r4,r4,10716
+    1274:	00000406 	br	1288 <main+0xe4>
+			} else if(gameOver ==2) {
+    1278:	00c00084 	movi	r3,2
+    127c:	10c0181e 	bne	r2,r3,12e0 <main+0x13c>
+				printf("\nGunner Win!\n");
+    1280:	01000034 	movhi	r4,0
+    1284:	210a7b04 	addi	r4,r4,10732
+    1288:	0001b140 	call	1b14 <puts>
+    128c:	00001406 	br	12e0 <main+0x13c>
+			}
+			return 0;
+		}
+		//gameOver =1;
+		
+		if(((*game_time) - previousUpdateBoard) > 10) {
+    1290:	80800017 	ldw	r2,0(r16)
+    1294:	1445c83a 	sub	r2,r2,r17
+    1298:	9880062e 	bgeu	r19,r2,12b4 <main+0x110>
+			alienShift = ((*game_time) / 10) % 8;
+    129c:	81000017 	ldw	r4,0(r16)
+    12a0:	01400284 	movi	r5,10
+    12a4:	00016a80 	call	16a8 <__udivsi3>
+    12a8:	108001cc 	andi	r2,r2,7
+    12ac:	d0a05e15 	stw	r2,-32392(gp)
+			//alienShift = 2;
+			//updateDisplay(pSramAliens, pSramBulletBuffer, gunnerX, (*game_time) % 2, alienShift);			
+			previousUpdateBoard = (*game_time);
+    12b0:	84400017 	ldw	r17,0(r16)
+		}
+		
+		if(((*game_time) - previousUpdateBullets) > 5) {
+    12b4:	80800017 	ldw	r2,0(r16)
+    12b8:	1485c83a 	sub	r2,r2,r18
+    12bc:	a080022e 	bgeu	r20,r2,12c8 <main+0x124>
+			updateProjectileNodes();
+    12c0:	00001c80 	call	1c8 <updateProjectileNodes>
+			previousUpdateBullets = (*game_time);
+    12c4:	84800017 	ldw	r18,0(r16)
+		}
+		
+		moveGunnerLeft(&gunnerX);
+    12c8:	d1200904 	addi	r4,gp,-32732
+    12cc:	0000d600 	call	d60 <moveGunnerLeft>
+		moveGunnerRight(&gunnerX);
+    12d0:	d1200904 	addi	r4,gp,-32732
+    12d4:	0000dc80 	call	dc8 <moveGunnerRight>
+		//shootGunner(&gunnerX);
+		shootAliens();
+    12d8:	0000ed40 	call	ed4 <shootAliens>
+	}
+    12dc:	003fdf06 	br	125c <_gp+0xffff6768>
+	
+    return 0;
+}
+    12e0:	0005883a 	mov	r2,zero
+    12e4:	dfc00a17 	ldw	ra,40(sp)
+    12e8:	dd000917 	ldw	r20,36(sp)
+    12ec:	dcc00817 	ldw	r19,32(sp)
+    12f0:	dc800717 	ldw	r18,28(sp)
+    12f4:	dc400617 	ldw	r17,24(sp)
+    12f8:	dc000517 	ldw	r16,20(sp)
+    12fc:	dec00b04 	addi	sp,sp,44
+    1300:	f800283a 	ret
+
+00001304 <getAlien>:
+#include "sram.h"
+#include "data_structures_constants.h"
+
+struct Alien getAlien(int pSramAliens, int x, int y) {
+    struct Alien a;
+    a.alive = sram[(pSramAliens + 0) + (sizeof(struct Alien) * ((x * 8) + y))];
+    1304:	280a90fa 	slli	r5,r5,3
+#include "sram.h"
+#include "data_structures_constants.h"
+
+struct Alien getAlien(int pSramAliens, int x, int y) {
+    1308:	deffff04 	addi	sp,sp,-4
+    struct Alien a;
+    a.alive = sram[(pSramAliens + 0) + (sizeof(struct Alien) * ((x * 8) + y))];
+    130c:	298d883a 	add	r6,r5,r6
+    1310:	318b883a 	add	r5,r6,r6
+    1314:	298d883a 	add	r6,r5,r6
+    1318:	310d883a 	add	r6,r6,r4
+    a.type = sram[(pSramAliens + 1) + (sizeof(struct Alien) * ((x * 8) + y))];
+    131c:	01000034 	movhi	r4,0
+    1320:	210b2904 	addi	r4,r4,11428
+    1324:	2189883a 	add	r4,r4,r6
+    a.rowId = sram[(pSramAliens + 2) + (sizeof(struct Alien) * ((x * 8) + y))];
+    return a;
+    1328:	20800043 	ldbu	r2,1(r4)
+    132c:	20c00083 	ldbu	r3,2(r4)
+    1330:	21400003 	ldbu	r5,0(r4)
+    1334:	1004923a 	slli	r2,r2,8
+    1338:	1806943a 	slli	r3,r3,16
+    133c:	1144b03a 	or	r2,r2,r5
+}
+    1340:	10c4b03a 	or	r2,r2,r3
+    1344:	dec00104 	addi	sp,sp,4
+    1348:	f800283a 	ret
+
+0000134c <setAlien>:
+
+void setAlien(int pSramAliens, int x, int y, struct Alien a) {
+    sram[(pSramAliens + 0) + (sizeof(struct Alien) * ((x * 8) + y))] = a.alive;
+    134c:	280a90fa 	slli	r5,r5,3
+    a.type = sram[(pSramAliens + 1) + (sizeof(struct Alien) * ((x * 8) + y))];
+    a.rowId = sram[(pSramAliens + 2) + (sizeof(struct Alien) * ((x * 8) + y))];
+    return a;
+}
+
+void setAlien(int pSramAliens, int x, int y, struct Alien a) {
+    1350:	deffff04 	addi	sp,sp,-4
+    1354:	d9c00015 	stw	r7,0(sp)
+    sram[(pSramAliens + 0) + (sizeof(struct Alien) * ((x * 8) + y))] = a.alive;
+    1358:	298d883a 	add	r6,r5,r6
+    135c:	318b883a 	add	r5,r6,r6
+    1360:	298d883a 	add	r6,r5,r6
+    1364:	310d883a 	add	r6,r6,r4
+    sram[(pSramAliens + 1) + (sizeof(struct Alien) * ((x * 8) + y))] = a.type;
+    1368:	d8800043 	ldbu	r2,1(sp)
+    a.rowId = sram[(pSramAliens + 2) + (sizeof(struct Alien) * ((x * 8) + y))];
+    return a;
+}
+
+void setAlien(int pSramAliens, int x, int y, struct Alien a) {
+    sram[(pSramAliens + 0) + (sizeof(struct Alien) * ((x * 8) + y))] = a.alive;
+    136c:	01000034 	movhi	r4,0
+    1370:	210b2904 	addi	r4,r4,11428
+    1374:	2189883a 	add	r4,r4,r6
+    sram[(pSramAliens + 1) + (sizeof(struct Alien) * ((x * 8) + y))] = a.type;
+    1378:	20800045 	stb	r2,1(r4)
+    sram[(pSramAliens + 2) + (sizeof(struct Alien) * ((x * 8) + y))] = a.rowId;
+    137c:	d8800083 	ldbu	r2,2(sp)
+    a.rowId = sram[(pSramAliens + 2) + (sizeof(struct Alien) * ((x * 8) + y))];
+    return a;
+}
+
+void setAlien(int pSramAliens, int x, int y, struct Alien a) {
+    sram[(pSramAliens + 0) + (sizeof(struct Alien) * ((x * 8) + y))] = a.alive;
+    1380:	21c00005 	stb	r7,0(r4)
+    sram[(pSramAliens + 1) + (sizeof(struct Alien) * ((x * 8) + y))] = a.type;
+    sram[(pSramAliens + 2) + (sizeof(struct Alien) * ((x * 8) + y))] = a.rowId;
+    1384:	20800085 	stb	r2,2(r4)
+}
+    1388:	dec00104 	addi	sp,sp,4
+    138c:	f800283a 	ret
+
+00001390 <getProjectile>:
+
+struct Projectile getProjectile(int pSramBulletBuffer, int x, int y) {
+    1390:	defffb04 	addi	sp,sp,-20
+    1394:	dc400315 	stw	r17,12(sp)
+    1398:	dc000215 	stw	r16,8(sp)
+    139c:	2823883a 	mov	r17,r5
+    13a0:	2021883a 	mov	r16,r4
+    struct Projectile p;
+    p.xVal = sram[(pSramBulletBuffer + 0) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    13a4:	01400a04 	movi	r5,40
+    13a8:	3009883a 	mov	r4,r6
+    sram[(pSramAliens + 0) + (sizeof(struct Alien) * ((x * 8) + y))] = a.alive;
+    sram[(pSramAliens + 1) + (sizeof(struct Alien) * ((x * 8) + y))] = a.type;
+    sram[(pSramAliens + 2) + (sizeof(struct Alien) * ((x * 8) + y))] = a.rowId;
+}
+
+struct Projectile getProjectile(int pSramBulletBuffer, int x, int y) {
+    13ac:	dfc00415 	stw	ra,16(sp)
+    struct Projectile p;
+    p.xVal = sram[(pSramBulletBuffer + 0) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    13b0:	00016b80 	call	16b8 <__mulsi3>
+    13b4:	1449883a 	add	r4,r2,r17
+    13b8:	01400184 	movi	r5,6
+    13bc:	00016b80 	call	16b8 <__mulsi3>
+    p.yVal = sram[(pSramBulletBuffer + 1) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    13c0:	01000034 	movhi	r4,0
+    sram[(pSramAliens + 2) + (sizeof(struct Alien) * ((x * 8) + y))] = a.rowId;
+}
+
+struct Projectile getProjectile(int pSramBulletBuffer, int x, int y) {
+    struct Projectile p;
+    p.xVal = sram[(pSramBulletBuffer + 0) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    13c4:	1405883a 	add	r2,r2,r16
+    p.yVal = sram[(pSramBulletBuffer + 1) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    13c8:	210b2904 	addi	r4,r4,11428
+    13cc:	2089883a 	add	r4,r4,r2
+    p.direction = sram[(pSramBulletBuffer + 2) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    p.symbol = sram[(pSramBulletBuffer + 3) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    p.type = sram[(pSramBulletBuffer + 4) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    p.timeTick = sram[(pSramBulletBuffer + 5) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    return p;
+    13d0:	20c00043 	ldbu	r3,1(r4)
+    13d4:	21400083 	ldbu	r5,2(r4)
+    13d8:	21800003 	ldbu	r6,0(r4)
+    13dc:	1806923a 	slli	r3,r3,8
+    13e0:	280a943a 	slli	r5,r5,16
+    13e4:	00804034 	movhi	r2,256
+    13e8:	1986b03a 	or	r3,r3,r6
+    13ec:	1946b03a 	or	r3,r3,r5
+    13f0:	218000c3 	ldbu	r6,3(r4)
+    13f4:	21400143 	ldbu	r5,5(r4)
+    13f8:	10bfffc4 	addi	r2,r2,-1
+    13fc:	300c963a 	slli	r6,r6,24
+    1400:	1884703a 	and	r2,r3,r2
+    1404:	280a923a 	slli	r5,r5,8
+    1408:	20c00103 	ldbu	r3,4(r4)
+}
+    140c:	1184b03a 	or	r2,r2,r6
+    1410:	1946b03a 	or	r3,r3,r5
+    1414:	dfc00417 	ldw	ra,16(sp)
+    1418:	dc400317 	ldw	r17,12(sp)
+    141c:	dc000217 	ldw	r16,8(sp)
+    1420:	dec00504 	addi	sp,sp,20
+    1424:	f800283a 	ret
+
+00001428 <setProjectile>:
+
+void setProjectile(int pSramBulletBuffer, int x, int y, struct Projectile bullet) {
+    1428:	defffb04 	addi	sp,sp,-20
+    142c:	dc800215 	stw	r18,8(sp)
+    1430:	dc000015 	stw	r16,0(sp)
+    1434:	2825883a 	mov	r18,r5
+    1438:	2021883a 	mov	r16,r4
+    sram[(pSramBulletBuffer + 0) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.xVal;
+    143c:	01400a04 	movi	r5,40
+    1440:	3009883a 	mov	r4,r6
+    p.type = sram[(pSramBulletBuffer + 4) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    p.timeTick = sram[(pSramBulletBuffer + 5) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    return p;
+}
+
+void setProjectile(int pSramBulletBuffer, int x, int y, struct Projectile bullet) {
+    1444:	dfc00315 	stw	ra,12(sp)
+    1448:	dc400115 	stw	r17,4(sp)
+    144c:	d9c00415 	stw	r7,16(sp)
+    1450:	3823883a 	mov	r17,r7
+    sram[(pSramBulletBuffer + 0) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.xVal;
+    1454:	00016b80 	call	16b8 <__mulsi3>
+    1458:	1489883a 	add	r4,r2,r18
+    145c:	01400184 	movi	r5,6
+    1460:	00016b80 	call	16b8 <__mulsi3>
+    1464:	00c00034 	movhi	r3,0
+    1468:	1405883a 	add	r2,r2,r16
+    146c:	18cb2904 	addi	r3,r3,11428
+    1470:	1885883a 	add	r2,r3,r2
+    sram[(pSramBulletBuffer + 1) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.yVal;
+    1474:	d8c00443 	ldbu	r3,17(sp)
+    p.timeTick = sram[(pSramBulletBuffer + 5) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))];
+    return p;
+}
+
+void setProjectile(int pSramBulletBuffer, int x, int y, struct Projectile bullet) {
+    sram[(pSramBulletBuffer + 0) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.xVal;
+    1478:	14400005 	stb	r17,0(r2)
+    sram[(pSramBulletBuffer + 1) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.yVal;
+    147c:	10c00045 	stb	r3,1(r2)
+    sram[(pSramBulletBuffer + 2) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.direction;
+    1480:	d8c00483 	ldbu	r3,18(sp)
+    1484:	10c00085 	stb	r3,2(r2)
+    sram[(pSramBulletBuffer + 3) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.symbol;
+    1488:	d8c004c3 	ldbu	r3,19(sp)
+    148c:	10c000c5 	stb	r3,3(r2)
+    sram[(pSramBulletBuffer + 4) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.type;
+    1490:	d8c00503 	ldbu	r3,20(sp)
+    1494:	10c00105 	stb	r3,4(r2)
+    sram[(pSramBulletBuffer + 5) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.timeTick;
+    1498:	d8c00543 	ldbu	r3,21(sp)
+    149c:	10c00145 	stb	r3,5(r2)
+}
+    14a0:	dfc00317 	ldw	ra,12(sp)
+    14a4:	dc800217 	ldw	r18,8(sp)
+    14a8:	dc400117 	ldw	r17,4(sp)
+    14ac:	dc000017 	ldw	r16,0(sp)
+    14b0:	dec00504 	addi	sp,sp,20
+    14b4:	f800283a 	ret
+
+000014b8 <resetSRAM>:
+
+void resetSRAM() {
+    14b8:	01400034 	movhi	r5,0
+    int i;
+    for (i = 0; i < 2048; i++ ) {
+    14bc:	0005883a 	mov	r2,zero
+    14c0:	294b2904 	addi	r5,r5,11428
+    14c4:	00c20004 	movi	r3,2048
+    14c8:	1149883a 	add	r4,r2,r5
+      sram[i] = 0;
+    14cc:	20000005 	stb	zero,0(r4)
+    sram[(pSramBulletBuffer + 5) + (sizeof(struct Projectile) * ((y * ALIEN_COLS * ALIEN_WIDTH) + x))] = bullet.timeTick;
+}
+
+void resetSRAM() {
+    int i;
+    for (i = 0; i < 2048; i++ ) {
+    14d0:	10800044 	addi	r2,r2,1
+    14d4:	10fffc1e 	bne	r2,r3,14c8 <_gp+0xffff69d4>
+      sram[i] = 0;
+   }
+}
+    14d8:	f800283a 	ret
+
+000014dc <sram_malloc>:
+
+/*  Fixed Block Size Dynamic Memory Allocation
+    Implimented with a free list  */
+int sram_malloc(int s) {
+    if(s == 0) {
+    14dc:	20002026 	beq	r4,zero,1560 <sram_malloc+0x84>
+    int FREE_LIST_OVERHEAD = 1;// if byte is zero its not taken, else its how much is taken.
+    int BLOCK_SIZE = 8;//8 Byte Blocks
+    int TOTAL_BLOCKS = HEAP_SIZE / (BLOCK_SIZE + FREE_LIST_OVERHEAD);
+    int FREE_LIST_END = (TOTAL_BLOCKS * FREE_LIST_OVERHEAD);
+
+    int blocksNeeded = ((s - 1) / BLOCK_SIZE) + 1;
+    14e0:	20bfffc4 	addi	r2,r4,-1
+    14e4:	1000010e 	bge	r2,zero,14ec <sram_malloc+0x10>
+    14e8:	20800184 	addi	r2,r4,6
+    14ec:	1005d0fa 	srai	r2,r2,3
+
+    int currBlock = 0;
+    int foundBlocks = 0;
+    int startFoundBlocks = 0;
+    while((foundBlocks < blocksNeeded) && (currBlock < FREE_LIST_END)) {
+        if(sram[currBlock] == 0) {//curr block is free
+    14f0:	02000034 	movhi	r8,0
+    int FREE_LIST_END = (TOTAL_BLOCKS * FREE_LIST_OVERHEAD);
+
+    int blocksNeeded = ((s - 1) / BLOCK_SIZE) + 1;
+
+    int currBlock = 0;
+    int foundBlocks = 0;
+    14f4:	000b883a 	mov	r5,zero
+    int FREE_LIST_OVERHEAD = 1;// if byte is zero its not taken, else its how much is taken.
+    int BLOCK_SIZE = 8;//8 Byte Blocks
+    int TOTAL_BLOCKS = HEAP_SIZE / (BLOCK_SIZE + FREE_LIST_OVERHEAD);
+    int FREE_LIST_END = (TOTAL_BLOCKS * FREE_LIST_OVERHEAD);
+
+    int blocksNeeded = ((s - 1) / BLOCK_SIZE) + 1;
+    14f8:	10c00044 	addi	r3,r2,1
+
+    int currBlock = 0;
+    14fc:	0009883a 	mov	r4,zero
+    int foundBlocks = 0;
+    int startFoundBlocks = 0;
+    1500:	0005883a 	mov	r2,zero
+    while((foundBlocks < blocksNeeded) && (currBlock < FREE_LIST_END)) {
+    1504:	01c03884 	movi	r7,226
+        if(sram[currBlock] == 0) {//curr block is free
+    1508:	420b2904 	addi	r8,r8,11428
+    int blocksNeeded = ((s - 1) / BLOCK_SIZE) + 1;
+
+    int currBlock = 0;
+    int foundBlocks = 0;
+    int startFoundBlocks = 0;
+    while((foundBlocks < blocksNeeded) && (currBlock < FREE_LIST_END)) {
+    150c:	28c00916 	blt	r5,r3,1534 <sram_malloc+0x58>
+    /*printf("Blocks Needed: %i\n", blocksNeeded);
+    printf("Total Blocks: %i\n", TOTAL_BLOCKS);
+    printf("Free List End: %i\n", FREE_LIST_END);
+    printf("Start Found Blocks: %i\n\n", startFoundBlocks);*/
+
+    if(currBlock == FREE_LIST_END) {
+    1510:	014038c4 	movi	r5,227
+    1514:	21401226 	beq	r4,r5,1560 <sram_malloc+0x84>
+        return -1;//Out of memory, or heap fragmented
+    } else {
+        sram[startFoundBlocks] = blocksNeeded;
+    1518:	01000034 	movhi	r4,0
+    151c:	210b2904 	addi	r4,r4,11428
+    1520:	2089883a 	add	r4,r4,r2
+        return FREE_LIST_END + (startFoundBlocks * (BLOCK_SIZE));
+    1524:	100490fa 	slli	r2,r2,3
+    printf("Start Found Blocks: %i\n\n", startFoundBlocks);*/
+
+    if(currBlock == FREE_LIST_END) {
+        return -1;//Out of memory, or heap fragmented
+    } else {
+        sram[startFoundBlocks] = blocksNeeded;
+    1528:	20c00005 	stb	r3,0(r4)
+        return FREE_LIST_END + (startFoundBlocks * (BLOCK_SIZE));
+    152c:	108038c4 	addi	r2,r2,227
+    1530:	f800283a 	ret
+    int blocksNeeded = ((s - 1) / BLOCK_SIZE) + 1;
+
+    int currBlock = 0;
+    int foundBlocks = 0;
+    int startFoundBlocks = 0;
+    while((foundBlocks < blocksNeeded) && (currBlock < FREE_LIST_END)) {
+    1534:	393ff616 	blt	r7,r4,1510 <_gp+0xffff6a1c>
+        if(sram[currBlock] == 0) {//curr block is free
+    1538:	410d883a 	add	r6,r8,r4
+    153c:	31800007 	ldb	r6,0(r6)
+    1540:	3000031e 	bne	r6,zero,1550 <sram_malloc+0x74>
+            foundBlocks++;
+    1544:	29400044 	addi	r5,r5,1
+            currBlock++;
+    1548:	21000044 	addi	r4,r4,1
+    154c:	003fef06 	br	150c <_gp+0xffff6a18>
+        } else {//curr block is allocated
+            foundBlocks = 0;
+            startFoundBlocks = currBlock + sram[currBlock];
+    1550:	2189883a 	add	r4,r4,r6
+    1554:	2005883a 	mov	r2,r4
+    while((foundBlocks < blocksNeeded) && (currBlock < FREE_LIST_END)) {
+        if(sram[currBlock] == 0) {//curr block is free
+            foundBlocks++;
+            currBlock++;
+        } else {//curr block is allocated
+            foundBlocks = 0;
+    1558:	000b883a 	mov	r5,zero
+    155c:	003feb06 	br	150c <_gp+0xffff6a18>
+
+/*  Fixed Block Size Dynamic Memory Allocation
+    Implimented with a free list  */
+int sram_malloc(int s) {
+    if(s == 0) {
+        return -1;
+    1560:	00bfffc4 	movi	r2,-1
+        return -1;//Out of memory, or heap fragmented
+    } else {
+        sram[startFoundBlocks] = blocksNeeded;
+        return FREE_LIST_END + (startFoundBlocks * (BLOCK_SIZE));
+    }
+}
+    1564:	f800283a 	ret
+
+00001568 <sram_free>:
+    int FREE_LIST_OVERHEAD = 1;// if byte is zero its not taken, else its how much is taken.
+    int BLOCK_SIZE = 8;//8 Byte Blocks
+    int TOTAL_BLOCKS = HEAP_SIZE / (BLOCK_SIZE + FREE_LIST_OVERHEAD);
+    int FREE_LIST_END = (TOTAL_BLOCKS * FREE_LIST_OVERHEAD);
+
+    int freeListLoc = (loc - FREE_LIST_END) / (BLOCK_SIZE);
+    1568:	20bfc744 	addi	r2,r4,-227
+    156c:	1000010e 	bge	r2,zero,1574 <sram_free+0xc>
+    1570:	20bfc904 	addi	r2,r4,-220
+    1574:	1005d0fa 	srai	r2,r2,3
+
+    //printf("Free List Location: %i\n", freeListLoc);
+
+    sram[freeListLoc] = 0;
+    1578:	00c00034 	movhi	r3,0
+    157c:	18cb2904 	addi	r3,r3,11428
+    1580:	1887883a 	add	r3,r3,r2
+    1584:	18000005 	stb	zero,0(r3)
+    return freeListLoc;
+
+}
+    1588:	f800283a 	ret
+
+0000158c <udivmodsi4>:
+    158c:	2900182e 	bgeu	r5,r4,15f0 <udivmodsi4+0x64>
+    1590:	28001716 	blt	r5,zero,15f0 <udivmodsi4+0x64>
+    1594:	00800804 	movi	r2,32
+    1598:	00c00044 	movi	r3,1
+    159c:	00000206 	br	15a8 <udivmodsi4+0x1c>
+    15a0:	10001126 	beq	r2,zero,15e8 <udivmodsi4+0x5c>
+    15a4:	28000516 	blt	r5,zero,15bc <udivmodsi4+0x30>
+    15a8:	294b883a 	add	r5,r5,r5
+    15ac:	10bfffc4 	addi	r2,r2,-1
+    15b0:	18c7883a 	add	r3,r3,r3
+    15b4:	293ffa36 	bltu	r5,r4,15a0 <_gp+0xffff6aac>
+    15b8:	18000b26 	beq	r3,zero,15e8 <udivmodsi4+0x5c>
+    15bc:	0005883a 	mov	r2,zero
+    15c0:	21400236 	bltu	r4,r5,15cc <udivmodsi4+0x40>
+    15c4:	2149c83a 	sub	r4,r4,r5
+    15c8:	10c4b03a 	or	r2,r2,r3
+    15cc:	1806d07a 	srli	r3,r3,1
+    15d0:	280ad07a 	srli	r5,r5,1
+    15d4:	183ffa1e 	bne	r3,zero,15c0 <_gp+0xffff6acc>
+    15d8:	3000011e 	bne	r6,zero,15e0 <udivmodsi4+0x54>
+    15dc:	f800283a 	ret
+    15e0:	2005883a 	mov	r2,r4
+    15e4:	f800283a 	ret
+    15e8:	0005883a 	mov	r2,zero
+    15ec:	003ffa06 	br	15d8 <_gp+0xffff6ae4>
+    15f0:	00c00044 	movi	r3,1
+    15f4:	003ff106 	br	15bc <_gp+0xffff6ac8>
+
+000015f8 <__divsi3>:
+    15f8:	defffe04 	addi	sp,sp,-8
+    15fc:	dfc00115 	stw	ra,4(sp)
+    1600:	dc000015 	stw	r16,0(sp)
+    1604:	20000b16 	blt	r4,zero,1634 <__divsi3+0x3c>
+    1608:	0021883a 	mov	r16,zero
+    160c:	28000c16 	blt	r5,zero,1640 <__divsi3+0x48>
+    1610:	000d883a 	mov	r6,zero
+    1614:	000158c0 	call	158c <udivmodsi4>
+    1618:	0407c83a 	sub	r3,zero,r16
+    161c:	1884f03a 	xor	r2,r3,r2
+    1620:	1405883a 	add	r2,r2,r16
+    1624:	dfc00117 	ldw	ra,4(sp)
+    1628:	dc000017 	ldw	r16,0(sp)
+    162c:	dec00204 	addi	sp,sp,8
+    1630:	f800283a 	ret
+    1634:	0109c83a 	sub	r4,zero,r4
+    1638:	04000044 	movi	r16,1
+    163c:	283ff40e 	bge	r5,zero,1610 <_gp+0xffff6b1c>
+    1640:	014bc83a 	sub	r5,zero,r5
+    1644:	8400005c 	xori	r16,r16,1
+    1648:	003ff106 	br	1610 <_gp+0xffff6b1c>
+
+0000164c <__modsi3>:
+    164c:	defffd04 	addi	sp,sp,-12
+    1650:	dfc00215 	stw	ra,8(sp)
+    1654:	dc400115 	stw	r17,4(sp)
+    1658:	dc000015 	stw	r16,0(sp)
+    165c:	20000c16 	blt	r4,zero,1690 <__modsi3+0x44>
+    1660:	0023883a 	mov	r17,zero
+    1664:	0021883a 	mov	r16,zero
+    1668:	28000d16 	blt	r5,zero,16a0 <__modsi3+0x54>
+    166c:	01800044 	movi	r6,1
+    1670:	000158c0 	call	158c <udivmodsi4>
+    1674:	1404f03a 	xor	r2,r2,r16
+    1678:	8885883a 	add	r2,r17,r2
+    167c:	dfc00217 	ldw	ra,8(sp)
+    1680:	dc400117 	ldw	r17,4(sp)
+    1684:	dc000017 	ldw	r16,0(sp)
+    1688:	dec00304 	addi	sp,sp,12
+    168c:	f800283a 	ret
+    1690:	0109c83a 	sub	r4,zero,r4
+    1694:	04400044 	movi	r17,1
+    1698:	043fffc4 	movi	r16,-1
+    169c:	283ff30e 	bge	r5,zero,166c <_gp+0xffff6b78>
+    16a0:	014bc83a 	sub	r5,zero,r5
+    16a4:	003ff106 	br	166c <_gp+0xffff6b78>
+
+000016a8 <__udivsi3>:
+    16a8:	000d883a 	mov	r6,zero
+    16ac:	000158c1 	jmpi	158c <udivmodsi4>
+
+000016b0 <__umodsi3>:
+    16b0:	01800044 	movi	r6,1
+    16b4:	000158c1 	jmpi	158c <udivmodsi4>
+
+000016b8 <__mulsi3>:
+    16b8:	0005883a 	mov	r2,zero
+    16bc:	20000726 	beq	r4,zero,16dc <__mulsi3+0x24>
+    16c0:	20c0004c 	andi	r3,r4,1
+    16c4:	2008d07a 	srli	r4,r4,1
+    16c8:	18000126 	beq	r3,zero,16d0 <__mulsi3+0x18>
+    16cc:	1145883a 	add	r2,r2,r5
+    16d0:	294b883a 	add	r5,r5,r5
+    16d4:	203ffa1e 	bne	r4,zero,16c0 <_gp+0xffff6bcc>
+    16d8:	f800283a 	ret
+    16dc:	f800283a 	ret
+
+000016e0 <calloc>:
+    16e0:	00c00034 	movhi	r3,0
+    16e4:	18cac804 	addi	r3,r3,11040
+    16e8:	2005883a 	mov	r2,r4
+    16ec:	19000017 	ldw	r4,0(r3)
+    16f0:	280d883a 	mov	r6,r5
+    16f4:	100b883a 	mov	r5,r2
+    16f8:	000174c1 	jmpi	174c <_calloc_r>
+
+000016fc <malloc>:
+    16fc:	00800034 	movhi	r2,0
+    1700:	108ac804 	addi	r2,r2,11040
+    1704:	200b883a 	mov	r5,r4
+    1708:	11000017 	ldw	r4,0(r2)
+    170c:	00018901 	jmpi	1890 <_malloc_r>
+
+00001710 <free>:
+    1710:	00800034 	movhi	r2,0
+    1714:	108ac804 	addi	r2,r2,11040
+    1718:	200b883a 	mov	r5,r4
+    171c:	11000017 	ldw	r4,0(r2)
+    1720:	00017ac1 	jmpi	17ac <_free_r>
+
+00001724 <memcpy>:
+    1724:	2005883a 	mov	r2,r4
+    1728:	0007883a 	mov	r3,zero
+    172c:	19800626 	beq	r3,r6,1748 <memcpy+0x24>
+    1730:	28c9883a 	add	r4,r5,r3
+    1734:	21c00003 	ldbu	r7,0(r4)
+    1738:	10c9883a 	add	r4,r2,r3
+    173c:	18c00044 	addi	r3,r3,1
+    1740:	21c00005 	stb	r7,0(r4)
+    1744:	003ff906 	br	172c <_gp+0xffff6c38>
+    1748:	f800283a 	ret
+
+0000174c <_calloc_r>:
+    174c:	defffd04 	addi	sp,sp,-12
+    1750:	dc000015 	stw	r16,0(sp)
+    1754:	2021883a 	mov	r16,r4
+    1758:	2809883a 	mov	r4,r5
+    175c:	300b883a 	mov	r5,r6
+    1760:	dfc00215 	stw	ra,8(sp)
+    1764:	dc400115 	stw	r17,4(sp)
+    1768:	00016b80 	call	16b8 <__mulsi3>
+    176c:	8009883a 	mov	r4,r16
+    1770:	100b883a 	mov	r5,r2
+    1774:	1023883a 	mov	r17,r2
+    1778:	00018900 	call	1890 <_malloc_r>
+    177c:	1021883a 	mov	r16,r2
+    1780:	10000426 	beq	r2,zero,1794 <_calloc_r+0x48>
+    1784:	1009883a 	mov	r4,r2
+    1788:	000b883a 	mov	r5,zero
+    178c:	880d883a 	mov	r6,r17
+    1790:	00022b00 	call	22b0 <memset>
+    1794:	8005883a 	mov	r2,r16
+    1798:	dfc00217 	ldw	ra,8(sp)
+    179c:	dc400117 	ldw	r17,4(sp)
+    17a0:	dc000017 	ldw	r16,0(sp)
+    17a4:	dec00304 	addi	sp,sp,12
+    17a8:	f800283a 	ret
+
+000017ac <_free_r>:
+    17ac:	28003726 	beq	r5,zero,188c <_free_r+0xe0>
+    17b0:	28ffff17 	ldw	r3,-4(r5)
+    17b4:	28bfff04 	addi	r2,r5,-4
+    17b8:	1800010e 	bge	r3,zero,17c0 <_free_r+0x14>
+    17bc:	10c5883a 	add	r2,r2,r3
+    17c0:	01400034 	movhi	r5,0
+    17c4:	294b2104 	addi	r5,r5,11396
+    17c8:	28c00017 	ldw	r3,0(r5)
+    17cc:	280d883a 	mov	r6,r5
+    17d0:	1800031e 	bne	r3,zero,17e0 <_free_r+0x34>
+    17d4:	10000115 	stw	zero,4(r2)
+    17d8:	28800015 	stw	r2,0(r5)
+    17dc:	f800283a 	ret
+    17e0:	10c00c2e 	bgeu	r2,r3,1814 <_free_r+0x68>
+    17e4:	11400017 	ldw	r5,0(r2)
+    17e8:	1149883a 	add	r4,r2,r5
+    17ec:	20c0041e 	bne	r4,r3,1800 <_free_r+0x54>
+    17f0:	20c00017 	ldw	r3,0(r4)
+    17f4:	28c7883a 	add	r3,r5,r3
+    17f8:	10c00015 	stw	r3,0(r2)
+    17fc:	20c00117 	ldw	r3,4(r4)
+    1800:	10c00115 	stw	r3,4(r2)
+    1804:	30800015 	stw	r2,0(r6)
+    1808:	f800283a 	ret
+    180c:	11400336 	bltu	r2,r5,181c <_free_r+0x70>
+    1810:	2807883a 	mov	r3,r5
+    1814:	19400117 	ldw	r5,4(r3)
+    1818:	283ffc1e 	bne	r5,zero,180c <_gp+0xffff6d18>
+    181c:	19c00017 	ldw	r7,0(r3)
+    1820:	19cd883a 	add	r6,r3,r7
+    1824:	30800a1e 	bne	r6,r2,1850 <_free_r+0xa4>
+    1828:	10800017 	ldw	r2,0(r2)
+    182c:	3885883a 	add	r2,r7,r2
+    1830:	18800015 	stw	r2,0(r3)
+    1834:	1889883a 	add	r4,r3,r2
+    1838:	2140141e 	bne	r4,r5,188c <_free_r+0xe0>
+    183c:	29000017 	ldw	r4,0(r5)
+    1840:	1105883a 	add	r2,r2,r4
+    1844:	18800015 	stw	r2,0(r3)
+    1848:	28800117 	ldw	r2,4(r5)
+    184c:	00000e06 	br	1888 <_free_r+0xdc>
+    1850:	1180032e 	bgeu	r2,r6,1860 <_free_r+0xb4>
+    1854:	00800304 	movi	r2,12
+    1858:	20800015 	stw	r2,0(r4)
+    185c:	f800283a 	ret
+    1860:	11800017 	ldw	r6,0(r2)
+    1864:	1189883a 	add	r4,r2,r6
+    1868:	2140061e 	bne	r4,r5,1884 <_free_r+0xd8>
+    186c:	29000017 	ldw	r4,0(r5)
+    1870:	3109883a 	add	r4,r6,r4
+    1874:	11000015 	stw	r4,0(r2)
+    1878:	29000117 	ldw	r4,4(r5)
+    187c:	11000115 	stw	r4,4(r2)
+    1880:	00000106 	br	1888 <_free_r+0xdc>
+    1884:	11400115 	stw	r5,4(r2)
+    1888:	18800115 	stw	r2,4(r3)
+    188c:	f800283a 	ret
+
+00001890 <_malloc_r>:
+    1890:	defffb04 	addi	sp,sp,-20
+    1894:	00bfff04 	movi	r2,-4
+    1898:	dc000015 	stw	r16,0(sp)
+    189c:	2c0000c4 	addi	r16,r5,3
+    18a0:	80a0703a 	and	r16,r16,r2
+    18a4:	dc800215 	stw	r18,8(sp)
+    18a8:	dfc00415 	stw	ra,16(sp)
+    18ac:	dcc00315 	stw	r19,12(sp)
+    18b0:	dc400115 	stw	r17,4(sp)
+    18b4:	84000204 	addi	r16,r16,8
+    18b8:	00800304 	movi	r2,12
+    18bc:	2025883a 	mov	r18,r4
+    18c0:	8080022e 	bgeu	r16,r2,18cc <_malloc_r+0x3c>
+    18c4:	1021883a 	mov	r16,r2
+    18c8:	00000506 	br	18e0 <_malloc_r+0x50>
+    18cc:	8000040e 	bge	r16,zero,18e0 <_malloc_r+0x50>
+    18d0:	00800304 	movi	r2,12
+    18d4:	90800015 	stw	r2,0(r18)
+    18d8:	0005883a 	mov	r2,zero
+    18dc:	00003c06 	br	19d0 <_malloc_r+0x140>
+    18e0:	817ffb36 	bltu	r16,r5,18d0 <_gp+0xffff6ddc>
+    18e4:	01000034 	movhi	r4,0
+    18e8:	210b2104 	addi	r4,r4,11396
+    18ec:	20800017 	ldw	r2,0(r4)
+    18f0:	1007883a 	mov	r3,r2
+    18f4:	18000926 	beq	r3,zero,191c <_malloc_r+0x8c>
+    18f8:	19400017 	ldw	r5,0(r3)
+    18fc:	2c0bc83a 	sub	r5,r5,r16
+    1900:	28001716 	blt	r5,zero,1960 <_malloc_r+0xd0>
+    1904:	018002c4 	movi	r6,11
+    1908:	31400d2e 	bgeu	r6,r5,1940 <_malloc_r+0xb0>
+    190c:	19400015 	stw	r5,0(r3)
+    1910:	1945883a 	add	r2,r3,r5
+    1914:	14000015 	stw	r16,0(r2)
+    1918:	1000231e 	bne	r2,zero,19a8 <_malloc_r+0x118>
+    191c:	04400034 	movhi	r17,0
+    1920:	8c4b2004 	addi	r17,r17,11392
+    1924:	88800017 	ldw	r2,0(r17)
+    1928:	1000101e 	bne	r2,zero,196c <_malloc_r+0xdc>
+    192c:	9009883a 	mov	r4,r18
+    1930:	000b883a 	mov	r5,zero
+    1934:	0001b9c0 	call	1b9c <_sbrk_r>
+    1938:	88800015 	stw	r2,0(r17)
+    193c:	00000b06 	br	196c <_malloc_r+0xdc>
+    1940:	10c0031e 	bne	r2,r3,1950 <_malloc_r+0xc0>
+    1944:	10c00117 	ldw	r3,4(r2)
+    1948:	20c00015 	stw	r3,0(r4)
+    194c:	00001606 	br	19a8 <_malloc_r+0x118>
+    1950:	19000117 	ldw	r4,4(r3)
+    1954:	11000115 	stw	r4,4(r2)
+    1958:	1805883a 	mov	r2,r3
+    195c:	00001206 	br	19a8 <_malloc_r+0x118>
+    1960:	1805883a 	mov	r2,r3
+    1964:	18c00117 	ldw	r3,4(r3)
+    1968:	003fe206 	br	18f4 <_gp+0xffff6e00>
+    196c:	9009883a 	mov	r4,r18
+    1970:	800b883a 	mov	r5,r16
+    1974:	0001b9c0 	call	1b9c <_sbrk_r>
+    1978:	04ffffc4 	movi	r19,-1
+    197c:	14ffd426 	beq	r2,r19,18d0 <_gp+0xffff6ddc>
+    1980:	144000c4 	addi	r17,r2,3
+    1984:	00ffff04 	movi	r3,-4
+    1988:	88e2703a 	and	r17,r17,r3
+    198c:	88800526 	beq	r17,r2,19a4 <_malloc_r+0x114>
+    1990:	9009883a 	mov	r4,r18
+    1994:	888bc83a 	sub	r5,r17,r2
+    1998:	0001b9c0 	call	1b9c <_sbrk_r>
+    199c:	14ffcc26 	beq	r2,r19,18d0 <_gp+0xffff6ddc>
+    19a0:	8805883a 	mov	r2,r17
+    19a4:	14000015 	stw	r16,0(r2)
+    19a8:	114002c4 	addi	r5,r2,11
+    19ac:	00fffe04 	movi	r3,-8
+    19b0:	11000104 	addi	r4,r2,4
+    19b4:	28c6703a 	and	r3,r5,r3
+    19b8:	1909c83a 	sub	r4,r3,r4
+    19bc:	20000326 	beq	r4,zero,19cc <_malloc_r+0x13c>
+    19c0:	110b883a 	add	r5,r2,r4
+    19c4:	0109c83a 	sub	r4,zero,r4
+    19c8:	29000015 	stw	r4,0(r5)
+    19cc:	1805883a 	mov	r2,r3
+    19d0:	dfc00417 	ldw	ra,16(sp)
+    19d4:	dcc00317 	ldw	r19,12(sp)
+    19d8:	dc800217 	ldw	r18,8(sp)
+    19dc:	dc400117 	ldw	r17,4(sp)
+    19e0:	dc000017 	ldw	r16,0(sp)
+    19e4:	dec00504 	addi	sp,sp,20
+    19e8:	f800283a 	ret
+
+000019ec <_printf_r>:
+    19ec:	defffd04 	addi	sp,sp,-12
+    19f0:	dfc00015 	stw	ra,0(sp)
+    19f4:	d9800115 	stw	r6,4(sp)
+    19f8:	d9c00215 	stw	r7,8(sp)
+    19fc:	20c00217 	ldw	r3,8(r4)
+    1a00:	280d883a 	mov	r6,r5
+    1a04:	01400034 	movhi	r5,0
+    1a08:	29488104 	addi	r5,r5,8708
+    1a0c:	19400115 	stw	r5,4(r3)
+    1a10:	21400217 	ldw	r5,8(r4)
+    1a14:	d9c00104 	addi	r7,sp,4
+    1a18:	0001c740 	call	1c74 <___vfprintf_internal_r>
+    1a1c:	dfc00017 	ldw	ra,0(sp)
+    1a20:	dec00304 	addi	sp,sp,12
+    1a24:	f800283a 	ret
+
+00001a28 <printf>:
+    1a28:	defffc04 	addi	sp,sp,-16
+    1a2c:	dfc00015 	stw	ra,0(sp)
+    1a30:	d9400115 	stw	r5,4(sp)
+    1a34:	d9800215 	stw	r6,8(sp)
+    1a38:	d9c00315 	stw	r7,12(sp)
+    1a3c:	00800034 	movhi	r2,0
+    1a40:	108ac804 	addi	r2,r2,11040
+    1a44:	10800017 	ldw	r2,0(r2)
+    1a48:	200b883a 	mov	r5,r4
+    1a4c:	01000034 	movhi	r4,0
+    1a50:	10c00217 	ldw	r3,8(r2)
+    1a54:	21088104 	addi	r4,r4,8708
+    1a58:	d9800104 	addi	r6,sp,4
+    1a5c:	19000115 	stw	r4,4(r3)
+    1a60:	11000217 	ldw	r4,8(r2)
+    1a64:	00021e00 	call	21e0 <__vfprintf_internal>
+    1a68:	dfc00017 	ldw	ra,0(sp)
+    1a6c:	dec00404 	addi	sp,sp,16
+    1a70:	f800283a 	ret
+
+00001a74 <_putchar_r>:
+    1a74:	21800217 	ldw	r6,8(r4)
+    1a78:	00023241 	jmpi	2324 <_putc_r>
+
+00001a7c <putchar>:
+    1a7c:	00800034 	movhi	r2,0
+    1a80:	108ac804 	addi	r2,r2,11040
+    1a84:	200b883a 	mov	r5,r4
+    1a88:	11000017 	ldw	r4,0(r2)
+    1a8c:	21800217 	ldw	r6,8(r4)
+    1a90:	00023241 	jmpi	2324 <_putc_r>
+
+00001a94 <_puts_r>:
+    1a94:	defffd04 	addi	sp,sp,-12
+    1a98:	dc000015 	stw	r16,0(sp)
+    1a9c:	2021883a 	mov	r16,r4
+    1aa0:	2809883a 	mov	r4,r5
+    1aa4:	dfc00215 	stw	ra,8(sp)
+    1aa8:	dc400115 	stw	r17,4(sp)
+    1aac:	2823883a 	mov	r17,r5
+    1ab0:	0001bec0 	call	1bec <strlen>
+    1ab4:	81400217 	ldw	r5,8(r16)
+    1ab8:	00c00034 	movhi	r3,0
+    1abc:	18c88104 	addi	r3,r3,8708
+    1ac0:	28c00115 	stw	r3,4(r5)
+    1ac4:	8009883a 	mov	r4,r16
+    1ac8:	880d883a 	mov	r6,r17
+    1acc:	100f883a 	mov	r7,r2
+    1ad0:	00022040 	call	2204 <__sfvwrite_small_dev>
+    1ad4:	00ffffc4 	movi	r3,-1
+    1ad8:	10c00926 	beq	r2,r3,1b00 <_puts_r+0x6c>
+    1adc:	81400217 	ldw	r5,8(r16)
+    1ae0:	01800034 	movhi	r6,0
+    1ae4:	8009883a 	mov	r4,r16
+    1ae8:	28800117 	ldw	r2,4(r5)
+    1aec:	318a7604 	addi	r6,r6,10712
+    1af0:	01c00044 	movi	r7,1
+    1af4:	103ee83a 	callr	r2
+    1af8:	10bfffe0 	cmpeqi	r2,r2,-1
+    1afc:	0085c83a 	sub	r2,zero,r2
+    1b00:	dfc00217 	ldw	ra,8(sp)
+    1b04:	dc400117 	ldw	r17,4(sp)
+    1b08:	dc000017 	ldw	r16,0(sp)
+    1b0c:	dec00304 	addi	sp,sp,12
+    1b10:	f800283a 	ret
+
+00001b14 <puts>:
+    1b14:	00800034 	movhi	r2,0
+    1b18:	108ac804 	addi	r2,r2,11040
+    1b1c:	200b883a 	mov	r5,r4
+    1b20:	11000017 	ldw	r4,0(r2)
+    1b24:	0001a941 	jmpi	1a94 <_puts_r>
+
+00001b28 <srand>:
+    1b28:	00800034 	movhi	r2,0
+    1b2c:	108b2204 	addi	r2,r2,11400
+    1b30:	11000015 	stw	r4,0(r2)
+    1b34:	10000115 	stw	zero,4(r2)
+    1b38:	f800283a 	ret
+
+00001b3c <rand>:
+    1b3c:	defffe04 	addi	sp,sp,-8
+    1b40:	dc000015 	stw	r16,0(sp)
+    1b44:	04000034 	movhi	r16,0
+    1b48:	840b2204 	addi	r16,r16,11400
+    1b4c:	81000017 	ldw	r4,0(r16)
+    1b50:	81400117 	ldw	r5,4(r16)
+    1b54:	01932574 	movhi	r6,19605
+    1b58:	01d614b4 	movhi	r7,22610
+    1b5c:	319fcb44 	addi	r6,r6,32557
+    1b60:	39fd0b44 	addi	r7,r7,-3027
+    1b64:	dfc00115 	stw	ra,4(sp)
+    1b68:	00023d40 	call	23d4 <__muldi3>
+    1b6c:	11000044 	addi	r4,r2,1
+    1b70:	2085803a 	cmpltu	r2,r4,r2
+    1b74:	10c7883a 	add	r3,r2,r3
+    1b78:	00a00034 	movhi	r2,32768
+    1b7c:	10bfffc4 	addi	r2,r2,-1
+    1b80:	1884703a 	and	r2,r3,r2
+    1b84:	81000015 	stw	r4,0(r16)
+    1b88:	80c00115 	stw	r3,4(r16)
+    1b8c:	dfc00117 	ldw	ra,4(sp)
+    1b90:	dc000017 	ldw	r16,0(sp)
+    1b94:	dec00204 	addi	sp,sp,8
+    1b98:	f800283a 	ret
+
+00001b9c <_sbrk_r>:
+    1b9c:	defffd04 	addi	sp,sp,-12
+    1ba0:	dc000015 	stw	r16,0(sp)
+    1ba4:	04000034 	movhi	r16,0
+    1ba8:	dc400115 	stw	r17,4(sp)
+    1bac:	840b2404 	addi	r16,r16,11408
+    1bb0:	2023883a 	mov	r17,r4
+    1bb4:	2809883a 	mov	r4,r5
+    1bb8:	dfc00215 	stw	ra,8(sp)
+    1bbc:	80000015 	stw	zero,0(r16)
+    1bc0:	00027500 	call	2750 <sbrk>
+    1bc4:	00ffffc4 	movi	r3,-1
+    1bc8:	10c0031e 	bne	r2,r3,1bd8 <_sbrk_r+0x3c>
+    1bcc:	80c00017 	ldw	r3,0(r16)
+    1bd0:	18000126 	beq	r3,zero,1bd8 <_sbrk_r+0x3c>
+    1bd4:	88c00015 	stw	r3,0(r17)
+    1bd8:	dfc00217 	ldw	ra,8(sp)
+    1bdc:	dc400117 	ldw	r17,4(sp)
+    1be0:	dc000017 	ldw	r16,0(sp)
+    1be4:	dec00304 	addi	sp,sp,12
+    1be8:	f800283a 	ret
+
+00001bec <strlen>:
+    1bec:	2005883a 	mov	r2,r4
+    1bf0:	10c00007 	ldb	r3,0(r2)
+    1bf4:	18000226 	beq	r3,zero,1c00 <strlen+0x14>
+    1bf8:	10800044 	addi	r2,r2,1
+    1bfc:	003ffc06 	br	1bf0 <_gp+0xffff70fc>
+    1c00:	1105c83a 	sub	r2,r2,r4
+    1c04:	f800283a 	ret
+
+00001c08 <print_repeat>:
+    1c08:	defffb04 	addi	sp,sp,-20
+    1c0c:	dc800315 	stw	r18,12(sp)
+    1c10:	dc400215 	stw	r17,8(sp)
+    1c14:	dc000115 	stw	r16,4(sp)
+    1c18:	dfc00415 	stw	ra,16(sp)
+    1c1c:	2025883a 	mov	r18,r4
+    1c20:	2823883a 	mov	r17,r5
+    1c24:	d9800005 	stb	r6,0(sp)
+    1c28:	3821883a 	mov	r16,r7
+    1c2c:	04000a0e 	bge	zero,r16,1c58 <print_repeat+0x50>
+    1c30:	88800117 	ldw	r2,4(r17)
+    1c34:	9009883a 	mov	r4,r18
+    1c38:	880b883a 	mov	r5,r17
+    1c3c:	d80d883a 	mov	r6,sp
+    1c40:	01c00044 	movi	r7,1
+    1c44:	103ee83a 	callr	r2
+    1c48:	843fffc4 	addi	r16,r16,-1
+    1c4c:	103ff726 	beq	r2,zero,1c2c <_gp+0xffff7138>
+    1c50:	00bfffc4 	movi	r2,-1
+    1c54:	00000106 	br	1c5c <print_repeat+0x54>
+    1c58:	0005883a 	mov	r2,zero
+    1c5c:	dfc00417 	ldw	ra,16(sp)
+    1c60:	dc800317 	ldw	r18,12(sp)
+    1c64:	dc400217 	ldw	r17,8(sp)
+    1c68:	dc000117 	ldw	r16,4(sp)
+    1c6c:	dec00504 	addi	sp,sp,20
+    1c70:	f800283a 	ret
+
+00001c74 <___vfprintf_internal_r>:
+    1c74:	deffe304 	addi	sp,sp,-116
+    1c78:	d8c00804 	addi	r3,sp,32
+    1c7c:	df001b15 	stw	fp,108(sp)
+    1c80:	ddc01a15 	stw	r23,104(sp)
+    1c84:	dd801915 	stw	r22,100(sp)
+    1c88:	dd401815 	stw	r21,96(sp)
+    1c8c:	dd001715 	stw	r20,92(sp)
+    1c90:	dcc01615 	stw	r19,88(sp)
+    1c94:	dc801515 	stw	r18,84(sp)
+    1c98:	dc401415 	stw	r17,80(sp)
+    1c9c:	dc001315 	stw	r16,76(sp)
+    1ca0:	dfc01c15 	stw	ra,112(sp)
+    1ca4:	2029883a 	mov	r20,r4
+    1ca8:	2823883a 	mov	r17,r5
+    1cac:	3839883a 	mov	fp,r7
+    1cb0:	d9800f15 	stw	r6,60(sp)
+    1cb4:	0021883a 	mov	r16,zero
+    1cb8:	d8000e15 	stw	zero,56(sp)
+    1cbc:	002f883a 	mov	r23,zero
+    1cc0:	002b883a 	mov	r21,zero
+    1cc4:	0027883a 	mov	r19,zero
+    1cc8:	0025883a 	mov	r18,zero
+    1ccc:	d8000c15 	stw	zero,48(sp)
+    1cd0:	d8000b15 	stw	zero,44(sp)
+    1cd4:	002d883a 	mov	r22,zero
+    1cd8:	d8c00915 	stw	r3,36(sp)
+    1cdc:	d8c00f17 	ldw	r3,60(sp)
+    1ce0:	19000003 	ldbu	r4,0(r3)
+    1ce4:	20803fcc 	andi	r2,r4,255
+    1ce8:	1080201c 	xori	r2,r2,128
+    1cec:	10bfe004 	addi	r2,r2,-128
+    1cf0:	10012e26 	beq	r2,zero,21ac <___vfprintf_internal_r+0x538>
+    1cf4:	01400044 	movi	r5,1
+    1cf8:	b1401426 	beq	r22,r5,1d4c <___vfprintf_internal_r+0xd8>
+    1cfc:	2d800216 	blt	r5,r22,1d08 <___vfprintf_internal_r+0x94>
+    1d00:	b0000626 	beq	r22,zero,1d1c <___vfprintf_internal_r+0xa8>
+    1d04:	00012506 	br	219c <___vfprintf_internal_r+0x528>
+    1d08:	01400084 	movi	r5,2
+    1d0c:	b1401d26 	beq	r22,r5,1d84 <___vfprintf_internal_r+0x110>
+    1d10:	014000c4 	movi	r5,3
+    1d14:	b1402b26 	beq	r22,r5,1dc4 <___vfprintf_internal_r+0x150>
+    1d18:	00012006 	br	219c <___vfprintf_internal_r+0x528>
+    1d1c:	01400944 	movi	r5,37
+    1d20:	11410d26 	beq	r2,r5,2158 <___vfprintf_internal_r+0x4e4>
+    1d24:	88800117 	ldw	r2,4(r17)
+    1d28:	d9000005 	stb	r4,0(sp)
+    1d2c:	880b883a 	mov	r5,r17
+    1d30:	a009883a 	mov	r4,r20
+    1d34:	d80d883a 	mov	r6,sp
+    1d38:	01c00044 	movi	r7,1
+    1d3c:	103ee83a 	callr	r2
+    1d40:	1000e81e 	bne	r2,zero,20e4 <___vfprintf_internal_r+0x470>
+    1d44:	84000044 	addi	r16,r16,1
+    1d48:	00011406 	br	219c <___vfprintf_internal_r+0x528>
+    1d4c:	01400c04 	movi	r5,48
+    1d50:	11410a26 	beq	r2,r5,217c <___vfprintf_internal_r+0x508>
+    1d54:	01400944 	movi	r5,37
+    1d58:	11400a1e 	bne	r2,r5,1d84 <___vfprintf_internal_r+0x110>
+    1d5c:	d8800005 	stb	r2,0(sp)
+    1d60:	88800117 	ldw	r2,4(r17)
+    1d64:	a009883a 	mov	r4,r20
+    1d68:	880b883a 	mov	r5,r17
+    1d6c:	d80d883a 	mov	r6,sp
+    1d70:	b00f883a 	mov	r7,r22
+    1d74:	103ee83a 	callr	r2
+    1d78:	1000da1e 	bne	r2,zero,20e4 <___vfprintf_internal_r+0x470>
+    1d7c:	84000044 	addi	r16,r16,1
+    1d80:	00010506 	br	2198 <___vfprintf_internal_r+0x524>
+    1d84:	25bff404 	addi	r22,r4,-48
+    1d88:	b5803fcc 	andi	r22,r22,255
+    1d8c:	00c00244 	movi	r3,9
+    1d90:	1d800936 	bltu	r3,r22,1db8 <___vfprintf_internal_r+0x144>
+    1d94:	00bfffc4 	movi	r2,-1
+    1d98:	90800426 	beq	r18,r2,1dac <___vfprintf_internal_r+0x138>
+    1d9c:	9009883a 	mov	r4,r18
+    1da0:	01400284 	movi	r5,10
+    1da4:	00016b80 	call	16b8 <__mulsi3>
+    1da8:	00000106 	br	1db0 <___vfprintf_internal_r+0x13c>
+    1dac:	0005883a 	mov	r2,zero
+    1db0:	15a5883a 	add	r18,r2,r22
+    1db4:	0000f206 	br	2180 <___vfprintf_internal_r+0x50c>
+    1db8:	01400b84 	movi	r5,46
+    1dbc:	1140f426 	beq	r2,r5,2190 <___vfprintf_internal_r+0x51c>
+    1dc0:	05800084 	movi	r22,2
+    1dc4:	213ff404 	addi	r4,r4,-48
+    1dc8:	20c03fcc 	andi	r3,r4,255
+    1dcc:	01000244 	movi	r4,9
+    1dd0:	20c00b36 	bltu	r4,r3,1e00 <___vfprintf_internal_r+0x18c>
+    1dd4:	00bfffc4 	movi	r2,-1
+    1dd8:	98800626 	beq	r19,r2,1df4 <___vfprintf_internal_r+0x180>
+    1ddc:	9809883a 	mov	r4,r19
+    1de0:	01400284 	movi	r5,10
+    1de4:	d8c01115 	stw	r3,68(sp)
+    1de8:	00016b80 	call	16b8 <__mulsi3>
+    1dec:	d8c01117 	ldw	r3,68(sp)
+    1df0:	00000106 	br	1df8 <___vfprintf_internal_r+0x184>
+    1df4:	0005883a 	mov	r2,zero
+    1df8:	10e7883a 	add	r19,r2,r3
+    1dfc:	0000e706 	br	219c <___vfprintf_internal_r+0x528>
+    1e00:	01401b04 	movi	r5,108
+    1e04:	1140e026 	beq	r2,r5,2188 <___vfprintf_internal_r+0x514>
+    1e08:	013fffc4 	movi	r4,-1
+    1e0c:	99000226 	beq	r19,r4,1e18 <___vfprintf_internal_r+0x1a4>
+    1e10:	d8000b15 	stw	zero,44(sp)
+    1e14:	00000106 	br	1e1c <___vfprintf_internal_r+0x1a8>
+    1e18:	04c00044 	movi	r19,1
+    1e1c:	01001a44 	movi	r4,105
+    1e20:	11001626 	beq	r2,r4,1e7c <___vfprintf_internal_r+0x208>
+    1e24:	20800916 	blt	r4,r2,1e4c <___vfprintf_internal_r+0x1d8>
+    1e28:	010018c4 	movi	r4,99
+    1e2c:	11009626 	beq	r2,r4,2088 <___vfprintf_internal_r+0x414>
+    1e30:	01001904 	movi	r4,100
+    1e34:	11001126 	beq	r2,r4,1e7c <___vfprintf_internal_r+0x208>
+    1e38:	01001604 	movi	r4,88
+    1e3c:	1100d61e 	bne	r2,r4,2198 <___vfprintf_internal_r+0x524>
+    1e40:	00c00044 	movi	r3,1
+    1e44:	d8c00e15 	stw	r3,56(sp)
+    1e48:	00001406 	br	1e9c <___vfprintf_internal_r+0x228>
+    1e4c:	01001cc4 	movi	r4,115
+    1e50:	1100a626 	beq	r2,r4,20ec <___vfprintf_internal_r+0x478>
+    1e54:	20800416 	blt	r4,r2,1e68 <___vfprintf_internal_r+0x1f4>
+    1e58:	01001bc4 	movi	r4,111
+    1e5c:	1100ce1e 	bne	r2,r4,2198 <___vfprintf_internal_r+0x524>
+    1e60:	05400204 	movi	r21,8
+    1e64:	00000e06 	br	1ea0 <___vfprintf_internal_r+0x22c>
+    1e68:	01001d44 	movi	r4,117
+    1e6c:	11000c26 	beq	r2,r4,1ea0 <___vfprintf_internal_r+0x22c>
+    1e70:	01001e04 	movi	r4,120
+    1e74:	11000926 	beq	r2,r4,1e9c <___vfprintf_internal_r+0x228>
+    1e78:	0000c706 	br	2198 <___vfprintf_internal_r+0x524>
+    1e7c:	e0800104 	addi	r2,fp,4
+    1e80:	b8000726 	beq	r23,zero,1ea0 <___vfprintf_internal_r+0x22c>
+    1e84:	d8800d15 	stw	r2,52(sp)
+    1e88:	e7000017 	ldw	fp,0(fp)
+    1e8c:	e000080e 	bge	fp,zero,1eb0 <___vfprintf_internal_r+0x23c>
+    1e90:	0739c83a 	sub	fp,zero,fp
+    1e94:	02000044 	movi	r8,1
+    1e98:	00000606 	br	1eb4 <___vfprintf_internal_r+0x240>
+    1e9c:	05400404 	movi	r21,16
+    1ea0:	e0c00104 	addi	r3,fp,4
+    1ea4:	d8c00d15 	stw	r3,52(sp)
+    1ea8:	e7000017 	ldw	fp,0(fp)
+    1eac:	002f883a 	mov	r23,zero
+    1eb0:	0011883a 	mov	r8,zero
+    1eb4:	002d883a 	mov	r22,zero
+    1eb8:	dd87883a 	add	r3,sp,r22
+    1ebc:	e0001a26 	beq	fp,zero,1f28 <___vfprintf_internal_r+0x2b4>
+    1ec0:	e009883a 	mov	r4,fp
+    1ec4:	a80b883a 	mov	r5,r21
+    1ec8:	d8c01115 	stw	r3,68(sp)
+    1ecc:	da001215 	stw	r8,72(sp)
+    1ed0:	00016a80 	call	16a8 <__udivsi3>
+    1ed4:	a809883a 	mov	r4,r21
+    1ed8:	100b883a 	mov	r5,r2
+    1edc:	d8801015 	stw	r2,64(sp)
+    1ee0:	00016b80 	call	16b8 <__mulsi3>
+    1ee4:	e085c83a 	sub	r2,fp,r2
+    1ee8:	01000244 	movi	r4,9
+    1eec:	d8c01117 	ldw	r3,68(sp)
+    1ef0:	d9801017 	ldw	r6,64(sp)
+    1ef4:	da001217 	ldw	r8,72(sp)
+    1ef8:	20800216 	blt	r4,r2,1f04 <___vfprintf_internal_r+0x290>
+    1efc:	17000c04 	addi	fp,r2,48
+    1f00:	00000506 	br	1f18 <___vfprintf_internal_r+0x2a4>
+    1f04:	d9400e17 	ldw	r5,56(sp)
+    1f08:	28000226 	beq	r5,zero,1f14 <___vfprintf_internal_r+0x2a0>
+    1f0c:	17000dc4 	addi	fp,r2,55
+    1f10:	00000106 	br	1f18 <___vfprintf_internal_r+0x2a4>
+    1f14:	170015c4 	addi	fp,r2,87
+    1f18:	1f000005 	stb	fp,0(r3)
+    1f1c:	b5800044 	addi	r22,r22,1
+    1f20:	3039883a 	mov	fp,r6
+    1f24:	003fe406 	br	1eb8 <_gp+0xffff73c4>
+    1f28:	1ec5c83a 	sub	r2,r3,sp
+    1f2c:	d8800a15 	stw	r2,40(sp)
+    1f30:	9885c83a 	sub	r2,r19,r2
+    1f34:	1839883a 	mov	fp,r3
+    1f38:	00800e0e 	bge	zero,r2,1f74 <___vfprintf_internal_r+0x300>
+    1f3c:	182d883a 	mov	r22,r3
+    1f40:	1885883a 	add	r2,r3,r2
+    1f44:	01000c04 	movi	r4,48
+    1f48:	d9400917 	ldw	r5,36(sp)
+    1f4c:	b007883a 	mov	r3,r22
+    1f50:	b140052e 	bgeu	r22,r5,1f68 <___vfprintf_internal_r+0x2f4>
+    1f54:	b5800044 	addi	r22,r22,1
+    1f58:	19000005 	stb	r4,0(r3)
+    1f5c:	b039883a 	mov	fp,r22
+    1f60:	b0bff91e 	bne	r22,r2,1f48 <_gp+0xffff7454>
+    1f64:	00000106 	br	1f6c <___vfprintf_internal_r+0x2f8>
+    1f68:	b039883a 	mov	fp,r22
+    1f6c:	b6edc83a 	sub	r22,r22,sp
+    1f70:	dd800a15 	stw	r22,40(sp)
+    1f74:	d8800a17 	ldw	r2,40(sp)
+    1f78:	1207883a 	add	r3,r2,r8
+    1f7c:	90edc83a 	sub	r22,r18,r3
+    1f80:	d8c00b17 	ldw	r3,44(sp)
+    1f84:	18001726 	beq	r3,zero,1fe4 <___vfprintf_internal_r+0x370>
+    1f88:	40000a26 	beq	r8,zero,1fb4 <___vfprintf_internal_r+0x340>
+    1f8c:	00800b44 	movi	r2,45
+    1f90:	d8800805 	stb	r2,32(sp)
+    1f94:	88800117 	ldw	r2,4(r17)
+    1f98:	a009883a 	mov	r4,r20
+    1f9c:	880b883a 	mov	r5,r17
+    1fa0:	d9800804 	addi	r6,sp,32
+    1fa4:	01c00044 	movi	r7,1
+    1fa8:	103ee83a 	callr	r2
+    1fac:	10004d1e 	bne	r2,zero,20e4 <___vfprintf_internal_r+0x470>
+    1fb0:	84000044 	addi	r16,r16,1
+    1fb4:	0580070e 	bge	zero,r22,1fd4 <___vfprintf_internal_r+0x360>
+    1fb8:	a009883a 	mov	r4,r20
+    1fbc:	880b883a 	mov	r5,r17
+    1fc0:	01800c04 	movi	r6,48
+    1fc4:	b00f883a 	mov	r7,r22
+    1fc8:	0001c080 	call	1c08 <print_repeat>
+    1fcc:	1000451e 	bne	r2,zero,20e4 <___vfprintf_internal_r+0x470>
+    1fd0:	85a1883a 	add	r16,r16,r22
+    1fd4:	d9000a17 	ldw	r4,40(sp)
+    1fd8:	e007883a 	mov	r3,fp
+    1fdc:	272dc83a 	sub	r22,r4,fp
+    1fe0:	00002206 	br	206c <___vfprintf_internal_r+0x3f8>
+    1fe4:	0580090e 	bge	zero,r22,200c <___vfprintf_internal_r+0x398>
+    1fe8:	a009883a 	mov	r4,r20
+    1fec:	880b883a 	mov	r5,r17
+    1ff0:	01800804 	movi	r6,32
+    1ff4:	b00f883a 	mov	r7,r22
+    1ff8:	da001215 	stw	r8,72(sp)
+    1ffc:	0001c080 	call	1c08 <print_repeat>
+    2000:	da001217 	ldw	r8,72(sp)
+    2004:	1000371e 	bne	r2,zero,20e4 <___vfprintf_internal_r+0x470>
+    2008:	85a1883a 	add	r16,r16,r22
+    200c:	403ff126 	beq	r8,zero,1fd4 <_gp+0xffff74e0>
+    2010:	00800b44 	movi	r2,45
+    2014:	d8800805 	stb	r2,32(sp)
+    2018:	88800117 	ldw	r2,4(r17)
+    201c:	a009883a 	mov	r4,r20
+    2020:	880b883a 	mov	r5,r17
+    2024:	d9800804 	addi	r6,sp,32
+    2028:	01c00044 	movi	r7,1
+    202c:	103ee83a 	callr	r2
+    2030:	10002c1e 	bne	r2,zero,20e4 <___vfprintf_internal_r+0x470>
+    2034:	84000044 	addi	r16,r16,1
+    2038:	003fe606 	br	1fd4 <_gp+0xffff74e0>
+    203c:	18ffffc4 	addi	r3,r3,-1
+    2040:	18800003 	ldbu	r2,0(r3)
+    2044:	a009883a 	mov	r4,r20
+    2048:	d8c01115 	stw	r3,68(sp)
+    204c:	d8800805 	stb	r2,32(sp)
+    2050:	88800117 	ldw	r2,4(r17)
+    2054:	880b883a 	mov	r5,r17
+    2058:	d9800804 	addi	r6,sp,32
+    205c:	01c00044 	movi	r7,1
+    2060:	103ee83a 	callr	r2
+    2064:	d8c01117 	ldw	r3,68(sp)
+    2068:	10001e1e 	bne	r2,zero,20e4 <___vfprintf_internal_r+0x470>
+    206c:	80c5c83a 	sub	r2,r16,r3
+    2070:	1d89883a 	add	r4,r3,r22
+    2074:	e085883a 	add	r2,fp,r2
+    2078:	013ff016 	blt	zero,r4,203c <_gp+0xffff7548>
+    207c:	1021883a 	mov	r16,r2
+    2080:	df000d17 	ldw	fp,52(sp)
+    2084:	00004406 	br	2198 <___vfprintf_internal_r+0x524>
+    2088:	01000044 	movi	r4,1
+    208c:	2480080e 	bge	r4,r18,20b0 <___vfprintf_internal_r+0x43c>
+    2090:	95bfffc4 	addi	r22,r18,-1
+    2094:	a009883a 	mov	r4,r20
+    2098:	880b883a 	mov	r5,r17
+    209c:	01800804 	movi	r6,32
+    20a0:	b00f883a 	mov	r7,r22
+    20a4:	0001c080 	call	1c08 <print_repeat>
+    20a8:	10000e1e 	bne	r2,zero,20e4 <___vfprintf_internal_r+0x470>
+    20ac:	85a1883a 	add	r16,r16,r22
+    20b0:	e0800017 	ldw	r2,0(fp)
+    20b4:	a009883a 	mov	r4,r20
+    20b8:	880b883a 	mov	r5,r17
+    20bc:	d8800005 	stb	r2,0(sp)
+    20c0:	88800117 	ldw	r2,4(r17)
+    20c4:	d80d883a 	mov	r6,sp
+    20c8:	01c00044 	movi	r7,1
+    20cc:	e5800104 	addi	r22,fp,4
+    20d0:	103ee83a 	callr	r2
+    20d4:	1000031e 	bne	r2,zero,20e4 <___vfprintf_internal_r+0x470>
+    20d8:	84000044 	addi	r16,r16,1
+    20dc:	b039883a 	mov	fp,r22
+    20e0:	00002d06 	br	2198 <___vfprintf_internal_r+0x524>
+    20e4:	00bfffc4 	movi	r2,-1
+    20e8:	00003106 	br	21b0 <___vfprintf_internal_r+0x53c>
+    20ec:	e5800017 	ldw	r22,0(fp)
+    20f0:	e0c00104 	addi	r3,fp,4
+    20f4:	d8c00a15 	stw	r3,40(sp)
+    20f8:	b009883a 	mov	r4,r22
+    20fc:	0001bec0 	call	1bec <strlen>
+    2100:	9091c83a 	sub	r8,r18,r2
+    2104:	1039883a 	mov	fp,r2
+    2108:	0200090e 	bge	zero,r8,2130 <___vfprintf_internal_r+0x4bc>
+    210c:	400f883a 	mov	r7,r8
+    2110:	a009883a 	mov	r4,r20
+    2114:	880b883a 	mov	r5,r17
+    2118:	01800804 	movi	r6,32
+    211c:	da001215 	stw	r8,72(sp)
+    2120:	0001c080 	call	1c08 <print_repeat>
+    2124:	da001217 	ldw	r8,72(sp)
+    2128:	103fee1e 	bne	r2,zero,20e4 <_gp+0xffff75f0>
+    212c:	8221883a 	add	r16,r16,r8
+    2130:	88800117 	ldw	r2,4(r17)
+    2134:	a009883a 	mov	r4,r20
+    2138:	880b883a 	mov	r5,r17
+    213c:	b00d883a 	mov	r6,r22
+    2140:	e00f883a 	mov	r7,fp
+    2144:	103ee83a 	callr	r2
+    2148:	103fe61e 	bne	r2,zero,20e4 <_gp+0xffff75f0>
+    214c:	8721883a 	add	r16,r16,fp
+    2150:	df000a17 	ldw	fp,40(sp)
+    2154:	00001006 	br	2198 <___vfprintf_internal_r+0x524>
+    2158:	05c00044 	movi	r23,1
+    215c:	04ffffc4 	movi	r19,-1
+    2160:	d8000e15 	stw	zero,56(sp)
+    2164:	05400284 	movi	r21,10
+    2168:	9825883a 	mov	r18,r19
+    216c:	d8000c15 	stw	zero,48(sp)
+    2170:	d8000b15 	stw	zero,44(sp)
+    2174:	b82d883a 	mov	r22,r23
+    2178:	00000806 	br	219c <___vfprintf_internal_r+0x528>
+    217c:	dd800b15 	stw	r22,44(sp)
+    2180:	05800084 	movi	r22,2
+    2184:	00000506 	br	219c <___vfprintf_internal_r+0x528>
+    2188:	00c00044 	movi	r3,1
+    218c:	d8c00c15 	stw	r3,48(sp)
+    2190:	058000c4 	movi	r22,3
+    2194:	00000106 	br	219c <___vfprintf_internal_r+0x528>
+    2198:	002d883a 	mov	r22,zero
+    219c:	d8c00f17 	ldw	r3,60(sp)
+    21a0:	18c00044 	addi	r3,r3,1
+    21a4:	d8c00f15 	stw	r3,60(sp)
+    21a8:	003ecc06 	br	1cdc <_gp+0xffff71e8>
+    21ac:	8005883a 	mov	r2,r16
+    21b0:	dfc01c17 	ldw	ra,112(sp)
+    21b4:	df001b17 	ldw	fp,108(sp)
+    21b8:	ddc01a17 	ldw	r23,104(sp)
+    21bc:	dd801917 	ldw	r22,100(sp)
+    21c0:	dd401817 	ldw	r21,96(sp)
+    21c4:	dd001717 	ldw	r20,92(sp)
+    21c8:	dcc01617 	ldw	r19,88(sp)
+    21cc:	dc801517 	ldw	r18,84(sp)
+    21d0:	dc401417 	ldw	r17,80(sp)
+    21d4:	dc001317 	ldw	r16,76(sp)
+    21d8:	dec01d04 	addi	sp,sp,116
+    21dc:	f800283a 	ret
+
+000021e0 <__vfprintf_internal>:
+    21e0:	2007883a 	mov	r3,r4
+    21e4:	01000034 	movhi	r4,0
+    21e8:	210ac804 	addi	r4,r4,11040
+    21ec:	21000017 	ldw	r4,0(r4)
+    21f0:	2805883a 	mov	r2,r5
+    21f4:	300f883a 	mov	r7,r6
+    21f8:	180b883a 	mov	r5,r3
+    21fc:	100d883a 	mov	r6,r2
+    2200:	0001c741 	jmpi	1c74 <___vfprintf_internal_r>
+
+00002204 <__sfvwrite_small_dev>:
+    2204:	2880000b 	ldhu	r2,0(r5)
+    2208:	defffa04 	addi	sp,sp,-24
+    220c:	dc000015 	stw	r16,0(sp)
+    2210:	dfc00515 	stw	ra,20(sp)
+    2214:	dd000415 	stw	r20,16(sp)
+    2218:	dcc00315 	stw	r19,12(sp)
+    221c:	dc800215 	stw	r18,8(sp)
+    2220:	dc400115 	stw	r17,4(sp)
+    2224:	1080020c 	andi	r2,r2,8
+    2228:	2821883a 	mov	r16,r5
+    222c:	10001726 	beq	r2,zero,228c <__sfvwrite_small_dev+0x88>
+    2230:	2880008f 	ldh	r2,2(r5)
+    2234:	10001216 	blt	r2,zero,2280 <__sfvwrite_small_dev+0x7c>
+    2238:	2027883a 	mov	r19,r4
+    223c:	3025883a 	mov	r18,r6
+    2240:	3823883a 	mov	r17,r7
+    2244:	05010004 	movi	r20,1024
+    2248:	04400b0e 	bge	zero,r17,2278 <__sfvwrite_small_dev+0x74>
+    224c:	8140008f 	ldh	r5,2(r16)
+    2250:	880f883a 	mov	r7,r17
+    2254:	a440010e 	bge	r20,r17,225c <__sfvwrite_small_dev+0x58>
+    2258:	01c10004 	movi	r7,1024
+    225c:	9809883a 	mov	r4,r19
+    2260:	900d883a 	mov	r6,r18
+    2264:	000237c0 	call	237c <_write_r>
+    2268:	0080050e 	bge	zero,r2,2280 <__sfvwrite_small_dev+0x7c>
+    226c:	88a3c83a 	sub	r17,r17,r2
+    2270:	90a5883a 	add	r18,r18,r2
+    2274:	003ff406 	br	2248 <_gp+0xffff7754>
+    2278:	0005883a 	mov	r2,zero
+    227c:	00000406 	br	2290 <__sfvwrite_small_dev+0x8c>
+    2280:	8080000b 	ldhu	r2,0(r16)
+    2284:	10801014 	ori	r2,r2,64
+    2288:	8080000d 	sth	r2,0(r16)
+    228c:	00bfffc4 	movi	r2,-1
+    2290:	dfc00517 	ldw	ra,20(sp)
+    2294:	dd000417 	ldw	r20,16(sp)
+    2298:	dcc00317 	ldw	r19,12(sp)
+    229c:	dc800217 	ldw	r18,8(sp)
+    22a0:	dc400117 	ldw	r17,4(sp)
+    22a4:	dc000017 	ldw	r16,0(sp)
+    22a8:	dec00604 	addi	sp,sp,24
+    22ac:	f800283a 	ret
+
+000022b0 <memset>:
+    22b0:	2005883a 	mov	r2,r4
+    22b4:	2007883a 	mov	r3,r4
+    22b8:	218d883a 	add	r6,r4,r6
+    22bc:	19800326 	beq	r3,r6,22cc <memset+0x1c>
+    22c0:	19400005 	stb	r5,0(r3)
+    22c4:	18c00044 	addi	r3,r3,1
+    22c8:	003ffc06 	br	22bc <_gp+0xffff77c8>
+    22cc:	f800283a 	ret
+
+000022d0 <putc>:
+    22d0:	defffd04 	addi	sp,sp,-12
+    22d4:	00800034 	movhi	r2,0
+    22d8:	dc000115 	stw	r16,4(sp)
+    22dc:	dfc00215 	stw	ra,8(sp)
+    22e0:	10888104 	addi	r2,r2,8708
+    22e4:	28800115 	stw	r2,4(r5)
+    22e8:	00800034 	movhi	r2,0
+    22ec:	108ac804 	addi	r2,r2,11040
+    22f0:	d9000005 	stb	r4,0(sp)
+    22f4:	2021883a 	mov	r16,r4
+    22f8:	11000017 	ldw	r4,0(r2)
+    22fc:	d80d883a 	mov	r6,sp
+    2300:	01c00044 	movi	r7,1
+    2304:	00022040 	call	2204 <__sfvwrite_small_dev>
+    2308:	00ffffc4 	movi	r3,-1
+    230c:	10c00126 	beq	r2,r3,2314 <putc+0x44>
+    2310:	8005883a 	mov	r2,r16
+    2314:	dfc00217 	ldw	ra,8(sp)
+    2318:	dc000117 	ldw	r16,4(sp)
+    231c:	dec00304 	addi	sp,sp,12
+    2320:	f800283a 	ret
+
+00002324 <_putc_r>:
+    2324:	defffd04 	addi	sp,sp,-12
+    2328:	00800034 	movhi	r2,0
+    232c:	dc000115 	stw	r16,4(sp)
+    2330:	dfc00215 	stw	ra,8(sp)
+    2334:	10888104 	addi	r2,r2,8708
+    2338:	30800115 	stw	r2,4(r6)
+    233c:	00800034 	movhi	r2,0
+    2340:	108ac804 	addi	r2,r2,11040
+    2344:	11000017 	ldw	r4,0(r2)
+    2348:	2821883a 	mov	r16,r5
+    234c:	01c00044 	movi	r7,1
+    2350:	300b883a 	mov	r5,r6
+    2354:	d80d883a 	mov	r6,sp
+    2358:	dc000005 	stb	r16,0(sp)
+    235c:	00022040 	call	2204 <__sfvwrite_small_dev>
+    2360:	00ffffc4 	movi	r3,-1
+    2364:	10c00126 	beq	r2,r3,236c <_putc_r+0x48>
+    2368:	8005883a 	mov	r2,r16
+    236c:	dfc00217 	ldw	ra,8(sp)
+    2370:	dc000117 	ldw	r16,4(sp)
+    2374:	dec00304 	addi	sp,sp,12
+    2378:	f800283a 	ret
+
+0000237c <_write_r>:
+    237c:	defffd04 	addi	sp,sp,-12
+    2380:	dc000015 	stw	r16,0(sp)
+    2384:	04000034 	movhi	r16,0
+    2388:	dc400115 	stw	r17,4(sp)
+    238c:	840b2404 	addi	r16,r16,11408
+    2390:	2023883a 	mov	r17,r4
+    2394:	2809883a 	mov	r4,r5
+    2398:	300b883a 	mov	r5,r6
+    239c:	380d883a 	mov	r6,r7
+    23a0:	dfc00215 	stw	ra,8(sp)
+    23a4:	80000015 	stw	zero,0(r16)
+    23a8:	00027a00 	call	27a0 <write>
+    23ac:	00ffffc4 	movi	r3,-1
+    23b0:	10c0031e 	bne	r2,r3,23c0 <_write_r+0x44>
+    23b4:	80c00017 	ldw	r3,0(r16)
+    23b8:	18000126 	beq	r3,zero,23c0 <_write_r+0x44>
+    23bc:	88c00015 	stw	r3,0(r17)
+    23c0:	dfc00217 	ldw	ra,8(sp)
+    23c4:	dc400117 	ldw	r17,4(sp)
+    23c8:	dc000017 	ldw	r16,0(sp)
+    23cc:	dec00304 	addi	sp,sp,12
+    23d0:	f800283a 	ret
+
+000023d4 <__muldi3>:
+    23d4:	defff604 	addi	sp,sp,-40
+    23d8:	dd800615 	stw	r22,24(sp)
+    23dc:	dd400515 	stw	r21,20(sp)
+    23e0:	25bfffcc 	andi	r22,r4,65535
+    23e4:	357fffcc 	andi	r21,r6,65535
+    23e8:	dc400115 	stw	r17,4(sp)
+    23ec:	2022d43a 	srli	r17,r4,16
+    23f0:	dcc00315 	stw	r19,12(sp)
+    23f4:	dc800215 	stw	r18,8(sp)
+    23f8:	2027883a 	mov	r19,r4
+    23fc:	2825883a 	mov	r18,r5
+    2400:	a809883a 	mov	r4,r21
+    2404:	b00b883a 	mov	r5,r22
+    2408:	dfc00915 	stw	ra,36(sp)
+    240c:	df000815 	stw	fp,32(sp)
+    2410:	ddc00715 	stw	r23,28(sp)
+    2414:	3839883a 	mov	fp,r7
+    2418:	302ed43a 	srli	r23,r6,16
+    241c:	dd000415 	stw	r20,16(sp)
+    2420:	dc000015 	stw	r16,0(sp)
+    2424:	3029883a 	mov	r20,r6
+    2428:	00016b80 	call	16b8 <__mulsi3>
+    242c:	a809883a 	mov	r4,r21
+    2430:	880b883a 	mov	r5,r17
+    2434:	1021883a 	mov	r16,r2
+    2438:	00016b80 	call	16b8 <__mulsi3>
+    243c:	880b883a 	mov	r5,r17
+    2440:	b809883a 	mov	r4,r23
+    2444:	102b883a 	mov	r21,r2
+    2448:	00016b80 	call	16b8 <__mulsi3>
+    244c:	b809883a 	mov	r4,r23
+    2450:	b00b883a 	mov	r5,r22
+    2454:	1023883a 	mov	r17,r2
+    2458:	00016b80 	call	16b8 <__mulsi3>
+    245c:	8012d43a 	srli	r9,r16,16
+    2460:	a885883a 	add	r2,r21,r2
+    2464:	1251883a 	add	r8,r2,r9
+    2468:	4540022e 	bgeu	r8,r21,2474 <__muldi3+0xa0>
+    246c:	00800074 	movhi	r2,1
+    2470:	88a3883a 	add	r17,r17,r2
+    2474:	4006d43a 	srli	r3,r8,16
+    2478:	4010943a 	slli	r8,r8,16
+    247c:	9809883a 	mov	r4,r19
+    2480:	e00b883a 	mov	r5,fp
+    2484:	843fffcc 	andi	r16,r16,65535
+    2488:	88e3883a 	add	r17,r17,r3
+    248c:	4421883a 	add	r16,r8,r16
+    2490:	00016b80 	call	16b8 <__mulsi3>
+    2494:	a009883a 	mov	r4,r20
+    2498:	900b883a 	mov	r5,r18
+    249c:	1027883a 	mov	r19,r2
+    24a0:	00016b80 	call	16b8 <__mulsi3>
+    24a4:	9885883a 	add	r2,r19,r2
+    24a8:	1447883a 	add	r3,r2,r17
+    24ac:	8005883a 	mov	r2,r16
+    24b0:	dfc00917 	ldw	ra,36(sp)
+    24b4:	df000817 	ldw	fp,32(sp)
+    24b8:	ddc00717 	ldw	r23,28(sp)
+    24bc:	dd800617 	ldw	r22,24(sp)
+    24c0:	dd400517 	ldw	r21,20(sp)
+    24c4:	dd000417 	ldw	r20,16(sp)
+    24c8:	dcc00317 	ldw	r19,12(sp)
+    24cc:	dc800217 	ldw	r18,8(sp)
+    24d0:	dc400117 	ldw	r17,4(sp)
+    24d4:	dc000017 	ldw	r16,0(sp)
+    24d8:	dec00a04 	addi	sp,sp,40
+    24dc:	f800283a 	ret
+
+000024e0 <alt_ic_isr_register>:
+  * @return                 0 if successful, else error (-1)
+  */
+int alt_ic_isr_register(alt_u32 ic_id, alt_u32 irq, alt_isr_func isr, 
+  void *isr_context, void *flags)
+{
+    return alt_iic_isr_register(ic_id, irq, isr, isr_context, flags);
+    24e0:	000257c1 	jmpi	257c <alt_iic_isr_register>
+
+000024e4 <alt_ic_irq_enable>:
+static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE 
+       alt_irq_disable_all (void)
+{
+  alt_irq_context context;
+
+  NIOS2_READ_STATUS (context);
+    24e4:	000d303a 	rdctl	r6,status
+
+  NIOS2_WRITE_STATUS (context & ~NIOS2_STATUS_PIE_MSK);
+    24e8:	00bfff84 	movi	r2,-2
+    24ec:	3084703a 	and	r2,r6,r2
+    24f0:	1001703a 	wrctl	status,r2
+  alt_irq_context  status;
+  extern volatile alt_u32 alt_irq_active;
+
+  status = alt_irq_disable_all ();
+
+  alt_irq_active |= (1 << id);
+    24f4:	00800034 	movhi	r2,0
+    24f8:	108b2504 	addi	r2,r2,11412
+    24fc:	01000044 	movi	r4,1
+    2500:	10c00017 	ldw	r3,0(r2)
+    2504:	214a983a 	sll	r5,r4,r5
+    2508:	28cab03a 	or	r5,r5,r3
+    250c:	11400015 	stw	r5,0(r2)
+  NIOS2_WRITE_IENABLE (alt_irq_active);
+    2510:	10800017 	ldw	r2,0(r2)
+    2514:	100170fa 	wrctl	ienable,r2
+  status &= ~NIOS2_STATUS_PIE_MSK;
+  status |= (context & NIOS2_STATUS_PIE_MSK);
+  
+  NIOS2_WRITE_STATUS (status);
+#else
+  NIOS2_WRITE_STATUS (context);
+    2518:	3001703a 	wrctl	status,r6
+  * @return                 0 if successful, else error (-1)
+  */
+int alt_ic_irq_enable (alt_u32 ic_id, alt_u32 irq)
+{
+    return alt_irq_enable(irq);
+}
+    251c:	0005883a 	mov	r2,zero
+    2520:	f800283a 	ret
+
+00002524 <alt_ic_irq_disable>:
+static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE 
+       alt_irq_disable_all (void)
+{
+  alt_irq_context context;
+
+  NIOS2_READ_STATUS (context);
+    2524:	000d303a 	rdctl	r6,status
+
+  NIOS2_WRITE_STATUS (context & ~NIOS2_STATUS_PIE_MSK);
+    2528:	00bfff84 	movi	r2,-2
+    252c:	3084703a 	and	r2,r6,r2
+    2530:	1001703a 	wrctl	status,r2
+  alt_irq_context  status;
+  extern volatile alt_u32 alt_irq_active;
+
+  status = alt_irq_disable_all ();
+
+  alt_irq_active &= ~(1 << id);
+    2534:	00800034 	movhi	r2,0
+    2538:	108b2504 	addi	r2,r2,11412
+    253c:	013fff84 	movi	r4,-2
+    2540:	10c00017 	ldw	r3,0(r2)
+    2544:	214a183a 	rol	r5,r4,r5
+    2548:	28ca703a 	and	r5,r5,r3
+    254c:	11400015 	stw	r5,0(r2)
+  NIOS2_WRITE_IENABLE (alt_irq_active);
+    2550:	10800017 	ldw	r2,0(r2)
+    2554:	100170fa 	wrctl	ienable,r2
+  status &= ~NIOS2_STATUS_PIE_MSK;
+  status |= (context & NIOS2_STATUS_PIE_MSK);
+  
+  NIOS2_WRITE_STATUS (status);
+#else
+  NIOS2_WRITE_STATUS (context);
+    2558:	3001703a 	wrctl	status,r6
+  * @return                 0 if successful, else error (-1)
+  */
+int alt_ic_irq_disable(alt_u32 ic_id, alt_u32 irq)
+{
+    return alt_irq_disable(irq);
+}
+    255c:	0005883a 	mov	r2,zero
+    2560:	f800283a 	ret
+
+00002564 <alt_ic_irq_enabled>:
+  */
+alt_u32 alt_ic_irq_enabled(alt_u32 ic_id, alt_u32 irq)
+{
+    alt_u32 irq_enabled;
+
+    NIOS2_READ_IENABLE(irq_enabled);
+    2564:	000530fa 	rdctl	r2,ienable
+
+    return (irq_enabled & (1 << irq)) ? 1: 0;
+    2568:	00c00044 	movi	r3,1
+    256c:	194a983a 	sll	r5,r3,r5
+    2570:	1144703a 	and	r2,r2,r5
+}
+    2574:	1004c03a 	cmpne	r2,r2,zero
+    2578:	f800283a 	ret
+
+0000257c <alt_iic_isr_register>:
+{
+  int rc = -EINVAL;  
+  int id = irq;             /* IRQ interpreted as the interrupt ID. */
+  alt_irq_context status;
+
+  if (id < ALT_NIRQ)
+    257c:	00c007c4 	movi	r3,31
+    2580:	19401616 	blt	r3,r5,25dc <alt_iic_isr_register+0x60>
+  * @param flags            
+  * @return                 0 if successful, else error (-1)
+  */
+int alt_iic_isr_register(alt_u32 ic_id, alt_u32 irq, alt_isr_func isr, 
+  void *isr_context, void *flags)
+{
+    2584:	defffe04 	addi	sp,sp,-8
+    2588:	dfc00115 	stw	ra,4(sp)
+    258c:	dc000015 	stw	r16,0(sp)
+static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE 
+       alt_irq_disable_all (void)
+{
+  alt_irq_context context;
+
+  NIOS2_READ_STATUS (context);
+    2590:	0021303a 	rdctl	r16,status
+
+  NIOS2_WRITE_STATUS (context & ~NIOS2_STATUS_PIE_MSK);
+    2594:	00ffff84 	movi	r3,-2
+    2598:	80c6703a 	and	r3,r16,r3
+    259c:	1801703a 	wrctl	status,r3
+     * state.
+     */
+
+    status = alt_irq_disable_all();
+
+    alt_irq[id].handler = isr;
+    25a0:	280490fa 	slli	r2,r5,3
+    25a4:	00c00034 	movhi	r3,0
+    25a8:	18cd2904 	addi	r3,r3,13476
+    25ac:	1891883a 	add	r8,r3,r2
+    25b0:	41800015 	stw	r6,0(r8)
+    alt_irq[id].context = isr_context;
+    25b4:	41c00115 	stw	r7,4(r8)
+
+    rc = (isr) ? alt_ic_irq_enable(ic_id, id) : alt_ic_irq_disable(ic_id, id);
+    25b8:	30000226 	beq	r6,zero,25c4 <alt_iic_isr_register+0x48>
+    25bc:	00024e40 	call	24e4 <alt_ic_irq_enable>
+    25c0:	00000106 	br	25c8 <alt_iic_isr_register+0x4c>
+    25c4:	00025240 	call	2524 <alt_ic_irq_disable>
+  status &= ~NIOS2_STATUS_PIE_MSK;
+  status |= (context & NIOS2_STATUS_PIE_MSK);
+  
+  NIOS2_WRITE_STATUS (status);
+#else
+  NIOS2_WRITE_STATUS (context);
+    25c8:	8001703a 	wrctl	status,r16
+
+    alt_irq_enable_all(status);
+  }
+
+  return rc; 
+}
+    25cc:	dfc00117 	ldw	ra,4(sp)
+    25d0:	dc000017 	ldw	r16,0(sp)
+    25d4:	dec00204 	addi	sp,sp,8
+    25d8:	f800283a 	ret
+  * @return                 0 if successful, else error (-1)
+  */
+int alt_iic_isr_register(alt_u32 ic_id, alt_u32 irq, alt_isr_func isr, 
+  void *isr_context, void *flags)
+{
+  int rc = -EINVAL;  
+    25dc:	00bffa84 	movi	r2,-22
+    25e0:	f800283a 	ret
+
+000025e4 <alt_load>:
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+    25e4:	deffff04 	addi	sp,sp,-4
+    25e8:	01000034 	movhi	r4,0
+    25ec:	01400034 	movhi	r5,0
+    25f0:	dfc00015 	stw	ra,0(sp)
+    25f4:	210a8504 	addi	r4,r4,10772
+    25f8:	294acd04 	addi	r5,r5,11060
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    25fc:	2140061e 	bne	r4,r5,2618 <alt_load+0x34>
+    2600:	01000034 	movhi	r4,0
+    2604:	01400034 	movhi	r5,0
+    2608:	21000804 	addi	r4,r4,32
+    260c:	29400804 	addi	r5,r5,32
+    2610:	2140141e 	bne	r4,r5,2664 <alt_load+0x80>
+    2614:	00000d06 	br	264c <alt_load+0x68>
+    2618:	00c00034 	movhi	r3,0
+    261c:	18cacd04 	addi	r3,r3,11060
+    2620:	00bfff04 	movi	r2,-4
+    2624:	1907c83a 	sub	r3,r3,r4
+    2628:	1886703a 	and	r3,r3,r2
+    262c:	0005883a 	mov	r2,zero
+  {
+    while( to != end )
+    2630:	10fff326 	beq	r2,r3,2600 <_gp+0xffff7b0c>
+    2634:	114f883a 	add	r7,r2,r5
+    {
+      *to++ = *from++;
+    2638:	39c00017 	ldw	r7,0(r7)
+    263c:	110d883a 	add	r6,r2,r4
+    2640:	10800104 	addi	r2,r2,4
+    2644:	31c00015 	stw	r7,0(r6)
+    2648:	003ff906 	br	2630 <_gp+0xffff7b3c>
+    264c:	01000034 	movhi	r4,0
+    2650:	01400034 	movhi	r5,0
+    2654:	210a3f04 	addi	r4,r4,10492
+    2658:	294a3f04 	addi	r5,r5,10492
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    265c:	2140121e 	bne	r4,r5,26a8 <alt_load+0xc4>
+    2660:	00000d06 	br	2698 <alt_load+0xb4>
+    2664:	00c00034 	movhi	r3,0
+    2668:	18c05404 	addi	r3,r3,336
+    266c:	00bfff04 	movi	r2,-4
+    2670:	1907c83a 	sub	r3,r3,r4
+    2674:	1886703a 	and	r3,r3,r2
+    2678:	0005883a 	mov	r2,zero
+  {
+    while( to != end )
+    267c:	10fff326 	beq	r2,r3,264c <_gp+0xffff7b58>
+    2680:	114f883a 	add	r7,r2,r5
+    {
+      *to++ = *from++;
+    2684:	39c00017 	ldw	r7,0(r7)
+    2688:	110d883a 	add	r6,r2,r4
+    268c:	10800104 	addi	r2,r2,4
+    2690:	31c00015 	stw	r7,0(r6)
+    2694:	003ff906 	br	267c <_gp+0xffff7b88>
+  
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+    2698:	00028ec0 	call	28ec <alt_dcache_flush_all>
+  alt_icache_flush_all();
+}
+    269c:	dfc00017 	ldw	ra,0(sp)
+    26a0:	dec00104 	addi	sp,sp,4
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+  alt_icache_flush_all();
+    26a4:	00028f01 	jmpi	28f0 <alt_icache_flush_all>
+    26a8:	00c00034 	movhi	r3,0
+    26ac:	18ca8504 	addi	r3,r3,10772
+    26b0:	00bfff04 	movi	r2,-4
+    26b4:	1907c83a 	sub	r3,r3,r4
+    26b8:	1886703a 	and	r3,r3,r2
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    26bc:	0005883a 	mov	r2,zero
+  {
+    while( to != end )
+    26c0:	10fff526 	beq	r2,r3,2698 <_gp+0xffff7ba4>
+    26c4:	114f883a 	add	r7,r2,r5
+    {
+      *to++ = *from++;
+    26c8:	39c00017 	ldw	r7,0(r7)
+    26cc:	110d883a 	add	r6,r2,r4
+    26d0:	10800104 	addi	r2,r2,4
+    26d4:	31c00015 	stw	r7,0(r6)
+    26d8:	003ff906 	br	26c0 <_gp+0xffff7bcc>
+
+000026dc <alt_main>:
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    26dc:	deffff04 	addi	sp,sp,-4
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    26e0:	0009883a 	mov	r4,zero
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    26e4:	dfc00015 	stw	ra,0(sp)
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    26e8:	000280c0 	call	280c <alt_irq_init>
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
+  ALT_SEM_CREATE (&alt_fd_list_lock, 1);
+
+  /* Initialize the device drivers/software components. */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
+  alt_sys_init();
+    26ec:	000282c0 	call	282c <alt_sys_init>
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    26f0:	d1206b17 	ldw	r4,-32340(gp)
+    26f4:	d1606a17 	ldw	r5,-32344(gp)
+    26f8:	d1a06917 	ldw	r6,-32348(gp)
+  close(STDOUT_FILENO);
+  exit (result);
+#endif
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] After main - we should not be here?.\r\n");
+}
+    26fc:	dfc00017 	ldw	ra,0(sp)
+    2700:	dec00104 	addi	sp,sp,4
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    2704:	00011a41 	jmpi	11a4 <main>
+
+00002708 <alt_putchar>:
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided putchar() routine.
+ */
+int 
+alt_putchar(int c)
+{
+    2708:	defffd04 	addi	sp,sp,-12
+    270c:	dc000115 	stw	r16,4(sp)
+	char        c1 = (char)(c & 0xff);
+    return write(STDOUT_FILENO,&c1,1);
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    char        c1 = (char)(c & 0xff);
+    2710:	d9000005 	stb	r4,0(sp)
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided putchar() routine.
+ */
+int 
+alt_putchar(int c)
+{
+    2714:	2021883a 	mov	r16,r4
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    char        c1 = (char)(c & 0xff);
+
+    if (ALT_DRIVER_WRITE(ALT_STDOUT_DEV, &c1, 1, 0) == -1) {
+    2718:	01000034 	movhi	r4,0
+    271c:	210acb04 	addi	r4,r4,11052
+    2720:	d80b883a 	mov	r5,sp
+    2724:	01800044 	movi	r6,1
+    2728:	000f883a 	mov	r7,zero
+ * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
+ * Otherwise, uses newlib provided putchar() routine.
+ */
+int 
+alt_putchar(int c)
+{
+    272c:	dfc00215 	stw	ra,8(sp)
+#else
+#ifdef ALT_USE_DIRECT_DRIVERS
+    ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
+    char        c1 = (char)(c & 0xff);
+
+    if (ALT_DRIVER_WRITE(ALT_STDOUT_DEV, &c1, 1, 0) == -1) {
+    2730:	00028300 	call	2830 <altera_avalon_jtag_uart_write>
+    2734:	00ffffc4 	movi	r3,-1
+    2738:	10c00126 	beq	r2,r3,2740 <alt_putchar+0x38>
+        return -1;
+    }
+    return c;
+    273c:	8005883a 	mov	r2,r16
+#else
+    return putchar(c);
+#endif
+#endif
+}
+    2740:	dfc00217 	ldw	ra,8(sp)
+    2744:	dc000117 	ldw	r16,4(sp)
+    2748:	dec00304 	addi	sp,sp,12
+    274c:	f800283a 	ret
+
+00002750 <sbrk>:
+static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE 
+       alt_irq_disable_all (void)
+{
+  alt_irq_context context;
+
+  NIOS2_READ_STATUS (context);
+    2750:	000b303a 	rdctl	r5,status
+
+  NIOS2_WRITE_STATUS (context & ~NIOS2_STATUS_PIE_MSK);
+    2754:	00bfff84 	movi	r2,-2
+    2758:	2884703a 	and	r2,r5,r2
+    275c:	1001703a 	wrctl	status,r2
+  char *prev_heap_end; 
+
+  context = alt_irq_disable_all();
+
+  /* Always return data aligned on a word boundary */
+  heap_end = (char *)(((unsigned int)heap_end + 3) & ~3);
+    2760:	d0a00d17 	ldw	r2,-32716(gp)
+    2764:	00ffff04 	movi	r3,-4
+    2768:	108000c4 	addi	r2,r2,3
+    276c:	10c4703a 	and	r2,r2,r3
+  if (((heap_end + incr) - __alt_heap_start) > ALT_MAX_HEAP_BYTES) {
+    alt_irq_enable_all(context);
+    return (caddr_t)-1;
+  }
+#else
+  if ((heap_end + incr) > __alt_heap_limit) {
+    2770:	00c00034 	movhi	r3,0
+  char *prev_heap_end; 
+
+  context = alt_irq_disable_all();
+
+  /* Always return data aligned on a word boundary */
+  heap_end = (char *)(((unsigned int)heap_end + 3) & ~3);
+    2774:	d0a00d15 	stw	r2,-32716(gp)
+  if (((heap_end + incr) - __alt_heap_start) > ALT_MAX_HEAP_BYTES) {
+    alt_irq_enable_all(context);
+    return (caddr_t)-1;
+  }
+#else
+  if ((heap_end + incr) > __alt_heap_limit) {
+    2778:	1109883a 	add	r4,r2,r4
+    277c:	18d00004 	addi	r3,r3,16384
+    2780:	1900032e 	bgeu	r3,r4,2790 <sbrk+0x40>
+  status &= ~NIOS2_STATUS_PIE_MSK;
+  status |= (context & NIOS2_STATUS_PIE_MSK);
+  
+  NIOS2_WRITE_STATUS (status);
+#else
+  NIOS2_WRITE_STATUS (context);
+    2784:	2801703a 	wrctl	status,r5
+    alt_irq_enable_all(context);
+    return (caddr_t)-1;
+    2788:	00bfffc4 	movi	r2,-1
+    278c:	f800283a 	ret
+  }
+#endif
+
+  prev_heap_end = heap_end; 
+  heap_end += incr; 
+    2790:	d1200d15 	stw	r4,-32716(gp)
+    2794:	2801703a 	wrctl	status,r5
+#endif
+
+  alt_irq_enable_all(context);
+
+  return (caddr_t) prev_heap_end; 
+} 
+    2798:	f800283a 	ret
+
+0000279c <usleep>:
+int ALT_USLEEP (useconds_t us)
+#else
+unsigned int ALT_USLEEP (unsigned int us)
+#endif
+{
+  return alt_busy_sleep(us);
+    279c:	00028641 	jmpi	2864 <alt_busy_sleep>
+
+000027a0 <write>:
+#if !defined(ALT_STDOUT_PRESENT) && !defined(ALT_STDERR_PRESENT)
+    /* Generate a link time warning, should this function ever be called. */
+    ALT_STUB_WARNING(write);
+#endif
+
+    switch (file) {
+    27a0:	00800044 	movi	r2,1
+    27a4:	20800226 	beq	r4,r2,27b0 <write+0x10>
+    27a8:	00800084 	movi	r2,2
+    27ac:	2080041e 	bne	r4,r2,27c0 <write+0x20>
+    case 1: /* stdout file descriptor */
+        return ALT_DRIVER_WRITE(ALT_STDOUT_DEV, ptr, len, 0);
+#endif /* ALT_STDOUT_PRESENT */
+#ifdef ALT_STDERR_PRESENT
+    case 2: /* stderr file descriptor */
+        return ALT_DRIVER_WRITE(ALT_STDERR_DEV, ptr, len, 0);
+    27b0:	01000034 	movhi	r4,0
+    27b4:	210acb04 	addi	r4,r4,11052
+    27b8:	000f883a 	mov	r7,zero
+    27bc:	00028301 	jmpi	2830 <altera_avalon_jtag_uart_write>
+
+extern int errno;
+
+static ALT_INLINE int* alt_get_errno(void)
+{
+  return ((alt_errno) ? alt_errno() : &errno);
+    27c0:	00800034 	movhi	r2,0
+    27c4:	108acc04 	addi	r2,r2,11056
+    27c8:	10800017 	ldw	r2,0(r2)
+    27cc:	10000926 	beq	r2,zero,27f4 <write+0x54>
+ * Provide minimal version that just writes to the stdout/stderr devices
+ * when provided.
+ */
+
+int ALT_WRITE (int file, const void *ptr, size_t len)
+{
+    27d0:	deffff04 	addi	sp,sp,-4
+    27d4:	dfc00015 	stw	ra,0(sp)
+    27d8:	103ee83a 	callr	r2
+#ifdef ALT_STDERR_PRESENT
+    case 2: /* stderr file descriptor */
+        return ALT_DRIVER_WRITE(ALT_STDERR_DEV, ptr, len, 0);
+#endif /* ALT_STDERR_PRESENT */
+    default:
+        ALT_ERRNO = EBADFD;
+    27dc:	00c01444 	movi	r3,81
+    27e0:	10c00015 	stw	r3,0(r2)
+        return -1;
+    }
+}
+    27e4:	00bfffc4 	movi	r2,-1
+    27e8:	dfc00017 	ldw	ra,0(sp)
+    27ec:	dec00104 	addi	sp,sp,4
+    27f0:	f800283a 	ret
+    27f4:	00800034 	movhi	r2,0
+    27f8:	108b2404 	addi	r2,r2,11408
+#ifdef ALT_STDERR_PRESENT
+    case 2: /* stderr file descriptor */
+        return ALT_DRIVER_WRITE(ALT_STDERR_DEV, ptr, len, 0);
+#endif /* ALT_STDERR_PRESENT */
+    default:
+        ALT_ERRNO = EBADFD;
+    27fc:	00c01444 	movi	r3,81
+    2800:	10c00015 	stw	r3,0(r2)
+        return -1;
+    }
+}
+    2804:	00bfffc4 	movi	r2,-1
+    2808:	f800283a 	ret
+
+0000280c <alt_irq_init>:
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
+ */
+
+void alt_irq_init ( const void* base )
+{
+    280c:	deffff04 	addi	sp,sp,-4
+    2810:	dfc00015 	stw	ra,0(sp)
+    ALTERA_NIOS2_QSYS_IRQ_INIT ( CPU, cpu);
+    2814:	00028f40 	call	28f4 <altera_nios2_qsys_irq_init>
+ * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
+ */
+static ALT_INLINE void ALT_ALWAYS_INLINE 
+       alt_irq_cpu_enable_interrupts (void)
+{
+    NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
+    2818:	00800044 	movi	r2,1
+    281c:	1001703a 	wrctl	status,r2
+    alt_irq_cpu_enable_interrupts();
+}
+    2820:	dfc00017 	ldw	ra,0(sp)
+    2824:	dec00104 	addi	sp,sp,4
+    2828:	f800283a 	ret
+
+0000282c <alt_sys_init>:
+ * Initialize the non-interrupt controller devices.
+ * Called after alt_irq_init().
+ */
+
+void alt_sys_init( void )
+{
+    282c:	f800283a 	ret
+
+00002830 <altera_avalon_jtag_uart_write>:
+ */
+
+int altera_avalon_jtag_uart_write(altera_avalon_jtag_uart_state* sp, 
+  const char * ptr, int count, int flags)
+{
+  unsigned int base = sp->base;
+    2830:	21000017 	ldw	r4,0(r4)
+ * one FIFOs worth of data.  But you said you didn't want to use interrupts :-)
+ */
+
+int altera_avalon_jtag_uart_write(altera_avalon_jtag_uart_state* sp, 
+  const char * ptr, int count, int flags)
+{
+    2834:	3005883a 	mov	r2,r6
+  unsigned int base = sp->base;
+
+  const char * end = ptr + count;
+    2838:	298d883a 	add	r6,r5,r6
+
+  while (ptr < end)
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+    283c:	21c00104 	addi	r7,r4,4
+{
+  unsigned int base = sp->base;
+
+  const char * end = ptr + count;
+
+  while (ptr < end)
+    2840:	2980072e 	bgeu	r5,r6,2860 <altera_avalon_jtag_uart_write+0x30>
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+    2844:	38c00037 	ldwio	r3,0(r7)
+    2848:	18ffffec 	andhi	r3,r3,65535
+    284c:	183ffc26 	beq	r3,zero,2840 <_gp+0xffff7d4c>
+      IOWR_ALTERA_AVALON_JTAG_UART_DATA(base, *ptr++);
+    2850:	28c00007 	ldb	r3,0(r5)
+    2854:	20c00035 	stwio	r3,0(r4)
+    2858:	29400044 	addi	r5,r5,1
+    285c:	003ff806 	br	2840 <_gp+0xffff7d4c>
+
+  return count;
+}
+    2860:	f800283a 	ret
+
+00002864 <alt_busy_sleep>:
+  {
+    cycles_per_loop = 3;
+  }
+  
+
+  big_loops = us / (INT_MAX/
+    2864:	014666b4 	movhi	r5,6554
+#include "alt_types.h"
+
+#include "priv/alt_busy_sleep.h"
+
+unsigned int alt_busy_sleep (unsigned int us)
+{
+    2868:	defffe04 	addi	sp,sp,-8
+  {
+    cycles_per_loop = 3;
+  }
+  
+
+  big_loops = us / (INT_MAX/
+    286c:	29666644 	addi	r5,r5,-26215
+#include "alt_types.h"
+
+#include "priv/alt_busy_sleep.h"
+
+unsigned int alt_busy_sleep (unsigned int us)
+{
+    2870:	dc000015 	stw	r16,0(sp)
+    2874:	dfc00115 	stw	ra,4(sp)
+    2878:	2021883a 	mov	r16,r4
+  {
+    cycles_per_loop = 3;
+  }
+  
+
+  big_loops = us / (INT_MAX/
+    287c:	00016a80 	call	16a8 <__udivsi3>
+  (ALT_CPU_FREQ/(cycles_per_loop * 1000000)));
+
+  if (big_loops)
+    2880:	10001026 	beq	r2,zero,28c4 <alt_busy_sleep+0x60>
+      /*
+      * Do NOT Try to single step the asm statement below 
+      * (single step will never return)
+      * Step out of this function or set a breakpoint after the asm statements
+      */
+      __asm__ volatile (
+    2884:	01600034 	movhi	r5,32768
+        "\n1:"
+        "\n\t.pushsection .debug_alt_sim_info"
+        "\n\t.int 4, 0, 0b, 1b"
+        "\n\t.popsection"
+        :: "r" (INT_MAX));
+      us -= (INT_MAX/(ALT_CPU_FREQ/
+    2888:	013999b4 	movhi	r4,58982
+  
+
+  big_loops = us / (INT_MAX/
+  (ALT_CPU_FREQ/(cycles_per_loop * 1000000)));
+
+  if (big_loops)
+    288c:	0007883a 	mov	r3,zero
+      /*
+      * Do NOT Try to single step the asm statement below 
+      * (single step will never return)
+      * Step out of this function or set a breakpoint after the asm statements
+      */
+      __asm__ volatile (
+    2890:	297fffc4 	addi	r5,r5,-1
+        "\n1:"
+        "\n\t.pushsection .debug_alt_sim_info"
+        "\n\t.int 4, 0, 0b, 1b"
+        "\n\t.popsection"
+        :: "r" (INT_MAX));
+      us -= (INT_MAX/(ALT_CPU_FREQ/
+    2894:	211999c4 	addi	r4,r4,26215
+      /*
+      * Do NOT Try to single step the asm statement below 
+      * (single step will never return)
+      * Step out of this function or set a breakpoint after the asm statements
+      */
+      __asm__ volatile (
+    2898:	297fffc4 	addi	r5,r5,-1
+    289c:	283ffe1e 	bne	r5,zero,2898 <_gp+0xffff7da4>
+  big_loops = us / (INT_MAX/
+  (ALT_CPU_FREQ/(cycles_per_loop * 1000000)));
+
+  if (big_loops)
+  {
+    for(i=0;i<big_loops;i++)
+    28a0:	18c00044 	addi	r3,r3,1
+        "\n1:"
+        "\n\t.pushsection .debug_alt_sim_info"
+        "\n\t.int 4, 0, 0b, 1b"
+        "\n\t.popsection"
+        :: "r" (INT_MAX));
+      us -= (INT_MAX/(ALT_CPU_FREQ/
+    28a4:	8121883a 	add	r16,r16,r4
+  big_loops = us / (INT_MAX/
+  (ALT_CPU_FREQ/(cycles_per_loop * 1000000)));
+
+  if (big_loops)
+  {
+    for(i=0;i<big_loops;i++)
+    28a8:	18bffb16 	blt	r3,r2,2898 <_gp+0xffff7da4>
+      "\n\tbne %0,zero,0b"
+      "\n1:"
+      "\n\t.pushsection .debug_alt_sim_info"
+      "\n\t.int 4, 0, 0b, 1b"
+      "\n\t.popsection"
+      :: "r" (us*(ALT_CPU_FREQ/(cycles_per_loop * 1000000))));
+    28ac:	8009883a 	mov	r4,r16
+    28b0:	01400144 	movi	r5,5
+    28b4:	00016b80 	call	16b8 <__mulsi3>
+    /*
+    * Do NOT Try to single step the asm statement below 
+    * (single step will never return)
+    * Step out of this function or set a breakpoint after the asm statements
+    */
+    __asm__ volatile (
+    28b8:	10bfffc4 	addi	r2,r2,-1
+    28bc:	103ffe1e 	bne	r2,zero,28b8 <_gp+0xffff7dc4>
+    28c0:	00000506 	br	28d8 <alt_busy_sleep+0x74>
+      "\n\tbgt %0,zero,0b"
+      "\n1:"
+      "\n\t.pushsection .debug_alt_sim_info"
+      "\n\t.int 4, 0, 0b, 1b"
+      "\n\t.popsection"
+      :: "r" (us*(ALT_CPU_FREQ/(cycles_per_loop * 1000000))));
+    28c4:	8009883a 	mov	r4,r16
+    28c8:	01400144 	movi	r5,5
+    28cc:	00016b80 	call	16b8 <__mulsi3>
+    /*
+    * Do NOT Try to single step the asm statement below 
+    * (single step will never return)
+    * Step out of this function or set a breakpoint after the asm statements
+    */
+    __asm__ volatile (
+    28d0:	10bfffc4 	addi	r2,r2,-1
+    28d4:	00bffe16 	blt	zero,r2,28d0 <_gp+0xffff7ddc>
+      "\n\t.popsection"
+      :: "r" (us*(ALT_CPU_FREQ/(cycles_per_loop * 1000000))));
+  }
+#endif /* #ifndef ALT_SIM_OPTIMIZE */
+  return 0;
+}
+    28d8:	0005883a 	mov	r2,zero
+    28dc:	dfc00117 	ldw	ra,4(sp)
+    28e0:	dc000017 	ldw	r16,0(sp)
+    28e4:	dec00204 	addi	sp,sp,8
+    28e8:	f800283a 	ret
+
+000028ec <alt_dcache_flush_all>:
+/*
+ * alt_dcache_flush_all() is called to flush the entire data cache.
+ */
+
+void alt_dcache_flush_all (void)
+{
+    28ec:	f800283a 	ret
+
+000028f0 <alt_icache_flush_all>:
+/*
+ * alt_icache_flush_all() is called to flush the entire instruction cache.
+ */
+
+void alt_icache_flush_all (void)
+{
+    28f0:	f800283a 	ret
+
+000028f4 <altera_nios2_qsys_irq_init>:
+ * To initialize the internal interrupt controller, just clear the IENABLE
+ * register so that all possible IRQs are disabled.
+ */
+void altera_nios2_qsys_irq_init(void) 
+{
+    NIOS2_WRITE_IENABLE(0);
+    28f4:	000170fa 	wrctl	ienable,zero
+    28f8:	f800283a 	ret

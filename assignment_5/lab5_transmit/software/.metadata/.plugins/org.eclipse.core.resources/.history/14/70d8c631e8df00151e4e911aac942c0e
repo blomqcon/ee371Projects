@@ -1,0 +1,43 @@
+#include "sys/alt_stdio.h"
+
+#define transmit_enable (volatile char *) 0x00003040
+#define character_sent (volatile char *) 0x00003050
+#define data_bus_output (volatile char *) 0x00003070
+#define load (volatile char *) 0x00003060
+#define data_bus_input (volatile char *) 0x000030a0
+#define character_received (volatile char *) 0x00003090
+#define data_bus_LEDs (volatile char *) 0x00003080
+
+int main()
+{ 
+  alt_putstr("Hello from Nios II!\n");
+
+  	alt_putstr("Input the char you would like to send.\n");
+  	alt_putchar(*data_bus_input);
+  	alt_putstr("\n");
+  	int c = alt_getchar();
+  	alt_putstr("\n");
+
+  	*transmit_enable = 0x0;
+  	*load = 0x0;
+  	*data_bus_output = c;
+  	usleep(1000);
+  	*transmit_enable = 0x1;
+  	*load = 0x1;
+  	usleep(50);
+  	*load = 0x0;
+
+  	*data_bus_LEDs = 0xFF;
+  	while (!*character_sent) {
+  	}
+  	*data_bus_LEDs = 0xFF;
+  	*transmit_enable = 0x0;
+
+  	while (!*character_received) {
+  	}
+
+  	alt_putchar(*data_bus_input);
+  	alt_putstr("\n");
+
+  return 0;
+}

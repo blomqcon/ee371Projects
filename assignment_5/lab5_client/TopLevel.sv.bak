@@ -1,0 +1,53 @@
+
+
+module TopLevel(CLOCK_50, serial_in, serial_out);
+	input CLOCK_50, reset, serial_in, transmit_enable;  // SClk clock divider bit 7 
+	output serial_out, char_received, char_sent;
+	
+	// Divide the clock
+	wire [31:0] clk;
+	parameter whichClock = 7;
+	clock_divider cdiv (CLOCK_50, clk);
+	
+	// processor should go here
+	input [7:0] input_bus;
+	output [7:0] output_bus;
+	wire in_enable, BSC_in_Count, BSC_out_Count, in_char_received, out_char_received;
+	
+	// start bit detector
+	StartBitDetect SBD (.SClk(clk[whichClock]), .reset(reset), .data_in(serial_in), .char_received(char_received), .in_enable(in_enable));
+	
+	// Bit Sample Count
+	BSC BSC_in (.SClk(clk[whichClock]), .enable(in_enable), .Count(BSC_in_Count));
+	
+	// BIC 
+	BIC BIC_in (.SClk(clk[whichClock]), .enable(in_enable), .BSC_Count(BSC_in_Count), .char_received(char_received));
+	
+	// Serial to Parallel 
+	S2P_ShiftRegister S2P (.SR_Clk(clk[whichClock]), .serial_data(serial_in), .ready(char_received), .data_bus(input_bus));
+	
+	// Bit Sample Count
+	BSC BSC_out (.SClk(clk[whichClock]), .enable(transmit_enable), .Count(BSC_out_Count));
+	
+	// BIC 
+	BIC BIC_out (.SClk(clk[whichClock]), .enable(transmit_enable), .BSC_Count(BSC_out_Count), .char_received(char_sent));
+	
+	// paralle to serial
+	P2S_ShiftRegister(.SRClk(clk[whichClock]), .reset(reset), .load(load), .data_bus(output_bus), .serial_data(serial_out));
+	
+	// clock divider module here
+	
+	
+endmodule
+
+module clock_divider (clock, divided_clocks);
+	input clock;
+	output [31:0] divided_clocks;
+	reg [31:0] divided_clocks;
+
+	initial
+	divided_clocks = 0;
+
+	always @(posedge clock)
+	divided_clocks = divided_clocks + 1;
+endmodule 

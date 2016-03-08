@@ -1,0 +1,193 @@
+#include <stdio.h>
+#include "sys/alt_stdio.h"
+#include <stdlib.h>
+#include <time.h>
+//#include <unistd.h>
+//#include <fcntl.h>
+//#include "altera_avalon_pio_regs.h"
+//IOWR_ALTERA_AVALON_PIO_DATA(targetAddress, aValue);
+//aValue = IOWR_ALTERA_AVALON_PIO_DATA(sourceAddress);
+
+#include "data_structures_constants.h"
+#include "sram.h"
+#include "display.h"
+#include "gamelogic.h"
+#include "ProjectileNode.h"
+
+int pSramAliens = 0;
+int alienShift = 0;
+int gameOver = 0;
+int gunnerX = ((ALIEN_WIDTH * ALIEN_COLS) / 2) - (GUNNER_WIDTH / 2);
+
+#include "sys/alt_irq.h"
+#include "system.h"
+
+/* Declare a global variable to hold the edge capture value. */
+volatile int edge_capture;
+
+/* Initialize the button_pio. */
+static void init_button_pio()
+{
+	/* Recast the edge_capture pointer to match the
+	alt_irq_register() function prototype. */
+	void* edge_capture_ptr = (void*) &edge_capture;
+	/* Enable all 4 button interrupts. */
+	IOWR_ALTERA_AVALON_PIO_IRQ_MASK(BUTTON_PIO_BASE, 0xf);
+	/* Reset the edge capture register. */
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(BUTTON_PIO_BASE, 0x0);
+	/* Register the ISR. */
+	alt_irq_register( BUTTON_PIO_IRQ, edge_capture_ptr, handle_button_interrupts );
+}
+
+int main() {
+	
+	while(1);
+	
+	return 0;
+	
+}
+
+
+
+/*unsigned int setParity(unsigned int c);
+unsigned int getParity(unsigned int c);
+unsigned int getCharacter(unsigned int c);
+unsigned int getBits(unsigned int c);
+
+int main()
+{ 
+	alt_putstr("Transmit Test\n");
+	
+	int i = 0;
+	char hello[20] = "Hello, world! abc123";
+	
+	while (i < 20) {
+		
+		*transmit_enable = 0x0;
+		*load = 0x0;
+		
+		*data_bus_output = (hello[i]);
+		*data_bus_output = setParity(*data_bus_output);
+		
+		usleep(1000);
+		*transmit_enable = 0x1;
+		*load = 0x1;
+		usleep(50);
+		*load = 0x0;
+		
+		while (!*character_received) {
+			
+		}
+		while(!*character_sent) {
+		}
+		
+		*transmit_enable = 0x0;
+		alt_putchar(getCharacter(*data_bus_input));
+		
+		i++;
+	}
+
+	return 0;
+}
+
+unsigned int setParity(unsigned int c) {
+	int parity = c;
+	parity ^= parity >> 4;
+	parity ^= parity >> 2;
+	parity ^= parity >> 1;
+
+	//alt_putchar(c);
+	int out = ((c  << 1));
+	//out ^= (parity & 1) << 7;
+	//out ^= 1 << (parity & 1);
+	if (parity & 1) {
+		out ^= 1 >> 7;
+	}
+	return out;
+}
+
+unsigned int getParity(unsigned int c) {
+	int parity = c;
+	parity ^= parity >> 4;
+	parity ^= parity >> 2;
+	parity ^= parity >> 1;
+	return parity & 1;
+}
+
+unsigned int getCharacter(unsigned int c) {
+	return ((c >> 1));
+}
+
+unsigned int getBits(unsigned int c) {
+	alt_printf("%x%x%x%x%x%x%x%x\n",
+			(c >> 7) & 0b00000001,
+			(c >> 6) & 0b00000001,
+			(c >> 5) & 0b00000001,
+			(c >> 4) & 0b00000001,
+			(c >> 3) & 0b00000001,
+			(c >> 2) & 0b00000001,
+			(c >> 1) & 0b00000001,
+			(c >> 0) & 0b00000001);
+}*/
+
+
+/*
+
+int main()
+{
+    //FOR NIOS
+	//fcntl(STDIN_FILENO, F_SETFL, O_NONBLOCK);
+
+    //Tests
+    //sram_malloc_test();
+    //sram_free_test();
+
+    //Game Init
+    initializeGame(startTimer);
+    pSramAliens = sram_malloc(sizeof(struct Alien) * (ALIEN_COLS * ALIEN_ROWS));
+    int pSramBulletBuffer = sram_malloc((sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT)) + sizeof(struct Projectile));
+
+    //printf("%i\n", sizeof(struct Projectile) * (ALIEN_COLS * ALIEN_WIDTH * VOID_HEIGHT));
+    //New Game
+	gameOver = 0;
+	unsigned int  gameStartTime = *game_time;
+	unsigned int  previousUpdateBoard = *game_time;
+	unsigned int  previousUpdateBullets = *game_time;
+    
+	initRandomAliens(pSramAliens);
+	initProjectileBuffer(pSramBulletBuffer);
+	
+	
+	
+	//Game Event Loop
+    while(1) {
+		if(gameOver) {
+			if(gameOver == 1) {
+				printf("\nAliens Win!\n");
+			} else if(gameOver ==2) {
+				printf("\nGunner Win!\n");
+			}
+			return 0;
+		}
+		//gameOver =1;
+		
+		if(((*game_time) - previousUpdateBoard) > 10) {
+			alienShift = ((*game_time) / 10) % 8;
+			//alienShift = 2;
+			updateDisplay(pSramAliens, pSramBulletBuffer, gunnerX, (*game_time) % 2, alienShift);			
+			previousUpdateBoard = (*game_time);
+		}
+		
+		if(((*game_time) - previousUpdateBullets) > 5) {
+			updateProjectileNodes();
+			previousUpdateBullets = (*game_time);
+		}
+		
+		moveGunnerLeft(&gunnerX);
+		moveGunnerRight(&gunnerX);
+		//shootGunner(&gunnerX);
+		shootAliens();
+	}
+	
+    return 0;
+}*/

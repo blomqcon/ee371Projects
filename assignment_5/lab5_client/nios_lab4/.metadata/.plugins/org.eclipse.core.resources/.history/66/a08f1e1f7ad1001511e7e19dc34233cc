@@ -1,0 +1,49 @@
+#include "sys/alt_stdio.h"
+#include "unistd.h"
+#define leds (volatile char *) 0x0003040
+#define OE_n (volatile char *) 0x0003000
+#define WE_n (volatile char *) 0x0003010
+#define address (volatile char *) 0x0003020
+#define data (volatile char *) 0x0003030
+
+int main()
+{ 
+  alt_putstr("Writing values to memory.\n");
+
+
+
+  *OE_n = 0x1;
+  *WE_n = 0x1;
+  *address = 127;
+  usleep(10000);
+  *WE_n = 0x0;
+  usleep(10000);
+
+  int i;
+  for (i = 0; i < 128; i++)
+  {
+	  *WE_n = 0x0;
+	  *address = i;
+	  *data = 127-i;
+	  usleep(100);
+	  *WE_n = 0x1;
+  }
+
+  alt_putstr("Reading values from memory.\n");
+
+  *OE_n = 0x0;
+
+  i = 0;
+  for (i = 0; i < 128; i++)
+  {
+	  *address = i;
+	  usleep(20000);
+	  *leds = *data;
+  }
+
+  *OE_n = 0x1;
+
+  alt_putstr("Finished!\n");
+
+  return 0;
+}

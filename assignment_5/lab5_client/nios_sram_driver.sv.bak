@@ -1,0 +1,14 @@
+module nios_sram_driver (CLOCK_50, LEDR, SW, KEY);
+	input CLOCK_50;
+	input [9:0] SW;
+	output [9:0] LEDR;
+	input [3:0] KEY;
+
+	wire [7:0] data;
+	wire [10:0] address;
+	wire OE_n, WE_n;
+
+	SRAM mem (data, address, OE_n, WE_n);
+	lights_and_switches lns (address, CLOCK_50, data, LEDR[7:0], OE_n, KEY[0], SW[7:0], WE_n);
+
+endmodule

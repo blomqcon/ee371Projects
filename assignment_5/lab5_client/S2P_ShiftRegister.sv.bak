@@ -1,0 +1,10 @@
+
+module S2P_ShiftRegister(SR_Clk, serial_data, ready, data_bus);
+	input SR_Clk, serial_data, ready;
+	output reg [7:0] data_bus;
+	
+	
+	always @(SR_Clk)
+		data_bus = {data_bus[6:0], serial_data};
+
+endmodule

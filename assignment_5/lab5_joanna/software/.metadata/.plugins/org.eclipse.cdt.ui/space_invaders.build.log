@@ -1,0 +1,25 @@
+03:33:51 **** Build of configuration Nios II for project space_invaders ****
+make all 
+Info: Building ../space_invaders_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../space_invaders_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../space_invaders_bsp//HAL/inc -I../space_invaders_bsp/ -I../space_invaders_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:72:2: warning: implicit declaration of function 'transmitIfBufferNotEmpty' [-Wimplicit-function-declaration]
+  transmitIfBufferNotEmpty();
+  ^
+main.c:56:16: warning: unused variable 'gameStartTime' [-Wunused-variable]
+  unsigned int  gameStartTime = *game_time;
+                ^
+Info: Linking space_invaders.elf
+nios2-elf-g++  -T'../space_invaders_bsp//linker.x' -msys-crt0='../space_invaders_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../space_invaders_bsp/  -msmallc  -Wl,-Map=space_invaders.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o space_invaders.elf obj/default/ProjectileNode.o obj/default/communication.o obj/default/data_structures_constants.o obj/default/display.o obj/default/gamelogic.o obj/default/main.o obj/default/sram.o -lm -msys-lib=m
+nios2-elf-insert space_invaders.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name lab5CPU --quartus_project_dir "C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5" --jdi C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/space_invaders_bsp/../../nios2_quartus2_project.jdi --sopcinfo C:/Users/blomqcon/Desktop/ee371Projects/assignment_5/lab5/software/space_invaders_bsp/../../lab5CPU.sopcinfo
+Info: (space_invaders.elf) 13 KBytes program size (code + initialized data).
+Info:                      2612 Bytes free for stack + heap.
+Info: Creating space_invaders.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source space_invaders.elf >space_invaders.objdump
+[space_invaders build complete]
+
+03:33:53 Build Finished (took 1s.277ms)
+

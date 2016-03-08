@@ -1,0 +1,9 @@
+13:11:55 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+
+13:11:56 Build Finished (took 650ms)
+

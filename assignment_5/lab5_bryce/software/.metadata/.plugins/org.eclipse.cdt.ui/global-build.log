@@ -1,0 +1,25 @@
+14:12:05 **** Incremental Build of configuration Nios II for project simple_test ****
+make all 
+Info: Building ../simple_test_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../simple_test_bsp/
+[BSP build complete]
+Info: Linking simple_test.elf
+nios2-elf-g++  -T'../simple_test_bsp//linker.x' -msys-crt0='../simple_test_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../simple_test_bsp/  -msmallc  -Wl,-Map=simple_test.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o simple_test.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert simple_test.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_sram --quartus_project_dir "C:/Users/blomqcon/Desktop/lab5" --jdi C:/Users/blomqcon/Desktop/lab5/software/simple_test_bsp/../../nios2_quartus2_project.jdi --sopcinfo C:/Users/blomqcon/Desktop/lab5/software/simple_test_bsp/../../nios_sram.sopcinfo
+Info: (simple_test.elf) 636 Bytes program size (code + initialized data).
+Info:                   3456 Bytes free for stack + heap.
+Info: Creating simple_test.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source simple_test.elf >simple_test.objdump
+[simple_test build complete]
+14:12:15 **** Build of configuration Nios II for project simple_test ****
+make all 
+Info: Building ../simple_test_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../simple_test_bsp/
+[BSP build complete]
+[simple_test build complete]
+14:12:27 **** Incremental Build of configuration Nios II for project simple_test ****
+make all 
+Info: Building ../simple_test_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../simple_test_bsp/
+[BSP build complete]
+[simple_test build complete]

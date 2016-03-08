@@ -1,0 +1,53 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst lab5CPU -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst lab5CPU.sram_address -pg 1 -lvl 3 -y 1710
+preplace inst lab5CPU.onchip_mem -pg 1 -lvl 3 -y 1130
+preplace inst lab5CPU.character_sent_input -pg 1 -lvl 3 -y 830
+preplace inst lab5CPU.jtag_uart -pg 1 -lvl 3 -y 1030
+preplace inst lab5CPU.sram_data -pg 1 -lvl 3 -y 1810
+preplace inst lab5CPU.random_number -pg 1 -lvl 3 -y 2110
+preplace inst lab5CPU.gun_shoot -pg 1 -lvl 3 -y 630
+preplace inst lab5CPU.game_time -pg 1 -lvl 3 -y 930
+preplace inst lab5CPU.alien_x -pg 1 -lvl 3 -y 130
+preplace inst lab5CPU.parallel_input -pg 1 -lvl 3 -y 1310
+preplace inst lab5CPU.led_output -pg 1 -lvl 3 -y 1610
+preplace inst lab5CPU.alien_y -pg 1 -lvl 3 -y 230
+preplace inst lab5CPU.transmit_enable_output -pg 1 -lvl 3 -y 1510
+preplace inst lab5CPU.sram_enable_read -pg 1 -lvl 3 -y 1910
+preplace inst lab5CPU.gun_left -pg 1 -lvl 3 -y 410
+preplace inst lab5CPU.sram_enable_write -pg 1 -lvl 3 -y 2010
+preplace inst lab5CPU.cpu -pg 1 -lvl 2 -y 1110
+preplace inst lab5CPU.clk_0 -pg 1 -lvl 1 -y 1170
+preplace inst lab5CPU.character_recieved_input -pg 1 -lvl 3 -y 730
+preplace inst lab5CPU.load_output -pg 1 -lvl 3 -y 1210
+preplace inst lab5CPU.parallel_output -pg 1 -lvl 3 -y 1410
+preplace inst lab5CPU.gun_right -pg 1 -lvl 3 -y 530
+preplace inst lab5CPU.alien_shoot -pg 1 -lvl 3 -y 30
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.alien_y_external_connection,(SLAVE)alien_y.external_connection) 1 0 3 NJ 260 NJ 260 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.sram_enable_write_external_connection,(SLAVE)sram_enable_write.external_connection) 1 0 3 NJ 2040 NJ 2040 NJ
+preplace netloc FAN_OUT<net_container>lab5CPU</net_container>(MASTER)cpu.d_irq,(SLAVE)gun_left.irq,(SLAVE)jtag_uart.irq) 1 2 1 720
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)gun_shoot.external_connection,(SLAVE)lab5CPU.gun_shoot_external_connection) 1 0 3 NJ 660 NJ 660 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)character_sent_input.external_connection,(SLAVE)lab5CPU.character_sent_input_external_connection) 1 0 3 NJ 860 NJ 860 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)sram_enable_read.external_connection,(SLAVE)lab5CPU.sram_enable_read_external_connection) 1 0 3 NJ 1940 NJ 1940 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)sram_data.external_connection,(SLAVE)lab5CPU.sram_data_external_connection) 1 0 3 NJ 1840 NJ 1840 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)game_time.external_connection,(SLAVE)lab5CPU.game_time_external_connection) 1 0 3 NJ 960 NJ 960 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)alien_x.external_connection,(SLAVE)lab5CPU.alien_x_external_connection) 1 0 3 NJ 160 NJ 160 NJ
+preplace netloc INTERCONNECT<net_container>lab5CPU</net_container>(SLAVE)sram_enable_read.reset,(SLAVE)alien_y.reset,(SLAVE)parallel_output.reset,(SLAVE)random_number.reset,(SLAVE)sram_enable_write.reset,(SLAVE)gun_right.reset,(MASTER)clk_0.clk_reset,(SLAVE)alien_shoot.reset,(SLAVE)led_output.reset,(SLAVE)character_sent_input.reset,(SLAVE)load_output.reset,(SLAVE)sram_data.reset,(SLAVE)alien_x.reset,(SLAVE)game_time.reset,(SLAVE)cpu.reset_n,(MASTER)cpu.jtag_debug_module_reset,(SLAVE)jtag_uart.reset,(SLAVE)onchip_mem.reset1,(SLAVE)sram_address.reset,(SLAVE)gun_shoot.reset,(SLAVE)character_recieved_input.reset,(SLAVE)parallel_input.reset,(SLAVE)transmit_enable_output.reset,(SLAVE)gun_left.reset) 1 1 2 450 2160 780
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.gun_right_external_connection,(SLAVE)gun_right.external_connection) 1 0 3 NJ 560 NJ 560 NJ
+preplace netloc FAN_OUT<net_container>lab5CPU</net_container>(SLAVE)character_recieved_input.clk,(SLAVE)gun_right.clk,(SLAVE)jtag_uart.clk,(SLAVE)gun_shoot.clk,(SLAVE)character_sent_input.clk,(SLAVE)sram_address.clk,(SLAVE)transmit_enable_output.clk,(SLAVE)gun_left.clk,(MASTER)clk_0.clk,(SLAVE)cpu.clk,(SLAVE)load_output.clk,(SLAVE)alien_x.clk,(SLAVE)parallel_input.clk,(SLAVE)game_time.clk,(SLAVE)sram_enable_read.clk,(SLAVE)alien_shoot.clk,(SLAVE)onchip_mem.clk1,(SLAVE)led_output.clk,(SLAVE)parallel_output.clk,(SLAVE)random_number.clk,(SLAVE)sram_data.clk,(SLAVE)sram_enable_write.clk,(SLAVE)alien_y.clk) 1 1 2 430 2060 740
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.parallel_output_external_connection,(SLAVE)parallel_output.external_connection) 1 0 3 NJ 1440 NJ 1440 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.load_output_external_connection,(SLAVE)load_output.external_connection) 1 0 3 NJ 1160 NJ 1240 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)sram_address.external_connection,(SLAVE)lab5CPU.sram_address_external_connection) 1 0 3 NJ 1740 NJ 1740 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)parallel_input.external_connection,(SLAVE)lab5CPU.parallel_input_external_connection) 1 0 3 NJ 1340 NJ 1340 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.gun_left_external_connection,(SLAVE)gun_left.external_connection) 1 0 3 NJ 440 NJ 440 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)clk_0.clk_in,(SLAVE)lab5CPU.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)transmit_enable_output.external_connection,(SLAVE)lab5CPU.transmit_enable_output_external_connection) 1 0 3 NJ 1540 NJ 1540 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.random_number_external_connection,(SLAVE)random_number.external_connection) 1 0 3 NJ 2140 NJ 2140 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.character_recieved_input_external_connection,(SLAVE)character_recieved_input.external_connection) 1 0 3 NJ 760 NJ 760 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)led_output.external_connection,(SLAVE)lab5CPU.led_output_external_connection) 1 0 3 NJ 1640 NJ 1640 NJ
+preplace netloc EXPORT<net_container>lab5CPU</net_container>(SLAVE)lab5CPU.alien_shoot_external_connection,(SLAVE)alien_shoot.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc INTERCONNECT<net_container>lab5CPU</net_container>(SLAVE)gun_right.s1,(SLAVE)random_number.s1,(SLAVE)cpu.jtag_debug_module,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)onchip_mem.s1,(SLAVE)led_output.s1,(SLAVE)sram_data.s1,(SLAVE)character_recieved_input.s1,(SLAVE)gun_shoot.s1,(SLAVE)alien_x.s1,(SLAVE)sram_enable_read.s1,(SLAVE)alien_y.s1,(SLAVE)alien_shoot.s1,(SLAVE)transmit_enable_output.s1,(SLAVE)character_sent_input.s1,(SLAVE)parallel_output.s1,(MASTER)cpu.instruction_master,(SLAVE)sram_enable_write.s1,(SLAVE)parallel_input.s1,(SLAVE)sram_address.s1,(SLAVE)load_output.s1,(MASTER)cpu.data_master,(SLAVE)gun_left.s1,(SLAVE)game_time.s1) 1 1 2 470 2180 760
+levelinfo -pg 1 0 200 990
+levelinfo -hier lab5CPU 210 240 500 810 970

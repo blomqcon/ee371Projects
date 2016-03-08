@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project,Library" />
+ <window width="1600" height="1160" x="0" y="0" />
+ <generation
+   path="C:/Users/blomqcon/Desktop/nios_lab4_newest/nios_lab4"
+   testbench_system="NONE"
+   mixed_lang_testbench_simulation="0"
+   block_symbol_file="0" />
+</preferences>

@@ -1,0 +1,20 @@
+module BIC(SClk, enable, BSC_Count, char_recieved);
+	input SClk, enable;
+	input [3:0] BSC_Count;
+	output reg char_recieved;
+	reg [3:0] BIC_Count;
+	
+	
+	always @(*) begin 
+		if (BIC_Count <= 4'b1001)
+			char_recieved = 1'b1;
+		else char_recieved = 1'b0;
+	end 
+	
+	// BSC_Count[3] is the most significant bit
+	always @(negedge BSC_Count[3]) begin 
+		if (~enable) BIC_Count <= 4'b0000;
+		else BIC_Count <= BIC_Count + 4'b0001;
+	end
+endmodule
+		

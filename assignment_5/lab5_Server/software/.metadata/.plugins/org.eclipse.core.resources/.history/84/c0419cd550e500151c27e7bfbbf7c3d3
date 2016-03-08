@@ -1,0 +1,35 @@
+int main()
+{ 
+	fcntl(STDIN_FILENO, F_SETFL, O_NONBLOCK);
+	alt_putstr("Hello from Nios II!\n");
+	*char_received = 0;
+	char *msg = "Hello from a different Nios II!";
+	int j;
+	unsigned char incoming;
+	while (1) {
+		//msg = fcntl(STDIN_FILENO, F_SETFL, O_NONBLOCK);
+
+		if (*char_received) {
+			incoming = getCharacter(*parallel_in);
+			alt_printf("Incoming: %c \n", incoming);
+
+			while(*char_received) {
+			}
+		}
+
+		/*if (msg[0] == '#') {
+			for (j = 0; j < 16; j++) {
+				*transmit_enable = 0x0;
+				*load = 0x0;
+				*parallel_out = setParity(msg[j]);
+				usleep(1000);
+				*transmit_enable = 0x1;
+				*load = 0x1;
+				usleep(50);
+				*load = 0x0;
+				usleep(50);
+			}
+
+			msg = "#";
+		}*/
+	}

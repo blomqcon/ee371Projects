@@ -1,0 +1,30 @@
+
+	module StartBitDetect(SClk, reset, data_in, char_recieved, start_bit);
+		input SClk, reset, data_in, char_recieved;
+		output reg start_bit;
+		
+		// Transmission States : Low for quiet state, High for transmission state
+		parameter quiescent = 1, recieving = 0;
+		reg ps, ns; 
+		
+
+		// Determine the State 
+		always @(data_in) begin 
+			case (ps)
+				quiescent : if (~data_in) ns = recieving;
+							else ns = ps;
+				recieving : if (char_recieved) ns = quiescent;
+							else ns = ps;
+			endcase 
+			start_bit = (ps == recieving);
+		end 
+		
+		always @(posedge SClk) begin 
+			if (reset) ps <= quiescent;
+			else ps <= ns;
+		end
+	endmodule 
+			
+		
+		
+				

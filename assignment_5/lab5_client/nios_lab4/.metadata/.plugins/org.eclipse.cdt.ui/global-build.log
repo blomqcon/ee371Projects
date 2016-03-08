@@ -1,0 +1,282 @@
+02:51:32 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+Info: Compiling memtest.c to obj/default/memtest.o
+nios2-elf-gcc -xc -MP -MMD -c -I../sram_controller_bsp//HAL/inc -I../sram_controller_bsp/ -I../sram_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/memtest.o memtest.c
+Info: Linking sram_controller.elf
+nios2-elf-g++  -T'../sram_controller_bsp//linker.x' -msys-crt0='../sram_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../sram_controller_bsp/  -msmallc  -Wl,-Map=sram_controller.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o sram_controller.elf obj/default/memtest.o -lm -msys-lib=m
+nios2-elf-insert sram_controller.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_sram --quartus_project_dir "C:/Users/fjyrin/Desktop/lab3/nios_sram" --jdi ../..//output_files/nios_sram_driver.jdi --sopcinfo C:/Users/fjyrin/Desktop/lab3/nios_sram/software/sram_controller_bsp/../../nios_sram.sopcinfo
+Info: (sram_controller.elf) 1416 Bytes program size (code + initialized data).
+Info:                       2676 Bytes free for stack + heap.
+Info: Creating sram_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sram_controller.elf >sram_controller.objdump
+[sram_controller build complete]
+02:51:36 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+02:51:48 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+02:52:27 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+02:54:29 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+Info: Compiling memtest.c to obj/default/memtest.o
+nios2-elf-gcc -xc -MP -MMD -c -I../sram_controller_bsp//HAL/inc -I../sram_controller_bsp/ -I../sram_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/memtest.o memtest.c
+Info: Linking sram_controller.elf
+nios2-elf-g++  -T'../sram_controller_bsp//linker.x' -msys-crt0='../sram_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../sram_controller_bsp/  -msmallc  -Wl,-Map=sram_controller.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o sram_controller.elf obj/default/memtest.o -lm -msys-lib=m
+nios2-elf-insert sram_controller.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_sram --quartus_project_dir "C:/Users/fjyrin/Desktop/lab3/nios_sram" --jdi ../..//output_files/nios_sram_driver.jdi --sopcinfo C:/Users/fjyrin/Desktop/lab3/nios_sram/software/sram_controller_bsp/../../nios_sram.sopcinfo
+Info: (sram_controller.elf) 1408 Bytes program size (code + initialized data).
+Info:                       2684 Bytes free for stack + heap.
+Info: Creating sram_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sram_controller.elf >sram_controller.objdump
+[sram_controller build complete]
+03:00:03 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+Info: Compiling memtest.c to obj/default/memtest.o
+nios2-elf-gcc -xc -MP -MMD -c -I../sram_controller_bsp//HAL/inc -I../sram_controller_bsp/ -I../sram_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/memtest.o memtest.c
+Info: Linking sram_controller.elf
+nios2-elf-g++  -T'../sram_controller_bsp//linker.x' -msys-crt0='../sram_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../sram_controller_bsp/  -msmallc  -Wl,-Map=sram_controller.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o sram_controller.elf obj/default/memtest.o -lm -msys-lib=m
+nios2-elf-insert sram_controller.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_sram --quartus_project_dir "C:/Users/fjyrin/Desktop/lab3/nios_sram" --jdi ../..//output_files/nios_sram_driver.jdi --sopcinfo C:/Users/fjyrin/Desktop/lab3/nios_sram/software/sram_controller_bsp/../../nios_sram.sopcinfo
+Info: (sram_controller.elf) 1416 Bytes program size (code + initialized data).
+Info:                       2676 Bytes free for stack + heap.
+Info: Creating sram_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sram_controller.elf >sram_controller.objdump
+[sram_controller build complete]
+03:00:56 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:02:22 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+Info: Compiling memtest.c to obj/default/memtest.o
+nios2-elf-gcc -xc -MP -MMD -c -I../sram_controller_bsp//HAL/inc -I../sram_controller_bsp/ -I../sram_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/memtest.o memtest.c
+Info: Linking sram_controller.elf
+nios2-elf-g++  -T'../sram_controller_bsp//linker.x' -msys-crt0='../sram_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../sram_controller_bsp/  -msmallc  -Wl,-Map=sram_controller.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o sram_controller.elf obj/default/memtest.o -lm -msys-lib=m
+nios2-elf-insert sram_controller.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_sram --quartus_project_dir "C:/Users/fjyrin/Desktop/lab3/nios_sram" --jdi ../..//output_files/nios_sram_driver.jdi --sopcinfo C:/Users/fjyrin/Desktop/lab3/nios_sram/software/sram_controller_bsp/../../nios_sram.sopcinfo
+Info: (sram_controller.elf) 1428 Bytes program size (code + initialized data).
+Info:                       2664 Bytes free for stack + heap.
+Info: Creating sram_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sram_controller.elf >sram_controller.objdump
+[sram_controller build complete]
+03:02:23 **** Incremental Build of configuration Nios II for project sram_controller_bsp ****
+make all 
+[BSP build complete]
+03:02:33 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:03:02 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:04:14 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:04:56 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:12:12 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:12:55 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:15:57 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+Info: Compiling memtest.c to obj/default/memtest.o
+nios2-elf-gcc -xc -MP -MMD -c -I../sram_controller_bsp//HAL/inc -I../sram_controller_bsp/ -I../sram_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/memtest.o memtest.c
+Info: Linking sram_controller.elf
+nios2-elf-g++  -T'../sram_controller_bsp//linker.x' -msys-crt0='../sram_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../sram_controller_bsp/  -msmallc  -Wl,-Map=sram_controller.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o sram_controller.elf obj/default/memtest.o -lm -msys-lib=m
+nios2-elf-insert sram_controller.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_sram --quartus_project_dir "C:/Users/fjyrin/Desktop/lab3/nios_sram" --jdi ../..//output_files/nios_sram_driver.jdi --sopcinfo C:/Users/fjyrin/Desktop/lab3/nios_sram/software/sram_controller_bsp/../../nios_sram.sopcinfo
+Info: (sram_controller.elf) 1432 Bytes program size (code + initialized data).
+Info:                       2660 Bytes free for stack + heap.
+Info: Creating sram_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sram_controller.elf >sram_controller.objdump
+[sram_controller build complete]
+03:16:08 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:16:19 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:16:29 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:17:14 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+Info: Compiling memtest.c to obj/default/memtest.o
+nios2-elf-gcc -xc -MP -MMD -c -I../sram_controller_bsp//HAL/inc -I../sram_controller_bsp/ -I../sram_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/memtest.o memtest.c
+Info: Linking sram_controller.elf
+nios2-elf-g++  -T'../sram_controller_bsp//linker.x' -msys-crt0='../sram_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../sram_controller_bsp/  -msmallc  -Wl,-Map=sram_controller.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o sram_controller.elf obj/default/memtest.o -lm -msys-lib=m
+nios2-elf-insert sram_controller.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_sram --quartus_project_dir "C:/Users/fjyrin/Desktop/lab3/nios_sram" --jdi ../..//output_files/nios_sram_driver.jdi --sopcinfo C:/Users/fjyrin/Desktop/lab3/nios_sram/software/sram_controller_bsp/../../nios_sram.sopcinfo
+Info: (sram_controller.elf) 1440 Bytes program size (code + initialized data).
+Info:                       2652 Bytes free for stack + heap.
+Info: Creating sram_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sram_controller.elf >sram_controller.objdump
+[sram_controller build complete]
+03:17:15 **** Incremental Build of configuration Nios II for project sram_controller_bsp ****
+make all 
+[BSP build complete]
+03:17:19 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:17:33 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:17:59 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+Info: Compiling memtest.c to obj/default/memtest.o
+nios2-elf-gcc -xc -MP -MMD -c -I../sram_controller_bsp//HAL/inc -I../sram_controller_bsp/ -I../sram_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/memtest.o memtest.c
+Info: Linking sram_controller.elf
+nios2-elf-g++  -T'../sram_controller_bsp//linker.x' -msys-crt0='../sram_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../sram_controller_bsp/  -msmallc  -Wl,-Map=sram_controller.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o sram_controller.elf obj/default/memtest.o -lm -msys-lib=m
+nios2-elf-insert sram_controller.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_sram --quartus_project_dir "C:/Users/fjyrin/Desktop/lab3/nios_sram" --jdi ../..//output_files/nios_sram_driver.jdi --sopcinfo C:/Users/fjyrin/Desktop/lab3/nios_sram/software/sram_controller_bsp/../../nios_sram.sopcinfo
+Info: (sram_controller.elf) 1440 Bytes program size (code + initialized data).
+Info:                       2652 Bytes free for stack + heap.
+Info: Creating sram_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sram_controller.elf >sram_controller.objdump
+[sram_controller build complete]
+03:18:00 **** Incremental Build of configuration Nios II for project sram_controller_bsp ****
+make all 
+[BSP build complete]
+03:19:15 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+03:19:57 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+Info: Compiling memtest.c to obj/default/memtest.o
+nios2-elf-gcc -xc -MP -MMD -c -I../sram_controller_bsp//HAL/inc -I../sram_controller_bsp/ -I../sram_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/memtest.o memtest.c
+Info: Linking sram_controller.elf
+nios2-elf-g++  -T'../sram_controller_bsp//linker.x' -msys-crt0='../sram_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../sram_controller_bsp/  -msmallc  -Wl,-Map=sram_controller.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o sram_controller.elf obj/default/memtest.o -lm -msys-lib=m
+nios2-elf-insert sram_controller.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_sram --quartus_project_dir "C:/Users/fjyrin/Desktop/lab3/nios_sram" --jdi ../..//output_files/nios_sram_driver.jdi --sopcinfo C:/Users/fjyrin/Desktop/lab3/nios_sram/software/sram_controller_bsp/../../nios_sram.sopcinfo
+Info: (sram_controller.elf) 1432 Bytes program size (code + initialized data).
+Info:                       2660 Bytes free for stack + heap.
+Info: Creating sram_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source sram_controller.elf >sram_controller.objdump
+[sram_controller build complete]
+03:19:58 **** Incremental Build of configuration Nios II for project sram_controller_bsp ****
+make all 
+[BSP build complete]
+03:20:01 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+12:48:09 **** Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+12:48:11 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+12:48:21 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+12:49:25 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+13:11:17 **** Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+13:11:19 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+13:11:54 **** Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]
+13:11:55 **** Incremental Build of configuration Nios II for project sram_controller ****
+make all 
+Info: Building ../sram_controller_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../sram_controller_bsp/
+[BSP build complete]
+[sram_controller build complete]

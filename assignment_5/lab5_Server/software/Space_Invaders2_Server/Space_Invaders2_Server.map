@@ -1,0 +1,1252 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                              obj/default/ProjectileNode.o (__divsi3)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                              obj/default/display.o (__mulsi3)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+                              obj/default/main.o (calloc)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o) (_impure_ptr)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+                              obj/default/ProjectileNode.o (malloc)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                              obj/default/main.o (memcpy)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o) (_calloc_r)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o) (_free_r)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o) (_malloc_r)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+                              obj/default/communication.o (printf)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+                              obj/default/ProjectileNode.o (putchar)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+                              obj/default/display.o (puts)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+                              obj/default/display.o (rand)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o) (strlen)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o) (___vfprintf_internal_r)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o) (__sfvwrite_small_dev)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o) (errno)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o) (memset)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o) (_putc_r)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o) (_write_r)
+c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o) (__muldi3)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/communication.o (alt_ic_isr_register)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_handler)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+                              ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o (alt_load)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+                              ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o (alt_main)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+                              obj/default/display.o (alt_putchar)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o) (sbrk)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+                              obj/default/communication.o (usleep)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+                              c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o) (write)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o) (altera_avalon_jtag_uart_write)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o) (alt_busy_sleep)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o) (alt_errno)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+
+Allocating common symbols
+Common symbol       size              file
+
+edge_capture_receive
+                    0x4               obj/default/communication.o
+alt_irq             0x100             ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+pTransmit           0x4               obj/default/main.o
+edge_capture_gun    0x4               obj/default/communication.o
+pBufferHead         0x4               obj/default/main.o
+sram                0x800             obj/default/ProjectileNode.o
+pBuffer             0x4               obj/default/main.o
+edge_capture_sent   0x4               obj/default/communication.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000000000 0x0000000000000020
+onchip_mem       0x0000000000000020 0x0000000000003fe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/ProjectileNode.o
+LOAD obj/default/communication.o
+LOAD obj/default/data_structures_constants.o
+LOAD obj/default/display.o
+LOAD obj/default/gamelogic.o
+LOAD obj/default/main.o
+LOAD obj/default/sram.o
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a
+LOAD ../Space_Invaders2_Server_bsp/\libhal_bsp.a
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a
+                0x0000000000000000                __alt_mem_onchip_mem = 0x0
+
+.entry          0x0000000000000000       0x20
+ *(.entry)
+ .entry         0x0000000000000000       0x20 ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+                0x0000000000000000                __reset
+                0x000000000000000c                _exit
+
+.exceptions     0x0000000000000020      0x130
+                0x0000000000000020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x0000000000000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x0000000000000020        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x0000000000000020                alt_irq_entry
+ .exceptions.entry.label
+                0x0000000000000020        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x0000000000000020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x0000000000000020       0x54 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x0000000000000074       0x10 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x0000000000000084        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x0000000000000088        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000000008c        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000000008c        0x8 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x0000000000000094        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x0000000000000098        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x0000000000000098        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x0000000000000098       0x54 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x00000000000000ec       0x64 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00000000000000ec                alt_irq_handler
+                0x0000000000000150                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x0000000000000020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x0000000000000150     0x2874
+                0x0000000000000150                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000150       0x3c ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+                0x0000000000000150                _start
+ .text          0x000000000000018c      0x330 obj/default/ProjectileNode.o
+                0x000000000000018c                removeProjectileNode
+                0x00000000000001c8                updateProjectileNodes
+                0x000000000000030c                initProjectileBuffer
+                0x00000000000003a0                updateProjectileBuffer
+                0x0000000000000408                addProjectileNode
+                0x0000000000000474                listLength
+                0x0000000000000494                createProjectile
+ .text          0x00000000000004bc      0x33c obj/default/communication.o
+                0x00000000000004bc                gun_handler
+                0x00000000000004d0                character_recieved_handler
+                0x0000000000000540                readBuffer
+                0x00000000000005a0                writeBuffer
+                0x00000000000005f4                transmitIfBufferNotEmpty
+                0x000000000000066c                character_sent_handler
+                0x00000000000006a8                setup_interrupt
+                0x0000000000000758                setParity
+                0x0000000000000760                getParity
+                0x0000000000000780                getCharacter
+                0x0000000000000788                getBits
+ .text          0x00000000000007f8        0x0 obj/default/data_structures_constants.o
+ .text          0x00000000000007f8      0x558 obj/default/display.o
+                0x00000000000007f8                newAlien
+                0x0000000000000820                initRandomAliens
+                0x00000000000008bc                getAlienApperence
+                0x00000000000008f0                printAlienSlice
+                0x00000000000009d0                printSlice
+                0x0000000000000a88                printAliens
+                0x0000000000000b0c                printVoid
+                0x0000000000000bb8                printGunnerSlice
+                0x0000000000000c88                printGunner
+                0x0000000000000cd4                updateDisplay
+ .text          0x0000000000000d50      0x4e8 obj/default/gamelogic.o
+                0x0000000000000d50                initializeGame
+                0x0000000000000d54                moveGunnerLeft
+                0x0000000000000dbc                moveGunnerLeftTransmited
+                0x0000000000000de0                moveGunnerRight
+                0x0000000000000e4c                moveGunnerRightTransmited
+                0x0000000000000e74                shootGunner
+                0x0000000000000f14                shootGunnerTransmited
+                0x0000000000000f6c                shootAliens
+                0x0000000000001064                checkGunnerWin
+                0x00000000000010f8                checkCollideAliens
+                0x000000000000120c                checkCollideGunner
+ .text          0x0000000000001238        0x0 obj/default/main.o
+ .text.startup  0x0000000000001238      0x194 obj/default/main.o
+                0x0000000000001238                main
+ .text          0x00000000000013cc      0x288 obj/default/sram.o
+                0x00000000000013cc                getAlien
+                0x0000000000001414                setAlien
+                0x0000000000001458                getProjectile
+                0x00000000000014f0                setProjectile
+                0x0000000000001580                resetSRAM
+                0x00000000000015a4                sram_malloc
+                0x0000000000001630                sram_free
+ .text          0x0000000000001654      0x12c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x00000000000016c0                __divsi3
+                0x0000000000001714                __modsi3
+                0x0000000000001770                __udivsi3
+                0x0000000000001778                __umodsi3
+ .text          0x0000000000001780       0x28 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x0000000000001780                __mulsi3
+ .text          0x00000000000017a8        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .text.calloc   0x00000000000017a8       0x1c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+                0x00000000000017a8                calloc
+ .text          0x00000000000017c4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .text          0x00000000000017c4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .text.malloc   0x00000000000017c4       0x14 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+                0x00000000000017c4                malloc
+ .text.free     0x00000000000017d8       0x14 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+                0x00000000000017d8                free
+ .text          0x00000000000017ec        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .text.memcpy   0x00000000000017ec       0x28 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                0x00000000000017ec                memcpy
+ .text          0x0000000000001814        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .text._calloc_r
+                0x0000000000001814       0x60 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+                0x0000000000001814                _calloc_r
+ .text          0x0000000000001874        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .text._free_r  0x0000000000001874       0xe4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+                0x0000000000001874                _free_r
+ .text          0x0000000000001958        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x0000000000001958      0x15c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                0x0000000000001958                _malloc_r
+ .text          0x0000000000001ab4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .text._printf_r
+                0x0000000000001ab4       0x3c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+                0x0000000000001ab4                _printf_r
+ .text.printf   0x0000000000001af0       0x4c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+                0x0000000000001af0                printf
+ .text          0x0000000000001b3c        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .text._putchar_r
+                0x0000000000001b3c        0x8 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+                0x0000000000001b3c                _putchar_r
+ .text.putchar  0x0000000000001b44       0x18 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+                0x0000000000001b44                putchar
+ .text          0x0000000000001b5c        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .text._puts_r  0x0000000000001b5c       0x80 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+                0x0000000000001b5c                _puts_r
+ .text.puts     0x0000000000001bdc       0x14 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+                0x0000000000001bdc                puts
+ .text          0x0000000000001bf0        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .text.srand    0x0000000000001bf0       0x14 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+                0x0000000000001bf0                srand
+ .text.rand     0x0000000000001c04       0x60 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+                0x0000000000001c04                rand
+ .text          0x0000000000001c64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x0000000000001c64       0x50 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+                0x0000000000001c64                _sbrk_r
+ .text          0x0000000000001cb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x0000000000001cb4       0x1c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x0000000000001cb4                strlen
+ .text          0x0000000000001cd0        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .text.print_repeat
+                0x0000000000001cd0       0x6c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .text.___vfprintf_internal_r
+                0x0000000000001d3c      0x56c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+                0x0000000000001d3c                ___vfprintf_internal_r
+ .text.__vfprintf_internal
+                0x00000000000022a8       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+                0x00000000000022a8                __vfprintf_internal
+ .text          0x00000000000022cc        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .text.__sfvwrite_small_dev
+                0x00000000000022cc       0xac c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                0x00000000000022cc                __sfvwrite_small_dev
+ .text          0x0000000000002378        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .text          0x0000000000002378        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .text.memset   0x0000000000002378       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                0x0000000000002378                memset
+ .text          0x0000000000002398        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .text.putc     0x0000000000002398       0x54 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+                0x0000000000002398                putc
+ .text._putc_r  0x00000000000023ec       0x58 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+                0x00000000000023ec                _putc_r
+ .text          0x0000000000002444        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .text._write_r
+                0x0000000000002444       0x58 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+                0x0000000000002444                _write_r
+ .text          0x000000000000249c      0x10c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+                0x000000000000249c                __muldi3
+ .text          0x00000000000025a8       0x9c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+                0x00000000000025a8                alt_ic_isr_register
+                0x00000000000025ac                alt_ic_irq_enable
+                0x00000000000025ec                alt_ic_irq_disable
+                0x000000000000262c                alt_ic_irq_enabled
+ .text          0x0000000000002644       0x68 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x0000000000002644                alt_iic_isr_register
+ .text          0x00000000000026ac        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x00000000000026ac        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x00000000000026ac        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x00000000000026ac       0xf8 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+                0x00000000000026ac                alt_load
+ .text          0x00000000000027a4       0x2c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000027a4                alt_main
+ .text          0x00000000000027d0       0x48 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+                0x00000000000027d0                alt_putchar
+ .text          0x0000000000002818       0x4c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+                0x0000000000002818                sbrk
+ .text          0x0000000000002864        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+                0x0000000000002864                usleep
+ .text          0x0000000000002868       0x6c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+                0x0000000000002868                write
+ .text          0x00000000000028d4       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00000000000028d4                alt_irq_init
+                0x00000000000028f4                alt_sys_init
+ .text          0x00000000000028f8       0x34 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00000000000028f8                altera_avalon_jtag_uart_write
+ .text          0x000000000000292c       0x88 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                0x000000000000292c                alt_busy_sleep
+ .text          0x00000000000029b4        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00000000000029b4                alt_dcache_flush_all
+ .text          0x00000000000029b8        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x00000000000029b8        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x00000000000029b8        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00000000000029b8                alt_icache_flush_all
+ .text          0x00000000000029bc        0x8 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00000000000029bc                altera_nios2_qsys_irq_init
+ *(.gnu.warning.*)
+ *(.fini)
+                0x00000000000029c4                PROVIDE (__etext, ABSOLUTE (.))
+                0x00000000000029c4                PROVIDE (_etext, ABSOLUTE (.))
+                0x00000000000029c4                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00000000000029c4                . = ALIGN (0x4)
+                0x00000000000029c4                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x00000000000029c4                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00000000000029c4                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x00000000000029c4                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00000000000029c4                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x00000000000029c4                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x00000000000029c4                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x00000000000029c4                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00000000000029c4                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x00000000000029c4                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x00000000000029c4                . = ALIGN (0x4)
+
+.rodata         0x00000000000029c4      0x110
+                0x00000000000029c4                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00000000000029c4                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00000000000029c4       0x12 obj/default/communication.o
+                                         0x14 (size before relaxing)
+ *fill*         0x00000000000029d6        0x2 
+ .rodata.str1.4
+                0x00000000000029d8       0x8f obj/default/data_structures_constants.o
+                                         0x90 (size before relaxing)
+ *fill*         0x0000000000002a67        0x1 
+ .rodata.str1.4
+                0x0000000000002a68       0x32 obj/default/display.o
+                                         0x34 (size before relaxing)
+ *fill*         0x0000000000002a9a        0x2 
+ .rodata.str1.4
+                0x0000000000002a9c       0x1d obj/default/main.o
+                                         0x20 (size before relaxing)
+ *fill*         0x0000000000002ab9        0x3 
+ .rodata        0x0000000000002abc       0x18 obj/default/main.o
+ .rodata.str1.4
+                0x0000000000000000       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+                                          0x4 (size before relaxing)
+ *(.rodata1)
+                0x0000000000002ad4                . = ALIGN (0x4)
+                0x0000000000002ad4                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00000000000029c4                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0000000000002ad4      0x120 load address 0x0000000000002bf4
+                0x0000000000002ad4                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000000000002ad4                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000002ad4        0x0 ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000002ad4        0x0 obj/default/ProjectileNode.o
+ .data          0x0000000000002ad4        0x0 obj/default/communication.o
+ .data          0x0000000000002ad4        0x0 obj/default/data_structures_constants.o
+ .data          0x0000000000002ad4        0x0 obj/default/display.o
+ .data          0x0000000000002ad4        0x0 obj/default/gamelogic.o
+ .data          0x0000000000002ad4        0x0 obj/default/main.o
+ .data          0x0000000000002ad4        0x0 obj/default/sram.o
+ .data          0x0000000000002ad4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .data          0x0000000000002ad4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .data          0x0000000000002ad4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .data          0x0000000000002ad4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000002ad4       0xe0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .data          0x0000000000002bb4        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000002bb4        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x000000000000abb4                _gp = ABSOLUTE ((. + 0x8000))
+                0x000000000000abb4                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0000000000002bb4       0x14 obj/default/data_structures_constants.o
+                0x0000000000002bb4                gunner
+                0x0000000000002bb8                alien2
+                0x0000000000002bbc                alien1
+                0x0000000000002bc0                alien0
+                0x0000000000002bc4                empty_space
+ .sdata         0x0000000000002bc8       0x10 obj/default/gamelogic.o
+                0x0000000000002bc8                alienShootToggle
+                0x0000000000002bcc                gunnerShootToggle
+                0x0000000000002bd0                gunnerRightToggle
+                0x0000000000002bd4                gunnerLeftToggle
+ .sdata         0x0000000000002bd8        0x4 obj/default/main.o
+                0x0000000000002bd8                gunnerX
+ .sdata._global_impure_ptr
+                0x0000000000002bdc        0x4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                0x0000000000002bdc                _global_impure_ptr
+ .sdata._impure_ptr
+                0x0000000000002be0        0x4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                0x0000000000002be0                _impure_ptr
+ .sdata         0x0000000000002be4        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000002be4                alt_priority_mask
+ .sdata         0x0000000000002be8        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .sdata         0x0000000000002bec        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000002bec                jtag_uart
+ .sdata         0x0000000000002bf0        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+                0x0000000000002bf0                alt_errno
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000002bf4                . = ALIGN (0x4)
+                0x0000000000002bf4                _edata = ABSOLUTE (.)
+                0x0000000000002bf4                PROVIDE (edata, ABSOLUTE (.))
+                0x0000000000002bf4                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0000000000002bf4                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000000000002d14      0x950
+                0x0000000000002d14                __bss_start = ABSOLUTE (.)
+                0x0000000000002d14                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0000000000002d14                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000002d14        0x8 obj/default/ProjectileNode.o
+                0x0000000000002d18                head
+ .sbss          0x0000000000002d1c        0xc obj/default/communication.o
+                0x0000000000002d1c                edge_capture_receive
+                0x0000000000002d20                edge_capture_gun
+                0x0000000000002d24                edge_capture_sent
+ .sbss          0x0000000000002d28       0x18 obj/default/main.o
+                0x0000000000002d28                gameOver
+                0x0000000000002d2c                alienShift
+                0x0000000000002d30                pSramAliens
+                0x0000000000002d34                pTransmit
+                0x0000000000002d38                pBufferHead
+                0x0000000000002d3c                pBuffer
+ .sbss.__malloc_sbrk_start
+                0x0000000000002d40        0x4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                0x0000000000002d40                __malloc_sbrk_start
+ .sbss.__malloc_free_list
+                0x0000000000002d44        0x4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                0x0000000000002d44                __malloc_free_list
+ .sbss._randbits
+                0x0000000000002d48        0x8 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .sbss          0x0000000000002d50        0x4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                0x0000000000002d50                errno
+ .sbss          0x0000000000002d54        0x4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000002d54                alt_irq_active
+ .sbss          0x0000000000002d58        0xc ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000002d58                alt_envp
+                0x0000000000002d5c                alt_argv
+                0x0000000000002d60                alt_argc
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x0000000000002d64                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x0000000000002d64                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000000000002d64        0x0 obj/default/ProjectileNode.o
+ .bss           0x0000000000002d64        0x0 obj/default/communication.o
+ .bss           0x0000000000002d64        0x0 obj/default/data_structures_constants.o
+ .bss           0x0000000000002d64        0x0 obj/default/display.o
+ .bss           0x0000000000002d64        0x0 obj/default/gamelogic.o
+ .bss           0x0000000000002d64        0x0 obj/default/main.o
+ .bss           0x0000000000002d64        0x0 obj/default/sram.o
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .bss           0x0000000000002d64        0x0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000002d64        0x0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ *(COMMON)
+ COMMON         0x0000000000002d64      0x800 obj/default/ProjectileNode.o
+                0x0000000000002d64                sram
+ COMMON         0x0000000000003564      0x100 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000003564                alt_irq
+                0x0000000000003664                . = ALIGN (0x4)
+                0x0000000000003664                __bss_end = ABSOLUTE (.)
+
+.onchip_mem     0x0000000000003664        0x0
+                0x0000000000003664                PROVIDE (_alt_partition_onchip_mem_start, ABSOLUTE (.))
+ *(.onchip_mem .onchip_mem. onchip_mem.*)
+                0x0000000000003664                . = ALIGN (0x4)
+                0x0000000000003664                PROVIDE (_alt_partition_onchip_mem_end, ABSOLUTE (.))
+                0x0000000000003664                _end = ABSOLUTE (.)
+                0x0000000000003664                end = ABSOLUTE (.)
+                0x0000000000003664                __alt_stack_base = ABSOLUTE (.)
+                0x0000000000003664                PROVIDE (_alt_partition_onchip_mem_load_addr, LOADADDR (.onchip_mem))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 obj/default/ProjectileNode.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 obj/default/communication.o
+ .comment       0x0000000000000000       0x24 obj/default/data_structures_constants.o
+ .comment       0x0000000000000000       0x24 obj/default/display.o
+ .comment       0x0000000000000000       0x24 obj/default/gamelogic.o
+ .comment       0x0000000000000000       0x24 obj/default/main.o
+ .comment       0x0000000000000000       0x24 obj/default/sram.o
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .comment       0x0000000000000000       0x24 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x668
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x20 obj/default/ProjectileNode.o
+ .debug_aranges
+                0x0000000000000048       0x20 obj/default/communication.o
+ .debug_aranges
+                0x0000000000000068       0x18 obj/default/data_structures_constants.o
+ .debug_aranges
+                0x0000000000000080       0x20 obj/default/display.o
+ .debug_aranges
+                0x00000000000000a0       0x20 obj/default/gamelogic.o
+ .debug_aranges
+                0x00000000000000c0       0x20 obj/default/main.o
+ .debug_aranges
+                0x00000000000000e0       0x20 obj/default/sram.o
+ .debug_aranges
+                0x0000000000000100       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x0000000000000120       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x0000000000000140       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .debug_aranges
+                0x0000000000000160       0x18 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000178       0x28 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_aranges
+                0x00000000000001a0       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x00000000000001c0       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .debug_aranges
+                0x00000000000001e0       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_aranges
+                0x0000000000000200       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_aranges
+                0x0000000000000220       0x28 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .debug_aranges
+                0x0000000000000248       0x28 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_aranges
+                0x0000000000000270       0x28 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_aranges
+                0x0000000000000298       0x28 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .debug_aranges
+                0x00000000000002c0       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_aranges
+                0x00000000000002e0       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000300       0x30 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .debug_aranges
+                0x0000000000000330       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_aranges
+                0x0000000000000350       0x18 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x0000000000000368       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_aranges
+                0x0000000000000388       0x28 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_aranges
+                0x00000000000003b0       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_aranges
+                0x00000000000003d0       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_aranges
+                0x00000000000003f0       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x0000000000000410       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x0000000000000430       0x30 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x0000000000000460       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x0000000000000480       0x18 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x0000000000000498       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000000000004b8       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000000000004d8       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_aranges
+                0x00000000000004f8       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_aranges
+                0x0000000000000518       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_aranges
+                0x0000000000000538       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_aranges
+                0x0000000000000558       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000578       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x0000000000000598       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_aranges
+                0x00000000000005b8       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000000000005d8       0x18 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x00000000000005f0       0x38 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x0000000000000628       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x0000000000000648       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0xa41d
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x7f ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x000000000000007f      0x4de obj/default/ProjectileNode.o
+ .debug_info    0x000000000000055d      0x5cb obj/default/communication.o
+ .debug_info    0x0000000000000b28       0x85 obj/default/data_structures_constants.o
+ .debug_info    0x0000000000000bad      0x967 obj/default/display.o
+ .debug_info    0x0000000000001514      0x43a obj/default/gamelogic.o
+ .debug_info    0x000000000000194e      0x3f0 obj/default/main.o
+ .debug_info    0x0000000000001d3e      0x35d obj/default/sram.o
+ .debug_info    0x000000000000209b      0x234 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_info    0x00000000000022cf       0xb4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_info    0x0000000000002383      0x5f5 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .debug_info    0x0000000000002978      0x5a7 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_info    0x0000000000002f1f      0x628 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_info    0x0000000000003547      0x106 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_info    0x000000000000364d      0x64e c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .debug_info    0x0000000000003c9b      0x685 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_info    0x0000000000004320      0x761 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_info    0x0000000000004a81      0x6c7 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .debug_info    0x0000000000005148      0x648 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_info    0x0000000000005790      0x685 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_info    0x0000000000005e15      0x5e5 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .debug_info    0x00000000000063fa      0x607 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_info    0x0000000000006a01       0xc2 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000006ac3      0xb38 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .debug_info    0x00000000000075fb      0x656 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_info    0x0000000000007c51       0x83 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x0000000000007cd4       0xd5 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_info    0x0000000000007da9      0x680 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_info    0x0000000000008429      0x639 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_info    0x0000000000008a62      0x1e2 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_info    0x0000000000008c44      0x39d ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x0000000000008fe1      0x249 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x000000000000922a       0x88 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00000000000092b2      0x185 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000009437       0x88 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x00000000000094bf      0x1ba ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000009679      0x17b ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000000000097f4      0x138 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_info    0x000000000000992c      0x1a3 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_info    0x0000000000009acf       0xd0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_info    0x0000000000009b9f      0x1d5 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_info    0x0000000000009d74      0x17a ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000009eee      0x190 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x000000000000a07e       0xd1 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_info    0x000000000000a14f       0x8b ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000000000000a1da       0x9f ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x000000000000a279       0x8e ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x000000000000a307       0x8b ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x000000000000a392       0x8b ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_abbrev   0x0000000000000000     0x39fe
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x29e obj/default/ProjectileNode.o
+ .debug_abbrev  0x00000000000002b0      0x234 obj/default/communication.o
+ .debug_abbrev  0x00000000000004e4       0x3c obj/default/data_structures_constants.o
+ .debug_abbrev  0x0000000000000520      0x27d obj/default/display.o
+ .debug_abbrev  0x000000000000079d      0x1e1 obj/default/gamelogic.o
+ .debug_abbrev  0x000000000000097e      0x17b obj/default/main.o
+ .debug_abbrev  0x0000000000000af9      0x176 obj/default/sram.o
+ .debug_abbrev  0x0000000000000c6f       0xd9 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x0000000000000d48       0x6f c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x0000000000000db7      0x1a6 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .debug_abbrev  0x0000000000000f5d      0x14a c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x00000000000010a7      0x1c4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_abbrev  0x000000000000126b       0xa4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x000000000000130f      0x1c3 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .debug_abbrev  0x00000000000014d2      0x1dd c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_abbrev  0x00000000000016af      0x26b c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_abbrev  0x000000000000191a      0x1fe c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .debug_abbrev  0x0000000000001b18      0x1c4 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_abbrev  0x0000000000001cdc      0x1ed c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_abbrev  0x0000000000001ec9      0x1a0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .debug_abbrev  0x0000000000002069      0x1c7 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_abbrev  0x0000000000002230       0x7f c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00000000000022af      0x2a1 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .debug_abbrev  0x0000000000002550      0x1c3 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_abbrev  0x0000000000002713       0x37 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x000000000000274a       0x8e c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_abbrev  0x00000000000027d8      0x1bf c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_abbrev  0x0000000000002997      0x1a8 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_abbrev  0x0000000000002b3f       0xe0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_abbrev  0x0000000000002c1f      0x17d ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x0000000000002d9c      0x1a6 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x0000000000002f42       0x12 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x0000000000002f54      0x122 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000003076       0x40 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00000000000030b6       0xd8 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x000000000000318e      0x120 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000000000032ae       0xd4 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_abbrev  0x0000000000003382      0x11b ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_abbrev  0x000000000000349d       0x96 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_abbrev  0x0000000000003533      0x130 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_abbrev  0x0000000000003663      0x107 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000000000000376a       0xd5 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x000000000000383f       0x8d ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_abbrev  0x00000000000038cc       0x42 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x000000000000390e       0x5a ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000000000003968       0x12 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x000000000000397a       0x42 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00000000000039bc       0x42 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_line     0x0000000000000000     0x3a15
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x66 ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000066      0x1d1 obj/default/ProjectileNode.o
+ .debug_line    0x0000000000000237      0x200 obj/default/communication.o
+ .debug_line    0x0000000000000437       0x3c obj/default/data_structures_constants.o
+ .debug_line    0x0000000000000473      0x18c obj/default/display.o
+ .debug_line    0x00000000000005ff      0x12e obj/default/gamelogic.o
+ .debug_line    0x000000000000072d      0x184 obj/default/main.o
+ .debug_line    0x00000000000008b1       0xc4 obj/default/sram.o
+ .debug_line    0x0000000000000975       0xc7 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_line    0x0000000000000a3c       0x80 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_line    0x0000000000000abc      0x1d9 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .debug_line    0x0000000000000c95      0x156 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_line    0x0000000000000deb      0x1ed c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_line    0x0000000000000fd8      0x15e c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000001136      0x1e6 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .debug_line    0x000000000000131c      0x1a1 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_line    0x00000000000014bd      0x220 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_line    0x00000000000016dd      0x208 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .debug_line    0x00000000000018e5      0x1eb c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_line    0x0000000000001ad0      0x208 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_line    0x0000000000001cd8      0x1eb c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .debug_line    0x0000000000001ec3      0x1e0 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_line    0x00000000000020a3      0x15c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x00000000000021ff      0x355 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .debug_line    0x0000000000002554      0x1f2 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_line    0x0000000000002746       0x5f c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x00000000000027a5      0x15d c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_line    0x0000000000002902      0x202 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_line    0x0000000000002b04      0x1ed c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_line    0x0000000000002cf1       0xa1 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_line    0x0000000000002d92       0xf1 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000000000002e83       0xd6 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x0000000000002f59       0x6b ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000002fc4       0xa5 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000000000003069       0x50 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000000000030b9       0xa6 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x000000000000315f       0xbd ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x000000000000321c       0x55 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_line    0x0000000000003271       0xea ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_line    0x000000000000335b       0xc7 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_line    0x0000000000003422      0x15a ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_line    0x000000000000357c      0x101 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x000000000000367d       0xf0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x000000000000376d       0xc0 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_line    0x000000000000382d       0x4e ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x000000000000387b       0x51 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000000000038cc       0xab ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000003977       0x4e ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00000000000039c5       0x50 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_frame    0x0000000000000000      0xd88
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0xfc obj/default/ProjectileNode.o
+ .debug_frame   0x00000000000000fc      0x114 obj/default/communication.o
+ .debug_frame   0x0000000000000210      0x1cc obj/default/display.o
+ .debug_frame   0x00000000000003dc      0x138 obj/default/gamelogic.o
+ .debug_frame   0x0000000000000514       0x48 obj/default/main.o
+ .debug_frame   0x000000000000055c       0xc4 obj/default/sram.o
+ .debug_frame   0x0000000000000620       0x8c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x00000000000006ac       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_frame   0x00000000000006cc       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .debug_frame   0x00000000000006ec       0x30 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_frame   0x000000000000071c       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_frame   0x000000000000073c       0x34 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .debug_frame   0x0000000000000770       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000000790       0x40 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000000000007d0       0x48 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .debug_frame   0x0000000000000818       0x30 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_frame   0x0000000000000848       0x48 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_frame   0x0000000000000890       0x40 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .debug_frame   0x00000000000008d0       0x38 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000000908       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000000928       0x8c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .debug_frame   0x00000000000009b4       0x40 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_frame   0x00000000000009f4       0x20 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000a14       0x50 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_frame   0x0000000000000a64       0x38 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_frame   0x0000000000000a9c       0x54 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_frame   0x0000000000000af0       0x50 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x0000000000000b40       0x30 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x0000000000000b70       0x34 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x0000000000000ba4       0x30 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000bd4       0x2c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x0000000000000c00       0x30 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_frame   0x0000000000000c30       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_frame   0x0000000000000c50       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_frame   0x0000000000000c70       0x2c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_frame   0x0000000000000c9c       0x3c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000000000000cd8       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x0000000000000cf8       0x30 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_frame   0x0000000000000d28       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000000000000d48       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000000000000d68       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_str      0x0000000000000000     0x1c91
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x242 obj/default/ProjectileNode.o
+                                        0x2ba (size before relaxing)
+ .debug_str     0x0000000000000242      0x1e3 obj/default/communication.o
+                                        0x303 (size before relaxing)
+ .debug_str     0x0000000000000425       0x44 obj/default/data_structures_constants.o
+                                         0xc8 (size before relaxing)
+ .debug_str     0x0000000000000469      0x13e obj/default/display.o
+                                        0x28c (size before relaxing)
+ .debug_str     0x00000000000005a7       0xbf obj/default/gamelogic.o
+                                        0x2d6 (size before relaxing)
+ .debug_str     0x0000000000000666       0x58 obj/default/main.o
+                                        0x2a6 (size before relaxing)
+ .debug_str     0x00000000000006be       0x9e obj/default/sram.o
+                                        0x1d5 (size before relaxing)
+ .debug_str     0x000000000000075c      0x185 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                                        0x1d0 (size before relaxing)
+ .debug_str     0x00000000000008e1       0x40 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                                        0x191 (size before relaxing)
+ .debug_str     0x0000000000000921      0x3e5 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+                                        0x4b0 (size before relaxing)
+ .debug_str     0x0000000000000d06       0xef c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                                        0x4b0 (size before relaxing)
+ .debug_str     0x0000000000000df5       0x5b c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+                                        0x4c4 (size before relaxing)
+ .debug_str     0x0000000000000e50       0xe6 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                                        0x1e5 (size before relaxing)
+ .debug_str     0x0000000000000f36       0x67 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+                                        0x4cc (size before relaxing)
+ .debug_str     0x0000000000000f9d       0x44 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+                                        0x508 (size before relaxing)
+ .debug_str     0x0000000000000fe1       0x50 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+                                        0x53d (size before relaxing)
+ .debug_str     0x0000000000001031      0x126 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+                                        0x4fb (size before relaxing)
+ .debug_str     0x0000000000001157       0x50 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+                                        0x4b8 (size before relaxing)
+ .debug_str     0x00000000000011a7       0x5e c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+                                        0x4bf (size before relaxing)
+ .debug_str     0x0000000000001205       0x4b c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+                                        0x4b1 (size before relaxing)
+ .debug_str     0x0000000000001250       0x45 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+                                        0x4a6 (size before relaxing)
+ .debug_str     0x0000000000001295       0x3d c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                                        0x1d7 (size before relaxing)
+ .debug_str     0x00000000000012d2      0x1fc c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+                                        0x684 (size before relaxing)
+ .debug_str     0x00000000000014ce       0x6c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                                        0x4d6 (size before relaxing)
+ .debug_str     0x000000000000153a       0x3f c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                                        0x1ca (size before relaxing)
+ .debug_str     0x0000000000001579       0x3d c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                                        0x1d1 (size before relaxing)
+ .debug_str     0x00000000000015b6       0x46 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+                                        0x4bd (size before relaxing)
+ .debug_str     0x00000000000015fc       0x3c c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+                                        0x4aa (size before relaxing)
+ .debug_str     0x0000000000001638       0x94 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+                                        0x217 (size before relaxing)
+ .debug_str     0x00000000000016cc      0x13a ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+                                        0x247 (size before relaxing)
+ .debug_str     0x0000000000001806       0x37 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                        0x201 (size before relaxing)
+ .debug_str     0x000000000000183d       0x3a ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                        0x18b (size before relaxing)
+ .debug_str     0x0000000000001877       0x17 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                        0x13a (size before relaxing)
+ .debug_str     0x000000000000188e      0x113 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x230 (size before relaxing)
+ .debug_str     0x00000000000019a1       0x8a ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x1a9 (size before relaxing)
+ .debug_str     0x0000000000001a2b       0x5e ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+                                        0x17f (size before relaxing)
+ .debug_str     0x0000000000001a89       0x61 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+                                        0x1c8 (size before relaxing)
+ .debug_str     0x0000000000001aea       0x24 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+                                        0x14b (size before relaxing)
+ .debug_str     0x0000000000001b0e       0x2c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+                                        0x1d2 (size before relaxing)
+ .debug_str     0x0000000000001b3a       0x86 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x218 (size before relaxing)
+ .debug_str     0x0000000000001bc0       0x2c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                        0x209 (size before relaxing)
+ .debug_str     0x0000000000001bec       0x33 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                                        0x15f (size before relaxing)
+ .debug_str     0x0000000000001c1f       0x1f ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x149 (size before relaxing)
+ .debug_str     0x0000000000001c3e       0x14 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_errno.o)
+                                        0x139 (size before relaxing)
+ .debug_str     0x0000000000001c52       0x1f ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x149 (size before relaxing)
+ .debug_str     0x0000000000001c71       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                        0x150 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x2f86
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x263 obj/default/ProjectileNode.o
+ .debug_loc     0x0000000000000263      0x1ba obj/default/communication.o
+ .debug_loc     0x000000000000041d      0x77a obj/default/display.o
+ .debug_loc     0x0000000000000b97      0x13f obj/default/gamelogic.o
+ .debug_loc     0x0000000000000cd6       0x7b obj/default/main.o
+ .debug_loc     0x0000000000000d51      0x393 obj/default/sram.o
+ .debug_loc     0x00000000000010e4      0x273 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x0000000000001357       0x93 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_loc     0x00000000000013ea       0x58 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .debug_loc     0x0000000000001442       0x58 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_loc     0x000000000000149a      0x11b c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_loc     0x00000000000015b5       0xa2 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .debug_loc     0x0000000000001657       0xfa c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_loc     0x0000000000001751      0x1d9 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_loc     0x000000000000192a       0xc6 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .debug_loc     0x00000000000019f0       0x81 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_loc     0x0000000000001a71       0x97 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_loc     0x0000000000001b08       0x4d c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_loc     0x0000000000001b55       0x1e c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x0000000000001b73      0xa32 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .debug_loc     0x00000000000025a5       0xbd c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_loc     0x0000000000002662       0xa5 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_loc     0x0000000000002707       0xc6 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_loc     0x00000000000027cd       0xa5 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_loc     0x0000000000002872      0x15d c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_loc     0x00000000000029cf      0x129 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x0000000000002af8      0x193 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x0000000000002c8b       0x98 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x0000000000002d23       0x2c ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_loc     0x0000000000002d4f       0x34 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_loc     0x0000000000002d83       0x21 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_loc     0x0000000000002da4       0xcf ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_loc     0x0000000000002e73       0x21 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x0000000000002e94       0x8b ../Space_Invaders2_Server_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x0000000000002f1f       0x67 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x40
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+ .debug_alt_sim_info
+                0x0000000000000010       0x30 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                0x0000000000004000                __alt_data_end = 0x4000
+                0x0000000000004000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x0000000000003664                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x0000000000003664                PROVIDE (__alt_heap_start, end)
+                0x0000000000004000                PROVIDE (__alt_heap_limit, 0x4000)
+OUTPUT(Space_Invaders2_Server.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000      0x528
+ .debug_ranges  0x0000000000000000       0x20 ../Space_Invaders2_Server_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x38 obj/default/ProjectileNode.o
+ .debug_ranges  0x0000000000000058       0xf8 obj/default/display.o
+ .debug_ranges  0x0000000000000150       0x70 obj/default/gamelogic.o
+ .debug_ranges  0x00000000000001c0       0x10 obj/default/main.o
+ .debug_ranges  0x00000000000001d0       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-calloc.o)
+ .debug_ranges  0x00000000000001e0       0x18 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-malloc.o)
+ .debug_ranges  0x00000000000001f8       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_ranges  0x0000000000000208       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-callocr.o)
+ .debug_ranges  0x0000000000000218       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-freer.o)
+ .debug_ranges  0x0000000000000228       0x40 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-nano-mallocr.o)
+ .debug_ranges  0x0000000000000268       0x18 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-printf.o)
+ .debug_ranges  0x0000000000000280       0x18 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_ranges  0x0000000000000298       0x18 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-puts.o)
+ .debug_ranges  0x00000000000002b0       0x18 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-rand.o)
+ .debug_ranges  0x00000000000002c8       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-sbrkr.o)
+ .debug_ranges  0x00000000000002d8       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_ranges  0x00000000000002e8       0xd8 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-vfprintf.o)
+ .debug_ranges  0x00000000000003c0       0x28 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_ranges  0x00000000000003e8       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_ranges  0x00000000000003f8       0x18 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_ranges  0x0000000000000410       0x10 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_ranges  0x0000000000000420       0x38 c:/altera/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a(_muldi3.o)
+ .debug_ranges  0x0000000000000458       0x28 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x0000000000000480       0x10 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x0000000000000490       0x48 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x00000000000004d8       0x20 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_ranges  0x00000000000004f8       0x30 ../Space_Invaders2_Server_bsp/\libhal_bsp.a(alt_exception_entry.o)

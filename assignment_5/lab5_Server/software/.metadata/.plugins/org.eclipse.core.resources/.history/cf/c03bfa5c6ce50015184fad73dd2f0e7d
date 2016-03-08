@@ -1,0 +1,155 @@
+#include <time.h>
+
+#include "gamelogic.h"
+#include "data_structures_constants.h"
+#include "sram.h"
+
+void initializeGame() {
+    //resetSRAM();
+    //srand(time(NULL)); //Seed random number generator
+    //startTimer = clock();
+}
+
+
+int gunnerLeftToggle = 1;
+void moveGunnerLeft(int* gunnerX) {
+	if((*gun_left) && gunnerLeftToggle) {
+		gunnerLeftToggle = 0;
+		if((*gunnerX) == 0) {
+			(*gunnerX) = (ALIEN_WIDTH * ALIEN_COLS) - 1;
+		} else {
+			(*gunnerX)--;
+		}		
+	} else if (!(*gun_left) && !(gunnerLeftToggle)) {
+		gunnerLeftToggle = 1;
+	}
+}
+
+void moveGunnerLeftTransmited() {
+	/*if((gunnerX) == (ALIEN_WIDTH * ALIEN_COLS) - 1) {
+		(gunnerX) = 0;
+	} else {
+		(gunnerX)--;
+	}*/
+	*if((gunnerX) == (ALIEN_WIDTH * ALIEN_COLS) - 1) {
+			(gunnerX) = 0;
+		} else {
+			(gunnerX)--;
+		}
+}
+
+int gunnerRightToggle = 1;
+void moveGunnerRight(int* gunnerX) {	
+	if((*gun_right) && gunnerRightToggle) {
+		gunnerRightToggle = 0;
+		if((*gunnerX) == (ALIEN_WIDTH * ALIEN_COLS) - 1) {
+			(*gunnerX) = 0;
+		} else {
+			(*gunnerX)++;
+		}		
+	} else if (!(*gun_right) && !(gunnerRightToggle)) {
+		gunnerRightToggle = 1;
+	}
+}
+
+void moveGunnerRightTransmited() {
+	if((gunnerX) == (ALIEN_WIDTH * ALIEN_COLS) - 1) {
+		(gunnerX) = 0;
+	} else {
+		(gunnerX)++;
+	}
+}
+
+
+int gunnerShootToggle = 1;
+void shootGunner(int* gunnerX) {
+	if((*gun_shoot) && gunnerShootToggle) {
+		gunnerShootToggle = 0;
+		struct Projectile proj;
+		proj.xVal = ((*gunnerX) + (GUNNER_WIDTH/2)) % (ALIEN_COLS * ALIEN_WIDTH);
+		proj.yVal = 0;
+		proj.direction = 1;
+		proj.symbol = '^';
+		proj.type = 1;
+		proj.timeTick = 0;
+		
+		//checkCollideAliens(pSramAliens, 2);
+		addProjectileNode(proj);
+	} else if (!(*gun_shoot) && !(gunnerShootToggle)) {
+		gunnerShootToggle = 1;
+	}
+}
+
+void shootGunnerTransmited() {
+	struct Projectile proj;
+	proj.xVal = ((gunnerX) + (GUNNER_WIDTH/2)) % (ALIEN_COLS * ALIEN_WIDTH);
+	proj.yVal = 0;
+	proj.direction = 1;
+	proj.symbol = '^';
+	proj.type = 1;
+	proj.timeTick = 0;
+	
+	//checkCollideAliens(pSramAliens, 2);
+	addProjectileNode(proj);
+}
+
+
+int alienShootToggle = 1;
+void shootAliens() {
+	if((*gun_shoot) && alienShootToggle) {
+		alienShootToggle = 0;
+		//printf("X, Y: (%i, %i)\n", (*alien_x), (*alien_y));
+		
+		if(*alien_x == 0 || *alien_y == 0) {
+			return;
+		}
+		struct Projectile proj;
+		//proj.xVal = (((*alien_x + alienShift) % ALIEN_COLS) * ALIEN_COLS) + (ALIEN_WIDTH / 2) + 1;
+		proj.xVal = (((*alien_x) + alienShift + 1) * ALIEN_WIDTH) + (ALIEN_WIDTH / 2);
+		proj.yVal = VOID_HEIGHT - 1;
+		proj.direction = -1;
+		proj.symbol = '*';
+		proj.type = 1;
+		proj.timeTick = 0;
+		
+		addProjectileNode(proj);
+		
+	} else if (!(*gun_shoot) && !(alienShootToggle)) {
+		alienShootToggle = 1;
+	}
+}
+
+void checkGunnerWin() {
+	int x, y;
+	for(x = 0; x < ALIEN_COLS; x++) {
+		for(y = 0; y < ALIEN_ROWS; y++) {
+			struct Alien a = getAlien(pSramAliens, y, x);
+			if(a.alive) {
+				return;
+			}
+		}
+	}
+	gameOver = 2;
+}
+
+void checkCollideAliens(int pSramAliens, int x) {
+	int y;
+	for(y = ALIEN_ROWS - 1; y >= 0; y--) {
+		struct Alien a = getAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS);
+		if(a.alive) {
+			//printf("KILL (%i, %i)\n", (x + (7-alienShift)) % ALIEN_COLS, y);
+			a.alive = 0;
+			setAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS, a);
+			break;
+		}
+	}
+	//checkGunnerWin();
+}
+
+
+void checkCollideGunner(int projX) {
+	int gunnerCenter = gunnerX + (GUNNER_WIDTH / 2);
+    if ((projX > (gunnerX + 2)) && (projX < (gunnerX + GUNNER_WIDTH - 2))) {
+        gameOver = 1;
+    }
+}

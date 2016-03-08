@@ -1,0 +1,6 @@
+01:31:06 **** Incremental Build of configuration Nios II for project interrupts_test_bsp ****
+make all 
+[BSP build complete]
+
+01:31:07 Build Finished (took 625ms)
+

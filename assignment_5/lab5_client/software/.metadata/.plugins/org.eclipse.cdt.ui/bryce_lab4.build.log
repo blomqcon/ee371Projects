@@ -1,0 +1,9 @@
+23:24:39 **** Incremental Build of configuration Nios II for project bryce_lab4 ****
+make all 
+Info: Building ../bryce_lab4_bsp/
+C:/altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bryce_lab4_bsp/
+[BSP build complete]
+[bryce_lab4 build complete]
+
+23:24:39 Build Finished (took 701ms)
+
