@@ -64,7 +64,7 @@ int alienShootToggle = 1;
 void shootAliens() {
 	if((*gun_shoot) && alienShootToggle) {
 		alienShootToggle = 0;
-		printf("X, Y: (%i, %i)\n", (*alien_x), (*alien_y));
+		//printf("X, Y: (%i, %i)\n", (*alien_x), (*alien_y));
 		
 		if(*alien_x == 0 || *alien_y == 0) {
 			return;
@@ -103,7 +103,7 @@ void checkCollideAliens(int pSramAliens, int x) {
 	for(y = ALIEN_ROWS - 1; y >= 0; y--) {
 		struct Alien a = getAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS);
 		if(a.alive) {
-			printf("KILL (%i, %i)\n", (x + (7-alienShift)) % ALIEN_COLS, y);
+			//printf("KILL (%i, %i)\n", (x + (7-alienShift)) % ALIEN_COLS, y);
 			a.alive = 0;
 			setAlien(pSramAliens, y, (x + (7-alienShift)) % ALIEN_COLS, a);
 			break;
@@ -113,9 +113,9 @@ void checkCollideAliens(int pSramAliens, int x) {
 }
 
 
-
 void checkCollideGunner(int projX) {
-    if (projX == gunnerX) {
+	int gunnerCenter = gunnerX + (GUNNER_WIDTH / 2);
+    if ((projX > (gunnerX + 2)) && (projX < (gunnerX + GUNNER_WIDTH - 2))) {
         gameOver = 1;
     }
 }
