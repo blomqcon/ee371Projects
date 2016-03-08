@@ -43,8 +43,9 @@ void updateProjectileNodes() {
         struct ProjectileNode* tempCurrent = current;
         current = current->next;
 
-        if(tempCurrent->bullet.yVal < -1) {
-            checkCollideGunner((int)tempCurrent->bullet.xVal);
+        if(tempCurrent->bullet.yVal < 0) {
+			//printf("Check Gunner Collison: %i", (int)tempCurrent->bullet.xVal % (ALIEN_COLS * ALIEN_WIDTH));
+            checkCollideGunner((int)tempCurrent->bullet.xVal % (ALIEN_COLS * ALIEN_WIDTH));
             removeProjectileNode(tempCurrent);
         } else if (tempCurrent->bullet.yVal > VOID_HEIGHT && (int)tempCurrent->bullet.direction >= 1) {
 			int alienX = ((int) tempCurrent->bullet.xVal) / ALIEN_WIDTH;
@@ -54,7 +55,6 @@ void updateProjectileNodes() {
     }
     printf("\n");
 }
-
 
 void initProjectileBuffer(int pSramBulletBuffer) {
 	int x, y;
