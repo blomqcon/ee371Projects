@@ -1,12 +1,27 @@
 #include "sram.h"
-#include "data_structures_constants.h";
+#include "data_structures_constants.h"
 #include "ProjectileNode.h"
+#include "gamelogic.h"
 
 //for std malloc
 #include <stdlib.h>
 
 struct ProjectileNode *head = NULL;
 struct ProjectileNode *end = NULL;
+
+void removeProjectileNode(struct ProjectileNode* proj) {
+    if(head == proj) {
+        if(proj == end) end = NULL;
+        head = proj->next;
+    } else {
+        struct ProjectileNode* current = head;
+        while(current->next != proj) { }
+        current->next = proj->next;
+        if(proj == end) end = current->next;
+    }
+	//printf("removed success x:%i y:%i", proj->bullet.xVal, proj->bullet.yVal);
+    //free(proj);
+}
 
 void updateProjectileNodes() {
     //if head is null, return
@@ -28,11 +43,11 @@ void updateProjectileNodes() {
         struct ProjectileNode* tempCurrent = current;
         current = current->next;
 
-        if(tempCurrent->bullet.yVal < 0) {
-            //checkCollideGunner();
+        if(tempCurrent->bullet.yVal < -1) {
+            checkCollideGunner((int)tempCurrent->bullet.xVal);
             removeProjectileNode(tempCurrent);
-        } else if (tempCurrent->bullet.yVal > VOID_HEIGHT) {
-						int alienX = ((int) tempCurrent->bullet.xVal) / ALIEN_WIDTH;
+        } else if (tempCurrent->bullet.yVal > VOID_HEIGHT && (int)tempCurrent->bullet.direction >= 1) {
+			int alienX = ((int) tempCurrent->bullet.xVal) / ALIEN_WIDTH;
             checkCollideAliens(pSramAliens, alienX);
             removeProjectileNode(tempCurrent);
         }
@@ -91,19 +106,6 @@ int listLength() {
 		current = current->next;
     }
 	return size;
-}
-
-void removeProjectileNode(struct ProjectileNode* proj) {
-    if(head == proj) {
-        if(proj == end) end = NULL;
-        head = proj->next;
-    } else {
-        struct ProjectileNode* current = head;
-        while(current->next != proj) { }
-        current->next = proj->next;
-        if(proj == end) end = current->next;
-    }
-    free(proj);
 }
 
 struct Projectile createProjectile(char x, char dir, char symb, char t) {

@@ -15,6 +15,8 @@ clock_t startTimer;
 
 int pSramAliens = 0;
 int alienShift = 0;
+int gameOver = 0;
+int gunnerX = ((ALIEN_WIDTH * ALIEN_COLS) / 2) - (GUNNER_WIDTH / 2);
 
 int main()
 {
@@ -37,9 +39,8 @@ int main()
 	unsigned int  previousUpdateBoard = *game_time;
 	unsigned int  previousUpdateBullets = *game_time;
     
-  initRandomAliens(pSramAliens);
+	initRandomAliens(pSramAliens);
 	initProjectileBuffer(pSramBulletBuffer);
-	int gunnerX = 37; //max value 39 (ALIEN_WIDTH * ALIEN_COLS)
 
 	
 	/*printf("List Length: %i\n", listLength());
@@ -52,30 +53,33 @@ int main()
 	
 	//Game Event Loop
     while(1) {
-			if(gameOver) {
-				if(gameOver == 1) {
-					printf("\nAliens Win!\n")
-				}
-				break;
+		if(gameOver) {
+			if(gameOver == 1) {
+				printf("\nAliens Win!\n");
+			} else if(gameOver ==2) {
+				printf("\nGunner Win!\n");
 			}
-			
-			if(((*game_time) - previousUpdateBoard) > 10) {
-				alienShift = ((*game_time) / 10) % 8;
-				updateDisplay(pSramAliens, pSramBulletBuffer, gunnerX, (*game_time) % 2, alienShift);			
-				previousUpdateBoard = (*game_time);
-			}
-			
-			if(((*game_time) - previousUpdateBullets) > 5) {
-				updateProjectileNodes();
-				previousUpdateBullets = (*game_time);
-			}
-			
-			moveGunnerLeft(&gunnerX);
-			moveGunnerRight(&gunnerX);
-			shootGunner(&gunnerX);
-			//shootAliens();
-	 
-			}
-
+			return 0;
+		}
+		//gameOver =1;
+		
+		if(((*game_time) - previousUpdateBoard) > 10) {
+			alienShift = ((*game_time) / 10) % 8;
+			//alienShift = 2;
+			updateDisplay(pSramAliens, pSramBulletBuffer, gunnerX, (*game_time) % 2, alienShift);			
+			previousUpdateBoard = (*game_time);
+		}
+		
+		if(((*game_time) - previousUpdateBullets) > 5) {
+			updateProjectileNodes();
+			previousUpdateBullets = (*game_time);
+		}
+		
+		moveGunnerLeft(&gunnerX);
+		moveGunnerRight(&gunnerX);
+		//shootGunner(&gunnerX);
+		shootAliens();
+	}
+	
     return 0;
 }

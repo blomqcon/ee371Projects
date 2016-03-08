@@ -46,6 +46,7 @@ extern const char* gunner;// straight line, very fast, 'reloads very fast'
 
 extern int pSramAliens;
 extern int alienShift;
+extern int gunnerX;
 extern int gameOver;
 
 struct Alien {

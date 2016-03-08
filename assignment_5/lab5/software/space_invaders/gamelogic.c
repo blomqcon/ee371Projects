@@ -4,10 +4,10 @@
 #include "data_structures_constants.h"
 #include "sram.h"
 
-void initializeGame(clock_t startTimer) {
+void initializeGame() {
     //resetSRAM();
     //srand(time(NULL)); //Seed random number generator
-    startTimer = clock();
+    //startTimer = clock();
 }
 
 
@@ -52,8 +52,8 @@ void shootGunner(int* gunnerX) {
 		proj.type = 1;
 		proj.timeTick = 0;
 		
-		checkCollideAliens(pSramAliens, 2);
-		//addProjectileNode(proj);
+		//checkCollideAliens(pSramAliens, 2);
+		addProjectileNode(proj);
 	} else if (!(*gun_shoot) && !(gunnerShootToggle)) {
 		gunnerShootToggle = 1;
 	}
@@ -64,10 +64,38 @@ int alienShootToggle = 1;
 void shootAliens() {
 	if((*gun_shoot) && alienShootToggle) {
 		alienShootToggle = 0;
-		printf("X, Y: %i, %i\n", (*alien_x), (*alien_y));
+		printf("X, Y: (%i, %i)\n", (*alien_x), (*alien_y));
+		
+		if(*alien_x == 0 || *alien_y == 0) {
+			return;
+		}
+		struct Projectile proj;
+		//proj.xVal = (((*alien_x + alienShift) % ALIEN_COLS) * ALIEN_COLS) + (ALIEN_WIDTH / 2) + 1;
+		proj.xVal = (((*alien_x) + alienShift + 1) * ALIEN_WIDTH) + (ALIEN_WIDTH / 2);
+		proj.yVal = VOID_HEIGHT - 1;
+		proj.direction = -1;
+		proj.symbol = '*';
+		proj.type = 1;
+		proj.timeTick = 0;
+		
+		addProjectileNode(proj);
+		
 	} else if (!(*gun_shoot) && !(alienShootToggle)) {
 		alienShootToggle = 1;
 	}
+}
+
+void checkGunnerWin() {
+	int x, y;
+	for(x = 0; x < ALIEN_COLS; x++) {
+		for(y = 0; y < ALIEN_ROWS; y++) {
+			struct Alien a = getAlien(pSramAliens, y, x);
+			if(a.alive) {
+				return;
+			}
+		}
+	}
+	gameOver = 2;
 }
 
 void checkCollideAliens(int pSramAliens, int x) {
@@ -81,13 +109,13 @@ void checkCollideAliens(int pSramAliens, int x) {
 			break;
 		}
 	}
+	//checkGunnerWin();
 }
 
-int checkCollideGunner(int gunnerX, int projX, int projY, int* gameOver) {
-    if (projX == gunnerX && projY == gunnerX) {
-        *gameOver = 1;
-        return 1;
-    } else {
-        return 0;
+
+
+void checkCollideGunner(int projX) {
+    if (projX == gunnerX) {
+        gameOver = 1;
     }
 }

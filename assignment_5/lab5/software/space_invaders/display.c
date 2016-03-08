@@ -48,6 +48,7 @@ void printAlienSlice(int pSramAliens, int x, int y, int slice, int step) {
     } else {
 		int i;
 		for(i = 0; i < ALIEN_WIDTH; i++) {
+			//alt_putchar('-');
 			alt_putchar(' ');
 		}
 	}
@@ -81,6 +82,7 @@ void printVoid(int pSramBulletBuffer) {
 			if(empty.type != 0) {
 				alt_putchar(empty.symbol);
 			} else {
+				//alt_putchar('-');
 				alt_putchar(' ');
 			}
         }
@@ -99,7 +101,8 @@ printGunnerSlice(int gunnerX, int slice) {
         putchar(gunner[(slice * GUNNER_WIDTH) + (GUNNER_WIDTH - numberOfWraps + i)]);
     }
     for(i = 0; i < (gunnerX - numberOfWraps); i++) {
-        putchar(' ');
+        //putchar('-');
+		putchar(' ');
     }
     for(i = 0; i < GUNNER_WIDTH - numberOfWraps; i++) {
         putchar(gunner[(slice * GUNNER_WIDTH) + i]);
@@ -123,5 +126,6 @@ void updateDisplay(int pSramAliens, int pSramBulletBuffer, int gunnerX, int step
     printAliens(pSramAliens, step, shift);
     printVoid(pSramBulletBuffer);
     printGunner(gunnerX);
+	checkGunnerWin();
 	//printf("List Length: %i\n", listLength());
 }
