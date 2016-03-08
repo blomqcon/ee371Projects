@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for nios2_quartus2_project
-Sun Mar 06 18:28:44 2016
+Mon Mar 07 21:14:15 2016
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
 
 
@@ -117,10 +117,10 @@ agreement for further details.
 +----------------------------------------------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                                                                  ; Status ; Read at                  ;
 +----------------------------------------------------------------------------------------------------------------+--------+--------------------------+
-; lab5CPU/synthesis/submodules/altera_reset_controller.sdc                                                       ; OK     ; Sun Mar 06 18:28:37 2016 ;
-; lab5CPU/synthesis/submodules/lab5CPU_cpu.sdc                                                                   ; OK     ; Sun Mar 06 18:28:37 2016 ;
-; c:/users/blomqcon/desktop/ee371projects/assignment_5/lab5/db/ip/lab5cpu/submodules/altera_reset_controller.sdc ; OK     ; Sun Mar 06 18:28:37 2016 ;
-; c:/users/blomqcon/desktop/ee371projects/assignment_5/lab5/db/ip/lab5cpu/submodules/lab5cpu_cpu.sdc             ; OK     ; Sun Mar 06 18:28:37 2016 ;
+; lab5CPU/synthesis/submodules/altera_reset_controller.sdc                                                       ; OK     ; Mon Mar 07 21:14:05 2016 ;
+; lab5CPU/synthesis/submodules/lab5CPU_cpu.sdc                                                                   ; OK     ; Mon Mar 07 21:14:05 2016 ;
+; c:/users/blomqcon/desktop/ee371projects/assignment_5/lab5/db/ip/lab5cpu/submodules/altera_reset_controller.sdc ; OK     ; Mon Mar 07 21:14:05 2016 ;
+; c:/users/blomqcon/desktop/ee371projects/assignment_5/lab5/db/ip/lab5cpu/submodules/lab5cpu_cpu.sdc             ; OK     ; Mon Mar 07 21:14:05 2016 ;
 +----------------------------------------------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -711,7 +711,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Standard Edition
-    Info: Processing started: Sun Mar 06 18:28:35 2016
+    Info: Processing started: Mon Mar 07 21:14:02 2016
 Info: Command: quartus_sta nios2_quartus2_project -c nios2_quartus2_project
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -925,8 +925,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 1264 megabytes
-    Info: Processing ended: Sun Mar 06 18:28:44 2016
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Processing ended: Mon Mar 07 21:14:15 2016
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:17
 
 

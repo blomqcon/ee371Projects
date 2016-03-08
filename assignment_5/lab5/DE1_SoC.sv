@@ -67,15 +67,17 @@ module DE1_SoC (LEDR, SW, KEY, PLD_CLOCKINPUT);
 	parameter whichClock8 = 8;
 	clock_divider cdiv (PLD_CLOCKINPUT, clk);
 	
-	// instantiate hardware modules
-	//gameClock gc1(clk[whichClock22], 0, gameTimer);
 	
+	// instantiate peripheral hardware modules
 	gameClock gc1(clk[whichClock22], 0, gameTimer);
 	LFSR_16bit lfsr1(PLD_CLOCKINPUT, 0, randomOut);
+	alienSelect as1(alienX, alienY, SW);
 	
 	//sram sram1(sram_data, sramReadWrite, sramEnable, sram_address);
 	
-	alienSelect as1(alienX, alienY, SW);
+	//TopLevel asyncCom (clk[whichClock22], dataIn, transmitLoad, 0, transmitEnable, receivingDataBus, dataOut, characterReceived, characterSent, transmittingDataBus);
+	
+	
 	
 	//receiving r1(clk[whichClock8], reset, dataIn, receivingDataBus, characterReceived);
 	//transmitting t1(clk[whichClock8], reset, transmitEnable, transmittingDataBus, dataOut, characterSent, transmitLoad);

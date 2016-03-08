@@ -1,3 +1,0 @@
--Use array to store all aliens and mark them as dead.
-	-Keeps transmission rate consisent reguardless of number of dead aliens
-	-simpler algorthimically (less cpu computations)
